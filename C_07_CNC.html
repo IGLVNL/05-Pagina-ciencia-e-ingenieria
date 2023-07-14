@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control numerico computarizado (CNC)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <P id="referencia"></P>
+    <p class="tema-particular">Ingenieria Industrial</p>
+    <p class="tema-particular">Material de estudio</p>
+    <p id="materia-subtema" >Procesos industriales</p>
+    <h1 id="tema">Control numerico computarizado (CNC)</h1>
+    <div id="menu">
+        <img src="Icons/Menu.svg" title="Menu">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="dropdown"><a href="#Tema-01-01" onclick="smoothScroll(event, 'Tema-01-01')">01- ¿QUE ES UN EQUIPO MANEJADO POR CNC?</a></li>
+                <li class="dropdown"><a href="#Tema-01-02" onclick="smoothScroll(event, 'Tema-01-02')">02- HISTORIA</a></li>
+                <li class="dropdown"><a href="#Tema-01-03" onclick="smoothScroll(event, 'Tema-01-03')">03- APLICACIONES</a></li>
+                <li class="dropdown"><a href="#Tema-01-04" onclick="smoothScroll(event, 'Tema-01-04')">04- VENTAJAS DE USAR UNA MAQUINA CNC</a></li>
+                <li class="dropdown"><a href="#Tema-01-05" onclick="smoothScroll(event, 'Tema-01-05')">05- ESTANDARES DE INSTRUCCIONES</a></li>
+                <li class="dropdown"><a href="#Tema-01-06" onclick="smoothScroll(event, 'Tema-01-06')">06- FLUJO DE PROCESAMIENTO</a></li>
+                <li class="dropdown"><a href="#Tema-01-07" onclick="smoothScroll(event, 'Tema-01-07')">07- NOMENCLATURA DE EJES Y MOVIMIENTOS</a></li>
+                <li class="dropdown"><a href="#Tema-01-08" onclick="smoothScroll(event, 'Tema-01-08')">08- REGLA DE LA MANO DERECHA</a></li>
+                <li class="dropdown"><a href="#Tema-01-09" onclick="smoothScroll(event, 'Tema-01-09')">09- ¿QUE ES UN PROGRAMA?</a></li>
+                <li class="dropdown"><a href="#Tema-01-10" onclick="smoothScroll(event, 'Tema-01-10')">10- VARIABLES DE UN PROGRAMA CNC</a></li>
+                <li class="dropdown"><a href="#Tema-01-11" onclick="smoothScroll(event, 'Tema-01-11')">11- FASES DE UN PROGRAMA CNC</a></li>
+                <li class="dropdown"><a href="#Tema-01-12" onclick="smoothScroll(event, 'Tema-01-12')">12- BLOQUES DE CODIGO</a></li>
+                <li class="dropdown"><a href="#Tema-01-13" onclick="smoothScroll(event, 'Tema-01-13')">13- RESTRICCIONES DE LOS BLOQUES</a></li>
+                <li class="dropdown"><a href="#Tema-01-14" onclick="smoothScroll(event, 'Tema-01-14')">14- PROCEDIMIENTO DE PROGRAMACION</a></li>
+                <li class="dropdown"><a href="#Tema-01-15" onclick="smoothScroll(event, 'Tema-01-15')">15- MOVIMIENTOS DE LAS HERRAMIENTAS</a></li>
+                <li class="dropdown"><a href="#Tema-01-16" onclick="smoothScroll(event, 'Tema-01-16')">16- CICLOS ENLATADOS</a></li>
+                <li class="dropdown"><a href="#Tema-01-17" onclick="smoothScroll(event, 'Tema-01-17')">17- COORDENADAS ABSOLUTAS E INCREMENTALE</a></li>
+                <li class="dropdown"><a href="#Tema-01-18" onclick="smoothScroll(event, 'Tema-01-18')">18- CODIGOS M Y G</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="cont-up">
+        <a href="#" id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a href="#" id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a href="#" id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a href="#" id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_00_procesos_industriales.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_00_diseño%20de%20layout.html">01- DISEÑO DE LAYOUT</a></li>
+                <li class="dropdown-2"><a href="C_01_Sistema%20de%20tolerancias.html">02- TOLERANCIAS</a></li>
+                <li class="dropdown-2"><a href="C_02_Instrumentos%20de%20medicion.html">03- INSTRUMENTOS DE MEDICION</a></li>
+                <li class="dropdown-2"><a href="C_03_Control%20estadistico%20de%20proceso.html">04- CONTROL ESTADISTICO DE PROCESOS (CEP)</a></li>
+                <li class="dropdown-2"><a href="C_04_Proceso%20productivo%20Hoja%20de%20ruta.html">05- PROCESO PRODUCTIVO - HOJA DE RUTA</a></li>
+                <li class="dropdown-2"><a href="C_05_MSAV.html">06- PROCESOS DE MECANIZADO SIN ARRANQUE DE VIRUTA (MSAV)</a></li>
+                <li class="dropdown-2"><a href="C_06_MCAV.html">07- PROCESOS DE MECANIZADO CON ARRANQUE DE VIRUTA (MCAV)</a></li>
+                <li class="dropdown-2"><a href="C_07_CNC.html">08- CNC</a></li>
+                <li class="dropdown-2"><a href="C_08_Industria%20alimenticia.html">09- INDUSTRIA ALIMENTICIA</a></li>
+                <li class="dropdown-2"><a href="C_09_Recubrimientos.html">10- RECUBRIMIENTOS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <a href="A_00_main.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas">
+        <a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">01- ¿QUE ES UN EQUIPO MANEJADO POR CNC?</a>
+        <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">02- HISTORIA</a>
+        <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03- APLICACIONES</a>
+        <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04- VENTAJAS DE USAR UNA MAQUINA CNC</a>
+        <a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">05- ESTANDARES DE INSTRUCCIONES</a>
+        <a href="#Tema-01-06" class="boton" onclick="smoothScroll(event, 'Tema-01-06')">06- FLUJO DE PROCESAMIENTO</a>
+        <a href="#Tema-01-07" class="boton" onclick="smoothScroll(event, 'Tema-01-07')">07- NOMENCLATURA DE EJES Y MOVIMIENTOS</a>
+        <a href="#Tema-01-08" class="boton" onclick="smoothScroll(event, 'Tema-01-08')">08- REGLA DE LA MANO DERECHA</a>
+        <a href="#Tema-01-09" class="boton" onclick="smoothScroll(event, 'Tema-01-09')">09- ¿QUE ES UN PROGRAMA?</a>
+        <a href="#Tema-01-10" class="boton" onclick="smoothScroll(event, 'Tema-01-10')">10- VARIABLES DE UN PROGRAMA CNC</a>
+        <a href="#Tema-01-11" class="boton" onclick="smoothScroll(event, 'Tema-01-11')">11- FASES DE UN PROGRAMA CNC</a>
+        <a href="#Tema-01-12" class="boton" onclick="smoothScroll(event, 'Tema-01-12')">12- BLOQUES DE CODIGO</a>
+        <a href="#Tema-01-13" class="boton" onclick="smoothScroll(event, 'Tema-01-13')">13- RESTRICCIONES DE LOS BLOQUES</a>
+        <a href="#Tema-01-14" class="boton" onclick="smoothScroll(event, 'Tema-01-14')">14- PROCEDIMIENTO DE PROGRAMACION</a>
+        <a href="#Tema-01-15" class="boton" onclick="smoothScroll(event, 'Tema-01-15')">15- MOVIMIENTOS DE LAS HERRAMIENTAS</a>
+        <a href="#Tema-01-16" class="boton" onclick="smoothScroll(event, 'Tema-01-16')">16- CICLOS ENLATADOS</a>
+        <a href="#Tema-01-17" class="boton" onclick="smoothScroll(event, 'Tema-01-17')">17- COORDENADAS ABSOLUTAS E INCREMENTALES</a>
+        <a href="#Tema-01-18" class="boton" onclick="smoothScroll(event, 'Tema-01-18')">18- CODIGOS M Y G</a>
+    </div>
+
+    <div id="Tema-01-01">
+        <h2>01-¿QUE ES UN EQUIPO MANEJADO POR CNC?</h2>
+        <p class="respuesta">Un equipo manejado por CNC (Control Numérico por Computadora) es un tipo de equipo o máquina que utiliza un sistema de control automatizado para realizar operaciones precisas y repetitivas. Estas máquinas están equipadas con computadoras y software especializados que les permiten ejecutar instrucciones programadas para llevar a cabo una variedad de tareas, como mecanizado, corte, conformado y otras operaciones de fabricación.</p>
+        <p class="respuesta">El CNC permite controlar con precisión la posición, la velocidad y otras variables del equipo durante el proceso de fabricación. Esto se logra mediante la programación de instrucciones específicas en un lenguaje de programación compatible con el CNC. Estas instrucciones indican al equipo qué movimientos realizar, cómo ejecutar las operaciones y otros parámetros relacionados.</p>
+        <p class="respuesta">Un equipo manejado por CNC ofrece varias ventajas, como mayor precisión, repetibilidad y velocidad en comparación con métodos de control manual. También permite la producción eficiente de piezas y componentes complejos, ya que el CNC puede ejecutar operaciones altamente detalladas y realizar ajustes automáticos según sea necesario.</p>
+        <p class="respuesta">Algunos ejemplos comunes de equipos manejados por CNC incluyen tornos CNC, fresadoras CNC, máquinas de corte por láser CNC y máquinas de control numérico para la fabricación de productos electrónicos. Estos equipos se utilizan en diversos sectores industriales, como la industria automotriz, aeroespacial, médica y de productos electrónicos, entre otros.</p>
+    </div>
+    
+    <div id="Tema-01-02">
+        <h2>02- HISTORIA</h2>
+        <p class="respuesta">En 1909, la línea de producción de Ford marcó uno de los primeros pasos hacia la automatización de la producción.</p>
+        <p class="respuesta">En 1952, se desarrolló el Control Numérico (CN), que utilizaba una computadora para lograr la posición de la herramienta. Se creó el lenguaje de programación "Herramientas Automáticamente Programadas" para el CN.</p>
+        <p class="respuesta">En 1960, se introdujo el primer robot, llamado "Unimate", basado en los principios del control numérico. Fue instalado en Ford.</p>
+        <p class="respuesta">En 1965, IBM desarrolló el control computarizado de la línea de producción para la fabricación de tarjetas de circuitos.</p>
+        <p class="respuesta">En la década de 1970, se logró el Control Multi Máquina, donde siete máquinas eran controladas simultáneamente por una computadora. Esto sentó las bases para el Control Numérico Directo (DNC) y el Control Numérico por Computadora (CNC).</p>
+        <p class="respuesta">En los años 1970, el desarrollo de las minicomputadoras permitió que las máquinas tuvieran su propia memoria de computadora, lo que llevó al CNC.</p>
+        <p class="respuesta">En 1975, se introdujo el Control Numérico Distribuido (DNC), que consistía en utilizar una computadora para proporcionar el programa de control numérico a la memoria de las máquinas y distribuir el trabajo en diferentes máquinas. Esto sentó las bases para los sistemas actuales de Control de Manufactura y Sistemas Flexibles de Manufactura (SFM).</p>
+        <p class="respuesta">En la década de 1980, se implementaron las Celdas de Manufactura y los Grupos Tecnológicos (GT), que permitían la determinación de familias y equipos adecuados, así como la transferencia automática de programas de CN y el manejo de materiales.</p>
+        <p class="respuesta">En la década de 1980, se desarrollaron los Sistemas Flexibles de Manufactura (SFM), que utilizaban conjuntos de máquinas para producir una variedad de productos con movimiento automático de materiales.</p>
+        <p class="respuesta">En 1985, se integró el CAD/CAM (diseño asistido por computadora/fabricación asistida por computadora) a través de la Planeación de Procesos Asistida por Computadora (CAPP), lo que permitió la preparación de instrucciones de operación detalladas y la programación más eficiente, acortando la brecha entre CAD y CAM.</p>
+        <p class="respuesta">Estos avances en el control numérico y la automatización han impulsado la eficiencia y la capacidad de producción en la industria manufacturera.</p>
+    </div>
+    
+    <div id="Tema-01-03">
+        <h2>03- APLICACIONES</h2>
+        <p class="respuesta">Algunos ejemplos comunes de equipos manejados por CNC incluyen tornos CNC, fresadoras CNC, máquinas de corte por láser CNC y máquinas de control numérico para la fabricación de productos electrónicos. Estos equipos se utilizan en diversos sectores industriales, como la industria automotriz, aeroespacial, médica y de productos electrónicos, entre otros.</p>
+    </div>
+    
+    <div id="Tema-01-04">
+        <h2>04- VENTAJAS DE USAR UNA MAQUINA CNC</h2>
+        <p class="respuesta">El uso de una máquina CNC (Control Numérico por Computadora) ofrece diversas ventajas en comparación con los métodos de fabricación tradicionales. A continuación, se presentan algunas de las ventajas principales de utilizar una máquina CNC:</p>
+        <p class="respuesta">Precisión y repetibilidad: Las máquinas CNC son altamente precisas y pueden realizar operaciones con una precisión y repetibilidad excepcionales. Esto garantiza la calidad y consistencia en la fabricación de piezas, lo que es especialmente importante en aplicaciones que requieren tolerancias estrechas.</p>
+        <p class="respuesta">Mayor productividad: Las máquinas CNC son capaces de trabajar de manera continua, sin la necesidad de intervención humana constante. Esto reduce los tiempos de inactividad y permite un aumento significativo en la productividad. Además, las máquinas CNC pueden realizar múltiples operaciones en una sola configuración, lo que mejora aún más la eficiencia y el rendimiento general.</p>
+        <p class="respuesta">Flexibilidad y versatilidad: Las máquinas CNC son altamente versátiles y se pueden programar para realizar una amplia gama de tareas y operaciones. Pueden adaptarse fácilmente a diferentes tipos de piezas y geometrías, lo que permite una mayor flexibilidad en la fabricación y la capacidad de producir piezas personalizadas.</p>
+        <p class="respuesta">Automatización y reducción de mano de obra: Las máquinas CNC permiten la automatización de procesos de fabricación, lo que reduce la dependencia de la mano de obra humana. Esto no solo disminuye los costos laborales, sino que también minimiza los errores humanos y mejora la seguridad en el entorno de trabajo.</p>
+        <p class="respuesta">Tiempo de programación y cambio rápido de piezas: La programación de una máquina CNC puede llevar menos tiempo en comparación con los métodos convencionales. Además, el cambio de piezas y herramientas es más rápido y sencillo, lo que reduce los tiempos de inactividad y mejora la eficiencia global.</p>
+        <p class="respuesta">Mayor control y supervisión: Las máquinas CNC ofrecen un mayor control y supervisión sobre el proceso de fabricación. Los operadores pueden monitorear y ajustar fácilmente los parámetros de mecanizado, lo que permite una mayor precisión y la capacidad de realizar cambios sobre la marcha.</p>
+        <p class="respuesta">Reducción de desechos y optimización de materiales: Las máquinas CNC pueden optimizar el uso de materiales al minimizar los desperdicios y maximizar la utilización de la materia prima. Esto resulta en ahorros significativos de costos y una producción más sostenible.</p>
+    </div>
+    
+    <div id="Tema-01-05">
+        <h2>05- ESTANDARES DE INSTRUCCIONES</h2>
+        <p class="respuesta">Los dos estándares principales que se siguen para programar un CNC son ISO 6983 (International Standardization Organization) y EIA RS274 (Electronic Industries Association). Estos estándares definen las instrucciones de programación (código) que permiten a la máquina herramienta llevar a cabo ciertas operaciones específicas.</p>
+        <p class="respuesta">El estándar ISO 6983 establece las instrucciones de programación para el control numérico y abarca una amplia gama de operaciones, como movimientos de desplazamiento, interpolación lineal y circular, cambios de herramienta, control de velocidades y avances, entre otros.</p>
+        <p class="respuesta">El estándar EIA RS274, también conocido como estándar G-code, define las instrucciones de programación para el control numérico y proporciona una serie de comandos estándar que se utilizan para controlar los movimientos y acciones de la máquina. Estas instrucciones incluyen funciones de movimiento (G-codes) y funciones misceláneas (M-codes) que se requieren para el maquinado de piezas.</p>
+        <p class="respuesta">Ambos estándares son reconocidos a nivel mundial y se utilizan en la programación de CNC para garantizar la compatibilidad entre diferentes controladores y máquinas herramienta. Sin embargo, es importante tener en cuenta que puede haber variaciones en los comandos y funciones específicas según el fabricante y el modelo del controlador de CNC utilizado.</p>
+    </div>
+    
+    <div id="Tema-01-06">
+        <h2>06- FLUJO DE PROCESAMIENTO</h2>
+        <p class="respuesta">El flujo de procesamiento en CNC sigue una secuencia de pasos que abarca desde la preparación del programa CNC hasta la ejecución del mecanizado. A continuación, se presenta el flujo de procesamiento típico en CNC:</p>
+        <p class="respuesta">Diseño del producto: Se crea un diseño 3D o 2D del producto utilizando software de diseño asistido por computadora (CAD).</p>
+        <p class="respuesta">Programación CNC: Se desarrolla el programa CNC utilizando software de programación CNC. Esto implica escribir instrucciones en lenguaje G-code para controlar los movimientos de la herramienta y otros parámetros de mecanizado.</p>
+        <p class="respuesta">Simulación: Se realiza una simulación del programa CNC para verificar la secuencia de movimientos y detectar posibles errores o colisiones.</p>
+        <p class="respuesta">Preparación de la máquina: Se carga el programa CNC en la máquina CNC y se realiza la configuración inicial, que incluye la sujeción de la pieza de trabajo, la instalación de la herramienta y la configuración de los parámetros de corte.</p>
+        <p class="respuesta">Ejecución del mecanizado: Se inicia la ejecución del programa CNC, y la máquina CNC realiza los movimientos de corte y otros comandos según lo especificado en el programa. Durante este proceso, se pueden realizar mediciones y ajustes para garantizar la precisión y la calidad del mecanizado.</p>
+        <p class="respuesta">Verificación y control de calidad: Una vez finalizado el mecanizado, se verifica la calidad de las piezas mecanizadas utilizando instrumentos de medición y se realiza un control de calidad para asegurar que cumplan con las especificaciones requeridas.</p>
+        <p class="respuesta">Finalización y documentación: Se retiran las piezas mecanizadas de la máquina CNC y se realiza la limpieza y el acabado necesario. También se documentan los registros y datos relevantes para futuras referencias y seguimiento del proceso.</p>
+        <p class="respuesta">Cabe mencionar que este flujo de procesamiento puede variar dependiendo de los requisitos específicos de cada aplicación y del tipo de máquina CNC utilizada. Sin embargo, en general, sigue estos pasos fundamentales para lograr la producción mecanizada con CNC.</p>
+    </div>
+    
+    <div id="Tema-01-07">
+        <h2>07- NOMENCLATURA DE EJES Y MOVIMIENTOS</h2>
+        <p class="respuesta">La nomenclatura estándar para los ejes de movimiento en programación de CNC utiliza las letras X, Y y Z para representar los ejes de coordenadas tridimensionales en un sistema cartesiano.</p>
+        <p class="respuesta">A continuación, se muestra la nomenclatura y la correspondencia de cada letra con el eje de movimiento:</p>
+        <p class="respuesta">X: Representa el eje horizontal o de desplazamiento lateral. Controla los movimientos de la herramienta de izquierda a derecha o viceversa.</p>
+        <p class="respuesta">Y: Representa el eje vertical o de desplazamiento longitudinal. Controla los movimientos de la herramienta de adelante hacia atrás o viceversa.</p>
+        <p class="respuesta">Z: Representa el eje de profundidad o de desplazamiento vertical. Controla los movimientos de la herramienta hacia arriba y hacia abajo.</p>
+        <p class="respuesta">En algunos casos, especialmente en máquinas de mayor complejidad, se pueden encontrar ejes adicionales, como A, B, C, etc., que se utilizan para controlar movimientos rotativos o específicos de la máquina.</p>
+        <p class="respuesta">Es importante tener en cuenta que la orientación y dirección de los ejes pueden variar según el sistema y la configuración de la máquina CNC en particular. Además, la nomenclatura puede diferir ligeramente según el fabricante y el controlador utilizado. Por lo tanto, es fundamental consultar la documentación y las especificaciones de la máquina CNC específica para comprender y utilizar correctamente la nomenclatura de los ejes de movimiento.</p>
+    </div>
+    
+    <div id="Tema-01-08">
+        <h2>08- REGLA DE LA MANO DERECHA</h2>
+        <p class="respuesta">La regla de la mano derecha en el contexto de CNC se refiere a una convención utilizada para determinar la dirección de movimiento de los ejes de una máquina CNC. Esta regla establece que si se coloca la mano derecha con los dedos extendidos en la dirección positiva del eje X y se cierra el puño, el pulgar apuntará en la dirección positiva del eje Y, mientras que el dedo índice apuntará en la dirección positiva del eje Z.</p>
+        <p class="respuesta">La regla de la mano derecha es útil para visualizar y recordar la orientación de los ejes en una máquina CNC. Al seguir esta regla, se puede establecer una referencia consistente para el sistema de coordenadas y comprender fácilmente la relación entre los ejes y los movimientos de la herramienta. Además, la regla de la mano derecha también se aplica al sentido de giro del husillo, donde el pulgar de la mano derecha representa la dirección de giro positiva.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/1-%20Regla%20mano%20derecha.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/1-%20Regla%20mano%20derecha%2000.png">
+        </div>
+    </div>
+    
+    <div id="Tema-01-09">
+        <h2>09- ¿QUE ES UN PROGRAMA?</h2>
+        <p class="respuesta">Un programa CNC es una secuencia de instrucciones codificadas que se utiliza para controlar una máquina CNC (Control Numérico por Computadora). Estas instrucciones, escritas en un lenguaje de programación específico para CNC, indican a la máquina cómo debe realizar las operaciones de mecanizado en una pieza.</p>
+        <p class="respuesta">El programa CNC contiene una lista de comandos y parámetros que definen el movimiento de la herramienta, las velocidades de corte, las coordenadas de los ejes, los cambios de herramienta, las pausas, entre otros aspectos relacionados con el proceso de mecanizado. Estos comandos son interpretados por el controlador de la máquina CNC, que convierte las instrucciones en movimientos precisos de los ejes y acciones específicas de la herramienta.</p>
+        <p class="respuesta">El programa CNC se crea utilizando un software de programación compatible con el controlador de la máquina. El programador CNC traduce el diseño o modelo de la pieza en instrucciones específicas para la máquina CNC. Esto implica definir las trayectorias de corte, las herramientas a utilizar, las velocidades de avance y otras variables necesarias para lograr el resultado deseado.</p>
+        <p class="respuesta">Una vez que el programa CNC está completo, se carga en el controlador de la máquina CNC, ya sea a través de una conexión directa o mediante un medio de almacenamiento como una memoria USB. La máquina ejecuta entonces las instrucciones del programa, realizando los movimientos y operaciones necesarios para mecanizar la pieza de acuerdo con las especificaciones del programa.</p>
+    </div>
+    
+    <div id="Tema-01-10">
+        <h2>10- VARIABLES DE UN PROGRAMA CNC</h2>
+        <p class="respuesta">En un programa CNC, las variables son utilizadas para definir parámetros y valores específicos que controlan diferentes aspectos del mecanizado. Estas variables permiten personalizar y adaptar el programa a las necesidades y características de la pieza que se está mecanizando. A continuación, se mencionan algunas de las variables más comunes en la programación CNC:</p>
+        <p class="respuesta">Número de bloque (N): Es utilizado para numerar y ordenar los bloques de código en el programa. Cada bloque contiene una instrucción o comando específico.</p>
+        <p class="respuesta">Función preparatoria (G): Los códigos G utilizan variables para indicar diferentes modos de operación, como movimientos rápidos (G00), movimientos lineales (G01), movimientos circulares (G02/G03), entre otros.</p>
+        <p class="respuesta">Coordenadas (X, Y, Z): Las variables X, Y y Z se utilizan para definir las coordenadas en los ejes X, Y y Z respectivamente. Estas variables determinan la posición y el desplazamiento de la herramienta de corte en el espacio de trabajo.</p>
+        <p class="respuesta">Localización de centro de arco (I, J, K): Estas variables se utilizan para especificar la ubicación del centro de un arco en los ejes X, Y y Z respectivamente. Se emplean en combinación con los códigos G02/G03 para realizar movimientos circulares.</p>
+        <p class="respuesta">Velocidad de avance (F): La variable F se utiliza para indicar la velocidad de avance de la herramienta durante el mecanizado. Esta variable define la velocidad a la cual se desplaza la herramienta en unidades de longitud por minuto.</p>
+        <p class="respuesta">Número de herramienta (T): Esta variable se utiliza para especificar el número de herramienta que se va a utilizar en una operación de mecanizado. Permite cambiar y seleccionar diferentes herramientas dentro del programa.</p>
+        <p class="respuesta">Estas son solo algunas de las variables comunes utilizadas en la programación CNC. La cantidad y el tipo de variables pueden variar dependiendo del controlador y la máquina CNC específica que se esté utilizando. Es importante consultar la documentación y los manuales de la máquina para conocer las variables compatibles y sus funciones correspondientes.</p>
+    </div>
+    
+    <div id="Tema-01-11">
+        <h2>11- FASES DE UN PROGRAMA CNC</h2>
+        <p class="respuesta">Las fases principales que componen un programa CNC ya hecho son las siguientes:</p>
+        <p class="respuesta">Inicio y configuración: Esta fase incluye el encendido de la máquina CNC y la carga del programa en el controlador. También se establecen los parámetros iniciales, como las coordenadas de referencia, las velocidades de avance y otros ajustes necesarios para el mecanizado.</p>
+        <p class="respuesta">Inicialización y preparación: En esta fase, se llevan a cabo las operaciones necesarias para preparar la máquina para el mecanizado. Esto puede incluir la colocación y fijación de la pieza de trabajo, la instalación de las herramientas requeridas y la verificación de la alineación y calibración de los ejes de la máquina.</p>
+        <p class="respuesta">Secuencia de movimientos: En esta fase, se definen los movimientos que la máquina CNC realizará para mecanizar la pieza. Se utilizan los códigos G (códigos de movimiento) para indicar los desplazamientos en los ejes X, Y y Z, así como los movimientos de rotación en los ejes adicionales, si corresponde.</p>
+        <p class="respuesta">Operaciones de mecanizado: Esta fase comprende las operaciones específicas de mecanizado que se realizarán en la pieza. Esto puede incluir operaciones como el fresado, taladrado, torneado, rectificado u otras acciones de conformado o corte. Se utilizan los códigos G y M (códigos de función miscelánea) para controlar y activar diferentes operaciones según sea necesario.</p>
+        <p class="respuesta">Cambio de herramientas: Si se requiere el cambio de herramientas durante el mecanizado, esta fase se encarga de gestionar ese proceso. Se utilizan comandos específicos (por ejemplo, códigos M06) para indicar el cambio de herramienta, y se pueden realizar operaciones adicionales, como la verificación y ajuste de la herramienta.</p>
+        <p class="respuesta">Finalización y apagado: Al finalizar el mecanizado, se ejecutan las operaciones finales, como el posicionamiento de la máquina en una posición segura, la liberación de la pieza y la limpieza del área de trabajo. Luego, se apaga la máquina y se completa el programa.</p>
+        <p class="respuesta">Estas fases representan las etapas principales en un programa CNC ya hecho. Cada fase tiene su propia secuencia de comandos y códigos correspondientes para lograr el mecanizado deseado de la pieza. Es importante tener en cuenta que la estructura y la secuencia exacta de las fases pueden variar según el tipo de mecanizado, las características de la máquina y los requisitos específicos del programa CNC.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/2-%20Fases%201.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/2-%20Fases%202.png">
+        </div>
+    </div>
+    
+    <div id="Tema-01-12">
+        <h2>12- BLOQUES DE CODIGO</h2>
+        <p class="respuesta">Un bloque en un programa CNC es una unidad de instrucción que contiene comandos específicos, como movimientos de herramienta, velocidades y coordenadas de posición. Cada bloque se identifica con un número único y se utiliza para organizar y secuenciar las operaciones que la máquina CNC realizará. Los bloques permiten una programación estructurada y precisa, asegurando un control adecuado sobre las acciones de la máquina durante el mecanizado.</p>
+    </div>
+    
+    <div id="Tema-01-13">
+        <h2>13- RESTRICCIONES DE LOS BLOQUES</h2>
+        <p class="respuesta">Las restricciones que se deben tener en cuenta en cada bloque del programa CNC son las siguientes:</p>
+        <p class="respuesta">Solo un movimiento de herramienta: Cada bloque debe contener únicamente un solo movimiento de la herramienta. Esto garantiza que se realice una única operación o acción en ese bloque específico.</p>
+        <p class="respuesta">Solo una velocidad de corte: En un bloque determinado, solo debe haber una velocidad de corte especificada. Esto se refiere a la velocidad a la cual la herramienta se desplaza durante el mecanizado.</p>
+        <p class="respuesta">Solo una herramienta o velocidad del husillo: Cada bloque debe contener solo una herramienta o especificar una velocidad del husillo. Esto asegura que se utilice una única herramienta o se ajuste una única velocidad del husillo para la operación en ese bloque.</p>
+        <p class="respuesta">Numeración secuencial de bloques: El número del bloque en el programa CNC debe ser secuencial. Esto facilita la organización y lectura del programa, ya que los bloques se ejecutarán en el orden numérico especificado.</p>
+        <p class="respuesta">Estas restricciones son importantes para garantizar la correcta interpretación y ejecución del programa CNC por parte de la máquina. Siguiendo estas pautas, se evitan ambigüedades, errores de programación y se facilita la comprensión del programa por parte de los operadores y programadores.</p>
+    </div>
+    
+    <div id="Tema-01-14">
+        <h2>14- PROCEDIMIENTO DE PROGRAMACION</h2>
+        <p class="respuesta">El procedimiento de programación en CNC se basa en varias etapas clave. En primer lugar, se desarrolla un orden de operaciones, planificando las secuencias de principio a fin antes de escribir el programa. Luego, se realizan los cálculos necesarios, como el cálculo de coordenadas, para determinar las posiciones y movimientos de la herramienta en relación con la pieza. Estas coordenadas se pueden indicar sobre el dibujo o utilizar hojas de coordenadas para mayor precisión. Además, se elige la herramienta adecuada y se establecen las velocidades de corte correspondientes, teniendo en cuenta la disponibilidad de herramientas en el taller. Estos pasos son fundamentales para garantizar una programación precisa y eficiente en una máquina CNC.</p>
+    </div>
+    
+    <div id="Tema-01-15">
+        <h2>15- MOVIMIENTOS DE LAS HERRAMIENTAS</h2>
+        <p class="respuesta">Los movimientos básicos de la herramienta en una máquina CNC son los siguientes:</p>
+        <p class="respuesta">Movimiento lineal (G01): Permite desplazar la herramienta en línea recta de un punto a otro en el plano de trabajo. Se especifica la coordenada de destino en el eje X, Y y/o Z.</p>
+        <p class="respuesta">Movimiento rápido (G00): Permite mover rápidamente la herramienta de un punto a otro sin tener en cuenta la trayectoria más corta. Es útil para desplazamientos rápidos entre operaciones o para moverse fuera del área de trabajo.</p>
+        <p class="respuesta">Movimiento circular (G02 y G03): Permite realizar trayectorias curvas. G02 se utiliza para movimientos en sentido horario, mientras que G03 se utiliza para movimientos en sentido antihorario. Se especifica el centro del arco, la dirección, y la posición de finalización.</p>
+        <p class="respuesta">Movimiento helicoidal (G02.2 y G03.2): Permite realizar movimientos en forma de hélice, combinando movimientos lineales y circulares. Se especifica el eje de rotación, la velocidad de avance axial y el ángulo de inclinación.</p>
+        <p class="respuesta">Estos movimientos básicos proporcionan la flexibilidad necesaria para realizar una amplia variedad de operaciones en una máquina CNC, como fresado, torneado, taladrado, entre otros.</p>
+    </div>
+    
+    <div id="Tema-01-16">
+        <h2>16- CICLOS ENLATADOS</h2>
+        <p class="respuesta">Los ciclos enlatados, también conocidos como ciclos fijos o ciclos predefinidos, son secuencias de comandos preestablecidos en un control numérico computarizado (CNC) que permiten automatizar operaciones comunes y repetitivas en el mecanizado. Estos ciclos enlatados son una forma eficiente de programar y ejecutar tareas estándar, ya que eliminan la necesidad de escribir instrucciones detalladas para cada operación.</p>
+        <p class="respuesta">Los ciclos enlatados abarcan una variedad de operaciones, como taladrado, avellanado, roscado, fresado de contornos, mecanizado de superficies y muchas más. Cada ciclo enlatado tiene una estructura específica y utiliza códigos y parámetros predefinidos para controlar la herramienta y el movimiento de la máquina.</p>
+        <p class="respuesta">Al utilizar ciclos enlatados, el programador solo necesita llamar al ciclo correspondiente y proporcionar los parámetros necesarios, como dimensiones y ubicaciones específicas. El control numérico se encarga de ejecutar el ciclo según las instrucciones predefinidas, ahorrando tiempo y esfuerzo en la programación manual de cada operación.</p>
+        <p class="respuesta">Los ciclos enlatados son una herramienta poderosa en la programación CNC, ya que simplifican el proceso de mecanizado y permiten una mayor productividad al realizar tareas repetitivas de manera rápida y precisa. Además, facilitan la estandarización de las operaciones y mejoran la eficiencia en la producción.</p>
+    </div>
+    
+    <div id="Tema-01-17">
+        <h2>17- COORDENADAS ABSOLUTAS E INCREMENTALES</h2>
+        <p class="respuesta">Las coordenadas absolutas e incrementales son dos sistemas utilizados en la programación y el control numérico computarizado (CNC) para especificar las posiciones y movimientos de la herramienta de mecanizado en relación con una referencia establecida.</p>
+        <p class="respuesta">Las coordenadas absolutas se refieren a posiciones medidas directamente desde un punto de referencia fijo en el espacio de trabajo de la máquina CNC. Este punto de referencia, conocido como origen absoluto, es establecido durante la configuración inicial de la máquina y sirve como punto de partida para todas las operaciones de mecanizado. Las coordenadas absolutas proporcionan valores absolutos y constantes para cada eje de movimiento, lo que permite una programación precisa de las posiciones de la herramienta en relación con el origen establecido.</p>
+        <p class="respuesta">Por otro lado, las coordenadas incrementales se refieren a movimientos relativos a la posición actual de la herramienta. En lugar de utilizar un punto de referencia fijo, las coordenadas incrementales se basan en el desplazamiento incremental desde la posición actual de la herramienta. Cada movimiento especificado se suma o resta a la posición actual, lo que permite programar desplazamientos relativos en relación con la posición previa. Las coordenadas incrementales son útiles para realizar movimientos relativos y secuenciales, como desplazamientos en línea recta o incrementos de ángulo en operaciones de fresado o torneado.</p>
+        <p class="respuesta">Tanto las coordenadas absolutas como las incrementales tienen sus aplicaciones específicas en la programación CNC. Las coordenadas absolutas son utilizadas cuando se requiere una referencia constante y precisa desde un punto fijo en el espacio de trabajo. Por otro lado, las coordenadas incrementales son útiles para realizar movimientos relativos y secuenciales sin la necesidad de referenciar constantemente un origen absoluto. La elección entre coordenadas absolutas e incrementales depende del tipo de operación y el enfoque requerido en cada programa CNC.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/3-%20Coordenadas%20Abs%20e%20Inc.png">
+        </div>
+    </div>
+    
+    <div id="Tema-01-18">
+        <h2>18- CODIGOS M Y G</h2>
+        <p class="respuesta">Los códigos M y G son comandos utilizados en la programación de máquinas CNC (Control Numérico por Computadora) para controlar diferentes funciones y operaciones de la máquina durante el proceso de mecanizado. A continuación, se explica brevemente cada uno de ellos:</p>
+        <p class="respuesta">Códigos G:</p>
+        <p class="respuesta">Los códigos G se conocen como códigos de función preparatoria y se utilizan para indicar el tipo de movimiento o acción que la máquina CNC debe realizar. Estos códigos G definen los modos de operación de la máquina, como movimientos rápidos, avances de corte, ciclos de perforación, entre otros.</p>
+        <br>
+        <p class="respuesta">G00: Movimiento rápido. Se utiliza para desplazar rápidamente la herramienta a una posición sin cortar material.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/G00.png">
+        </div>
+        <p class="respuesta">G01: Movimiento lineal. Se utiliza para realizar movimientos lineales en el eje especificado a una velocidad de avance constante.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/G01.png">
+        </div>
+        <p class="respuesta">G02/G03: Movimiento circular. Se utilizan para realizar movimientos circulares en sentido horario (G02) o antihorario (G03) con un radio especificado.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/G02.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/G03.png">
+        </div>
+        <p class="respuesta">G17/G18/G19: Selecciona el plano de trabajo. G17 Plano XY, G18 Plano XZ y G19 Plano YZ.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/G17,18,19.png">
+        </div>
+        <p class="respuesta">G20/G21: Unidad de medida. G20 se utiliza para establecer las unidades de medida en pulgadas, mientras que G21 se utiliza para establecer las unidades de medida en milímetros.</p>
+        <p class="respuesta">G90: Programación absoluta. Establece el modo de programación absoluta, donde las coordenadas se especifican con respecto al origen absoluto.</p>
+        <p class="respuesta">G91: Programación incremental. Establece el modo de programación incremental, donde las coordenadas se especifican como incrementos con respecto a la posición actual. </p>
+        <p class="respuesta">G04: Tiempo de espera. Se utiliza para realizar una pausa o retardo en el programa por un tiempo especificado.</p>
+        <p class="respuesta">G10: Programación de datos. Se utiliza para ingresar datos adicionales o parámetros en la memoria de la máquina CNC.</p>
+        <p class="respuesta">G40: Cancelar compensación de radio. Se utiliza para desactivar la compensación de radio previamente establecida.</p>
+        <p class="respuesta">G54-G59: Sistemas de coordenadas de piezas. Se utilizan para seleccionar diferentes sistemas de coordenadas de piezas guardados en la memoria de la máquina CNC.</p>
+        <p class="respuesta">G81-G89: Ciclos de taladrado. Se utilizan para realizar operaciones de taladrado repetitivas con parámetros predefinidos</p>
+        <br>
+        <p class="respuesta">Códigos M:</p>
+        <p class="respuesta">Los códigos M se conocen como códigos de función miscelánea y se utilizan para controlar acciones adicionales de la máquina CNC, como encender o apagar el husillo, cambiar herramientas, activar el sistema de refrigeración, entre otros.</p>
+        <br>
+        <p class="respuesta">M03: Encender el husillo en sentido horario. Se utiliza para encender el husillo en la dirección de giro horario.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/M03.png">
+        </div>
+        <p class="respuesta">M04: Encender el husillo en sentido antihorario. Se utiliza para encender el husillo en la dirección de giro antihorario.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/M04.png">
+        </div>
+        <p class="respuesta">M05: Apagar el husillo. Se utiliza para apagar el husillo.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/M05.png">
+        </div>
+        <p class="respuesta">M08: Encender refrigerante. Se utiliza para encender el sistema de refrigeración o lubricación.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/M08.png">
+        </div>
+        <p class="respuesta">M09: Apagar refrigerante. Se utiliza para apagar el sistema de refrigeración o lubricación.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/M09.png">
+        </div>
+        <p class="respuesta">M30: Fin del programa. Se utiliza para indicar el final del programa CNC.</p>
+        <p class="respuesta">M02: Fin del programa con parada. Similar al código M30, pero detiene la máquina después de finalizar el programa.</p>
+        <p class="respuesta">M06: Cambio de herramienta automático. Se utiliza para realizar un cambio automático de herramienta en una máquina CNC con un sistema de cambio de herramienta.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/08-%20CNC/M06.png">
+        </div>
+        <p class="respuesta">M07: Encender refrigerante de aire. Se utiliza para encender un sistema de enfriamiento o soplado de aire.</p>
+        <p class="respuesta">M19: Orientación del husillo. Se utiliza para orientar el husillo a una posición específica, como un índice de 90 grados.</p>
+        <p class="respuesta">M98/M99: Subprogramas. M98 se utiliza para llamar a un subprograma desde el programa principal, mientras que M99 indica el final de un subprograma y el regreso al programa principal.</p>
+        <br>
+        <p class="respuesta">La disponibilidad y el uso de estos códigos pueden variar según la máquina CNC y el controlador utilizado. Es importante consultar la documentación específica de la máquina o el manual del controlador para obtener una lista completa y precisa de los códigos G y M admitidos.</p>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="function.js"></script>
+</body>
+</html>

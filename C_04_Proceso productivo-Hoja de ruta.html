@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesos productivos - Hoja de ruta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <P id="referencia"></P>
+    <p class="tema-particular">Ingenieria Industrial</p>
+    <p class="tema-particular">Material de estudio</p>
+    <p id="materia-subtema" >Procesos industriales</p>
+    <h1 id="tema">Procesos productivos - Hoja de ruta</h1>
+    <div id="menu">
+        <img src="Icons/Menu.svg" title="Menu">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="dropdown" ><a href="#Tema-01-00"  onclick="smoothScroll(event, 'Tema-01-00')">INTRODUCCION</a>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-01"  onclick="smoothScroll(event, 'Tema-01-01')">01- ANALISIS DEL PROCESO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#001"  onclick="smoothScroll(event, '001')">El producto</a></li>
+                        <li><a href="#002"  onclick="smoothScroll(event, '002')">Administración científica</a></li>
+                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Sistemas de manufactura</a></li>
+                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Ingeniería de manufactura</a></li>
+                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Fases de un proceso</a></li>
+                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Selección de un proceso</a></li>
+                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Ejemplo</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-02"  onclick="smoothScroll(event, 'Tema-01-02')">02- DISEÑO DEL PROCESO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Planificación de los procesos</a></li>
+                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Procesos básicos y secundarios</a></li>
+                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Mejoras de las propiedades físicas y terminación</a></li>
+                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Diagramas más comunes para la planificación de procesos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">03- HOJA DE RUTA / HOJA DE PROCESOS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Ejemplos de diferentes formatos de hojas de ruta</a></li>
+                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Ejemplo de modo de uso de una hoja de ruta</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="cont-up">
+        <a href="#" id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a href="#" id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a href="#" id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a href="#" id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+
+    <div id="cont-btn-volver">
+        <a href="B_00_procesos_industriales.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_00_diseño%20de%20layout.html">01- DISEÑO DE LAYOUT</a></li>
+                <li class="dropdown-2"><a href="C_01_Sistema%20de%20tolerancias.html">02- TOLERANCIAS</a></li>
+                <li class="dropdown-2"><a href="C_02_Instrumentos%20de%20medicion.html">03- INSTRUMENTOS DE MEDICION</a></li>
+                <li class="dropdown-2"><a href="C_03_Control%20estadistico%20de%20proceso.html">04- CONTROL ESTADISTICO DE PROCESOS (CEP)</a></li>
+                <li class="dropdown-2"><a href="C_04_Proceso%20productivo%20Hoja%20de%20ruta.html">05- PROCESO PRODUCTIVO - HOJA DE RUTA</a></li>
+                <li class="dropdown-2"><a href="C_05_MSAV.html">06- PROCESOS DE MECANIZADO SIN ARRANQUE DE VIRUTA (MSAV)</a></li>
+                <li class="dropdown-2"><a href="C_06_MCAV.html">07- PROCESOS DE MECANIZADO CON ARRANQUE DE VIRUTA (MCAV)</a></li>
+                <li class="dropdown-2"><a href="C_07_CNC.html">08- CNC</a></li>
+                <li class="dropdown-2"><a href="C_08_Industria%20alimenticia.html">09- INDUSTRIA ALIMENTICIA</a></li>
+                <li class="dropdown-2"><a href="C_09_Recubrimientos.html">10- RECUBRIMIENTOS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_main.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas">
+        <a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">01- ANALISIS DEL PROCESO</a>
+        <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">02- DISEÑO DEL PROCESO</a>
+        <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03- HOJA DE RUTA / HOJA DE PROCESOS</a>
+    </div>
+    <div id="Tema-01-00">
+        <h2>INTRODUCCION</h2>
+        <p class="respuesta">Un proceso se refiere a una parte cualquiera de una organización que toma insumos y los transforma en productos que, según se espera, tengan un valor más alto para la organización que los insumos originales. El análisis de procesos es una actividad fundamental para comprender y mejorar la eficiencia de las operaciones.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/1-%20Procesos%20productivo.jpg">
+        </div>
+        <p class="respuesta">En el caso de Honda Motors, por ejemplo, la planta armadora en Marysville, Ohio, toma partes y componentes fabricados por otros proveedores y los utiliza junto con mano de obra, equipo de línea de montaje y energía para ensamblar automóviles, como el Accord. De manera similar, en los restaurantes de McDonald's, se utilizan insumos como carne molida, lechuga, tomates y papas, y los empleados, a través de su trabajo de cocinar y tomar pedidos, transforman estos insumos en hamburguesas, papas fritas y otros platillos.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/2-%20Ensamble.jpg">
+        </div>
+        <p class="respuesta">Es importante tener en cuenta que los productos de un proceso no siempre son bienes tangibles, también pueden ser servicios. Por ejemplo, en un hospital, los equipos especializados, médicos, enfermeras y técnicos altamente capacitados combinan sus conocimientos y habilidades con el insumo principal, el paciente, para brindar atención y tratamiento médico adecuados, con el objetivo de transformar al paciente en una persona sana.</p>
+    </div>
+
+    <div id="Tema-01-01">
+        <h2>01- ANALISIS DEL PROCESO</h2>
+        <p class="respuesta">El análisis del proceso es una herramienta poderosa que permite responder preguntas importantes, como la capacidad de producción por hora, el tiempo necesario para atender a un cliente, los cambios requeridos para expandir la capacidad del proceso y el costo asociado al proceso. Es crucial comprender claramente el propósito del análisis para determinar el nivel de detalle necesario en el modelo del proceso durante su preparación. En general, se busca que el análisis sea lo más simple posible.</p>
+        <p class="respuesta">Algunas tareas típicas involucradas en el análisis de procesos incluyen:</p>
+        <p class="respuesta">Descomposición del proceso en actividades, tareas u operaciones individuales.</p>
+        <p class="respuesta">Recopilación o cálculo de datos relevantes, como tiempos, distancias, equipos necesarios, recursos humanos, materiales, etc.</p>
+        <p class="respuesta">Representación gráfica del proceso utilizando diagramas de flujo u otros métodos que brinden una visión clara del conjunto.</p>
+        <p class="respuesta">Utilización de índices o indicadores para evaluar el rendimiento del proceso y medir su eficiencia.</p>
+        <p class="respuesta">Estas actividades ayudan a comprender cómo funciona el proceso actualmente, identificar áreas de mejora y tomar decisiones informadas para optimizar el rendimiento y la eficiencia del proceso en general.</p>
+
+        <p id="001" class="pregunta">El producto</p>
+        <p class="respuesta">En términos tecnológicos, la manufactura implica el uso de procesos físicos y químicos para modificar la forma, propiedades o apariencia de un material inicial y fabricar piezas o productos. También incluye el ensamblaje de varias piezas para crear productos completos. Los procesos de manufactura involucran máquinas, herramientas, energía y trabajo manual. La manufactura se realiza en una secuencia de operaciones que acerca el material al estado final deseado.</p>
+        <p class="respuesta">La lealtad del consumidor hacia una marca se basa en comprarla de manera continua, incluso cuando existen productos alternativos con precios más bajos o características superiores. La lealtad genera un valor significativo y garantiza ingresos futuros para la empresa. La fidelidad se define como la tendencia a comprar la misma marca o frecuentar el mismo establecimiento para satisfacer una necesidad.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/3-%20Valor%20percibido.jpg">
+        </div>
+
+        <p id="002" class="pregunta">Administración científica</p>
+        <p class="respuesta">A finales del siglo XIX, en Estados Unidos, surgió el movimiento de la Administración Científica como respuesta a la necesidad de planificar y controlar las actividades de un número creciente de trabajadores. Algunos de los líderes de este movimiento fueron Frederick W. Taylor, Frank Gilbreth y su esposa Lilian. La Administración Científica se caracterizaba por diversas prácticas, entre las cuales se incluían:</p>
+        <p class="respuesta">El estudio de movimientos, que buscaba descubrir el mejor método para realizar una tarea dada y eliminar movimientos innecesarios.</p>
+        <p class="respuesta">El estudio de tiempos, con el objetivo de establecer estándares de trabajo para diferentes labores.</p>
+        <p class="respuesta">El uso amplio de estándares en la industria.</p>
+        <p class="respuesta">La selección y formación adecuada de los trabajadores para cada puesto.</p>
+        <p class="respuesta">El sistema de pago a destajo y otros planes de incentivos laborales.</p>
+        <p class="respuesta">El uso de datos, registros y contabilidad de costos en las operaciones fabriles.</p>
+
+        <p id="003" class="pregunta">Sistemas de manufactura</p>
+        <p class="respuesta">Los sistemas de apoyo a la manufactura comprenden los procedimientos y sistemas utilizados por una empresa para resolver problemas técnicos y logísticos en la planificación, los pedidos de material, el control de la producción y el aseguramiento de la calidad de los productos. Estos sistemas desempeñan un papel importante en las operaciones globales de la compañía.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/4-%20Sistemas.jpg">
+        </div>
+
+        <p id="004" class="pregunta">Ingeniería de manufactura</p>
+        <p class="respuesta">La ingeniería de manufactura es una función llevada a cabo por personal técnico, y se centra en la planificación de los procesos de manufactura para lograr una producción económica de productos de alta calidad. Su objetivo principal es optimizar la manufactura dentro de una organización específica. El ámbito de la ingeniería de manufactura incluye aspectos como el diseño para la manufacturabilidad, la planificación de procesos y la solución de problemas y mejora continua.</p>
+        
+        <p id="005" class="pregunta">Fases de un proceso</p>
+        <p class="respuesta">En cuanto a las fases de un proceso, su nivel de definición dependerá del propósito del análisis realizado. Se pueden tener varios niveles de descomposición. Las fases del proceso suelen organizarse en categorías con valor agregado y sin valor agregado. Las fases que siempre se consideran en el análisis son: operaciones, transporte, control y almacenamiento. Como acción general de mejora, se busca minimizar aquellas fases que no agregan valor al proceso (Almacenamiento, transporte, demoras y controles).</p>
+
+        <p id="006" class="pregunta">Selección de un proceso</p>
+        <p class="respuesta">La selección del proceso se refiere a la decisión estratégica de elegir el tipo de proceso de producción que se utilizará para fabricar un producto o brindar un servicio. Esta elección depende de factores como el volumen de producción y la estandarización del producto. Se pueden utilizar diferentes tipos de estructuras de distribución, como proyectos, centros de trabajo, celdas de manufactura, líneas de ensamble y procesos continuos, en función de las características del producto y el volumen de producción.</p>
+        <p class="respuesta">En la selección del proceso de producción, se elige el tipo de proceso a utilizar según las necesidades. El flujo de trabajo puede seguir diferentes patrones, como proyectos, centros de trabajo, celdas de manufactura, líneas de ensamble o procesos continuos.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/5-%20Tipos%20de%20procesos.jpg">
+        </div>
+        <p class="respuesta">El análisis del punto de equilibrio es un enfoque común utilizado para elegir entre procesos o equipos alternativos. Este análisis se basa en una gráfica que representa visualmente las pérdidas y ganancias asociadas al número de unidades producidas o vendidas. La elección del proceso o equipo adecuado depende principalmente de la demanda anticipada.</p>
+        <p class="respuesta">Este método es especialmente útil cuando los procesos y equipos requieren una inversión inicial significativa y tienen costos fijos. También es efectivo cuando los costos variables se mantienen en proporción razonable con el número de unidades producidas.</p>
+        <p class="respuesta">El análisis del punto de equilibrio permite identificar el punto en el cual los ingresos totales igualan los costos totales, lo que indica el nivel de producción necesario para alcanzar el equilibrio financiero. Además, se pueden calcular los márgenes de seguridad, que indican la capacidad de la empresa para cubrir costos fijos y obtener ganancias adicionales.</p>
+        
+        <p id="007" class="pregunta">Ejemplo</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/6-%20Ejemplo%201.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/6-%20Ejemplo%202.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/6-%20Ejemplo%203.jpg">
+        </div>
+    </div>
+
+    <div id="Tema-01-02">
+        <h2>02- DISEÑO DEL PROCESO</h2>
+        <p class="respuesta">El diseño del proceso en la planificación de procesos implica determinar los procesos de manufactura más adecuados y el orden en el cual deben realizarse para producir una pieza o producto específico. Esto se basa en la ingeniería de diseño que especifica los requisitos funcionales del producto.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/7-%20Preguntas%20diseño.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/8-%20Desiciones.jpg">
+        </div>
+        <p class="respuesta">En el caso de productos ensamblados, la planificación de procesos debe definir la secuencia apropiada de los pasos de ensamble. El plan de proceso debe ejecutarse dentro de las limitaciones impuestas por el equipo de procesamiento disponible y la capacidad productiva de la fábrica. Si hay piezas o sub-ensambles que no pueden fabricarse internamente, se deben comprar a proveedores externos. En algunos casos, incluso los artículos que pueden producirse internamente se adquieren a proveedores externos por razones económicas u otras.</p>
+
+        <p id="008" class="pregunta">Planificación de los procesos</p>
+        <p class="respuesta">En la planificación de procesos para obtener piezas específicas, los procesos necesarios se determinan en gran medida por el material con el que se fabrica la pieza. </p>
+        <p class="respuesta">El trabajo del planificador de procesos generalmente comienza después de que el proceso básico ha producido la forma inicial de la pieza. Las piezas maquinadas comienzan como materia prima en forma de barras, fundiciones o forjados, y a menudo los procesos básicos para estas formas iniciales son realizados externamente a la planta de fabricación. El estampado comienza como rollos o tiras de chapas metálicas adquiridos de otra fábrica. Estas son las materias primas que los proveedores externos proporcionan para los procesos secundarios y las operaciones posteriores que se realizarán en la fábrica. Los procesos más apropiados y el orden en el que deben realizarse se determinan en función de la capacidad, experiencia y juicio del planificador de procesos.</p>
+        <p class="respuesta">En la planificación de procesos, se deben tener en cuenta varias premisas y consideraciones, como:</p>
+        <p class="respuesta">Asegurar el menor costo posible del producto.</p>
+        <p class="respuesta">Implementar el mejor proceso técnicamente posible.</p>
+        <p class="respuesta">Garantizar la seguridad de las personas y los equipos.</p>
+        <p class="respuesta">Asegurar la calidad del producto mediante la reducción o eliminación de controles y la implementación de auditorías de procesos.</p>
+        <p class="respuesta">Trabajar con flujo continuo, minimizando las demoras y el transporte mediante ajustes en el diseño de la distribución de la planta.</p>
+        <p class="respuesta">Trabajar con un flujo balanceado para optimizar la eficiencia y evitar cuellos de botella.</p>
+        <p class="respuesta">Reducir los stocks intermedios para minimizar los espacios de almacenamiento transitorio.</p>
+        <p class="respuesta">Asegurar la flexibilidad del proceso, reduciendo el tamaño de los lotes de fabricación.</p>
+        <p class="respuesta">La secuencia típica de procesamiento para fabricar una pieza separada consta de cuatro etapas: un proceso básico, uno o más procesos secundarios, operaciones para mejorar las propiedades físicas y operaciones de terminación.</p>
+
+        <p id="009" class="pregunta">Procesos básicos y secundarios</p>
+        <p class="respuesta">Los procesos básicos y secundarios son procesos de formado que alteran la forma de la pieza de trabajo. Un proceso básico establece la configuración geométrica inicial de la pieza, como la fundición, el forjado o la laminación. Los procesos secundarios refinan la forma básica en la configuración geométrica final. La selección de los procesos básicos está relacionada con los procesos secundarios que se utilizarán. Por ejemplo, cuando el proceso básico es el fundido en arena o el forjado, generalmente los procesos secundarios son operaciones de maquinado. Si una laminadora produce tiras o rollos de lámina metálica, los procesos secundarios son operaciones de estampado como el perforado y el doblado. Al seleccionar ciertos procesos básicos, se puede reducir la necesidad de procesos secundarios. Por ejemplo, si el proceso básico es el moldeado por inyección de plástico, generalmente no se requieren operaciones secundarias, ya que el moldeo proporciona características geométricas detalladas con buena precisión dimensional.</p>
+
+        <p id="010" class="pregunta">Mejoras de las propiedades físicas y terminación</p>
+        <p class="respuesta">Después de las operaciones de formado, puede ser necesario mejorar las propiedades físicas y/o terminar el producto. Las operaciones para mejorar las propiedades incluyen el tratamiento térmico en componentes metálicos y cristalería. Las operaciones de acabado son las últimas en la secuencia y generalmente proporcionan un recubrimiento en la superficie, como galvanizado o pintura. En algunos casos, después de las operaciones de mejora de propiedades, se pueden aplicar operaciones secundarias adicionales antes del acabado.</p>
+
+        <p id="011" class="pregunta">Diagramas más comunes para la planificación de procesos</p>
+        <p class="respuesta">En cuanto a las herramientas utilizadas en la planificación de procesos, se pueden emplear diferentes tipos de diagramas, como:</p>
+        <p class="respuesta"><i><U>Cursograma:</U></i> una representación gráfica que muestra la secuencia cronológica de todas las operaciones, inspecciones, tiempos y materiales utilizados en el proceso.</p>
+        <p class="respuesta"><i><U>Cursograma sinóptico:</U></i> un diagrama que registra de manera general las principales operaciones e inspecciones en una ojeada, sin especificar ubicaciones o personas responsables.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/9-%20Cursograma%20sinoptico%201.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/9-%20Cursograma%20sinoptico%202.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/9-%20Cursograma%20sinoptico%203.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/9-%20Cursograma%20sinoptico%204.jpg">
+        </div>
+        <p class="respuesta"><i><U>Cursograma analítico o diagrama de flujo:</U></i> un diagrama que muestra la trayectoria de un producto, ya sea siguiendo la trayectoria de las personas que trabajan en él, el movimiento y secuencia de los materiales o el movimiento del equipo utilizado en el proceso.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/10-%20Cursograma%20analitico%201.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/10-%20Cursograma%20analitico%202.jpg">
+        </div>
+        <p class="respuesta">Además, en el diseño del proceso se utilizan herramientas como hojas de procesos, hojas de ruta o hojas de instrucciones que contienen información detallada sobre los procesos industriales, materiales, máquinas y equipos, herramientas, calibres, condiciones de fabricación, tolerancias, dibujo técnico, normas, secuencia de fabricación, estudio de tiempos y cálculo de costos.</p>
+        <p class="respuesta">Estas herramientas y consideraciones ayudan al planificador de procesos a diseñar un proceso eficiente, que cumpla con los requisitos de costo, calidad, seguridad y flujo de trabajo adecuado para la fabricación de un producto.</p>
+    </div>
+
+    <div id="Tema-01-03">
+        <h2>03- HOJA DE RUTA / HOJA DE PROCESOS</h2>
+        <p class="respuesta">La creación de un proceso de mecanizado requiere tomar en cuenta diversos elementos como la secuencia óptima de operaciones, el material de partida, las máquinas, las herramientas, los elementos de sujeción y posicionado, y los métodos de control. También es fundamental estimar la fuerza de sujeción de la pieza, la cual debe garantizar la posición relativa entre la pieza y la herramienta durante todo el proceso de trabajo, absorbiendo los esfuerzos y momentos de corte en su magnitud, dirección y sentido.</p>
+        <p class="respuesta">Para diseñar un proceso de mecanizado, es necesario contar con una hoja de ruta que represente la secuencia cronológica de todas las operaciones necesarias para fabricar una pieza. Esta hoja de ruta es un documento escrito que detalla las características específicas requeridas para la fabricación, las operaciones a realizar y su secuencia de trabajo, así como las máquinas y herramientas que se utilizarán, y otros cálculos técnicos relevantes. En esencia, la hoja de ruta es al planificador de procesos lo que el dibujo de ingeniería es al diseñador del producto. Es un documento oficial que especifica los detalles del plan de procesos.</p>
+        <p class="respuesta">Antes de elaborar la hoja de ruta, es importante realizar todos los cálculos y obtener los parámetros de trabajo necesarios para su ejecución. En la hoja de proceso, deben incluirse elementos como el membrete de la empresa, número de hoja, fecha de emisión, número de revisión, número de plano y descripción de la pieza, número de fase/operación, operaciones a realizar, máquinas a utilizar, herramientas, tiempo necesario, material y cualquier otra información relevante.</p>
+        <p class="respuesta">El formato y contenido de las hojas de ruta pueden variar dependiendo del tipo de empresa y del producto que se fabrique o trabaje, pero todas cumplen la función principal de brindar información sobre los pasos que deben seguirse para fabricar una pieza en el taller, desde la adquisición del material en bruto hasta su finalización.</p>
+        
+        <p id="012" class="pregunta">Ejemplos de diferentes formatos de hojas de ruta</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/11-%20Hoja%20de%20ruta%201.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/11-%20Hoja%20de%20ruta%202.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/11-%20Hoja%20de%20ruta%203.jpg">
+        </div>
+        
+        <p id="013" class="pregunta">Ejemplo de modo de uso de una hoja de ruta</p>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/12-%20modo%20de%20uso%201.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/12-%20modo%20de%20uso%202.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/12-%20modo%20de%20uso%203.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/12-%20modo%20de%20uso%204.jpg">
+        </div>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="function.js"></script>
+</body>
+</html>
