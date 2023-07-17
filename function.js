@@ -5,7 +5,7 @@ function smoothScroll(event, targetId) {
 }
 
 document.getElementById("help").onclick = function() {
-    alert("Tips: \n" +
+    alert("Tips dentro de las secciones: \n" +
             "-Si queres ver una imagen con mayor detalle, o hacerle zoom, podes hacerle click derecho a la imagen y" +
             " pones abrir imagen en nueva pestaña, ahi le vas a poder hacer zoom  \n" +
             "-Si queres imprimir alguna de las secciones de la pagina, dale click derecho en el navegador, " +
@@ -26,8 +26,10 @@ document.getElementById("help").onclick = function() {
     );
 }
 
-document.getElementById("mail").onclick = function() {
-    alert("Mail de contacto: \n" + "iglvnl.mnj@gmail.com");
+if (document.getElementById("mail")) {
+    document.getElementById("mail").onclick = function() {
+        alert("Mail de contacto: \n" + "iglvnl.mnj@gmail.com");
+    }
 }
 
 document.getElementById("donaciones").onclick = function() {
@@ -36,7 +38,11 @@ document.getElementById("donaciones").onclick = function() {
     "No olvides poner 'Donacion Web' como motivo de tu transferencia. \n" + 
     "Muchas gracias!!! ");
 }
-
-document.getElementById("imprimir").onclick = function() {
-    window.print();
+if (document.getElementById("imprimir")) {
+    document.getElementById("imprimir").onclick = function() {
+        window.print();
+    }
 }
+
+
+

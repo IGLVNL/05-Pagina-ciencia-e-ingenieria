@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="ciencia, ingenieria, libros, material de estudio, material didactico, tutoriales">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="index_styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Ciencia e Ingenieria</title>
+</head>
+<body>
+    <header>
+        <div id="logoYNombre">
+            <img src="Icons/IconoPagina001.png">
+            <h1>"Ciencia e Ingenieria a tu alcance"</h1>
+        </div>
+        <div id="burbujas">
+            <a href="#" id="donaciones">
+                <img src="Icons/donaciones.svg" title="Donaciones" alt="img">
+            </a>
+            <a href="#" id="help">
+                <img src="Icons/Ayuda.svg" title="Ayuda" alt="img">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="contenedor-descripcion">
+            <div id="descripcion">
+                <p>Nuestra página web tiene como objetivo difundir y promover el conocimiento, fomentar el estudio autodidacta y ofrecer recursos educativos de calidad. Brindamos acceso a material didáctico, tutoriales, artículos informativos y recursos interactivos para inspirar el aprendizaje continuo. ¡Bienvenidos a nuestra comunidad de aprendizaje y descubrimiento!</p>
+            </div>
+            <div id="busqueda">
+                <p><i>Busca palabras clave como: "procesos productivos"</i></p>
+                <input type="text">
+                <a href="#">
+                    <img src="Icons/search.svg">
+                </a>
+            </div>
+        </div>
+        <div id="principal">
+            <div id="myCarousel" class="carousel slide" >
+            <h2>Novedades!!!</h2>
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active carItem">
+                        <a href="C_00_diseño de layout.html" style="text-decoration: none;">
+                        <img src="Imgs/Procesos industriales/01- Distribucion del LayOut/LayOut Por proceso 00.jpg" alt="Slide 1">
+                            <div class="caption">
+                                <h3>Diseño de layout</h3>
+                                <p>En esta sección, se proporciona una descripción detallada del proceso de diseño de Layout basado en los principios de distribución de Muther. Explora los fundamentos teóricos, conceptos clave y mejores prácticas para crear diseños efectivos. Se abordan consideraciones ergonómicas, disposición estratégica de elementos y optimización del espacio. Incluye ejemplos prácticos y casos de estudio. Nuestro objetivo es guiar a los profesionales en la creación de diseños impactantes y funcionales.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item carItem">
+                        <a href="C_03_Control estadistico de proceso.html" style="text-decoration: none;">
+                            <img src="Imgs/Procesos industriales/04- CEP/2- CP CPk2.png" alt="Slide 1">
+                            <div class="caption">
+                                <h3>Control estadistico de proceso</h3>
+                                <p>En esta sección, se explora en detalle el concepto y la aplicación del Control Estadístico de Proceso (CEP). Se abordan los fundamentos teóricos, las herramientas estadísticas y las técnicas utilizadas para monitorear y mejorar la calidad de los procesos industriales. Aprenderás sobre la recolección y análisis de datos, la construcción de gráficos de control, la identificación de variaciones y la toma de decisiones basada en datos. Se presentan ejemplos prácticos y estudios de casos para ilustrar la importancia del CEP en la mejora continua y la reducción de la variabilidad en la producción. Nuestro objetivo es brindarte los conocimientos y habilidades necesarios para implementar y mantener un sistema eficiente de control estadístico de proceso.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item carItem">
+                        <a href="C_06_MCAV.html" style="text-decoration: none;">
+                        <img src="Imgs/Procesos industriales/07- MCAV/A- Fresado 05.png" alt="Slide 1">
+                            <div class="caption">
+                                <h3>Mecanizado con arranque de viruta</h3>
+                                <p>En esta sección, exploraremos en detalle el proceso de mecanizado con arranque de viruta. Desde los conceptos básicos hasta las técnicas avanzadas, analizaremos cómo se lleva a cabo este proceso fundamental en la industria manufacturera. Aprenderás sobre las herramientas utilizadas, los diferentes métodos de mecanizado, como el torneado, fresado y taladrado, y cómo se seleccionan las velocidades de corte, avances y parámetros de corte adecuados. También discutiremos aspectos relacionados con la seguridad, la precisión dimensional y la calidad de las superficies mecanizadas. A través de ejemplos prácticos y casos de estudio, entenderás cómo el mecanizado con arranque de viruta contribuye a la producción eficiente y de alta calidad en diversos sectores industriales.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div id="categorias">
+                <nav class="nav">
+                    <h2>Categorias y subcategorias</h2>
+                    <ul>
+                        <h4>Material teorico</h4>
+                        <li id="ing-indust"><a href="A_00_main.html">Ingenieria industrial</a>
+                            <ul>
+                                <li><a href="B_00_procesos_industriales.html">Procesos industriales</a></li>
+                                <li><a href="#">Tecnologia y resistencia de los materiales</a></li>
+                                <li><a href="#">Investigacion operativa</a></li>
+                                <li><a href="#">Quimica industrial</a></li>
+                                <li><a href="#">Costos y finanzas</a></li>
+                                <li><a href="#">Instalaciones termomecanicas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h4>Material de ejercitacion</h4>
+                        <li id="ing-indust"><a href="A_00_main.html">Ingenieria industrial</a>
+                            <ul>
+                                <li><a href="B_00_procesos_industriales.html">Procesos industriales</a></li>
+                                <li><a href="#">Tecnologia y resistencia de los materiales</a></li>
+                                <li><a href="#">Investigacion operativa</a></li>
+                                <li><a href="#">Quimica industrial</a></li>
+                                <li><a href="#">Costos y finanzas</a></li>
+                                <li><a href="#">Instalaciones termomecanicas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h4>Material bibliografico</h4>
+                        <li id="ing-indust"><a href="A_00_main.html">Ingenieria industrial</a>
+                            <ul>
+                                <li><a href="B_00_procesos_industriales.html">Procesos industriales</a></li>
+                                <li><a href="#">Tecnologia y resistencia de los materiales</a></li>
+                                <li><a href="#">Investigacion operativa</a></li>
+                                <li><a href="#">Quimica industrial</a></li>
+                                <li><a href="#">Costos y finanzas</a></li>
+                                <li><a href="#">Instalaciones termomecanicas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="redes">
+            <a href="#"><img src="Icons/Facebook_icon.png" alt="img">Facebook</a>
+            <a href="#"><img src="Icons/instagram_icon.png" alt="img">Instagram</a>
+            <a href="https://youtube.com/@cienciaeingenieriaatualcan6"><img src="Icons/youtube_icon.png" alt="img">Canal de youtube</a>
+        </div>
+        <div id="infoContacto">
+            <h5>Informacion de contacto:</h5>
+            <ul>
+                <li>E-mail: iglvnl.mnj@gmail.com</li>
+                <li>Tel: 1168553317</li>
+            </ul>
+        </div>
+        <div id="derechos">
+        <!--p>Aca va la info de derechos de autor</p--> 
+        </div>
+    </footer>
+    <script src="function.js"></script>
+</body>
+</html>
