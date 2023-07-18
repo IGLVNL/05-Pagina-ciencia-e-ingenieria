@@ -1,0 +1,271 @@
+/*Diseño general Escritorio*/
+body{
+    padding-top: 45px;
+    min-width: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Imgs/Fondo_00.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content;
+    width: fit-content;
+    padding-bottom: 5%;
+}
+body::-webkit-scrollbar{
+    width: 20px;
+    max-height: 20px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #dfddc7;
+    border-radius: 25px;
+    min-height: 50px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #fffdcd;
+}
+body::-webkit-scrollbar-track{
+    background-color: #1a1a1a;
+}
+body::-webkit-scrollbar-track:hover{
+    background-color: #252525;
+}
+
+#contenedor-materias .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #139a2c;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+#contenedor-materias .boton:hover {
+    background-color: #49d964;
+}
+
+#contenedor-materias{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#materias{
+    text-align: center;
+    font-size: 7vw;
+    margin: 0px;
+    color: #32c0a6;
+}
+
+.materias-principal {
+    margin: 0;
+    font-size: 6vw;
+    text-align: center;
+    color: rgb(84, 84, 226);
+}
+
+#cei{
+    display: flex;
+    width: 20%;
+    text-align: center;
+    background-color: #7b424200;
+    position: fixed;
+    bottom: 1%;
+    z-index: 500;
+    border-radius: 50px;
+}
+#cei img:hover {
+    scale: 1.2;
+    transition-duration: 0.15s;
+}
+#cei img{
+    width: 50%;
+}
+.boton:hover{
+    scale: 1.015;
+    transition-duration: 0.5s;
+}
+.boton:not(:hover){
+    scale: 1.0;
+    transition-duration: 0.5s;
+}
+#menu{
+    display: flex;
+    width: fit-content;
+    text-align: center;
+    background-color: #7b424200;
+    position: fixed;
+    top: 4%;
+    left: 1.2%;
+    z-index: 50;
+}
+#menu img:hover{
+    scale: 1.2;
+    transition-duration: 0.5s;
+}
+#menu:hover .navbar{
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.navbar {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: #333;
+    padding: 10px;
+    z-index: 100;
+    visibility: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.navbar:hover{
+    visibility: visible;
+}
+.navbar:not(:hover){
+    transition-delay: 0.5s;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-list li {
+    display: flex;
+    margin-right: 20px;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+.navbar-list li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    z-index: 200;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background-color: #333;
+    min-width: 150px;
+    padding: 5px;
+    max-height: 400px;
+    max-width: fit-content;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+
+.dropdown-content li {
+    margin: 5px 0;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    text-decoration: none;
+}
+#cont-up{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top: 4%;
+    right: 1.5%;
+    z-index: 50;
+}
+
+#donaciones{
+    transform: rotate(-20deg);
+    transition: transform 0.3s ease-in-out;
+}
+#donaciones:hover{
+    scale: 1.25;
+    transform: rotate(20deg);
+    animation: rotateAnimation 0.5s infinite alternate;
+}
+
+@keyframes rotateAnimation {
+        0% 
+    {
+        transform: rotate(20deg);
+    }
+        50% 
+    {
+        transform: rotate(-20deg);
+    }
+        100% 
+    {
+        transform: rotate(20deg);
+    }
+}
+
+#help:hover{
+    scale: 1.2;
+    transform: rotate(20deg);
+    animation: rotateAnimation 0.5s infinite alternate;
+}
+#mail:hover{
+    scale: 1.2;
+    transform: rotate(20deg);
+    animation: rotateAnimation 0.5s infinite alternate;
+}
+
+#imprimir:hover{
+    scale: 1.2;
+    transform: rotate(20deg);
+    animation: rotateAnimation 0.5s infinite alternate;
+}
+
+
+/*Diseño mobile*/
+@media (max-width: 500px) {
+
+    #contenedor-materias .boton {
+        font-size: 5vw;
+    }
+
+    .navbar{
+        width: 100vw;
+        margin: 0%;
+    }
+
+    .navbar ul{
+        width: 100vw;
+        margin: 0%;
+    }
+    
+    .navbar li{
+        width: 100vw;
+        margin: 0%;
+    }
+
+    .navbar-list{
+        width: 100vw;
+    }
+    
+    #cei img{
+        width:100%;
+    }
+    #cei{
+        left: 2%;
+    }
+}
