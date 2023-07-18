@@ -44,5 +44,88 @@ if (document.getElementById("imprimir")) {
     }
 }
 
+const searchButton = document.getElementById("searchButton");
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
 
+searchButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    var searchTerm = searchInput.value;
+    performSearch(searchTerm);
+    mostrarResultados();
+});
+
+
+searchInput.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        event.stopPropagation();
+        var searchTerm = searchInput.value;
+        performSearch(searchTerm);
+        mostrarResultados();
+    }
+});
+
+function performSearch(searchTerm) {
+    var fileUrls = ['A_00_main.html','B_00_procesos_industriales.html','C_00_diseño de layout.html','C_01_Sistema de tolerancias.html','C_02_Instrumentos de medicion.html','C_03_Control estadistico de proceso.html','C_04_Proceso productivo-Hoja de ruta.html','C_05_MSAV.html','C_06_MCAV.html','C_07_CNC.html','C_08_Industria alimenticia.html','C_09_Recubrimientos.html',];
+    searchResults.innerHTML = '';
+    var filesProcessed = 0;
+
+    fileUrls.forEach(function(url) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.onload = function() {
+        if (xhr.status === 200) {
+            var htmlContent = xhr.responseText;
+            searchInHTML(htmlContent, searchTerm, url);
+        }
+        filesProcessed++;
+        if (filesProcessed === fileUrls.length) {
+            if (searchResults.children.length === 0) {
+                var noResultsMessage = document.createElement('p');
+                noResultsMessage.textContent = 'No hay resultados';
+                searchResults.appendChild(noResultsMessage);
+            }
+            mostrarResultados();
+            }
+        };
+        xhr.send();
+    });
+}
+
+function mostrarResultados() {
+    var elemento = document.getElementById('searchResults');
+    var input = document.getElementById('searchInput');
+    var rect = input.getBoundingClientRect();
+    elemento.style.top = (rect.bottom + window.scrollY) + 'px';
+    elemento.style.left = (rect.left + window.scrollX) + 'px';
+    elemento.style.display = 'flex';
+}
+
+
+
+function searchInHTML(htmlContent, searchTerm, url) {
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(htmlContent, "text/html");
+    var elements = doc.querySelectorAll("h1, h2, .pregunta, .materias-principal");
+    var regex = new RegExp(searchTerm.toLowerCase().replace(/\s/g, ''), 'gi');
+    elements.forEach(function(element) {
+        if (element.textContent.toLowerCase().replace(/\s/g, '').match(regex)) {
+            var id = element.id || element.textContent.replace(/\s/g, '_');
+            element.id = id;
+            var link = document.createElement('a');
+            link.href = url + '#' + id;
+            link.textContent = element.textContent;
+            searchResults.appendChild(link);
+        }
+    });
+}
+
+
+document.addEventListener("click", function(event) {
+    if (event.target !== searchButton && event.target !== searchInput) {
+        searchResults.style.display = 'none';
+    }
+});
 

@@ -17,7 +17,7 @@ header{
     height: 15%;
     padding: 20px;
     font-family: sans-serif;
-    background-image: url(Imgs/pngwing.com\ \(1\).png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.454),rgba(0, 0, 0, 0.506)), url(Imgs/pngwing.com\ \(1\).png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,11 +75,10 @@ footer{
 }
 
 #logoYNombre h1{
-    width: 90%;
+    width: fit-content;
+    margin-left: 1.5%;
     align-self: center;
-    padding-left: 5%;
-    background-color: rgba(0, 0, 0, 0.412);
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 /*contenido de burbujas*/
@@ -97,21 +96,6 @@ footer{
     border-radius: 25px;
 }
 
-#donaciones{
-    transform: rotate(-20deg);
-    transition: transform 0.3s ease-in-out;
-    border-radius: 25px;
-    position: fixed;
-    top: 5%;
-    right: 0%;
-    scale: 1.3;
-}
-#donaciones:hover{
-    transform: rotate(20deg);
-    animation: rotateAnimation 0.5s infinite alternate;
-    background-color: rgba(0, 0, 0, 0.285);
-}
-
 @keyframes rotateAnimation {
         0% 
     {
@@ -127,8 +111,20 @@ footer{
     }
 }
 
+#donaciones{
+    transition: transform 0.3s ease-in-out;
+    border-radius: 25px;
+    position: fixed;
+    top: 5%;
+    right: 0%;
+    scale: 1.3;
+}
+#donaciones:hover{
+    animation: rotateAnimation 0.5s infinite alternate;
+    background-color: rgba(0, 0, 0, 0.285);
+}
+
 #help{
-    transform: rotate(-20deg);
     transition: transform 0.3s ease-in-out;
     border-radius: 25px;
     position: fixed;
@@ -137,7 +133,6 @@ footer{
     scale: 1.3;
 }
 #help:hover{
-    transform: rotate(20deg);
     animation: rotateAnimation 0.5s infinite alternate;
     background-color: rgba(0, 0, 0, 0.285);
     border-radius: 25px;
@@ -187,6 +182,7 @@ footer{
     padding: 10px;
     margin-top: 3%;
     border-radius: 25px;
+    color: #000;
 }
 #busqueda a{
     margin-top: 3%;
@@ -307,4 +303,28 @@ ul{
 }
 #infoContacto li{
     margin-top: 2%;
+}
+
+/*Resultado de busqueda*/
+#searchResults {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(72, 72, 72);
+    padding: 1%;
+    z-index: 300;
+    flex-direction: column;
+}
+
+#searchResults a{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #ffffff;
+}
+
+#searchResults a:hover{
+    font-size: large;
+    color: #f8ffbf;
+    transition-duration: 0.15s;
 }
