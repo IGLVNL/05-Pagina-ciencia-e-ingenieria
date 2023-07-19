@@ -43,14 +43,14 @@ body::-webkit-scrollbar-track:hover{
     background-color: #dedede39;
     transition-duration: 0.7s;
 }
-.tema-particular{
+.tema{
     margin: 0;
     font-size: 8vw;
     text-align: center;
     color: #c53636;
 }
 
-#materia-subtema{
+#materia{
     font-size: 5vw;
     color: #cd6c38;
     margin: 0;
