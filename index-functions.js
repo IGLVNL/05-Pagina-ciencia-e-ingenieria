@@ -113,3 +113,32 @@ document.getElementById("help").onclick = function() {
         
     );
 }
+
+
+
+
+
+function mostrarContraseña() {
+    // Hacer una solicitud AJAX al archivo PHP para obtener el valor del campo "pass"
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'backend/api.php', true); // La ruta al archivo PHP del backend
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                // Obtener el resultado de la respuesta JSON
+                var response = JSON.parse(xhr.responseText);
+                if (response.pass) {
+                    // Mostrar el valor del campo "pass" en un alert
+                    alert('El valor del campo "pass" es: ' + response.pass);
+                } else {
+                    // Mostrar un mensaje de error en caso de que no se encontraran registros
+                    alert('No se encontraron registros');
+                }
+            } else {
+                // Mostrar un mensaje de error en caso de que ocurriera un error en el servidor
+                alert('Error al obtener el valor del campo "pass"');
+            }
+        }
+    };
+    xhr.send();
+}
