@@ -117,7 +117,6 @@ document.getElementById("help").onclick = function() {
 
 
 
-
 function mostrarContraseña() {
     // Hacer una solicitud AJAX al archivo PHP para obtener el valor del campo "pass"
     var xhr = new XMLHttpRequest();

@@ -14,7 +14,7 @@ if (!$conexion) {
 }
 
 // Realizar la consulta para obtener el registro
-$query = "SELECT pass FROM contraseñas WHERE id = 1"; // Cambia 'contraseñas' por el nombre de tu tabla y 'id' por el campo que identifica al registro que quieres obtener
+$query = "SELECT pass FROM contraseñas"; // Cambia 'contraseñas' por el nombre de tu tabla y 'id' por el campo que identifica al registro que quieres obtener
 $resultado = mysqli_query($conexion, $query);
 
 // Verificar si se obtuvieron resultados
