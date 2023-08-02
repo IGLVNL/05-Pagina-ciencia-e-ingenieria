@@ -28,20 +28,26 @@ document.getElementById("help").onclick = function() {
 
 if (document.getElementById("mail")) {
     document.getElementById("mail").onclick = function() {
-        alert("Mail de contacto: \n" + "iglvnl.mnj@gmail.com");
+        /*alert("Mail de contacto: \n" + "iglvnl.mnj@gmail.com");*/
     }
 }
 
 document.getElementById("donaciones").onclick = function() {
-    alert("Si queres apoyar nuestro proyecto, podes hacer donaciones a esta cuenta \n " + 
+    /*alert("Si queres apoyar nuestro proyecto, podes hacer donaciones a esta cuenta \n " + 
     "CVU: XXXXXXXXXXXXXXXXX \n Alias: TORTUGA.SIGILOSA \n" + 
     "No olvides poner 'Donacion Web' como motivo de tu transferencia. \n" + 
-    "Muchas gracias!!! ");
+    "Muchas gracias!!! ");*/
 }
 if (document.getElementById("imprimir")) {
     document.getElementById("imprimir").onclick = function() {
+        var elements = document.querySelectorAll("p , h2 , a , h1");
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.color = '#000000';
+        }
         window.print();
-    }
+        window.location.reload();
+    };
 }
+
 
 

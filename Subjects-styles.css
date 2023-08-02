@@ -5,8 +5,8 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Imgs/Fondo_00.jpeg');
     background-attachment: fixed;
     background-size: cover;
-    height: fit-content;
-    width: fit-content;
+    height: fit-content-moz-fit-content;
+    width: fit-content-moz-fit-content;
 }
 body::-webkit-scrollbar{
     width: 20px;
@@ -41,7 +41,7 @@ body::-webkit-scrollbar-track:hover{
 }
 #inicio{
     display: flex;
-    width: fit-content;
+    width: fit-content-moz-fit-content;
     text-align: center;
     background-color: #7b424200;
     position: fixed;
@@ -52,7 +52,7 @@ body::-webkit-scrollbar-track:hover{
     padding: 5px;
 }
 #inicio:hover{
-    scale: 1.2;
+    transform: scale(1.2);
     background-color: #dedede39;
     transition-duration: 0.7s;
 }
@@ -61,17 +61,20 @@ body::-webkit-scrollbar-track:hover{
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
-    background-color: #742b8f;
-    color: white;
+    background-color: #631e7c;
+    color: rgb(210, 208, 208);
     text-decoration: none;
     border: none;
     cursor: pointer;
     flex-grow: 1;
     flex-basis: 0;
     text-align: center;
+    white-space: nowrap;
 }
+
 #contenedor-temas .boton:hover {
-    background-color: #af58cf;
+    background-color: #5d37c5;
+    color: rgb(255, 255, 255);
 }
 #contenedor-temas{
     display: flex;
@@ -80,25 +83,24 @@ body::-webkit-scrollbar-track:hover{
 
 #volver_materia{
     display: flex;
-    width: fit-content;
-    height: fit-content;
+    width: fit-content-moz-fit-content;
+    height: fit-content-moz-fit-content;
     text-align: center;
     background-color: #7b424200;
     border-radius: 50px;
     padding: 5px;
 }
 .boton:hover{
-    scale: 1.015;
+    transform: scale(1.015);
     transition-duration: 0.5s;
 }
 .boton:not(:hover){
-    scale: 1.0;
+    transform: scale(1);
     transition-duration: 0.5s;
 }
 #menu{
     display: flex;
-    width: fit-content;
-    text-align: center;
+    width: fit-content-moz-fit-content;
     background-color: #7b424200;
     position: fixed;
     top: 4%;
@@ -106,7 +108,7 @@ body::-webkit-scrollbar-track:hover{
     z-index: 50;
 }
 #menu img:hover{
-    scale: 1.2;
+    transform: scale(1.2);
     transition-duration: 0.5s;
 }
 #menu:hover .navbar{
@@ -121,6 +123,7 @@ body::-webkit-scrollbar-track:hover{
     padding: 10px;
     z-index: 100;
     visibility: hidden;
+    max-height: 100%;
 }
 
 .dropdown:hover .dropdown-content {
@@ -174,9 +177,10 @@ body::-webkit-scrollbar-track:hover{
     min-width: 150px;
     padding: 5px;
     max-height: 400px;
-    max-width: fit-content;
+    width: fit-content-moz-fit-content;
     overflow-y: auto; 
     overflow-x: hidden; 
+    white-space: nowrap;
 }
 
 .dropdown-content li {
@@ -191,8 +195,8 @@ body::-webkit-scrollbar-track:hover{
     display: flex;
     flex-direction: row;
     position: fixed;
-    width: fit-content;
-    height: fit-content;
+    width: fit-content-moz-fit-content;
+    height: fit-content-moz-fit-content;
     top: 4%;
     right: 1.5%;
     z-index: 50;
@@ -203,7 +207,7 @@ body::-webkit-scrollbar-track:hover{
     transition: transform 0.3s ease-in-out;
 }
 #donaciones:hover{
-    scale: 1.25;
+    transform: scale(1.25);
     transform: rotate(20deg);
     animation: rotateAnimation 0.5s infinite alternate;
 }
@@ -224,12 +228,12 @@ body::-webkit-scrollbar-track:hover{
 }
 
 #help:hover{
-    scale: 1.2;
+    transform: scale(1.2);
     transform: rotate(20deg);
     animation: rotateAnimation 0.5s infinite alternate;
 }
 #mail:hover{
-    scale: 1.2;
+    transform: scale(1.2);
     transform: rotate(20deg);
     animation: rotateAnimation 0.5s infinite alternate;
 }
@@ -237,6 +241,10 @@ body::-webkit-scrollbar-track:hover{
 
 /*Diseño mobile*/
 @media (max-width: 500px) {
+
+    #contenedor-temas .boton {
+        white-space: normal;
+    }
 
     #contenedor-temas .boton {
         font-size: 4vw;

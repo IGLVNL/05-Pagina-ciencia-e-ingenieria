@@ -60,16 +60,16 @@
         </nav>
     </div>
     <div id="cont-up">
-        <a href="#" id="imprimir">
+        <a id="imprimir">
             <img src="Icons/Imprimir.svg" title="Imprimir pagina">
         </a>
-        <a href="#" id="donaciones">
+        <a id="donaciones">
             <img src="Icons/donaciones.svg" title="Donaciones">
         </a>
-        <a href="#" id="mail">
+        <a id="mail">
             <img src="Icons/Mail.svg" title="Contacto">
         </a>
-        <a href="#" id="help">
+        <a id="help">
             <img src="Icons/Ayuda.svg" title="Ayuda">
         </a>
         <a href="#referencia" id="principio">
@@ -89,7 +89,7 @@
                 <li class="dropdown-2"><a href="C_01_Sistema%20de%20tolerancias.html">02- TOLERANCIAS</a></li>
                 <li class="dropdown-2"><a href="C_02_Instrumentos%20de%20medicion.html">03- INSTRUMENTOS DE MEDICION</a></li>
                 <li class="dropdown-2"><a href="C_03_Control%20estadistico%20de%20proceso.html">04- CONTROL ESTADISTICO DE PROCESOS (CEP)</a></li>
-                <li class="dropdown-2"><a href="C_04_Proceso%20productivo%20Hoja%20de%20ruta.html">05- PROCESO PRODUCTIVO - HOJA DE RUTA</a></li>
+                <li class="dropdown-2"><a href="C_04_Proceso%20productivo-Hoja%20de%20ruta.html">05- PROCESO PRODUCTIVO - HOJA DE RUTA</a></li>
                 <li class="dropdown-2"><a href="C_05_MSAV.html">06- PROCESOS DE MECANIZADO SIN ARRANQUE DE VIRUTA (MSAV)</a></li>
                 <li class="dropdown-2"><a href="C_06_MCAV.html">07- PROCESOS DE MECANIZADO CON ARRANQUE DE VIRUTA (MCAV)</a></li>
                 <li class="dropdown-2"><a href="C_07_CNC.html">08- CNC</a></li>
@@ -114,7 +114,7 @@
     </div>
 
     <div id="Tema-01-01">
-        <h2>01- VARIABILIDAD DE LOS PROCESOS</h2>
+        <h2>VARIABILIDAD DE LOS PROCESOS</h2>
         <p class="respuesta">En la producción industrial, es inevitable que surjan variaciones aleatorias, lo que significa que cada producto fabricado no será idéntico al otro. Esta falta de uniformidad en las características del producto es indeseable, y el objetivo es reducir esta variabilidad tanto como sea posible o al menos mantenerla dentro de límites aceptables. El Control Estadístico de Procesos (CEP) es una herramienta valiosa para lograr este objetivo. Al implementarse durante el proceso de fabricación, contribuye a mejorar la calidad de la producción y aumenta el conocimiento sobre el proceso, lo que puede conducir a mejoras adicionales.</p>
         <p class="respuesta">Para controlar la calidad de las piezas, existen tres métodos:</p>
         <p class="respuesta"><i><U>Control unitario o control al 100%:</U></i> Implica revisar cada producto individualmente, lo que es un proceso largo, costoso y tedioso.</p>
@@ -126,7 +126,7 @@
     </div>
 
     <div id="Tema-01-02">
-        <h2>02- FUNDAMENTOS ESTADISTICOS</h2>
+        <h2>FUNDAMENTOS ESTADISTICOS</h2>
         <p id="001" class="pregunta">Distribución Normal o Campana de Gauss</p>
         <p class="respuesta">Para comprender el Control Estadístico de Procesos, no es necesario ser un experto en estadística, pero es importante recordar los siguientes puntos clave:</p>
         <p class="respuesta"><i><U>Distribución normal o campana de Gauss:</U></i> La distribución normal es una función de densidad de probabilidad que tiene una forma acampanada. Está determinada por dos parámetros: la media (µ) y la desviación estándar (δ). Es simétrica respecto a la media. Alrededor del 68% de la población se encuentra dentro de un rango de ±1 desviación estándar alrededor de la media (µ), el 95% dentro de ±2 desviaciones estándar, y el 99.73% dentro de ±3 desviaciones estándar. Es decir, casi todos los posibles valores que puede tomar la variable estudiada están comprendidos en el rango µ±3δ.</p>
@@ -138,7 +138,7 @@
     </div>
 
     <div id="Tema-01-03">
-        <h2>03- CAPACIDAD DE PROCESOS</h2>
+        <h2>CAPACIDAD DE PROCESOS</h2>
         <p class="respuesta">La capacidad del proceso se refiere a la habilidad del proceso de producción para satisfacer las especificaciones de calidad establecidas por el diseñador, el productor o el comprador. Aunque un proceso esté bajo control estadístico, es posible que los productos fabricados no cumplan con las especificaciones de calidad externas si la variabilidad es alta.</p>
         <p class="respuesta">Los estudios de capacidad del proceso buscan responder si el proceso tiene la capacidad de cumplir con las especificaciones de calidad. Cuando un proceso se encuentra en control estadístico, aproximadamente el 99.73% de los productos fabricados tendrán una característica de calidad entre µ - 3δ y µ + 3δ. Aquí, µ depende del punto central del proceso, mientras que δ es intrínseco y está relacionado con el número y la variabilidad de las causas comunes del proceso.</p>
         <p class="respuesta">La variabilidad natural del proceso, representada por 6δ, es independiente de las tolerancias establecidas. Si 6s es mayor que el rango de tolerancias, algunos productos estarán fuera de las especificaciones y serán considerados no conformes. Ajustar el proceso para centrarlo sin considerar este hecho solo aumentará su variabilidad.</p>
@@ -146,14 +146,14 @@
     </div>
 
     <div id="Tema-01-04">
-        <h2>04- ANALISIS DE APTITUD DE LOS PROCESOS</h2>
+        <h2>ANALISIS DE APTITUD DE LOS PROCESOS</h2>
         <p class="respuesta">El análisis de aptitud de un proceso tiene como objetivo principal verificar si dicho proceso se encuentra bajo control estadístico. Una vez confirmado esto, se puede realizar periódicamente para evaluar la capacidad del proceso y otros usos importantes.</p>
         <p class="respuesta">Entre los usos clave del análisis de aptitud de un proceso se encuentran:</p>
-        <p class="respuesta">Predecir el grado de cumplimiento del proceso con las tolerancias establecidas.</p>
-        <p class="respuesta">Ayudar a los diseñadores del producto a seleccionar o modificar el proceso.</p>
-        <p class="respuesta">Especificar requisitos para el funcionamiento de nuevos equipos.</p>
-        <p class="respuesta">Elegir entre nuevos proveedores.</p>
-        <p class="respuesta">Reducir la variabilidad en un proceso de manufactura mediante modificaciones o ajustes.</p>
+        <p class="respuesta">-Predecir el grado de cumplimiento del proceso con las tolerancias establecidas.</p>
+        <p class="respuesta">-Ayudar a los diseñadores del producto a seleccionar o modificar el proceso.</p>
+        <p class="respuesta">-Especificar requisitos para el funcionamiento de nuevos equipos.</p>
+        <p class="respuesta">-Elegir entre nuevos proveedores.</p>
+        <p class="respuesta">-Reducir la variabilidad en un proceso de manufactura mediante modificaciones o ajustes.</p>
         <p class="respuesta">El proceso de análisis de aptitud comienza con la producción de una muestra de al menos 30 piezas fabricadas consecutivamente bajo condiciones normales de producción en serie. Si es posible, se toma una cantidad mayor de piezas para obtener resultados más precisos. Sin embargo, en ciertos casos donde existen variaciones progresivas en las medidas controladas, un tamaño de muestra demasiado grande puede generar confusiones en los resultados, por lo que es importante graficar los datos para detectar tendencias de variación progresiva.</p>
         <p class="respuesta">Luego, se obtienen los datos tomando múltiples medidas por pieza de la característica controlada para valorar posibles deformaciones. Por ejemplo, en el caso de un diámetro, se toman al menos dos valores (máximo y mínimo) para evaluar la ovalización, y si el largo lo permite, se toman cuatro valores (dos en cada extremo) para tener en cuenta la conicidad u otros errores.</p>
         <p class="respuesta">El procesamiento estadístico de los datos incluye:</p>
@@ -168,9 +168,9 @@
         <p class="respuesta">Si se pretende que la producción esté dentro de tolerancia, es necesario que CP > 1. </p>
         <p class="respuesta">Si el proceso no estuviese centrado, el valor del índice de capacidad de proceso CP falsearía el grado de cobertura con respecto a fabricar piezas fuera de tolerancias. En estos casos es más significativo el índice CPK que se define: </p>
         <p class="respuesta">Cpk = min(Cps ; Cpi)</p>
-        <p class="respuesta">Donde CPS y CPI son los límites de capacidad unilaterales: </p>
-        <p class="respuesta">Cp= (LSE - µ)/3δ	y	Cp= (µ - LIE)/3δ</p>
-        <p class="respuesta">Aplicando estos mismos conceptos a la variabilidad atribuible de una máquina de las que integran el proceso de fabricación, podemos definir la capacidad de máquina, el índice de capacidad de máquina CM y CMK. </p>
+        <p class="respuesta">Donde CPkS y CPkI son los límites de capacidad unilaterales: </p>
+        <p class="respuesta">Cpks= (LSE - µ)/3δ	y	Cpki= (µ - LIE)/3δ</p>
+        <p class="respuesta">Aplicando estos mismos conceptos a la variabilidad atribuible de una máquina de las que integran el proceso de fabricación, podemos definir la capacidad de máquina CM, y el índice de capacidad de máquina CMK. </p>
         <div class="contenedor-img">
             <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/04-%20CEP/2-%20CP%20CPk.png">
         </div>
@@ -188,7 +188,7 @@
     </div>
 
     <div id="Tema-01-05">
-        <h2>05- GRAFICOS DE CONTROL X-R</h2>
+        <h2>GRAFICOS DE CONTROL X-R</h2>
         <p id="004" class="pregunta">Definición</p>
         <p class="respuesta">El gráfico de control X̅ -R es una herramienta valiosa para estudiar las variaciones en procesos repetitivos y monitorearlos de manera continua. Se utiliza específicamente cuando la característica de calidad que se desea controlar es una variable continua.</p>
         <p class="respuesta">Este tipo de gráficos tiene dos propósitos fundamentales:</p>
@@ -200,10 +200,10 @@
         <p class="respuesta">Cuando se está controlando un proceso que ya se encuentra bajo control estadístico, ambos diagramas tienen igual importancia, ya que cada uno proporciona información sobre un aspecto diferente del proceso.</p>
 
         <p id="005" class="pregunta">Realizacion del grafico X̅ - R </p>
-        <p class="respuesta">La realización del gráfico X̅ -R es un procedimiento que se utiliza tanto para el análisis inicial de capacidad de un proceso como para el control continuo de un proceso que ya está bajo control estadístico. A continuación, se describen los pasos para crear el gráfico X̅ -R:</p>
+        <p class="respuesta">La realización del gráfico X̅ -R es un procedimiento que se utiliza tanto para el análisis inicial de capacidad de un proceso, como para el control continuo de un proceso que ya está bajo control estadístico. A continuación, se describen los pasos para crear el gráfico X̅ -R:</p>
 
         <p id="006" class="pregunta"><i><U>Paso 1:</U></i> Recolección de datos</p>
-        <p class="respuesta">La realización del gráfico X̅ -R es un procedimiento que se utiliza tanto para el análisis inicial de capacidad de un proceso como para el control continuo de un proceso que ya está bajo control estadístico. A continuación, se describen los pasos para crear el gráfico X̅ -R:</p>
+        <p class="respuesta">Se extraen muestras del proceso que se quiere controlar. Los datos deben ser recientes y deben corresponder al mismo producto. Cada muestra consistirá en un grupo de piezas consecutivas, y cada grupo tendrá como máximo 5 piezas. La frecuencia de extracción de muestras dependerá del conocimiento y experiencia previa sobre el proceso.</p>
 
         <p id="007" class="pregunta"><i><U>Paso 2:</U></i> Cálculo del promedio (X̅)</p>
         <p class="respuesta">Para cada subgrupo, se calcula el promedio (X̅) sumando los datos de cada subgrupo y dividiéndolos por el número de datos en el subgrupo (n).</p>
@@ -247,7 +247,10 @@
         <p class="respuesta">Límite de control superior (LCS) = D4 * R</p>
         <p class="respuesta">Límite de control inferior (LCI) = D3 * R</p>
         <p class="respuesta">Una vez establecidos estos límites de control provisionales para ambos gráficos, se verifica si alguna de las muestras está fuera de los límites. Si alguna muestra está fuera de los límites, se procede a investigar la causa asignable que podría explicar esta anormalidad. En caso de encontrar una causa asignable, se toman las medidas correctivas necesarias y se recalculan los límites.</p>
-        <p class="respuesta">Es importante recalcar que estos límites deben ser recalculados periódicamente, por ejemplo, cada 25 muestras, para asegurarse de que el proceso siga bajo control estadístico y detectar rápidamente cualquier cambio significativo en la variabilidad del proceso.</p>
+        <p class="respuesta">Es importante destacar que estos límites deben ser recalculados periódicamente, por ejemplo, cada 25 muestras, para asegurarse de que el proceso siga bajo control estadístico y detectar rápidamente cualquier cambio significativo en la variabilidad del proceso.</p>
+        <p class="respuesta">Cabe recalcar que existen diferencias significativas entre los límites de control superior e inferior (LCS y LCI) y los límites de especificación. Estas diferencias se refieren a los propósitos y aplicaciones de cada conjunto de límites.</p>
+        <p class="respuesta">Límites de Control Superior e Inferior (LCS y LCI): Estos límites son utilizados en los gráficos de control para monitorear la variabilidad natural del proceso. Se calculan a partir de los datos recopilados durante la fase de recolección de datos y representan las fronteras que indican cuando el proceso está fuera de control. Si algún punto del gráfico o una tendencia de puntos cruzan estos límites, se toma como una señal de que puede haber una causa asignable que requiere investigación y acción para corregir el proceso.</p>
+        <p class="respuesta">Límites de Especificación: Estos límites son determinados por los requisitos del cliente o especificaciones del producto. Representan el rango de valores aceptables para la característica del producto o proceso y se basan en consideraciones de diseño, seguridad, rendimiento u otros criterios definidos por el cliente. Estos límites están fuera del control del proceso y no deben confundirse con los límites de control. El objetivo del CEP es asegurar que el proceso esté bajo control y sea capaz de producir resultados consistentes y dentro de los límites de especificación requeridos.</p>
         <p class="respuesta">El gráfico X-R es una herramienta poderosa para el control de la variabilidad en procesos repetitivos, y su utilización adecuada permite asegurar la calidad del producto o servicio al mantener el proceso bajo control estadístico y tomar acciones preventivas o correctivas cuando sea necesario.</p>
         <div class="contenedor-img">
             <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/04-%20CEP/5-%20Tabla%20de%20coeficientes.png">
@@ -278,9 +281,9 @@
         <p class="respuesta">En este caso, a medida que se toman las muestras (subgrupos), se vuelcan los valores en el gráfico X̅ -R donde deben haberse marcado los límites de control LCI y LCS calculados durante el ensayo de aptitud. </p>
         <p class="respuesta">Cuando algún subgrupo sale fuera de los límites, tanto en el gráfico X como en el R, es señal de que algún factor extraño (no normal) está afectando el proceso. </p>
         <p class="respuesta">Si la anormalidad se presenta en el gráfico de los promedios (X̅), las causas pueden ser: puesta a punto errónea del proceso, error de medición por parte del operario, uso de un patrón equivocado, etc.  </p>
-        <p class="respuesta">En cambio, si la anormalidad aparece en el gráfico de loe rangos (R), esto indica un aumento en la dispersión del proceso, y las causas pueden ser más difíciles de encontrar.  </p>
+        <p class="respuesta">En cambio, si la anormalidad aparece en el gráfico de los rangos (R), esto indica un aumento en la dispersión del proceso, y las causas pueden ser más difíciles de encontrar.  </p>
         <p class="respuesta">En ambos casos debe detenerse el proceso hasta eliminar la fuente de variación, y volverlo a poner bajo control.  </p>
-        <p class="respuesta">Si se calcula el coeficiente de capacidad de un grupo de muestras pertenecientes a un proceso ya en control, el límite de aceptabilidad será 1,00 (utilizando como tolerancia natural 6δ).</p>
+        <p class="respuesta">Si se calcula el coeficiente de capacidad de un grupo de muestras pertenecientes a un proceso ya en control, el límite de aceptabilidad será 1 (utilizando como tolerancia natural 6δ).</p>
 
         <p id="015" class="pregunta">Alteraciones del grafico X̅ - R</p>
         <div class="contenedor-img">
@@ -304,19 +307,19 @@
     </div>
 
     <div id="Tema-01-06">
-        <h2>06- COMPORTAMIENTO FISICO Y ESTADISTICO DE UN UNA TOLERANCIA</h2>
+        <h2>COMPORTAMIENTO FISICO Y ESTADISTICO DE UNA TOLERANCIA</h2>
         <p class="respuesta">Supongamos dos máquinas realizando una misma operación de mecanizado, bajo las mismas condiciones de preparación. Ambas máquinas son iguales, pero una tiene grandes desgastes. </p>
         <p class="respuesta">En la máquina con desgastes, el operario debe controlar todas las piezas y corregir continuamente la medida para mantenerla dentro de la tolerancia. </p>
         <p class="respuesta">En la otra máquina, con juegos normales, se siguió un proceso de control estadístico de producción (previa comprobación de la capacidad), por lo que el operario controla piezas sólo con una cierta frecuencia, y modificará la puesta a punto solamente cuando la medida supere ciertos límites.  </p>
         <p class="respuesta">De esta manera tendremos dos lotes de piezas, ambos cumpliendo la tolerancia. Sin embargo, el primero no da ninguna garantía acerca de su comportamiento en el futuro, ni permite realizar un control por muestreo pues no existe ninguna relación entre una pieza y otra. La única forma de garantizar la calidad de este lote es realizar un control 100%. El segundo lote permite tomar una muestra, y confiar en que los resultados de la misma coinciden (dentro de ciertos rangos) con los del lote completo. Esto se debe a que en el lote producido bajo control estadístico de las piezas se encuentran relacionadas por la “distribución normal”. </p>
-        <p class="respuesta">Al primer lote de lo denomina “físicamente” en tolerancia y al segundo “estadísticamente” en tolerancia.</p>
+        <p class="respuesta">Al primer lote se lo denomina “físicamente” en tolerancia y al segundo “estadísticamente” en tolerancia.</p>
         <div class="contenedor-img">
             <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/04-%20CEP/9-%20comportamiento%20fisico%20y%20estadistico.jpg">
         </div>
     </div>
 
     <div id="Tema-01-07">
-        <h2>07- TABLA DE COEFICIENTES Y CONSTANTES DEL GRAFICO DE CONTROL</h2>
+        <h2>TABLAS DE COEFICIENTES Y CONSTANTES DEL GRAFICO DE CONTROL</h2>
         <div class="contenedor-img">
             <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/04-%20CEP/10-%20Tabla%20de%20coeficientes.png">
         </div>

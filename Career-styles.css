@@ -5,8 +5,8 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Imgs/Fondo_00.jpeg');
     background-attachment: fixed;
     background-size: cover;
-    height: fit-content;
-    width: fit-content;
+    height: fit-content-moz-fit-content;
+    width: fit-content-moz-fit-content;
     padding-bottom: 5%;
 }
 body::-webkit-scrollbar{
@@ -32,18 +32,21 @@ body::-webkit-scrollbar-track:hover{
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
-    background-color: #139a2c;
-    color: white;
+    background-color: #3a9e00;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border: none;
     cursor: pointer;
     flex-grow: 1;
     flex-basis: 0;
     text-align: center;
+    white-space: nowrap;
 }
 
+
 #contenedor-materias .boton:hover {
-    background-color: #49d964;
+    background-color: #008631;
+    color: white;
 }
 
 #contenedor-materias{
@@ -75,39 +78,46 @@ body::-webkit-scrollbar-track:hover{
     z-index: 500;
     border-radius: 50px;
 }
+
 #cei img:hover {
-    scale: 1.2;
-    transition-duration: 0.15s;
+    transform: scale(1.2);
+    transition-duration: 0.25s;
 }
+
 #cei img{
     width: 50%;
 }
+
 .boton:hover{
-    scale: 1.015;
+    transform: scale(1.015);
     transition-duration: 0.5s;
 }
+
 .boton:not(:hover){
-    scale: 1.0;
+    transform: scale(1);
     transition-duration: 0.5s;
 }
+
 #menu{
     display: flex;
-    width: fit-content;
-    text-align: center;
+    width: fit-content-moz-fit-content;
     background-color: #7b424200;
     position: fixed;
     top: 4%;
     left: 1.2%;
     z-index: 50;
 }
+
 #menu img:hover{
-    scale: 1.2;
+    transform: scale(1.2);
     transition-duration: 0.5s;
 }
+
 #menu:hover .navbar{
     visibility: visible;
     transition-delay: 0.5s;
 }
+
 .navbar {
     position: fixed;
     top: 0%;
@@ -116,6 +126,7 @@ body::-webkit-scrollbar-track:hover{
     padding: 10px;
     z-index: 100;
     visibility: hidden;
+    max-height: 100%;
 }
 
 .dropdown:hover .dropdown-content {
@@ -169,9 +180,10 @@ body::-webkit-scrollbar-track:hover{
     min-width: 150px;
     padding: 5px;
     max-height: 400px;
-    max-width: fit-content;
+    max-width: fit-content-moz-fit-content;
     overflow-y: auto; 
     overflow-x: hidden; 
+    white-space: nowrap;
 }
 
 .dropdown-content li {
@@ -186,8 +198,8 @@ body::-webkit-scrollbar-track:hover{
     display: flex;
     flex-direction: row;
     position: fixed;
-    width: fit-content;
-    height: fit-content;
+    width: fit-content-moz-fit-content;
+    height: fit-content-moz-fit-content-webkit-fit-content;
     top: 4%;
     right: 1.5%;
     z-index: 50;
@@ -198,7 +210,7 @@ body::-webkit-scrollbar-track:hover{
     transition: transform 0.3s ease-in-out;
 }
 #donaciones:hover{
-    scale: 1.25;
+    transform: scale(1.25);
     transform: rotate(20deg);
     animation: rotateAnimation 0.5s infinite alternate;
 }
@@ -219,18 +231,18 @@ body::-webkit-scrollbar-track:hover{
 }
 
 #help:hover{
-    scale: 1.2;
+    transform: scale(1.2);
     transform: rotate(20deg);
     animation: rotateAnimation 0.5s infinite alternate;
 }
 #mail:hover{
-    scale: 1.2;
+    transform: scale(1.2);
     transform: rotate(20deg);
     animation: rotateAnimation 0.5s infinite alternate;
 }
 
 #imprimir:hover{
-    scale: 1.2;
+    transform: scale(1.2);
     transform: rotate(20deg);
     animation: rotateAnimation 0.5s infinite alternate;
 }
@@ -240,6 +252,7 @@ body::-webkit-scrollbar-track:hover{
 @media (max-width: 500px) {
 
     #contenedor-materias .boton {
+        white-space: normal;
         font-size: 5vw;
     }
 

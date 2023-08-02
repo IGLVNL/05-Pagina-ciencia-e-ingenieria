@@ -56,6 +56,10 @@ if(document.getElementById("searchInput")){
         elemento.style.top = (rect.bottom + window.scrollY) + 'px';
         elemento.style.left = (rect.left + window.scrollX) + 'px';
         elemento.style.display = 'flex';
+        elemento.style.width = 'fit-content';
+        elemento.style.maxHeight = '100vh';
+        elemento.style.overflowY = 'scroll';
+        elemento.style.borderRadius = '7.5px';
         elemento.style.padding = '1%';
     }
 
@@ -85,10 +89,10 @@ if(document.getElementById("searchInput")){
 }
 
 document.getElementById("donaciones").onclick = function() {
-    alert("Si queres apoyar nuestro proyecto, podes hacer donaciones a esta cuenta \n " + 
+    /*alert("Si queres apoyar nuestro proyecto, podes hacer donaciones a esta cuenta \n " + 
     "CVU: XXXXXXXXXXXXXXXXX \n Alias: TORTUGA.SIGILOSA \n" + 
     "No olvides poner 'Donacion Web' como motivo de tu transferencia. \n" + 
-    "Muchas gracias!!! ");
+    "Muchas gracias!!! ");*/
 }
 
 
@@ -110,34 +114,6 @@ document.getElementById("help").onclick = function() {
             "4- Si te gusta el material que suministramos, comparte el material con quien lo necesiten, y si " +
             "queres apoyarnos economicamente, cualquier donacion o aporte nos motiva a seguir " +
             "compartiendo conocimiento de calidad. Tenes un boton aca arriba donde que te explica como colaborar.\n"
-        
     );
 }
 
-
-
-
-function mostrarContraseña() {
-    // Hacer una solicitud AJAX al archivo PHP para obtener el valor del campo "pass"
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'backend/api.php', true); // La ruta al archivo PHP del backend
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                // Obtener el resultado de la respuesta JSON
-                var response = JSON.parse(xhr.responseText);
-                if (response.pass) {
-                    // Mostrar el valor del campo "pass" en un alert
-                    alert('El valor del campo "pass" es: ' + response.pass);
-                } else {
-                    // Mostrar un mensaje de error en caso de que no se encontraran registros
-                    alert('No se encontraron registros');
-                }
-            } else {
-                // Mostrar un mensaje de error en caso de que ocurriera un error en el servidor
-                alert('Error al obtener el valor del campo "pass"');
-            }
-        }
-    };
-    xhr.send();
-}

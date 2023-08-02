@@ -25,7 +25,7 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: fit-content-moz-fit-content;
     padding: 20px;
     padding-top: 0px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.681),rgba(0, 0, 0, 0.707)), url(Imgs/fd87df997a43680959878c29ce8cd711.jpg);
@@ -38,7 +38,7 @@ main{
 footer{
     display: flex;
     flex-direction: row;
-    height: fit-content;
+    height: fit-content-moz-fit-content;
     padding: 20px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.832),rgba(0, 0, 0, 0.865)), url(Imgs/Banner\ del\ canal.PNG);
     background-size: cover;
@@ -52,7 +52,7 @@ footer{
 #logoYNombre{
     display: flex;
     flex-direction: row;
-    width: fit-content;
+    width: fit-content-moz-fit-content;
     background-color: transparent;
 }
 
@@ -69,7 +69,7 @@ footer{
 }
 
 #logoYNombre h1{
-    width: fit-content;
+    width: fit-content-moz-fit-content;
     margin-left: 1.5%;
     align-self: center;
     border-radius: 10px;
@@ -81,7 +81,7 @@ footer{
 #burbujas a{
     display: flex;
     flex-direction: row;
-    width: fit-content;
+    width: fit-content-moz-fit-content;
     margin-left: 5%;
     margin-right: 5%;
     background-color: transparent;
@@ -112,7 +112,7 @@ footer{
     position: fixed;
     top: 5%;
     right: 0%;
-    scale: 1.3;
+    transform: scale(1.3);
 }
 #donaciones:hover{
     animation: rotateAnimation 0.5s infinite alternate;
@@ -125,7 +125,7 @@ footer{
     position: fixed;
     bottom: 5%;
     right: 0%;
-    scale: 1.3;
+    transform: scale(1.3);
 }
 #help:hover{
     animation: rotateAnimation 0.5s infinite alternate;
@@ -139,14 +139,14 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: fit-content;
+    height: fit-content-moz-fit-content;
 }
 
 #principal{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: fit-content;
+    height: fit-content-moz-fit-content;
 }
 
 /*contenido descripcion*/
@@ -199,7 +199,7 @@ footer{
     flex-direction: column;
     align-items: center;
     width: 50%;
-    height: fit-content;
+    height: fit-content-moz-fit-content;
 }
 #myCarousel h2{
     font-size: 3.5vw;
@@ -218,7 +218,7 @@ footer{
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    height: fit-content;
+    height: fit-content-moz-fit-content;
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
@@ -233,12 +233,20 @@ footer{
 }
 .caption{
     width: auto;
-    text-justify: auto;
     font-family: sans-serif;
     text-align: justify;
     font-size: 2.3vw;
 }
+.caption h3{
+    text-align: center;
+    font-size: 4vw;
+}
 
+.custom-btn:hover {
+    border-radius: 7.5px;
+    background-color: rgba(192, 192, 192, 0.369);
+    /* Otros estilos personalizados */
+}
 /*contenido de categorias*/
 nav{
     width: 100%;
@@ -275,7 +283,7 @@ ul{
     display: flex;
     flex-direction: column;
     width: 35%;
-    height: fit-content;
+    height: fit-content-moz-fit-content;
     padding: 2%;
 }
 
@@ -283,7 +291,7 @@ ul{
     display: flex;
     flex-direction: column;
     width: 35%;
-    height: fit-content;
+    height: fit-content-moz-fit-content;
     padding: 2%;
 }
 
@@ -291,7 +299,7 @@ ul{
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: fit-content;
+    height: fit-content-moz-fit-content;
     padding: 2%;
 }
 
@@ -302,9 +310,18 @@ ul{
     height: auto;
     margin-right: 5%;
 }
+
+#redes a:hover > img{
+    transition-duration: 0.1s;
+    transform: scale(1.4);
+}
 #redes a{
     margin-top: 5%;
     margin-top: 5%;
+}
+
+#YT{
+    transform: scale(1.365);
 }
 
 /*contenido contacto*/
@@ -320,8 +337,6 @@ ul{
 #searchResults {
     display: none;
     position: absolute;
-    width: fit-content;
-    height: fit-content;
     background-color: rgb(72, 72, 72);
     z-index: 300;
     flex-direction: column;
@@ -362,13 +377,13 @@ ul{
     #contenedor-descripcion{
         display: flex;
         flex-direction: column;
-        width: fit-content;
+        width: fit-content-moz-fit-content;
         justify-content: space-around;
-        height: fit-content;
+        height: fit-content-moz-fit-content;
     }
         
     #descripcion{
-        width: fit-content;
+        width: 100%;
     }
     #descripcion p{
         margin-bottom: 0%;
@@ -377,15 +392,15 @@ ul{
 
     /*contenido busqueda*/
     #busqueda{
-        width: fit-content;
-        height: fit-content;
+        width: 100%;
+        height: fit-content-moz-fit-content;
         flex-direction: column-reverse;
         align-items: center;
     }
 
     #busqueda p{
         padding: 0%;
-        height: fit-content;
+        height: fit-content-moz-fit-content;
         margin-right: 5vw;
         margin-bottom: 0%;
         font-size: 5vw;
@@ -418,6 +433,10 @@ ul{
 
     #myCarousel p{
         font-size: 5vw;
+    }
+
+    .caption h3{
+        font-size: 8vw;
     }
 
     #categorias{
