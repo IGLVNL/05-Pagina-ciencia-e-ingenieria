@@ -16,7 +16,7 @@
 </head>
 <body>
     <div id="CuadroDonacion">
-        <img id="cerrar" src="Icons/close.svg" alt="img">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
         <a href="http://mpago.la/28SAJCw">
             <img src="Imgs/MP.jpeg" alt="mp">
             <p>Donar 500$ ARS</p>
@@ -29,6 +29,23 @@
             <img src="Imgs/MP.jpeg" alt="mp">
             <p>Donar 2000$ ARS</p>
         </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_03_Control estadistico de proceso.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
     </div>
     <P id="referencia"></P>
     <p class="tema">Ingenieria Industrial</p>

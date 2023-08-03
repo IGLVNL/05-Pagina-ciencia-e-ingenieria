@@ -16,7 +16,7 @@
 </head>
 <body>
     <div id="CuadroDonacion">
-        <img id="cerrar" src="Icons/close.svg" alt="img">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
         <a href="http://mpago.la/28SAJCw">
             <img src="Imgs/MP.jpeg" alt="mp">
             <p>Donar 500$ ARS</p>
@@ -29,6 +29,23 @@
             <img src="Imgs/MP.jpeg" alt="mp">
             <p>Donar 2000$ ARS</p>
         </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_05_MSAV.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
     </div>
     <P id="referencia"></P>
     <p class="tema">Ingenieria Industrial</p>
@@ -373,10 +390,10 @@
         <p class="respuesta">H* = Longitud del plegado</p>
         <p class="respuesta">C = Compensación por elasticidad</p>
         <p class="respuesta">La fuerza requerida para realizar el doblado depende de la forma del punzón y la matriz, así como de la resistencia, espesor y ancho de la lámina metálica. La fuerza máxima de doblado se puede estimar utilizando la siguiente ecuación:</p>
-        <p class="respuesta">P = (σd * b * s * l) / (σd * t)</p>
+        <p class="respuesta">P = 2(σd * b * s<sup>2</sup>) / 3(σd * l)</p>
         <p class="respuesta">donde:</p>
         <p class="respuesta">P = Fuerza requerida para el doblado (kg)</p>
-        <p class="respuesta">σd = Tensión de flexión (kg/mm²)</p>
+        <p class="respuesta">σd = Tensión de flexión (kg/mm²) = 2*σt</p>
         <p class="respuesta">b = Ancho de la chapa (mm)</p>
         <p class="respuesta">s = Espesor de la chapa (mm)</p>
         <p class="respuesta">l = Distancia entre apoyos (mm)</p>
