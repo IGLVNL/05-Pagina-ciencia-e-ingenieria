@@ -33,16 +33,33 @@
                 <p>Donar 2000$ ARS</p>
             </a>
         </div>
+        <div id="CuadroMail">
+            <form action="enviar_correo.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea><br><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
         <div id="logoYNombre">
             <img src="Icons/IconoPagina001.png"  alt="img">
             <h1>"Ciencia e Ingenieria a tu alcance"</h1>
         </div>
-        <div id="burbujas">
+        <div id="cont-up">
             <a id="donaciones">
                 <img src="Icons/donaciones.svg" title="Donaciones">
             </a>
+            <a id="mail">
+                <img src="Icons/Mail.svg" title="Contacto">
+            </a>
             <a id="help">
-                <img src="Icons/Ayuda.svg" title="Ayuda" alt="img">
+                <img src="Icons/Ayuda.svg" title="Ayuda" >
             </a>
         </div>
     </header>

@@ -1,6 +1,6 @@
 /*Diseño general Escritorio*/
 body{
-    padding-top: 45px;
+    height: 97vh;
     min-width: none;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Imgs/Fondo_00.jpeg');
     background-attachment: fixed;

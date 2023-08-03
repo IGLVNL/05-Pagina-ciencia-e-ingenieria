@@ -55,12 +55,12 @@ footer{
     width: fit-content-moz-fit-content;
     background-color: transparent;
 }
-
+/*
 #burbujas{
     display: flex;
     background-color: transparent;
 }
-
+*/
 /*contenido de logo y nombre*/
 
 #logoYNombre img{
@@ -78,19 +78,6 @@ footer{
 
 /*contenido de burbujas*/
 
-#burbujas a{
-    display: flex;
-    flex-direction: row;
-    width: fit-content-moz-fit-content;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: transparent;
-}
-#burbujas a img{
-    background-color: transparent;
-    border-radius: 25px;
-}
-
 @keyframes rotateAnimation {
         0% 
     {
@@ -106,31 +93,35 @@ footer{
     }
 }
 
-#donaciones{
-    transition: transform 0.3s ease-in-out;
-    border-radius: 25px;
+#cont-up{
+    display: flex;
+    flex-direction: row;
     position: fixed;
-    top: 5%;
-    right: 0%;
-    transform: scale(1.2);
-}
-#donaciones:hover{
-    animation: rotateAnimation 0.5s infinite alternate;
-    background-color: rgba(0, 0, 0, 0.285);
+    width: fit-content-moz-fit-content;
+    height: fit-content-moz-fit-content;
+    top: 4%;
+    right: 1.5%;
+    z-index: 50;
 }
 
-#help{
+#donaciones{
+    transform: rotate(-20deg);
     transition: transform 0.3s ease-in-out;
-    border-radius: 25px;
-    position: fixed;
-    bottom: 5%;
-    right: 0%;
-    transform: scale(1.3);
+}
+#donaciones:hover{
+    transform: scale(1.25);
+    transform: rotate(20deg);
+    animation: rotateAnimation 0.5s infinite alternate;
 }
 #help:hover{
+    transform: scale(1.2);
+    transform: rotate(20deg);
     animation: rotateAnimation 0.5s infinite alternate;
-    background-color: rgba(0, 0, 0, 0.285);
-    border-radius: 25px;
+}
+#mail:hover{
+    transform: scale(1.2);
+    transform: rotate(20deg);
+    animation: rotateAnimation 0.5s infinite alternate;
 }
 
 /*contenido de main*/
@@ -401,6 +392,10 @@ ul{
 
 /*Diseño mobile*/
 @media (max-width: 500px) {
+
+    #logoYNombre{
+        flex-direction: column;
+    }
     
     #logoYNombre h1{
         font-size: 7vw;
