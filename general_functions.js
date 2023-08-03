@@ -33,11 +33,20 @@ if (document.getElementById("mail")) {
 }
 
 document.getElementById("donaciones").onclick = function() {
-    /*alert("Si queres apoyar nuestro proyecto, podes hacer donaciones a esta cuenta \n " + 
-    "CVU: XXXXXXXXXXXXXXXXX \n Alias: TORTUGA.SIGILOSA \n" + 
-    "No olvides poner 'Donacion Web' como motivo de tu transferencia. \n" + 
-    "Muchas gracias!!! ");*/
-}
+    var cuadro = document.getElementById("CuadroDonacion");
+    cuadro.style.display = 'flex';
+};
+
+document.body.onclick = function (event) {
+    var cuadro = document.getElementById("CuadroDonacion");
+    var cerrar = document.getElementById("cerrar");
+
+    // Si el clic se realiza fuera del cuadro de donación y del botón de donaciones, ocultar el cuadro
+    if (event.target == cerrar) {
+        cuadro.style.display = 'none';
+    }
+};
+
 if (document.getElementById("imprimir")) {
     document.getElementById("imprimir").onclick = function() {
         var elements = document.querySelectorAll("p , h2 , a , h1");
@@ -48,6 +57,8 @@ if (document.getElementById("imprimir")) {
         window.location.reload();
     };
 }
+
+
 
 
 

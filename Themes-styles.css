@@ -362,6 +362,55 @@ body::-webkit-scrollbar-track:hover{
     animation: rotateAnimation 0.5s infinite alternate;
 }
 
+#CuadroDonacion{
+    display: none;
+    position: fixed;
+    z-index: 500;
+    width: 80%;
+    right: 10%;
+    top: 20%;
+    height: fit-content-moz-fit-content;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: stretch;
+    background-color: rgba(0, 0, 0, 0.639);
+}
+
+#CuadroDonacion a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+#CuadroDonacion a:hover{
+    transition-duration: 0.45s;
+    transform: scale(1.2);
+}
+
+#CuadroDonacion a img{
+    width: 40%;
+    margin-bottom: 5%;
+    border-radius: 25px;
+}
+
+#CuadroDonacion a p{
+    font-size: 20px;
+    color: white;
+}
+
+#cerrar{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+#cerrar:hover{
+    transition-duration: 0.45s;
+    transform: scale(1.2);
+}
+
 @keyframes rotateAnimation {
         0% 
     {
@@ -453,5 +502,18 @@ body::-webkit-scrollbar-track:hover{
 
     .navbar-list-2{
         width: 100vw;
+    }
+    
+    #CuadroDonacion{
+        flex-direction: column;
+        width: 100%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        max-height: 100%;
+        overflow-y: scroll;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: rgba(0, 0, 0, 0.787);
     }
 }
