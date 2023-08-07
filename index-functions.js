@@ -67,7 +67,7 @@ if(document.getElementById("searchInput")){
     function searchInHTML(htmlContent, searchTerm, url) {
         var parser = new DOMParser();
         var doc = parser.parseFromString(htmlContent, "text/html");
-        var elements = doc.querySelectorAll("h1, h2, .pregunta, .respuesta");
+        var elements = doc.querySelectorAll("h1, h2, .pregunta");
         var regex = new RegExp(searchTerm.toLowerCase().replace(/\s/g, ''), 'gi');
         elements.forEach(function(element) {
             if (element.textContent.toLowerCase().replace(/\s/g, '').match(regex)) {
