@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, industrias petroquimicas, petroleo">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Industrias petroquimicas</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_10_Industrias petroquimicas.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="tema">Ingenieria Industrial</p>
+    <p class="tema">Material de estudio</p>
+    <p id="materia" >Procesos industriales</p>
+    <h1 id="tema">Industrias petroquimicas</h1>
+    <div id="menu">
+        <img src="Icons/Menu.svg" title="Menu">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="dropdown"><a href="#Tema-01-00"  onclick="smoothScroll(event, 'Tema-01-00')">INTRODUCCION</a></li>
+                <li class="dropdown"><a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">EXTRACCION Y RESERVAS DE HIDROCARBUROS</a></li>
+                <li class="dropdown"><a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">PERFORACION Y EXPLORACION</a></li>
+                <li class="dropdown"><a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">RESERVAS Y EXTRACCION TERCIARIA</a></li>
+                <li class="dropdown"><a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">TRANSPORTE Y ALMACENAMIENTO</a></li>
+                <li class="dropdown"><a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">REFINACION Y PETROQUIMICA</a></li>
+                <li class="dropdown"><a href="#Tema-01-06" class="boton" onclick="smoothScroll(event, 'Tema-01-06')">BIOCOMBUSTIBLES Y ENERGIAS RENOVABLES</a></li>
+                <li class="dropdown"><a href="#Tema-01-07" class="boton" onclick="smoothScroll(event, 'Tema-01-07')">TENDENCIAS MUNDIALES Y CAMBIOS CLIMATICOS</a></li>
+                <li class="dropdown"><a href="#Tema-01-08" class="boton" onclick="smoothScroll(event, 'Tema-01-08')">DESAFIOS A FUTURO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_00_procesos_industriales.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_00_diseño%20de%20layout.html">01- DISEÑO DE LAYOUT</a></li>
+                <li class="dropdown-2"><a href="C_01_Sistema%20de%20tolerancias.html">02- TOLERANCIAS</a></li>
+                <li class="dropdown-2"><a href="C_02_Instrumentos%20de%20medicion.html">03- INSTRUMENTOS DE MEDICION</a></li>
+                <li class="dropdown-2"><a href="C_03_Control%20estadistico%20de%20proceso.html">04- CONTROL ESTADISTICO DE PROCESOS (CEP)</a></li>
+                <li class="dropdown-2"><a href="C_04_Proceso%20productivo-Hoja%20de%20ruta.html">05- PROCESO PRODUCTIVO - HOJA DE RUTA</a></li>
+                <li class="dropdown-2"><a href="C_05_MSAV.html">06- PROCESOS DE MECANIZADO SIN ARRANQUE DE VIRUTA (MSAV)</a></li>
+                <li class="dropdown-2"><a href="C_06_MCAV.html">07- PROCESOS DE MECANIZADO CON ARRANQUE DE VIRUTA (MCAV)</a></li>
+                <li class="dropdown-2"><a href="C_07_CNC.html">08- CNC</a></li>
+                <li class="dropdown-2"><a href="C_08_Industria%20alimenticia.html">09- INDUSTRIA ALIMENTICIA</a></li>
+                <li class="dropdown-2"><a href="C_09_Recubrimientos.html">10- RECUBRIMIENTOS</a></li>
+                <li class="dropdown-2"><a href="C_10_Industrias petroquimicas.html">11- INDUSTRIAS PETROQUIMICAS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas">
+        <a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">EXTRACCION Y RESERVAS DE HIDROCARBUROS</a>
+        <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">PERFORACION Y EXPLORACION</a>
+        <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">RESERVAS Y EXTRACCION TERCIARIA</a>
+        <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">TRANSPORTE Y ALMACENAMIENTO</a>
+        <a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">REFINACION Y PETROQUIMICA</a>
+        <a href="#Tema-01-06" class="boton" onclick="smoothScroll(event, 'Tema-01-06')">BIOCOMBUSTIBLES Y ENERGIAS RENOVABLES</a>
+        <a href="#Tema-01-07" class="boton" onclick="smoothScroll(event, 'Tema-01-07')">TENDENCIAS MUNDIALES Y CAMBIOS CLIMATICOS</a>
+        <a href="#Tema-01-08" class="boton" onclick="smoothScroll(event, 'Tema-01-08')">DESAFIOS A FUTURO</a>
+    </div>
+    <div id="Tema-01-00">
+        <h2>INTRODUCCION</h2>
+        <p class="respuesta">Las industrias petroquímicas representan un pilar esencial en la cadena de suministro global, al ocuparse de la producción de una diversidad de productos químicos y materiales derivados del petróleo. Estas industrias desempeñan un papel crucial en la fabricación de una amplia gama de productos, desde plásticos y productos químicos hasta fertilizantes y productos farmacéuticos. Explorar en profundidad cada faceta de las industrias petroquímicas permite comprender su complejidad y relevancia en la sociedad moderna.</p>
+    </div>
+    <div id="Tema-01-01">
+        <h2>EXTRACCION Y RESERVAS DE HIDROCARBUROS</h2>
+        <p class="respuesta">El petróleo, como materia prima primordial, es extraído de dos tipos de yacimientos: convencionales y no convencionales. En los yacimientos convencionales, los hidrocarburos pueden migrar por la porosidad de la roca generadora y acumularse en la roca reservorio. Por otro lado, los yacimientos no convencionales presentan una porosidad más baja en la roca generadora, lo que requiere técnicas como la fracturación hidráulica para liberar los hidrocarburos. Este proceso involucra la inyección de fluidos a alta presión para crear fisuras en la roca y permitir la extracción.</p>
+    </div>
+    <div id="Tema-01-02">
+        <h2>PERFORACION Y EXPLORACION</h2>
+        <p class="respuesta">La exploración y perforación son fases cruciales para localizar y evaluar yacimientos de petróleo y gas. Se utilizan herramientas especializadas llamadas trepanos, los cuales son equipos de tres rodillos que trituran la roca durante la perforación de pozos exploratorios. Además, técnicas avanzadas de prospección sísmica se emplean para identificar características geológicas y potenciales reservas de hidrocarburos en el subsuelo.</p>
+    </div>
+    <div id="Tema-01-03">
+        <h2>RESERVAS Y EXTRACCION TERCIARIA</h2>
+        <p class="respuesta">Determinar las reservas de hidrocarburos es crucial para planificar la extracción y la viabilidad de la producción. Aunque la extracción terciaria podría aumentar la recuperación de petróleo, su uso es limitado en Argentina debido a los altos costos asociados con la construcción de pozos inyectores necesarios para esta técnica.</p>
+    </div>
+    <div id="Tema-01-04">
+        <h2>TRANSPORTE Y ALMACENAMIENTO</h2>
+        <p class="respuesta">El transporte de petróleo y gas desde los yacimientos hasta las refinerías se logra a través de redes de oleoductos y gasoductos. En general, las refinerías se ubican cerca de zonas pobladas y costeras para facilitar el transporte. Para el comercio internacional, se utilizan buques tankers para el petróleo y buques metaneros para el gas natural licuado, los cuales tienen una gran capacidad de almacenamiento.</p>
+    </div>
+    <div id="Tema-01-05">
+        <h2>REFINACION Y PETROQUIMICA</h2>
+        <p class="respuesta">Las refinerías son instalaciones clave en la transformación del petróleo crudo en productos refinados como gasolina, diesel y nafta. En las industrias petroquímicas, los productos derivados del petróleo, como metano, etano y nafta, se utilizan como materias primas para fabricar una diversidad de productos químicos y plásticos. Estos productos son fundamentales en la vida cotidiana y en numerosas industrias.</p>
+    </div>
+    <div id="Tema-01-06">
+        <h2>BIOCOMBUSTIBLES Y ENERGIAS RENOVABLES</h2>
+        <p class="respuesta">Los biocombustibles, como el biodiesel y el bioetanol, se obtienen de fuentes biológicas y reducen las emisiones de carbono. Las energías renovables, como la solar y la eólica, están en constante evolución en la matriz energética. Sin embargo, aún enfrentan desafíos en términos de almacenamiento de energía y autonomía de vehículos eléctricos.</p>
+    </div>
+    <div id="Tema-01-07">
+        <h2>TENDENCIAS MUNDIALES Y CAMBIOS CLIMATICOS</h2>
+        <p class="respuesta">Las tendencias mundiales indican una transición hacia fuentes de energía más limpias y sostenibles. Las industrias petroquímicas experimentan un cambio en el panorama debido a la necesidad de reducir las emisiones de gases de efecto invernadero. Esta transición impulsa la búsqueda de soluciones innovadoras y el desarrollo de tecnologías que minimicen el impacto ambiental.</p>
+    </div>
+    <div id="Tema-01-08">
+        <h2>DESAFIOS A FUTURO</h2>
+        <p class="respuesta">Las industrias petroquímicas enfrentan desafíos significativos, como la dependencia de regulaciones gubernamentales y la fluctuación en la demanda de hidrocarburos. A medida que avanza la tecnología y se promueven las energías limpias, como el hidrógeno, estas industrias pueden adaptarse para abordar las preocupaciones ambientales y económicas.</p>
+        <p class="respuesta">Las industrias petroquímicas desempeñan un papel integral en la economía global, desde la extracción y producción de hidrocarburos hasta la fabricación de productos químicos y materiales esenciales. La interacción entre estas diversas etapas y procesos determina en gran medida cómo se satisfacen las demandas de energía y productos químicos en la sociedad moderna, a la vez que se abordan los desafíos ambientales y tecnológicos del siglo XXI.</p>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
