@@ -24,7 +24,7 @@ if(document.getElementById("searchInput")){
     });
 
     function performSearch(searchTerm) {
-        var fileUrls = ['A_00_main.html','B_00_procesos_industriales.html','C_00_diseño de layout.html','C_01_Sistema de tolerancias.html','C_02_Instrumentos de medicion.html','C_03_Control estadistico de proceso.html','C_04_Proceso productivo-Hoja de ruta.html','C_05_MSAV.html','C_06_MCAV.html','C_07_CNC.html','C_08_Industria alimenticia.html','C_09_Recubrimientos.html',,'C_10_Industrias petroquimicas.html',];
+        var fileUrls = ['A_00_main.html','B_00_procesos_industriales.html','C_00_diseño de layout.html','C_01_Sistema de tolerancias.html','C_02_Instrumentos de medicion.html','C_03_Control estadistico de proceso.html','C_04_Proceso productivo-Hoja de ruta.html','C_05_MSAV.html','C_06_MCAV.html','C_07_CNC.html','C_08_Industria alimenticia.html','C_09_Recubrimientos.html','C_10_Industrias petroquimicas.html'];
         searchResults.innerHTML = '';
         var filesProcessed = 0;
 
