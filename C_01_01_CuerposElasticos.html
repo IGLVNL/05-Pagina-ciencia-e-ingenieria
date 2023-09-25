@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Cuerpos elasticos, ecuaciones diferenciales, teoremas de mohr, carga unitaria">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Cuerpos elasticos</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_01_01_CuerposElasticos.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="tema">Ingenieria Industrial</p>
+    <p class="tema">Material de estudio</p>
+    <p id="materia" >Tecnologia y resistencia de los materiales</p>
+    <h1 id="tema">Cuerpos elasticos</h1>
+    <div id="menu">
+        <img src="Icons/Menu.svg" title="Menu">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="dropdown"><a href="#Tema-01-01" onclick="smoothScroll(event, 'Tema-01-01')">01- TEORIA DE LA CURVA DE DEFLEXION - ECUACION DE LA ELASTICA</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_01_TecYResMateriales.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_01_01_CuerposElasticos.html">01- CUERPOS ELASTICOS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas">
+        <a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">01 - TEORIA DE LA CURVA DE DEFLEXION - ECUACION DE LA ELASTICA</a>
+    </div>
+    <div id="Tema-01-01">
+        <h2>TEORIA DE LA CURVA DE DEFLEXION - ECUACION DE LA ELASTICA</h2>
+        <p id="001" class="pregunta">Curva de deflexión o ecuación de la elástica</p>
+        <p class="respuesta">La curva elástica, es la curva que describe la forma que tendría una viga al deformarse por acción de una fuerza.</p>
+        <p class="respuesta">Si se hace un análisis de la geometría de la curva llamada “elástica”, se puede determinar la ecuación de la elástica. Para ello, se trazan dos perpendiculares a dos puntos muy próximos de la curva, y se obtiene el centro de curvatura “O” en el punto donde estas se cruzan. La distancia desde O a cualquiera de los 2 puntos, o sea, el radio de curvatura “ρ”, al multiplicarla por el ángulo diferencial que se forma entre ambas rectas, se obtiene un arco diferencial ds.  Al acomodar la ecuación quedaría como se ve en la imagen. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Tecnologia y resistencia de los materiales/AnalisisGeometricoDeformada.png">
+        </div>
+        <p class="respuesta">En esta igualdad acomodada, K es la curva descrita por pequeñas deformaciones y rotaciones. En ese marco, se puede decir que ds es aproximadamente igual a dx, como simplificación. Por lo que la curva deformada podría pasar a depender de una pequeña deformación en el eje X (dx). Teniendo en cuenta que el ángulo tita formado entre el eje X y la tangente al primero de los puntos, es una rotación muy pequeña, también se puede aproximar que la tangente a dicho ángulo, es igual a dicho ángulo, y al cociente entre dy y dx.  Si reemplazamos el valor de tita, en la ecuación de K, se obtiene que K es igual a la derivada del cociente entre dy y dx, respecto de dx. Esto es una derivada de segundo grado. </p>
+        
+        <p id="002" class="pregunta">Relación entre deformación especifica lineal y ley de Hooke</p>
+        <p class="respuesta">Para analizar y conocer las deformaciones lineales de una viga, se debe analizar la curvatura de la viga (la curva deformada o elástica), es por ello que se toma una pequeña sección diferencial de la misma, sometida a flexión pura, o sea, a un momento flexor M. (Esto siempre asumiendo que las diferentes secciones planas de la viga, se mantengan planas, y perpendiculares al eje neutro de la misma).</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Tecnologia y resistencia de los materiales/AnalisisGeometricoDeformada02.png">
+        </div>
+        <p class="respuesta">En este caso, se toma una sección del grafico analizado previamente, y tomando el mismo centro de curvatura. Haciendo esto, se toma como radio de curvatura, a la distancia dende O hasta el eje neutro de la viga. Si usamos la ecuación hallada en el punto anterior, se pueden obtener geométricamente, las siguientes ecuaciones. </p>
+        <p class="respuesta">En estas se parte de igualar la ecuación que vincula dx y ρ con dθ, a lo que representa dθ en este gráfico, que es igual al arco L1 sobre la distancia ρ – y, por lo que, si despejamos, y sabiendo que L1 es igual dx – ΔL, se puede obtener la última ecuación que se ve en la imagen. </p>
+        <p class="respuesta">Para relacionar lo anterior con la deformación especifica ε, se debe reemplazar la última ecuación en la fórmula que define a la deformación especifica. Esto hace que se pueda relacionar la deformación especifica o lineal de una fibra de la viga, con la distancia de dicha fibra al eje neutro, y con el radio de curvatura de la viga.</p>
+        <p class="respuesta">Conociendo la relación anterior, podemos redefinir la Ley de Hooke con esos parámetros.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Tecnologia y resistencia de los materiales/AnalisisGeometricoDeformada03.png">
+        </div>
+        <p class="respuesta">En el siguiente análisis, lo que se busca es relacionar un momento externo, con los parámetros geométricos que adquiriría la viga en ese régimen de tensiones. Por este motivo, se toma una cara de la sección diferencial de análisis utilizada anteriormente. Sabiendo que está en un régimen de flexión pura, se debe considerar que los mementos externos, generan momentos internos. En este caso, se toma una pequeña área diferencial dA, en donde se aplica un pequeño momento interno diferencia dM. Dicho momento, se lo puede definir como el producto de la distancia Y al eje neutro, por un pequeño diferencial de fuerza dF. Si el pequeño diferencial de fuerza se aplica sobre la pequeña área, genera una tensión normal sobre esa pequeña área. Dicha tensión, es la que relaciona la deformación especifica con el Módulo de elasticidad longitudinal. Por ende, si reemplazamos la Ley de Hooke, en la fórmula de dM, queda una ecuación diferencial de primer orden. Al integrar esta función, se logra saber que el Momento flector, depende de la integral de la distancia Y al cuadrado. Dicha integral, es el momento de inercia respecto del eje z, de esa área de análisis. Por lo que, si se reacomoda la ecuación, se obtiene que 1 sobre Rho, o sea, la curvatura K, es una función del Momento flector aplicado. El producto entre E y Jz, se lo denomina módulo de rigidez.</p>
+        
+        <p id="003" class="pregunta">Función de la curva deformada o ecuación de la elástica</p>
+        <p class="respuesta">De lo deducido anteriormente, se puede relacionar la curvatura k definida como dθ sobre dx, con la expresión anterior, o sea, con el momento flector y con el módulo de rigidez.</p>
+        <p class="respuesta">Sabiendo esto, se puede integrar y derivar esta expresión, de forma tal de que se puedan obtener un conjunto de ecuaciones que relacionan las diferentes acciones externas, con la posición en el eje de la barra y con el módulo de rigidez.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Tecnologia y resistencia de los materiales/AnalisisGeometricoDeformada04.png">
+        </div>
+        <p class="respuesta">De esta forma, se obtiene que la variación de la curvatura Y, respecto de X, es proporcional a la rotación. La integral de esta función, da como resultado curvo de deflexión en función de la posición en X. La derivada de la función rotación tita, es proporcional al momento hallado anteriormente. La derivada de esta función momento M, es proporcional a la carga aplicada. Y por último, la derivada de la función esfuerzo de corte Q, es proporcional a la función carga distribuida. </p>
+        
+        <p id="004" class="pregunta">Pasos para la definición de la curva de deflexión</p>
+        <p class="respuesta">1- Hallar la función de momento flector, en función de la posición. Tener en cuenta que las discontinuidades en la función momento, hace que el análisis se haga por tramo de viga. También, hay que considerar que tantos las cargas como los esfuerzos de corte, se pueden expresar como Momentos internos que varían según la posición.</p>
+        <p class="respuesta">2- Una vez hallada la función Momento de cada tramo (según si tenga discontinuidad en la función momento o no), se debe reemplazar dicha función en la ecuación diferencial del momento flector (Función Momento)</p>
+        <p class="respuesta">3- Luego se pasa a integrar en cada tramo, y a ambos lados de la ecuación diferencial. Esto agrega un término constante en la ecuación ya que la ecuación es indeterminada.</p>
+        <p class="respuesta">4- Determinar las constantes teniendo en cuenta las condiciones de borde o de frontera, de continuidad o de simetría. Esto significa que hay que asignar un valor conocido de la función ya integrada, en una posición definida, y despejar el valor de la constante. Este valor conocido, suele estar ubicado en los límites de cada tramo de viga.</p>
+        <p class="respuesta">5- Una vez hallada la constante, se procede a integrar la función integrada previamente. Esta función integrada, es la función Rotación, que, al integrarla nuevamente, se transforma en la función deflexión, más una constante de integración. Procediendo de la misma manera que antes.</p>
+        <p class="respuesta">6- Al hallar la función deflexión, se puede determinar la posición en el eje Y, que adoptara la curva deformada, o sea, la deflexión, en cierta posición X, ante la acción de cargas externas.</p>
+        
+        <p id="005" class="pregunta">Ejercicios de aplicacion</p>
+
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div id="Tema-01-0">
+    <h2></h2>
+    <p class="pregunta"></p>
+    <p class="respuesta"></p>
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="">
+    </div>
+</div-->

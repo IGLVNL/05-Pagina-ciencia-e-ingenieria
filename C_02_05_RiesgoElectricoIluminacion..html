@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Riesgo Electrico, Iluminacion">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Riesgo Electrico e Iluminacion</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_05_RiesgoElectricoIluminacion.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="tema">Ingenieria Industrial</p>
+    <p class="tema">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Riesgo Electrico e Ilumnacion</h1>
+    <div id="menu">
+        <img src="Icons/Menu.svg" title="Menu">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="dropdown"><a href="#Tema-01-01" onclick="smoothScroll(event, 'Tema-01-01')">01 - RIESGO ELECTRICO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#001"  onclick="smoothScroll(event, '001')">Tipos de Riesgo Eléctrico</a></li>
+                        <li><a href="#002"  onclick="smoothScroll(event, '002')">Estadísticas y Conciencia del Riesgo</a></li>
+                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Causas de los Accidentes Eléctricos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-02" onclick="smoothScroll(event, 'Tema-01-02')">02 - EFECTOS DE UN CHOQUE ELECTRICO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Efectos en Función de la Intensidad y el Tiempo</a></li>
+                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Otros efectos fisiopatológicos</a></li>
+                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Impedancia del cuerpo humano</a></li>
+                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Quemaduras por arco eléctrico</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-03" onclick="smoothScroll(event, 'Tema-01-03')">03 - MEDIDAS DE PREVENCION</a></li>
+                <li class="dropdown"><a href="#Tema-01-04" onclick="smoothScroll(event, 'Tema-01-04')">04 - LEGISLACION ELECTRICA</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#008"  onclick="smoothScroll(event, '008')">DECRETO 351/79 - ANEXO I - TITULO V - CAPITULO 14: Instalaciones Eléctricas. Artículo 95-102</a></li>
+                        <li><a href="#009"  onclick="smoothScroll(event, '009')">ANEXO VI: Correspondientes a los artículos 95 a 102: CAPITULO 14 - Instalaciones Eléctricas</a></li>
+                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Niveles de Tensión</a></li>
+                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Tensión de Seguridad</a></li>
+                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Bloqueo de un Aparato</a></li>
+                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Consignación</a></li>
+                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Capacitación del Personal</a></li>
+                        <li><a href="#015"  onclick="smoothScroll(event, '015')">Electricidad Estática</a></li>
+                        <li><a href="#016"  onclick="smoothScroll(event, '016')">Recomendaciones de AEA</a></li>
+                        <li><a href="#017"  onclick="smoothScroll(event, '017')">Norma NFPA 70E</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-05" onclick="smoothScroll(event, 'Tema-01-05')">05 - PROTECCIONES ELECTRICAS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#018"  onclick="smoothScroll(event, '018')">Protección contra Riesgo de Contactos Directos</a></li>
+                        <li><a href="#019"  onclick="smoothScroll(event, '019')">Protección contra Riesgo de Contactos Indirectos</a></li>
+                        <li><a href="#020"  onclick="smoothScroll(event, '020')">Dispositivos de Seguridad</a></li>
+                        <li><a href="#021"  onclick="smoothScroll(event, '021')">Ejemplos de protecciones</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-06" onclick="smoothScroll(event, 'Tema-01-06')">06 - ILUMINACION</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#022"  onclick="smoothScroll(event, '022')">Sensibilidad del Ojo</a></li>
+                        <li><a href="#023"  onclick="smoothScroll(event, '023')">Agudeza Visual y Campo Visual</a></li>
+                        <li><a href="#024"  onclick="smoothScroll(event, '024')">Magnitudes y Unidades</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-07" onclick="smoothScroll(event, 'Tema-01-07')">07 - CONDICIONES PARA EL CONFORT VISUAL</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#025"  onclick="smoothScroll(event, '025')">Efectos de una mala iluminación en la salud </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-08" onclick="smoothScroll(event, 'Tema-01-08')">08 - LEGISLACION Y NORMATIVAS PARA LA ILUMINACION</a></li>
+                <li class="dropdown"><a href="#Tema-01-09" onclick="smoothScroll(event, 'Tema-01-09')">09 - MEDICION DE LA ILUMINACION</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#026"  onclick="smoothScroll(event, '026')">Eficiencia de Lámparas y Luminarias</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgo en el trabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_Riesgo Mecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion..html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas">
+        <a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">01 - RIESGO ELECTRICO</a>
+        <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">02 - EFECTOS DE UN CHOQUE ELECTRICO</a>
+        <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03 - MEDIDAS DE PREVENCION</a>
+        <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04 - LEGISLACION ELECTRICA</a>
+        <a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">05 - PROTECCIONES ELECTRICAS</a>
+        <a href="#Tema-01-06" class="boton" onclick="smoothScroll(event, 'Tema-01-06')">06 - ILUMINACION</a>
+        <a href="#Tema-01-07" class="boton" onclick="smoothScroll(event, 'Tema-01-07')">07 - CONDICIONES PARA EL CONFORT VISUAL</a>
+        <a href="#Tema-01-08" class="boton" onclick="smoothScroll(event, 'Tema-01-08')">08 - LEGISLACION Y NORMATIVAS PARA LA ILUMINACION</a>
+        <a href="#Tema-01-09" class="boton" onclick="smoothScroll(event, 'Tema-01-09')">09 - MEDICION DE LA ILUMINACION</a>
+    </div>
+
+    <div id="Tema-01-01">
+        <h2>RIESGO ELECTRICO</h2>
+        <p class="respuesta">El riesgo eléctrico es una amenaza física asociada a la siniestralidad generada por la energía eléctrica. Abarca diversas situaciones peligrosas, como el choque eléctrico, quemaduras por arco eléctrico, caídas a causa de descargas eléctricas y la posibilidad de incendios o explosiones relacionados con la electricidad. Es fundamental entender sus distintos aspectos y aplicar medidas de prevención adecuadas para garantizar la seguridad en los entornos laborales y evitar accidentes.</p>
+        
+        <p id="001" class="pregunta">Tipos de Riesgo Eléctrico</p>
+        <p class="respuesta">El riesgo eléctrico engloba varias categorías, entre las que se incluyen:</p>
+        <p class="respuesta">1. Choque Eléctrico o Electrocución:</p>
+        <p class="respuesta">1-A- Contacto Eléctrico Directo: Ocurre cuando una persona entra en contacto con elementos que están bajo tensión. Esto puede suceder por no respetar medidas de seguridad o por manipular equipos defectuosos.</p>
+        <p class="respuesta">1-B- Contacto Eléctrico Indirecto: Ocurre cuando una persona entra en contacto con masas accidentalmente energizadas. Esto puede ocurrir, por ejemplo, si un equipo está conectado de manera incorrecta.</p>
+        <p class="respuesta">2. Quemaduras por Choque Eléctrico o Arco Eléctrico:</p>
+        <p class="respuesta">Las quemaduras pueden ser causadas por el flujo de corriente a través del cuerpo o por la emisión de calor intenso durante un arco eléctrico.</p>
+        <p class="respuesta">3. Caídas o Golpes como Consecuencia de Choque o Arco Eléctrico:</p>
+        <p class="respuesta">El impacto de un choque eléctrico o la presencia de un arco eléctrico pueden provocar caídas y golpes, lo que agrava los riesgos de lesiones.</p>
+        <p class="respuesta">4. Incendios o Explosiones Originados por la Electricidad:</p>
+        <p class="respuesta">La electricidad puede generar chispas y arcos eléctricos, que a su vez pueden desencadenar incendios o explosiones en entornos con sustancias inflamables o explosivas.</p>
+        
+        <p id="002" class="pregunta">Estadísticas y Conciencia del Riesgo</p>
+        <p class="respuesta">Aunque la electricidad es una fuente de energía ampliamente utilizada, los accidentes laborales relacionados con la electricidad son menos frecuentes que los causados por otros factores. Sin embargo, es importante tener en cuenta que incluso con una baja tasa de siniestros, los accidentes eléctricos tienen un alto potencial de mortalidad. En Argentina, se estima que cada 1000 accidentes laborales, solo 2 están vinculados con la electricidad, pero cada 10 muertes en accidentes laborales, 1 se debe a la electricidad.</p>
+        
+        <p id="003" class="pregunta">Causas de los Accidentes Eléctricos</p>
+        <p class="respuesta">Varios factores pueden contribuir a la ocurrencia de accidentes eléctricos:</p>
+        <p class="respuesta">Falta de Reconocimiento del Peligro: En muchos casos, los peligros eléctricos no son evidentes a simple vista, lo que puede llevar a la exposición a situaciones riesgosas sin ser conscientes de ello.</p>
+        <p class="respuesta">Sentidos No Perturbados: A menudo, los sentidos humanos no pueden percibir peligros eléctricos a ciertas distancias, lo que puede llevar a la exposición sin darse cuenta.</p>
+        <p class="respuesta">Uso de Herramientas o Equipos Inadecuados: La elección de herramientas o equipos incorrectos puede aumentar el riesgo de choque eléctrico.</p>
+        <p class="respuesta">Rescate Incorrecto de Accidentados: La falta de capacitación en cómo manejar situaciones de emergencia eléctrica puede llevar a una respuesta incorrecta que aumenta el peligro.</p>
+    </div>
+
+    <div id="Tema-01-02">
+        <h2>EFECTOS DE UN CHOQUE ELECTRICO</h2>
+        <p class="respuesta">Cuando una persona experimenta un choque eléctrico, la intensidad de la corriente eléctrica que atraviesa su cuerpo es crucial para determinar los efectos fisiológicos. Varios factores influyen en los efectos de la electricidad en el cuerpo:</p>
+        <p class="respuesta">Intensidad de la Corriente Eléctrica: Depende de la resistencia del cuerpo, la humedad de la piel, la trayectoria de la corriente y la frecuencia.</p>
+        <p class="respuesta">Duración del Contacto Eléctrico: La duración de la exposición a la corriente eléctrica también es determinante en el resultado de un accidente.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/045.jpg">
+        </div>
+        <p class="respuesta">Curvas de reacción del cuerpo humano de acuerdo a la intensidad de corriente y el tiempo de exposición a la misma en corriente alterna.</p>
+
+        <p id="004" class="pregunta">Efectos en Función de la Intensidad y el Tiempo</p>
+        <p class="respuesta">Los factores que influyen en los efectos de la electricidad sobre el cuerpo de una víctima son la intensidad de corriente eléctrica y la duración del contacto eléctrico.</p>
+        <p class="respuesta">El valor de la intensidad de corriente eléctrica dependerá de la impedancia o resistencia del cuerpo de la víctima, que a su vez depende fundamentalmente de la humedad, la superficie de contacto, la trayectoria del paso de esa corriente a través del cuerpo (> trayectoria > impedancia, y además puede involucrar órganos más o menos relevantes) y la frecuencia de la corriente (< frecuencia < impedancia). De la Tensión si la misma es media o alta, y/o si la impedancia del contacto es baja, se produce el paso de una intensidad elevada y, por tanto, peligrosa. (LEY DE OHM → I = V / R).</p>
+        <p class="respuesta">Según la intensidad:</p>
+        <p class="respuesta">> 10 mA: Sensación de cosquilleo muscular.</p>
+        <p class="respuesta">25 a 30 mA: Tetanización, pérdida de control muscular y/o Asfixia respiratoria</p>
+        <p class="respuesta">> 30 mA: Fibrilación Cardíaca</p>
+        <p class="respuesta">Según la duración:</p>
+        <p class="respuesta">> 100 mA por 3 segundos o 30mA por 35 segundos: Paro respiratorio temporal y/o Fibrilación Cardíaca</p>
+        <p class="respuesta">> 500 mA: Fibrilación ventricular, puede ser fatal.</p>
+        <p class="respuesta">Fibrilación ventricular: consiste en el movimiento anárquico del corazón, el cual, deja de enviar sangre a los distintos órganos y, aunque esté en movimiento, no sigue su ritmo normal de funcionamiento. </p>
+        <p class="respuesta">Asfixia: se produce cuando el paso de la corriente afecta al centro nervioso que regula la función respiratoria, ocasionando el paro respiratorio. </p>
+        <p class="respuesta">Tetanización: movimiento incontrolado de los músculos como consecuencia del paso de la energía eléctrica. Dependiendo del recorrido de la corriente el accidentado perderá el control de las manos, brazos, músculos pectorales, etc.</p>
+
+        <p id="005" class="pregunta">Otros efectos fisiopatológicos</p>
+        <p class="respuesta">Contracciones y desgarros musculares. Aumento de la presión sanguínea. Dificultades de respiración. Lesiones óseas por impactos y caídas. Quemaduras superficiales. Electrólisis de la sangre.</p>   
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/046.jpg">
+        </div>
+
+        <p id="006" class="pregunta">Impedancia del cuerpo humano</p>
+        <p class="respuesta">La impedancia de nuestro cuerpo se comporta como sumatoria de impedancias en serie. Hasta tensiones de contacto de 50 V en CA, la impedancia de la piel varia, incluso en un mismo individuo, dependiendo de factores externos tales como la temperatura, la humedad de la piel, etc. </p>
+        <p class="respuesta">A partir de 50 V la impedancia de la piel decrece rápidamente, llegando a ser muy baja si la piel esta perforada. Para tensiones elevadas la impedancia interna hace prácticamente despreciable la impedancia de la piel. La impedancia interna del cuerpo es esencialmente resistiva, con la particularidad de ser la resistencia de los brazos y las piernas mucho mayor que la del tronco. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/047.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/048.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/049.jpg">
+        </div>
+
+        <p id="007" class="pregunta">Quemaduras por arco eléctrico</p>
+        <p class="respuesta">Estudios indican que hasta un 80% de las heridas de todos los trabajadores accidentados con electricidad no corresponden a choques eléctricos (paso de corriente a través del cuerpo) sino que se deben a quemaduras externas, creadas por la intensa radiación de energía producto de exposición a un arco eléctrico. Un arco eléctrico es el paso de corriente entre dos puntos a diferente potencial (usualmente muy próximos), pero a través de una atmósfera gaseosa a determinada presión (puede ser aire) que oficia como conductor. Este fenómeno libera usualmente una gran cantidad de energía en forma de calor, luz y sonido.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/050.jpg">
+        </div>
+        <p class="respuesta">Índice ATPV (“Arc Thermal Performance Value” o “Valor de Rendimiento Térmico frente al Arco”) es un valor asignado a telas, protectores faciales, uniformes y trajes para arcos eléctricos, que representa la energía térmica máxima incidente por área de superficie (también denominada densidad de energía, generalmente medida en kJ/m2 o cal/cm²), que un tejido o material puede soportar antes de que el usuario sufra quemaduras de segundo grado.</p>
+    </div>
+
+    <div id="Tema-01-03">
+        <h2>MEDIDAS DE PREVENCION ELECTRICA</h2>
+        <p class="respuesta">Es esencial implementar medidas de prevención y protección adecuadas para minimizar los riesgos eléctricos en el entorno laboral:</p>
+        <p class="respuesta">Identificación de Peligros y Evaluación de Riesgos: Realizar análisis de seguridad eléctrica para identificar los peligros y evaluar los riesgos asociados.</p>
+        <p class="respuesta">Formación y Capacitación: Capacitar a los trabajadores sobre los riesgos eléctricos, medidas de seguridad y procedimientos de trabajo seguros.</p>
+        <p class="respuesta">Uso de Equipos de Protección Personal (EPP): Proporcionar y asegurar el uso de EPP, como guantes aislantes, gafas protectoras y ropa adecuada.</p>
+        <p class="respuesta">Bloqueo y Etiquetado (LOTO): Implementar procedimientos de bloqueo y etiquetado para evitar la activación accidental de equipos durante el mantenimiento.</p>
+        <p class="respuesta">Mantenimiento Regular: Realizar inspecciones y mantenimiento periódico de equipos eléctricos para prevenir fallas y riesgos.</p>
+        <p class="respuesta">Señalización: Colocar señales y etiquetas de advertencia en zonas de peligro eléctrico.</p>
+        <p class="respuesta">Distancias de Seguridad: Establecer distancias seguras alrededor de equipos eléctricos para evitar contactos accidentales.</p>
+        <p class="respuesta">Aislamiento: Utilizar aislantes y barreras para proteger a los trabajadores de posibles contactos eléctricos.</p>
+        <p class="respuesta">Plan de Respuesta ante Emergencias: Tener un plan claro para responder a situaciones de emergencia eléctrica y rescatar a trabajadores en peligro.</p>
+        <p class="respuesta">Cumplimiento Normativo: Cumplir con las regulaciones y normativas eléctricas vigentes para garantizar un entorno laboral seguro.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/051.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/052.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/053.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/054.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/055.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/056.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/057.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/058.jpg">
+        </div>
+    </div>
+
+    <div id="Tema-01-04">
+        <h2>LEGISLACION ELECTRICA</h2>
+        <p id="008" class="pregunta">DECRETO 351/79 - ANEXO I - TITULO V - CAPITULO 14: Instalaciones Eléctricas. Artículo 95-102</p>
+        <p class="respuesta">Las instalaciones y equipos eléctricos deben cumplir con normas de seguridad para prevenir riesgos.</p>
+        <p class="respuesta">Los materiales y equipos utilizados deben cumplir con normas técnicas.</p>
+        <p class="respuesta">Los proyectos de instalaciones eléctricas deben estar aprobados por el responsable de Higiene y Seguridad en el Trabajo.</p>
+        <p class="respuesta">El mantenimiento debe ser realizado por personal capacitado y autorizado.</p>
+        <p class="respuesta">Se deben extremar las medidas de seguridad en lugares con materiales inflamables o riesgos específicos.</p>
+        <p class="respuesta">Se establecen regulaciones específicas para motores, conductores, transformadores y otros equipos eléctricos.</p>
+        <p class="respuesta">Se deben tomar medidas para eliminar la electricidad estática en operaciones donde sea un riesgo.</p>
+        
+        <p id="009" class="pregunta">ANEXO VI: Correspondientes a los artículos 95 a 102: CAPITULO 14 - Instalaciones Eléctricas</p>
+        <p class="respuesta">Se define terminología y conceptos relacionados con las instalaciones eléctricas.</p>
+        <p class="respuesta">Se establece la capacitación necesaria para el personal que trabaja en instalaciones eléctricas.</p>
+        <p class="respuesta">Se describen las normas y procedimientos para trabajos y maniobras en diferentes tipos de instalaciones eléctricas.</p>
+        <p class="respuesta">Se abordan aspectos de seguridad en canalizaciones eléctricas, dispositivos y locales eléctricos.</p>
+        <p class="respuesta">Se establecen normas para la protección contra riesgos de contactos directos e indirectos.</p>
+        <p class="respuesta">Se mencionan regulaciones específicas para locales con riesgos eléctricos especiales y baterías de acumuladores eléctricos.</p>
+        <p class="respuesta">Se deben tomar medidas para evitar la electricidad estática.</p>
+        
+        <p id="010" class="pregunta">Niveles de Tensión</p>
+        <p class="respuesta">Se definen cuatro niveles de tensión: Muy baja tensión (MBT), Baja tensión (BT), Media tensión (MT) y Alta tensión (AT).</p>
+        <p class="respuesta">MBT: Hasta 50 V en corriente continua o iguales valores eficaces entre fases en corriente alterna.</p>
+        <p class="respuesta">BT: Por encima de 50 V y hasta 1000 V, en corriente continua o iguales valores eficaces entre fases en corriente alterna.</p>
+        <p class="respuesta">MT: Por encima de 1000 V y hasta 33000 V inclusive.</p>
+        <p class="respuesta">AT: Por encima de 33000 V.</p>
+        
+        <p id="011" class="pregunta">Tensión de Seguridad</p>
+        <p class="respuesta">En ambientes secos y húmedos, la tensión de seguridad se considera hasta 24 V respecto a tierra. En ambientes mojados o con líquidos conductores, la tensión de seguridad será determinada por el responsable de Higiene y Seguridad en el Trabajo de la empresa.</p>
+        
+        <p id="012" class="pregunta">Bloqueo de un Aparato</p>
+        <p class="respuesta">El bloqueo de un aparato es el conjunto de operaciones para evitar su maniobra y mantenerlo en una posición determinada. Incluye señalización para evitar operación no autorizada. El bloqueo por sí solo no autoriza trabajar sobre el aparato; se debe consignar la instalación para hacerlo.</p>
+        
+        <p id="013" class="pregunta">Consignación</p>
+        <p class="respuesta">Procedimiento para sacar de servicio una instalación eléctrica.</p>
+        <p class="respuesta">Secuencia de Consignación de una instalación eléctrica Las 5 “Reglas de Oro”:</p>
+        <p class="respuesta">1- Corte (Interruptor o Seccionador)</p>
+        <p class="respuesta">2- Enclavamiento</p>
+        <p class="respuesta">3- Determinar si hay Tensión </p>
+        <p class="respuesta">4- Descargar y Poner a Tierra</p>
+        <p class="respuesta">5- Señalizar</p>
+        
+        <p id="014" class="pregunta">Capacitación del Personal</p>
+        <p class="respuesta">El personal encargado del mantenimiento de las instalaciones eléctricas debe ser capacitado por la empresa para realizar su trabajo de manera efectiva y segura.</p>
+        <p class="respuesta">Deben recibir información sobre los riesgos involucrados en su labor.</p>
+        <p class="respuesta">Se les instruirá en cómo proporcionar primeros auxilios, luchar contra incendios y evacuar en caso de incendio.</p>
+        <p class="respuesta">Trabajos con tensión solo deben ser realizados por personal especializado.</p>
+        <p class="respuesta">La habilitación para trabajar con tensión debe ser aprobada por el jefe del Servicio de Higiene y Seguridad de la empresa.</p>
+        <p class="respuesta">Se requieren conocimientos de la tarea, experiencia similar, consentimiento, aptitud física y antecedentes de baja accidentabilidad.</p>
+        
+        <p id="015" class="pregunta">Electricidad Estática</p>
+        <p class="respuesta">En lugares donde no se puede evitar la generación de cargas electrostáticas, se deben tomar medidas de protección para prevenir chispas y efectos secundarios peligrosos.</p>
+        <p class="respuesta">Estas medidas incluyen humidificación, aumento de conductividad eléctrica de los cuerpos aislantes y descarga a tierra de cargas generales.</p>
+        <p class="respuesta">En locales con riesgo de incendio o explosión, se requieren pisos antiestáticos y antichispazos.</p>
+        
+        <p id="016" class="pregunta">Recomendaciones de AEA</p>
+        <p class="respuesta">La Asociación Electrotécnica Argentina establece normas y reglamentaciones para la práctica segura en instalaciones eléctricas y ofrece capacitaciones en este ámbito. Proporciona requisitos para la Certificación de Normas Internacionales en seguridad eléctrica.</p>
+        
+        <p id="017" class="pregunta">Norma NFPA 70E</p>
+        <p class="respuesta">La NFPA 70E es una norma de la National Fire Protection Association que se enfoca en la seguridad eléctrica en lugares de trabajo. Aborda prácticas seguras de trabajo, uso adecuado de equipo de protección personal (EPP), mantenimiento de sistemas eléctricos, seguridad para equipos especiales y requisitos de seguridad para instalaciones.</p>
+    </div>
+
+    <div id="Tema-01-05">
+        <h2>PROTECCIONES ELECTRICAS</h2>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/059.jpg">
+        </div>
+        <p id="018" class="pregunta">Protección contra Riesgo de Contactos Directos</p>
+        <p class="respuesta">Protección por Alejamiento: Las partes activas de la instalación deben estar alejadas a una distancia suficiente de las áreas donde las personas normalmente se encuentran o circulan para evitar contactos accidentales. Se deben considerar movimientos, caídas de herramientas, entre otros factores.</p>
+        <p class="respuesta">Protección por Aislamiento: Las partes activas de la instalación deben estar cubiertas con un aislamiento adecuado que conserve sus propiedades durante su vida útil y limite la corriente de contacto a niveles seguros.</p>
+        <p class="respuesta">Protección por Medio de Obstáculos: Se deben colocar obstáculos que impidan el contacto accidental con las partes activas de la instalación. Estos obstáculos deben ser eficaces en términos de naturaleza, extensión, disposición, resistencia mecánica y aislamiento. Antes de prescindir de la protección por obstáculos, se debe poner fuera de tensión las partes conductoras.</p>
+
+        <p id="019" class="pregunta">Protección contra Riesgo de Contactos Indirectos</p>
+        <p class="respuesta">Puesta a Tierra de las Masas: Las masas deben estar conectadas eléctricamente a una toma de tierra o a un conjunto de tomas de tierra interconectadas. El circuito de puesta a tierra debe ser continuo, permanente, capaz de llevar la corriente de falla y tener una resistencia apropiada.</p>
+        
+        <p id="020" class="pregunta">Dispositivos de Seguridad</p>
+        <p class="respuesta">Dispositivos de Protección Activa: Las instalaciones deben contar con dispositivos que detecten automáticamente defectos de aislamiento o saquen de servicio partes averiadas de la instalación.</p>
+        <p class="respuesta">Dispositivos de Protección Pasiva: Estos dispositivos evitan que una persona entre en contacto con dos masas o partes conductoras que tengan diferencias de potencial peligrosas.</p>
+        
+        <p id="021" class="pregunta">Ejemplos de protecciones</p>
+        <p class="respuesta">Doble Aislamiento Eléctrico: Implica la utilización de aislamiento eléctrico en equipos, conductores e instalaciones para evitar el contacto directo con partes activas.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/060.jpg">
+        </div>
+        <p class="respuesta">Tensión de Seguridad en Instalaciones de Comando: Se utiliza una tensión de seguridad (24 V) en instalaciones de comando para reducir los riesgos de contacto eléctrico.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/061.jpg">
+        </div>
+        <p class="respuesta">Dispositivos de Fusibles y Corte por Cortocircuito y Sobrecarga: Los fusibles son dispositivos que se intercalan en una instalación eléctrica y se funden por efecto Joule cuando la corriente supera ciertos valores, protegiendo así los conductores de la instalación.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/062.jpg">
+        </div>
+        <p class="respuesta">Los interruptores termo-magnéticos (llaves TM) son dispositivos electromecánicos que interrumpen el flujo de corriente cuando la intensidad supera ciertos valores máximos. Tienen dos partes: una magnética (para cortocircuitos) y una térmica (para sobrecargas).</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/063.jpg">
+        </div>
+        <p class="respuesta">Al circular la corriente por el electroimán, crea una fuerza que, mediante un dispositivo mecánico adecuado (M), tiende a abrir el contacto C, pero sólo podrá abrirlo si la intensidad I que circula por la carga sobrepasa el límite de intervención fijado. Este nivel de intervención suele estar comprendido entre 3 y 20 veces la intensidad nominal (la intensidad de diseño del termo-magnético) y su actuación es de aproximadamente unas 25 milésimas de segundo, lo cual lo hace muy seguro por su velocidad de reacción. Esta es la parte destinada a la protección frente a los cortocircuitos, donde se produce un aumento muy rápido y elevado de corriente.</p>
+        <p class="respuesta">La otra parte está constituida por una lámina bimetálica (en la figura: rojo) que, al calentarse por encima de un determinado límite, sufre una deformación (debido a la diferencia de dilatación del par bimetálico) que provoca la apertura del contacto y el corte en el paso de la corriente. El aumento de la temperatura va de la mano del aumento de la corriente, relacionadas en el ya mencionado Efecto Joule. La parte térmica es la encargada de proteger de corrientes que, aunque son superiores a las permitidas por la instalación, no llegan al nivel de intervención del dispositivo magnético. Esta situación es típica de las sobrecargas (exceso de consumo por exceso de equipos conectados a la red o por mal funcionamiento de un equipo). La parte térmica no requiere de reacción instantánea ya que el aumento de T suele ser progresivo.</p>
+        <p class="respuesta">Puesta a Tierra: La puesta a tierra (PAT) es un sistema de protección que evita el paso de corriente al suelo a través de un fallo de aislamiento. Consiste en una jabalina metálica enterrada en suelo de baja resistencia y conectada a las partes metálicas de la estructura. Las mediciones de resistencia de puesta a tierra son requeridas por normativas para asegurar la seguridad eléctrica. </p>
+        <p class="respuesta">La PAT se conecta y distribuye por la instalación por medio de un conductor cuyo aislante es de color verde y amarillo, que debe: Acompañar en todas sus derivaciones a los cables de tensión eléctrica. Llegar a través de los tomacorrientes a cualquier aparato que disponga de partes metálicas que no estén separadas de los elementos conductores de su interior. La jabalina es eficaz también para la derivación de descargas atmosféricas. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/064.jpg">
+        </div>
+        <p class="respuesta">Para realizar las mediciones de PAT se utiliza un telurímetro homologado y calibrado anualmente. Las mediciones deben realizarse por personal idóneo matriculado y adjuntarse a las mediciones los certificados del instrumental utilizado, así como también el Protocolo de medición de resistencia de la PAT y continuidad de las masas (Res. SRT 900/2015). Se recomienda utilizar instrumental de marcas reconocidas o que hayan certificado ISO9000 en alguna de sus versiones.</p>
+        <p class="respuesta">Las mediciones de puesta a tierra son requeridas por normativa legal para cumplimentar los requisitos de seguridad eléctrica. A nivel nacional, la Ley 19.587 y su decreto 351/79, como la Res. SRT 900/2015 delegan en la Asociación Electrotécnica Argentina (AEA) la reglamentación referida a la seguridad eléctrica (AEA 90364). Por otro lado, las normativas locales (municipales o provinciales) pueden complementar los requisitos generales establecidos por la AEA. Para la AEA, la R de PAT < 10 Ω.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/065.jpg">
+        </div>
+        <p class="respuesta">Interruptor Diferencial: El interruptor diferencial es un dispositivo electromecánico que se coloca en instalaciones eléctricas para proteger a los usuarios contra descargas eléctricas. Funciona detectando la diferencia entre la corriente de entrada y la corriente de salida, activando los contactos para interrumpir el flujo de corriente si se detecta una fuga a tierra.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/066.jpg">
+        </div>
+        <p class="respuesta">Pararrayos: El pararrayos es un dispositivo diseñado para atraer y conducir un rayo hacia tierra, protegiendo así a las personas y estructuras.</p>
+    </div>
+
+    <div id="Tema-01-06">
+        <h2>ILUMINACION</h2>
+        <p class="respuesta">La iluminación adecuada en el entorno laboral tiene un impacto directo en la seguridad, el confort y la productividad de los trabajadores. Una correcta integración de estos aspectos asegura un ambiente de trabajo seguro, cómodo y eficiente. La luz, que es la radiación electromagnética perceptible por el ojo humano, juega un papel esencial en la visión humana y en el rendimiento en el trabajo.</p>
+
+        <p id="022" class="pregunta">Sensibilidad del Ojo</p>
+        <p class="respuesta">La sensibilidad del ojo humano a la luz varía a lo largo del espectro electromagnético. La máxima sensibilidad se encuentra alrededor de los 555 nm (nanómetros), pero esta curva puede variar entre individuos y con el tiempo. La visión diurna (fotópica) se realiza principalmente a través de los conos, mientras que la visión nocturna (escotópica) es el resultado de la acción de los bastones.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/067.jpg">
+        </div>
+        <p class="respuesta">Como ya se mencionó, el ojo humano percibe una serie de radiaciones entre los 380 y los 780 nm, la sensibilidad es baja en los extremos y el máximo se encuentra en los 555 nm. En el caso de niveles de iluminación débiles esta sensibilidad máxima se desplaza hacia los 500 nm. Importante: la curva varía de un individuo a otro y con el paso del tiempo.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/068.jpg">
+        </div>
+        
+        <p id="023" class="pregunta">Agudeza Visual y Campo Visual</p>
+        <p class="respuesta">La agudeza visual, también conocida como poder separador del ojo, se refiere a la capacidad del ojo para distinguir objetos separados. Esta capacidad depende de la intensidad de la iluminación, siendo mayor en condiciones de mayor luminosidad.</p>
+        <p class="respuesta">El campo visual se refiere a la parte del entorno que se puede percibir cuando los ojos y la cabeza están fijos. Se divide en campo de visión neta (precisa), campo medio (contrastes fuertes y movimientos) y campo periférico (detección de objetos en movimiento).</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/069.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/070.jpg">
+        </div>
+        
+        <p id="024" class="pregunta">Magnitudes y Unidades</p>
+        <p class="respuesta">Flujo Luminoso e Intensidad Luminosa: El flujo luminoso es la energía luminosa emitida por una fuente, mientras que la intensidad luminosa describe cómo se distribuye en el espacio.</p>
+        <p class="respuesta">Iluminancia: Indica el flujo luminoso que incide sobre una unidad de superficie (lux).</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/071.jpg">
+        </div>
+        <p class="respuesta">Luminancia: Característica propia de la fuente de luz o de una superficie iluminada en una dirección dada. Influye en la percepción de claridad.</p>
+    </div>
+
+    <div id="Tema-01-07">
+        <h2>CONDICIONES PARA EL CONFORT VISUAL</h2>
+        <p class="respuesta">Para lograr un confort visual óptimo en el ambiente laboral, se deben considerar varios condicionantes:</p>
+        <p class="respuesta">Condicionantes del Observador: Edad, capacidad visual, agudeza, salud visual, entre otros. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/072.jpg">
+        </div>
+        <p class="respuesta">Condicionantes de la Tarea: Duración, repetitividad, velocidad de respuesta, distancia a objetos, ángulo de fijación visual.</p>
+        <p class="respuesta">Condicionantes del Entorno: Dimensiones, colores, forma, reflexión, textura, sombras.</p>
+        <p class="respuesta">Condicionantes de la Estructura: Posición y diseño de los puntos de luz, relación luz natural-artificial, entre otros.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/073.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/074.jpg">
+        </div>
+        
+        <p id="025" class="pregunta">Efectos de una mala iluminación en la salud </p>
+        <p class="respuesta">Trastornos del sueño (insomnio, etc.)</p>
+        <p class="respuesta"> Cefaleas </p>
+        <p class="respuesta">Dolores en el globo ocular</p>
+        <p class="respuesta">Trastornos en la visión </p>
+        <p class="respuesta">Stress, nerviosismo, falta de motivación </p>
+        <p class="respuesta"> Inconvenientes posturales</p>
+    </div>
+
+    <div id="Tema-01-08">
+        <h2>lEGISLACION Y NORMATIVAS PARA LA ILUMINACION</h2>
+        <p class="respuesta">La legislación en materia de iluminación en el entorno laboral establece niveles mínimos de iluminancia para diferentes tipos de tareas y destinos de los locales. La relación entre la iluminancia mínima y media debe ser de al menos 0.5 para asegurar una uniformidad razonable en la iluminancia del lugar.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/075.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/076.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/077.jpg">
+        </div>
+    </div>
+
+    <div id="Tema-01-09">
+        <h2>MEDICION DE LA ILUMINACION</h2>
+        <p class="respuesta">La medición de la iluminación se realiza utilizando un luxómetro y sigue un protocolo estandarizado. Se toman múltiples mediciones en puntos clave y se calcula la iluminancia media y mínima en función de estos datos.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/078.jpg">
+        </div>
+        
+        <p id="026" class="pregunta">Eficiencia de Lámparas y Luminarias</p>
+        <p class="respuesta">Para mejorar la iluminación en un ambiente que no cumple con los requisitos, se pueden considerar varias opciones. Una de ellas es la eficiencia de las lámparas, ya que diferentes tipos de lámparas tienen diferentes rendimientos luminosos. También se puede optimizar la disposición y cantidad de luminarias.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/079.jpg">
+        </div>
+        <p class="respuesta">Caso de ejemplo</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/080.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/081.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/082.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/083.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/084.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/085.jpg">
+        </div>
+        <p class="respuesta">Si la medición hubiese arrojado valores por debajo de los solicitados por la legislación, se pueden manejar diversas alternativas para adecuarse: el primero es la eficiencia de las lámparas, si son reemplazables por una alternativa que entregue mayor cantidad lúmenes / watt. O bien ver si por un tema de limpieza, ubicación, tipo de luminaria, se puede mejorar el CU. Pasando al diseño de instalaciones eléctricas, puede verse si puede aumentarse la cantidad de luminarias en el sector.</p>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div id="Tema-01-0">
+    <h2></h2>
+    <p id="" class="pregunta"></p>
+    <p class="respuesta"></p>
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="">
+    </div>
+</div-->

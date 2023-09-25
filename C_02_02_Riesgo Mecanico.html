@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Riesgo Mecanico">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Riesgo Mecanico</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_02_Riesgo Mecanico.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="tema">Ingenieria Industrial</p>
+    <p class="tema">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Riesgo mecanico</h1>
+    <div id="menu">
+        <img src="Icons/Menu.svg" title="Menu">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="dropdown"><a href="#Tema-01-00" onclick="smoothScroll(event, 'Tema-01-00')">00 - INTRODUCCION</a></li>
+                <li class="dropdown"><a href="#Tema-01-01" onclick="smoothScroll(event, 'Tema-01-01')">01 - AREAS DE RIESGO MECANICO</a></li>
+                <li class="dropdown"><a href="#Tema-01-02" onclick="smoothScroll(event, 'Tema-01-02')">02 - SITUACIONES PELIGROSAS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Situaciones Relacionadas con la Operación</a></li>
+                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Situaciones Relacionadas con la Interacción Humana</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-03" onclick="smoothScroll(event, 'Tema-01-03')">03 - CLASIFICACION DEL RIESGO MECANICO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Riesgo de Atrapamiento</a></li>
+                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Riesgo de Aplastamiento</a></li>
+                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Riesgo de Cizallamiento</a></li>
+                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Riesgo por Sólidos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-04" onclick="smoothScroll(event, 'Tema-01-04')">04 - ENFERMEDADES PROFESIONALES ASOCIADAS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Causas de Enfermedades Profesionales</a></li>
+                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Enfermedades Profesionales Relacionadas con el Riesgo Mecánico</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-05" onclick="smoothScroll(event, 'Tema-01-05')">05 - SEGURIDAD EN MAQUINAS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Resguardos</a></li>
+                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Dispositivos de Resguardo</a></li>
+                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Seguridad en Máquinas Eléctricas Manuales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgo en el trabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_Riesgo Mecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion..html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas">
+        <a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">01 - AREAS DE RIESGO MECANICO</a>
+        <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">02 - SITUACIONES PELIGROSAS</a>
+        <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03 - CLASIFICACION DEL RIESGO MECANICO</a>
+        <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04 - ENFERMEDADES PROFESIONALES ASOCIADAS</a>
+        <a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">05 - SEGURIDAD EN MAQUINAS</a>
+    </div>
+    <div id="Tema-01-00">
+        <h2>INTRODUCCION</h2>
+        <p class="respuesta">Los riesgos mecánicos son un conjunto de factores físicos que pueden resultar en lesiones o enfermedades profesionales debido a la acción mecánica de elementos como máquinas, herramientas, piezas a trabajar o materiales proyectados, ya sean sólidos o fluidos. Estos riesgos representan una preocupación importante en el ámbito laboral y requieren medidas de prevención y control para garantizar la seguridad de los trabajadores. En este contexto, la Ley N° 19.587 y el Decreto N° 351/79 establecen directrices para abordar estos riesgos en el entorno de trabajo.</p>
+    </div>
+    <div id="Tema-01-01">
+        <h2>AREAS DE RIESGO MECANICO</h2>
+        <p class="respuesta">Los riesgos mecánicos pueden manifestarse en una variedad de operaciones que implican la manipulación de herramientas, maquinaria, vehículos y dispositivos de elevación. Algunas de las áreas donde se pueden presentar riesgos mecánicos incluyen:</p>
+        <p class="respuesta">Herramientas Manuales: El uso de herramientas manuales, ya sean motorizadas o no, conlleva el riesgo de lesiones debido a la acción de corte, impacto o compresión. Esto incluye herramientas como sierras, martillos, destornilladores y más.</p>
+        <p class="respuesta">Maquinaria Industrial: Diversas máquinas industriales como fresadoras, lijadoras, tornos, taladros y prensas pueden causar lesiones si no se utilizan adecuadamente o si ocurren fallas en su funcionamiento.</p>
+        <p class="respuesta">Manipulación de Vehículos: La operación de vehículos dentro de un entorno laboral, como montacargas o vehículos industriales, puede exponer a los trabajadores a riesgos de choques, atropellos o vuelcos.</p>
+        <p class="respuesta">Dispositivos de Elevación: El uso de grúas, puentes grúa u otros dispositivos de elevación implica la manipulación de cargas pesadas, lo que puede generar riesgos de caídas de objetos o colisiones.</p>
+        <p class="respuesta">Para mitigar los riesgos mecánicos, es esencial implementar medidas de prevención y control. Algunas acciones importantes incluyen:</p>
+        <p class="respuesta">Proporcionar capacitación adecuada a los trabajadores sobre el uso seguro de herramientas y maquinaria.</p>
+        <p class="respuesta">Mantener y revisar regularmente la maquinaria y herramientas para asegurar su funcionamiento correcto.</p>
+        <p class="respuesta">Utilizar equipos de protección personal, como guantes, gafas de seguridad y cascos, para reducir el riesgo de lesiones.</p>
+        <p class="respuesta">Establecer procedimientos operativos seguros y prácticas de trabajo seguras.</p>
+        <p class="respuesta">Garantizar que los dispositivos de elevación se utilicen de acuerdo con las especificaciones y protocolos de seguridad.</p>
+        <p class="respuesta">Realizar inspecciones regulares para identificar y corregir posibles condiciones peligrosas.</p>
+    </div>
+
+    <div id="Tema-01-02">
+        <h2>SITUACIONES PELIGROSAS</h2>
+        <p class="respuesta">La seguridad en el entorno laboral es una prioridad fundamental para prevenir accidentes y proteger la salud de los trabajadores. Las situaciones peligrosas son circunstancias que, si no se manejan adecuadamente, pueden derivar en accidentes con consecuencias negativas. Es crucial identificar estas situaciones y tomar medidas preventivas para minimizar los riesgos. A continuación, se presentan algunas situaciones peligrosas comunes en el entorno laboral</p>
+
+        <p id="001" class="pregunta">Situaciones Relacionadas con la Operación</p>
+        <p class="respuesta">Material en Movimiento: La manipulación de materiales que están en movimiento puede causar atrapamientos, pellizcos o colisiones, lo que aumenta el riesgo de lesiones.</p>
+        <p class="respuesta">Máquinas y Herramientas: La operación de máquinas y herramientas sin el debido conocimiento y precaución puede llevar a cortes, aplastamientos o lesiones por proyección.</p>
+        <p class="respuesta">Transporte Mecánico: Utilizar vehículos industriales o de transporte mecánico sin las precauciones adecuadas puede resultar en colisiones, vuelcos o atropellos.</p>
+        <p class="respuesta">Partes en Movimiento: Elementos de maquinaria en movimiento, como poleas o engranajes, pueden atrapar objetos o extremidades, causando lesiones graves.</p>
+        <p class="respuesta">Caída de Objetos: Objetos que caen desde alturas pueden golpear a los trabajadores y causar lesiones en la cabeza, cuerpo o extremidades.</p>
+        <p class="respuesta">Elementos Punzocortantes o Contundentes: La exposición a objetos afilados, punzantes o contundentes puede causar heridas o traumatismos.</p>
+        <p class="respuesta">Superficies y Elementos Peligrosos: Superficies muy resbaladizas o ásperas aumentan el riesgo de caídas y resbalones.</p>
+        
+        <p id="002" class="pregunta">Situaciones Relacionadas con la Interacción Humana</p>
+        <p class="respuesta">Intervención Manual en el Punto de Operación: La manipulación manual cerca de puntos de operación de maquinaria puede causar atrapamientos o lesiones.</p>
+        <p class="respuesta">Fallo en la Comunicación entre Operarios: La falta de comunicación efectiva entre trabajadores puede resultar en acciones inseguras o colisiones.</p>
+        <p class="respuesta">Puesta en Marcha Imprevista: Iniciar maquinaria o equipos de manera imprevista puede atrapar objetos o extremidades.</p>
+        <p class="respuesta">Aproximación al Punto de Operación: Acercarse demasiado a partes en movimiento de la maquinaria aumenta el riesgo de atrapamientos.</p>
+        <p class="respuesta">Partes en Movimiento no Protegidas: Falta de protecciones en partes móviles de máquinas, exponiendo a los trabajadores a riesgos de atrapamiento.</p>
+        <p class="respuesta">Atrapamiento de Ropas, Objetos o Miembros: Elementos sueltos pueden quedar atrapados en maquinaria en movimiento.</p>
+        <p class="respuesta">Señalización Inexistente o Defectuosa: Una señalización inadecuada dificulta la identificación de riesgos.</p>
+        <p class="respuesta">Factores Ambientales y Personales: Elementos como ruido, iluminación inadecuada, prisa, estrés o factores personales pueden aumentar la probabilidad de accidentes.</p>
+    </div>
+    
+    <div id="Tema-01-03">
+        <h2>CLASIFICACION DEL RIESGO MECANICO</h2>
+        <p class="respuesta">Los riesgos mecánicos son una categoría importante de peligros en el entorno laboral, relacionados con la acción mecánica de maquinaria y objetos en movimiento. Estos riesgos pueden resultar en lesiones graves si no se toman medidas preventivas adecuadas. Aquí se presenta una clasificación de riesgos mecánicos junto con ejemplos de cada uno</p>
+
+        <p id="003" class="pregunta">Riesgo de Atrapamiento</p>
+        <p class="respuesta">Este riesgo ocurre cuando un miembro del cuerpo, como las manos, queda atrapado en partes en movimiento de maquinaria. Ejemplos incluyen:</p>
+        <p class="respuesta">Atrapamiento de manos en correas de transmisión.</p>
+        <p class="respuesta">Enredado de cabello en engranajes giratorios.</p>
+        <p class="respuesta">Atrapamiento de extremidades en cilindros de alimentación.</p>
+
+        <p id="004" class="pregunta">Riesgo de Aplastamiento</p>
+        <p class="respuesta">Este riesgo se presenta cuando dos objetos se mueven uno sobre otro, aplastando cualquier objeto o cuerpo atrapado entre ellos. Ejemplos incluyen:</p>
+        <p class="respuesta">Aplastamiento de dedos en puertas que se cierran.</p>
+        <p class="respuesta">Riesgo de quedar atrapado entre maquinaria y una pared.</p>
+        <p class="respuesta">Aplastamiento de pies bajo cargas pesadas.</p>
+
+        <p id="005" class="pregunta">Riesgo de Cizallamiento</p>
+        <p class="respuesta">Este riesgo se refiere a la acción de dos superficies que se deslizan una sobre la otra, cortando o pellizcando material en el proceso. Ejemplos incluyen:</p>
+        <p class="respuesta">Riesgo de amputación de dedos en máquinas de corte.</p>
+        <p class="respuesta">Cizallamiento de tejidos blandos entre partes móviles de maquinaria.</p>
+        <p class="respuesta">Acciones de corte en prensas y guillotinas.</p>
+
+        <p id="006" class="pregunta">Riesgo por Sólidos</p>
+        <p class="respuesta">Algunas máquinas expulsan partículas a alta velocidad, representando un peligro para los trabajadores. Ejemplos incluyen:</p>
+        <p class="respuesta">Proyección de fragmentos de material durante procesos de corte.</p>
+        <p class="respuesta">Expulsión de partículas metálicas de herramientas giratorias.</p>
+        <p class="respuesta">Salpicaduras de fluidos durante operaciones de maquinaria.</p>
+    </div>
+    
+    <div id="Tema-01-04">
+        <h2>ENFERMEDADES PROFESIONALES ASOCIADAS</h2>
+        <p class="respuesta">El riesgo mecánico en el entorno laboral no solo puede causar accidentes, sino que también puede dar lugar al desarrollo de enfermedades profesionales. Estas enfermedades son el resultado de la exposición continua a factores mecánicos que pueden afectar la salud de los trabajadores a lo largo del tiempo. A continuación, se describen algunas enfermedades profesionales relacionadas con el riesgo mecánico y las causas subyacentes</p>
+
+        <p id="007" class="pregunta">Causas de Enfermedades Profesionales</p>
+        <p class="respuesta">Ruido: La exposición constante a niveles elevados de ruido, como los producidos por maquinaria pesada, puede resultar en pérdida auditiva gradual o hipoacusia.</p>
+        <p class="respuesta">Vibraciones Mecánicas: La exposición prolongada a vibraciones de herramientas y maquinaria puede causar trastornos musculoesqueléticos y nerviosos, conocidos como "vibraciones mano-brazo" y "vibraciones cuerpo completo".</p>
+        <p class="respuesta">Posturas Forzadas: Mantener posturas incómodas durante largos periodos puede provocar trastornos musculoesqueléticos y lesiones en articulaciones.</p>
+        <p class="respuesta">Movimientos Repetitivos: Realizar movimientos repetitivos sin descanso adecuado puede dar lugar a afecciones como tendinitis y síndrome del túnel carpiano.</p>
+        <p class="respuesta">Compresiones sobre Correderas Anatómicas: Presión constante sobre áreas anatómicas, como muñecas y codos, puede causar inflamación y dolor crónico.</p>
+        <p class="respuesta">Fatiga Crónica: La fatiga constante debido a la realización de tareas repetitivas y demandantes puede afectar la salud general y aumentar el riesgo de lesiones.</p>
+
+        <p id="008" class="pregunta">Enfermedades Profesionales Relacionadas con el Riesgo Mecánico</p>
+        <p class="respuesta">Sorderas e Hipoacusias: La exposición continua a ruido intenso puede causar pérdida auditiva permanente.</p>
+        <p class="respuesta">Afecciones Musculoesqueléticas: Vibraciones y movimientos repetitivos pueden dar lugar a trastornos musculoesqueléticos, como artritis, osteítis y tendinitis.</p>
+        <p class="respuesta">Inflamaciones y Lesiones de Tejidos Blandos: Posturas forzadas y compresiones pueden resultar en inflamación de bolsas serosas, sinovitis y lesiones nerviosas por compresión.</p>
+        <p class="respuesta">Lesiones en Articulaciones y Ligamentos: Movimientos repetitivos y posturas forzadas pueden causar lesiones en los meniscos y arrancamientos apofisarios.</p>
+    </div>
+    
+    <div id="Tema-01-05">
+        <h2>SEGURIDAD EN MAQUINAS</h2>
+        <p class="respuesta">La seguridad en el entorno laboral, especialmente en el uso de máquinas y herramientas, es fundamental para prevenir accidentes y proteger la salud de los trabajadores. Para garantizar esta seguridad, se implementan diversas medidas y dispositivos de resguardo. A continuación, se presentan algunos conceptos clave relacionados con la seguridad en máquinas y herramientas:</p>
+        <p class="respuesta">Las medidas de seguridad en máquinas y herramientas se basan en una combinación de medidas tomadas durante la fase de diseño y construcción, así como en las medidas adoptadas por el usuario.</p>
+        <p class="respuesta">Las medidas adoptadas durante la fase de diseño son preferibles, ya que brindan una protección más efectiva que las medidas incorporadas por el usuario.</p>
+
+        <p id="009" class="pregunta">Resguardos</p>
+        <p class="respuesta">Los resguardos son elementos de máquinas diseñados para proteger a los trabajadores mediante barreras materiales.</p>
+        <p class="respuesta">Resguardo Fijo: Permanece en su posición de forma permanente mediante fijaciones. Puede ser en forma de envolvente o distanciador, según encierre completamente la zona peligrosa o la haga inaccesible por dimensiones y distancia.</p>
+        <p class="respuesta">Resguardo Móvil: Es articulado o guiado y puede abrirse sin herramientas para permitir acceso controlado a la zona peligrosa.</p>
+
+        <p id="010" class="pregunta">Dispositivos de Resguardo</p>
+        <p class="respuesta">Mando Sensitivo: Dispositivo que pone en marcha los elementos de la máquina mientras el órgano de accionamiento esté asociado.</p>
+        <p class="respuesta">Mando a Dos Manos: Requiere el accionamiento simultáneo de dos órganos de accionamiento para iniciar y mantener el funcionamiento de una máquina.</p>
+        <p class="respuesta">Dispositivo Sensible: Provoca la parada de una máquina cuando una persona o parte de su cuerpo rebasa un límite de seguridad.</p>
+        <p class="respuesta">Dispositivo Limitador: Impide que una máquina o sus elementos sobrepasen un límite establecido.</p>
+        <p class="respuesta">Mando de Marcha a Impulsos: Permite un desplazamiento limitado de un elemento de la máquina con cada accionamiento.</p>
+
+        <p id="011" class="pregunta">Seguridad en Máquinas Eléctricas Manuales</p>
+        <p class="respuesta">Los trabajadores que manejen herramientas deben ser entrenados.</p>
+        <p class="respuesta">No usar herramientas portátiles sin enchufe.</p>
+        <p class="respuesta">Revisar periódicamente los cables eléctricos y rechazar los deteriorados.</p>
+        <p class="respuesta">Evitar desconexiones bruscas.</p>
+        <p class="respuesta">Comprobar conexiones eléctricas como puesta a tierra, disyuntor y fusibles.</p>
+        <p class="respuesta">Usar elementos aislantes en locales húmedos.</p>
+        <p class="respuesta">Desconectar herramientas al cambiar el útil y al finalizar el trabajo.</p>
+        <p class="respuesta">Asegurarse de que los elementos cortantes estén bien afilados y los resguardos colocados.</p>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div id="Tema-01-0">
+    <h2></h2>
+    <p class="pregunta"></p>
+    <p class="respuesta"></p>
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="">
+    </div>
+</div-->

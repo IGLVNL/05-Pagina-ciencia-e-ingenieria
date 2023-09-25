@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, mecanizado con arranque de viruta, torneado, fresado, taladrado, rectificado">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Procesos de mecanizado con arranque de viruta</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_00_07_MCAV.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="tema">Ingenieria Industrial</p>
+    <p class="tema">Material de estudio</p>
+    <p id="materia" >Procesos industriales</p>
+    <h1 id="tema">Procesos de mecanizado con arranque de viruta</h1>
+    <div id="menu">
+        <img src="Icons/Menu.svg" title="Menu">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="dropdown"><a href="#Tema-01-00" onclick="smoothScroll(event, 'Tema-01-00')">Introduccion</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#001"  onclick="smoothScroll(event, '001')">Acción del corte y procesos de mecanizado</a></li>
+                        <li><a href="#002"  onclick="smoothScroll(event, '002')">Importancia comercial y tecnológica de las operaciones de mecanizado</a></li>
+                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Desventajas y consideraciones adicionales</a></li>
+                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Herramientas de corte</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-01" onclick="smoothScroll(event, 'Tema-01-01')">01- Formación de la viruta </a></li>
+                <li class="dropdown"><a href="#Tema-01-02" onclick="smoothScroll(event, 'Tema-01-02')">02- Maquinabilidad </a></li>
+                <li class="dropdown"><a href="#Tema-01-03" onclick="smoothScroll(event, 'Tema-01-03')">03- Teoría de torneado </a></li>
+                <li class="dropdown"><a href="#Tema-01-04" onclick="smoothScroll(event, 'Tema-01-04')">04- Fórmulas para torneado</a></li>
+                <li class="dropdown"><a href="#Tema-01-05" onclick="smoothScroll(event, 'Tema-01-05')">05- Códigos de insertos </a></li>
+                <li class="dropdown"><a href="#Tema-01-06" onclick="smoothScroll(event, 'Tema-01-06')">06- Selección de insertos </a></li>
+                <li class="dropdown"><a href="#Tema-01-07" onclick="smoothScroll(event, 'Tema-01-07')">07- Parámetros principales</a></li>
+                <li class="dropdown"><a href="#Tema-01-07" onclick="smoothScroll(event, 'Tema-01-07')">08- Ejemplo practico</a></li>
+                <li class="dropdown"><a href="#Tema-01-08" onclick="smoothScroll(event, 'Tema-01-08')">09- Fresado</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Características del proceso de fresado</a></li>
+                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Ventajas y desventajas del fresado</a></li>
+                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Selección de herramientas de fresado</a></li>
+                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Cálculos asociados al fresado</a></li>
+                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Tipos de fresas</a></li>
+                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Tipos de fresadoras</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-09" onclick="smoothScroll(event, 'Tema-01-09')">10- Taladrado</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Características del proceso de taladrado</a></li>
+                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Ventajas y desventajas del taladrado</a></li>
+                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Selección de herramientas de taladrado</a></li>
+                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Cálculos asociados al taladrado</a></li>
+                        <li><a href="#015"  onclick="smoothScroll(event, '015')">Tipos de brocas de taladrado</a></li>
+                        <li><a href="#016"  onclick="smoothScroll(event, '016')">Tipos de taladros</a></li>
+                        <li><a href="#017"  onclick="smoothScroll(event, '017')">Tipos de sistemas de sujeción</a></li>
+                        <li><a href="#018"  onclick="smoothScroll(event, '017')">Sujeción de piezas a taladrar</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-10" onclick="smoothScroll(event, 'Tema-01-10')">11- Rectificado</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#019"  onclick="smoothScroll(event, '019')">Características del proceso de rectificado</a></li>
+                        <li><a href="#020"  onclick="smoothScroll(event, '020')">Ventajas y desventajas del rectificado</a></li>
+                        <li><a href="#021"  onclick="smoothScroll(event, '021')">Selección de muelas abrasivas</a></li>
+                        <li><a href="#022"  onclick="smoothScroll(event, '022')">Desgaste de las muelas y diamantado</a></li>
+                        <li><a href="#023"  onclick="smoothScroll(event, '023')">Cálculos asociados al rectificado</a></li>
+                        <li><a href="#024"  onclick="smoothScroll(event, '024')">Tipos de rectificado</a></li>
+                        <li><a href="#025"  onclick="smoothScroll(event, '025')">Tipos de rectificadoras</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_00_procesos_industriales.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_00_01_diseño%20de%20layout.html">01- DISEÑO DE LAYOUT</a></li>
+                <li class="dropdown-2"><a href="C_00_02_Sistema%20de%20tolerancias.html">02- TOLERANCIAS</a></li>
+                <li class="dropdown-2"><a href="C_00_03_Instrumentos%20de%20medicion.html">03- INSTRUMENTOS DE MEDICION</a></li>
+                <li class="dropdown-2"><a href="C_00_04_Control%20estadistico%20de%20proceso.html">04- CONTROL ESTADISTICO DE PROCESOS (CEP)</a></li>
+                <li class="dropdown-2"><a href="C_00_05_Proceso%20productivo-Hoja%20de%20ruta.html">05- PROCESO PRODUCTIVO - HOJA DE RUTA</a></li>
+                <li class="dropdown-2"><a href="C_00_06_MSAV.html">06- PROCESOS DE MECANIZADO SIN ARRANQUE DE VIRUTA (MSAV)</a></li>
+                <li class="dropdown-2"><a href="C_00_07_MCAV.html">07- PROCESOS DE MECANIZADO CON ARRANQUE DE VIRUTA (MCAV)</a></li>
+                <li class="dropdown-2"><a href="C_00_08_CNC.html">08- CNC</a></li>
+                <li class="dropdown-2"><a href="C_00_09_Industria%20alimenticia.html">09- INDUSTRIA ALIMENTICIA</a></li>
+                <li class="dropdown-2"><a href="C_00_10_Recubrimientos.html">10- RECUBRIMIENTOS</a></li>
+                <li class="dropdown-2"><a href="C_00_11_Industrias%20petroquimicas.html">11- INDUSTRIAS PETROQUIMICAS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas">
+        <a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">01- FORMACION DE LA VIRUTA</a>
+        <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">02- MAQUINABILIDAD</a>
+        <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03- TEORIA DE TORNEADO</a>
+        <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04- FORMULAS DE TORNEADO</a>
+        <a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">05- CODIGOS DE INSERTOS</a>
+        <a href="#Tema-01-06" class="boton" onclick="smoothScroll(event, 'Tema-01-06')">06- SELECCION DE INSERTOS</a>
+        <a href="#Tema-01-07" class="boton" onclick="smoothScroll(event, 'Tema-01-07')">07- PARAMETROS PRINCIPALES</a>
+        <a href="#Tema-01-08" class="boton" onclick="smoothScroll(event, 'Tema-01-08')">08- EJEMPLO PRACTICO</a>
+        <a href="#Tema-01-09" class="boton" onclick="smoothScroll(event, 'Tema-01-09')">09- FRESADO</a>
+        <a href="#Tema-01-10" class="boton" onclick="smoothScroll(event, 'Tema-01-10')">10- TALADRADO</a>
+        <a href="#Tema-01-11" class="boton" onclick="smoothScroll(event, 'Tema-01-11')">11- RECTIFICADO</a>
+    </div>
+
+    <div id="Tema-01-00">
+        <h2>INTRODUCCION</h2>
+        <p class="respuesta">Los procesos de remoción de material son una familia de operaciones de formado en las que se elimina el material sobrante de una pieza de trabajo inicial de tal manera que queda la forma final deseada. El mecanizado, también llamado maquinado, es un proceso de manufactura en el que una herramienta de corte se utiliza para remover el exceso de material de una pieza en bruto. El mecanizado es el proceso de formación de viruta, donde el objetivo final es cortar el metal para obtener una determinada forma y tamaño. Permite obtener características de formas y terminaciones particulares.</p>
+
+        <p id="001" class="pregunta">Acción de corte y procesos de mecanizado</p>
+        <p class="respuesta">Durante el mecanizado, la acción predominante es la deformación cortante del material de trabajo para formar la viruta. Al removerse la viruta, queda expuesta una nueva superficie. El mecanizado se aplica principalmente para formar metales. Los tres procesos principales de mecanizado son el torneado, el taladrado/agujereado y el fresado. También existen otras operaciones de mecanizado como el perfilado, el cepillado, el escariado y el aserrado. Además, existen otros procesos de remoción de material como el proceso abrasivo, que remueve el material mediante partículas abrasivas duras, y los procesos no tradicionales o avanzados, que utilizan otras formas de energía aparte de la herramienta de corte agudo o de partículas abrasivas.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/1-%20tipos%20de%20procesos.png">
+        </div>
+
+        <p id="002" class="pregunta">Importancia comercial y tecnológica de las operaciones de mecanizado</p>
+        <p class="respuesta">Las operaciones de mecanizado tienen importancia comercial y tecnológica debido a varias razones. En primer lugar, permiten trabajar una amplia gama de materiales, incluyendo metales, plásticos y compuestos. Además, el mecanizado puede generar cualquier forma geométrica regular y también formas geométricas irregulares mediante variaciones en las trayectorias y formas de las herramientas. El mecanizado también ofrece precisión dimensional, pudiendo producir dimensiones con tolerancias muy estrechas. Por último, el mecanizado es capaz de crear acabados superficiales de calidad, incluso mejores que 0.4 micras.</p>
+
+        <p id="003" class="pregunta">Desventajas y consideraciones adicionales</p>
+        <p class="respuesta">Aunque el mecanizado tiene numerosas ventajas, también presenta algunas desventajas. Una de ellas es el desperdicio de material, ya que la viruta removida se considera un desperdicio. Además, el mecanizado tiende a tomar más tiempo en comparación con otros procesos de formado, como el fundido o el forjado. Por estas razones, el mecanizado se suele realizar después de otros procesos de manufactura, ya que estos crean la forma general de la pieza y el mecanizado se encarga de obtener la forma final, dimensiones y acabado.</p>
+
+        <p id="004" class="pregunta">Herramientas de corte</p>
+        <p class="respuesta">Una herramienta de corte tiene uno o más filos cortantes y está hecha de un material más duro que el material de trabajo. El filo cortante se utiliza para separar la viruta del material de trabajo. Existen tres formas posibles de falla en una herramienta de corte: fractura, falla por temperatura y desgaste gradual del filo de corte. Las herramientas de corte deben poseer propiedades como tenacidad, dureza en caliente y resistencia al desgaste. Los materiales más comunes utilizados para herramientas de corte son los aceros de alta velocidad y los carburos cementados. A lo largo de la historia, se han desarrollado nuevos materiales y técnicas, como los recubrimientos CVD, que han permitido aumentar la velocidad de corte y mejorar la eficiencia del mecanizado.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/2-%20herr%20corte.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/2-%20herr%20corte%2000.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/3-%20desgaste%20herramienta.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/4-%20herr%20temp.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/4-%20herr%20temp%2000.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/4-%20herr%20tiemp.png">
+        </div>
+    </div>
+
+    <div id="Tema-01-01">
+        <h2>FORMACION DE LA VIRUTA</h2>
+        <p class="respuesta">La formación de viruta es un proceso que ocurre durante el corte ortogonal, el cual es un modelo simplificado del maquinado. En este modelo, se utiliza una herramienta en forma de cuña, donde el borde cortante es perpendicular a la dirección de la velocidad de corte (vc). La herramienta está formada por dos caras: la superficie/plano de ataque, corte o desprendimiento (A) y la superficie/plano de incidencia (B). Estas dos superficies forman respectivamente con la normal y la tangente a la superficie mecanizada, el ángulo de ataque o desprendimiento (gn) y el ángulo de incidencia (a). El ángulo de filo (b) de la cuña sólida queda delimitado entre ambos. Estos ángulos dependen del material a mecanizar, del material de la herramienta y del tipo de operación de mecanizado a realizar (torneado, agujereado, fresado, etc.).</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/5-%20viruta.png">
+        </div>
+        <p class="respuesta">Durante el proceso de corte, al presionar la herramienta contra el material, se forma viruta por deformación cortante a lo largo del plano de corte. Únicamente el borde afilado de corte de la herramienta hace que ocurra la falla del material, y como resultado, la viruta se separa del material original. El material se deforma plásticamente a lo largo del plano de corte, donde se consume la mayor parte de la energía mecánica en el maquinado. La geometría de la herramienta y las condiciones de corte juegan un papel importante en el proceso de formación de viruta.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/6-%20rotura%20viruta.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/6-%20rotura%20viruta%2000.png">
+        </div>
+        <p class="respuesta">En cuanto a la temperatura en la zona de corte, casi toda la energía que se consume en el maquinado se convierte en calor, aproximadamente el 98%. Esto puede resultar en temperaturas muy altas en la interfaz herramienta-viruta, llegando comúnmente por encima de los 600 °C. El 2% restante de la energía se retiene como energía elástica en la viruta. La disipación del calor generado en la zona de corte se distribuye de la siguiente manera: el 80% en la viruta, el 10% en la herramienta y el 10% en la pieza. Las temperaturas de corte son importantes ya que las elevadas temperaturas pueden reducir la vida útil de la herramienta, generar viruta caliente que representa riesgos para el operador y provocar imprecisiones en las dimensiones de la pieza de trabajo debido a la expansión térmica del material de trabajo.</p>
+    </div>
+
+
+    <div id="Tema-01-02">
+        <h2>MAQUINABILIDAD</h2>
+        <p class="respuesta">La maquinabilidad se refiere a la habilidad del material de la pieza para ser mecanizado, es decir, la facilidad con la que el material puede ser cortado por una herramienta de corte. No existe una definición o estandarización precisa de la maquinabilidad, pero generalmente se considera como la capacidad del material para ser cortado. Por ejemplo, un acero de contenido medio de carbono es más fácil de mecanizar que una aleación resistente al calor, y una fundición gris es más fácil que una fundición de coquilla. Sin embargo, el concepto de maquinabilidad es ambiguo y difícil de medir en valores comparativos debido a los diferentes métodos, circunstancias y herramientas de corte disponibles.</p>
+        <p class="respuesta">Diversos factores afectan la maquinabilidad, como la metalurgia, la química, la mecánica, el tratamiento, los aditivos, las inclusiones y el estado superficial del material de la pieza, así como la arista de corte, el portaherramientas, la máquina herramienta, la operación y las condiciones de mecanizado. Los valores de maquinabilidad para los materiales solo pueden servir como una guía inicial y deben considerarse en función de la optimización futura.</p>
+        <p class="respuesta">La maquinabilidad de un material se analiza desde el punto de vista operacional de la herramienta de corte y se evalúa en términos de la vida útil de la herramienta, la formación de viruta, el acabado superficial, la capacidad de arranque de metal, la fuerza de corte y la tendencia al desgaste del filo. La evaluación de la maquinabilidad puede realizarse mediante pruebas frecuentes de mecanizado y la combinación de datos sobre materiales a mecanizar.</p>
+        <p class="respuesta">Los materiales utilizados en el mecanizado se dividen en seis grupos principales según la norma ISO 513, y cada grupo presenta características únicas en cuanto a su maquinabilidad. Estos grupos son: acero, acero inoxidable, fundición, aleaciones resistentes al calor, aluminio, aceros duros y titanio. La maquinabilidad de un material depende de múltiples variables, como la calidad del material, la geometría de la herramienta, las condiciones de corte, etc.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/7-%20materiales%20a%20cortar.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/7-%20materiales%20a%20cortar%2000.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/7-%20materiales%20a%20cortar%2001.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/7-%20materiales%20a%20cortar%2002.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/7-%20materiales%20a%20cortar%2003.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/7-%20materiales%20a%20cortar%2004.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/7-%20materiales%20a%20cortar%2005.png">
+        </div>
+        <p class="respuesta">La fuerza específica de corte (kc) es el esfuerzo cortante necesario para cortar una sección transversal específica de viruta en condiciones definidas. Este valor es altamente dependiente del material y puede variar según el espesor de la viruta sin deformar. Se utilizan diagramas y manuales de fabricantes de herramientas de corte para obtener valores aproximados de la fuerza específica de corte.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/9-%20kc%20segun%20materiales.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/9-%20kc%20segun%20materiales%2000.png">
+        </div>
+    </div>
+
+
+    <div id="Tema-01-03">
+        <h2>TEORIA DE TORNEADO</h2>
+        <p class="respuesta">El torneado es un proceso de mecanizado que se utiliza para generar formas cilíndricas en piezas mediante el uso de herramientas de un solo punto de corte. Se basa en dos movimientos principales: la rotación de la pieza y el avance de la herramienta.</p>
+        <p class="respuesta">El movimiento de avance de la herramienta puede ser paralelo al eje de rotación de la pieza, lo que resulta en una reducción del diámetro de la pieza (cilindrado). También es posible que la herramienta avance hacia el centro de la pieza (refrentado) en el extremo de la pieza. En muchos casos, el avance es una combinación de estas dos direcciones, lo que resulta en una superficie cónica o curvada (perfilado).</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/10-%20parametros%20torneado.png">
+        </div>
+        <p class="respuesta">El control numérico utilizado en los tornos modernos permite abordar las múltiples posibilidades de mecanizado de piezas rectas o redondas. Los tornos de control numérico ofrecen un control eficiente del filo de corte, reemplazando el antiguo concepto de copiado y permitiendo el uso de herramientas con formas específicas.</p>
+        <p class="respuesta">El torneado es considerado uno de los métodos de corte más directos y con definiciones relativamente simples. Es ampliamente utilizado y ha facilitado su propio desarrollo a lo largo del tiempo. Sin embargo, a pesar de ser una operación con un solo filo de corte, el proceso de torneado puede variar en términos de la forma de la herramienta, el material, el tipo de operación, las condiciones y los requisitos, lo que implica una serie de factores a considerar al elegir las herramientas de corte.</p>
+        <p class="respuesta">Hoy en día, las herramientas de torneado están cuidadosamente diseñadas en función de décadas de experiencia, investigación y desarrollo. Desde la microgeometría y los materiales hasta su implementación en el trabajo, pasando por la forma básica y sujeción de las plaquitas intercambiables mediante portaplaquitas, tipo de mango o modulares, las herramientas de torneado utilizan la dinámica de las herramientas de corte modernas de una manera que habría sido impensable hace unas décadas.</p>
+        <p class="respuesta">El torneado es un método eficiente y flexible para mecanizar piezas redondas en una amplia variedad de tamaños y materiales utilizando herramientas de un solo punto. Existen varios tipos básicos de operaciones que requieren herramientas específicas para llevar a cabo la operación de la manera más eficiente. En esta asignatura nos centraremos en el torneado exterior.</p>
+        <p class="respuesta">En el torneado, la pieza gira en el torno a una velocidad determinada del husillo (n), medida en revoluciones por minuto (rpm). La velocidad de corte (vc) es la velocidad superficial a la que se desplaza la herramienta por la superficie de la pieza. La velocidad de corte se calcula en función del diámetro a mecanizar (Dm), la constante pi (π) y la velocidad del husillo (n).</p>
+        <p class="respuesta">El avance por revolución (fn) es el movimiento de la herramienta en relación a la pieza que está girando. La profundidad de corte (ap) es la mitad de la diferencia entre el diámetro sin cortar y el diámetro cortado de la pieza. El ángulo de posición (Kr) es el ángulo formado por el filo de corte y la dirección de avance. Estos parámetros son fundamentales para definir las condiciones de corte y la calidad de la operación.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/11-%20angulo%20posi.png">
+        </div>
+        <p class="respuesta">Las fuerzas de corte durante el torneado se descomponen en fuerza tangencial (FC), fuerza axial (Ff) y fuerza radial (FP). Estas fuerzas están relacionadas con la geometría de la herramienta, el contacto entre la viruta y la cara de desprendimiento, el material de la herramienta y otros factores.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/12-%20fuerzas.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/12-%20fuerzas%2000.png">
+        </div>
+        <p class="respuesta">El torneado implica el arranque de material del diámetro superficial de la pieza con una herramienta de un solo punto de corte. El tamaño de las fuerzas de corte y la potencia consumida dependen de varios factores, como el material de la pieza, la geometría de la herramienta, la velocidad de corte y el avance. </p>
+    </div>
+
+
+    <div id="Tema-01-04">
+        <h2>FORMULAS PARA TORNEADO</h2>
+        <p class="respuesta">Para realizar los cálculos relacionados con el torneado, se utilizan fórmulas que involucran parámetros como la velocidad del husillo, la velocidad de corte, la potencia consumida, el volumen de viruta, la velocidad de avance y el tiempo de corte. Estas fórmulas permiten determinar los valores óptimos para cada operación de torneado.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/13-%20formulas.png">
+        </div>
+    </div>
+
+
+    <div id="Tema-01-05">
+        <h2>CODIGOS DE INSERTOS</h2>
+        <p class="respuesta">Existen innumerables insertos de corte, llamados también plaquitas, para el mecanizado: triangulares, circulares, cuadrados, en forma de diamante, de metal duro recubierto, sin recubrir, de acero rápido, etc. Para clasificar estos insertos de corte según distintos criterios, existe la norma ISO 1832. A continuación, resumiremos la metodología propuesta por dicha norma:</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/14-%20codigo%20placas.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/14-%20codigo%20placas%2000.png">
+        </div>
+        <p class="respuesta">La geometría de los insertos de corte puede variar y se describen mediante diferentes formas como cuadrados, pentágonos, hexágonos, círculos, paralelogramos, diamantes, rectángulos, octógonos, entre otros. La primera letra del código indica la geometría y también incluye el ángulo de la cara con respecto a la horizontal.</p>
+        <p class="respuesta">El ángulo de incidencia es el ángulo por el cual el inserto arranca la viruta. Junto con los ángulos de filo y de ataque, ayuda a reducir la fricción contra el material.</p>
+        <p class="respuesta">La tolerancia se refiere a la variación permitida en diferentes medidas del inserto, como el espesor, el círculo inscrito y el ancho. Se clasifica como "G" para tolerancia más gruesa, "E" para tolerancia más fina, y "M" y "U" para tolerancias medias. Generalmente, se expresa como una tolerancia mínima y máxima, en la forma de ± 0,xxx mm.</p>
+        <p class="respuesta">El tipo de plaquita se indica mediante una letra que muestra la presencia de agujeros (con o sin avellanado) para sujetar el inserto al portaherramientas, así como la presencia de rompevirutas. Los rompevirutas se utilizan para controlar y romper las virutas durante el proceso de torneado.</p>
+        <p class="respuesta">El tamaño de la plaquita se representa con un número de dos cifras que indica la longitud del filo de corte en milímetros. El grosor de la plaquita se expresa mediante un código numérico que indica el espesor del inserto, siendo mayor el espesor relacionado con mayor resistencia mecánica.</p>
+        <p class="respuesta">El radio de punta se refiere a la forma en la punta de corte y puede representarse con un número entero o una letra. Esto se especifica principalmente si el inserto está diseñado para tornos.</p>
+        <p class="respuesta">Finalmente, el fabricante puede agregar símbolos adicionales al código para identificar la geometría de la plaquita, como -PF para ISO P de acabado y -MR para ISO M de desbaste, por ejemplo.</p>
+    </div>
+
+
+    <div id="Tema-01-06">
+        <h2>SELECCION DE INSERTOS</h2>
+        <p class="respuesta">El objetivo de esta unidad es comprender cómo seleccionar un inserto para el mecanizado de una pieza, especialmente en el proceso de torneado exterior, de manera que sea adecuado y productivo.</p>
+        <p class="respuesta">Se plantea la pregunta de si un problema de mecanizado tiene una única solución, y la respuesta es NO. Sin embargo, se traza un camino a seguir para abordar el proceso de selección.</p>
+        <p class="respuesta">El punto de partida es el plano de fabricación, donde se encuentra información sobre la forma de la pieza, el material utilizado, propiedades mecánicas como la dureza o resistencia a la tracción, y las tolerancias requeridas, como la rugosidad.</p>
+        <p class="respuesta">Existen condicionantes a tener en cuenta, como la máquina-herramienta utilizada. Esta máquina tiene una capacidad de mecanizado, que en el caso de un torno se refiere al diámetro y longitud máximos de la pieza, y una potencia de husillo que puede limitar las condiciones de corte.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/15-%20planificacion.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/15-%20planificacion%2000.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/15-%20planificacion%2001.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/15-%20planificacion%2002.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/15-%20planificacion%2003.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/15-%20planificacion%2004.png">
+        </div>
+    </div>
+
+
+    <div id="Tema-01-07">
+        <h2>PARAMETROS PRINCIPALES</h2>
+        <p class="respuesta">Los parámetros a considerar para la selección de una herramienta de corte en el proceso de torneado son los siguientes: </p>
+        <p class="respuesta"><i><U>Sistema de sujeción:</U></i> El sistema de sujeción utilizado afectará la estabilidad y precisión de la herramienta de corte. Los sistemas mecánicos, hidráulicos u otros tipos de sujeción deben ser compatibles con el portaherramientas o la torreta del torno. La elección del sistema de sujeción dependerá de la aplicación, la rigidez requerida y las capacidades de la máquina. </p>
+        <p class="respuesta"><i><U>Sistema de sujeción rígido:</U></i> Este sistema se basa en una configuración robusta y resistente para asegurar la herramienta de corte de manera firme y estable. Generalmente, este tipo de sistema utiliza una combinación de elementos como tornillos, pernos o abrazaderas para sujetar la herramienta en su posición. El objetivo principal de este sistema es proporcionar una sujeción sólida y resistente a las fuerzas de corte y vibraciones generadas durante el mecanizado.</p>
+        <p class="respuesta"><i><U>Sistema de sujeción por palanca:</U></i> Este tipo de sistema utiliza una palanca para asegurar la herramienta de corte en su posición. Consiste en un mecanismo de sujeción con una palanca que se puede accionar manualmente. Al accionar la palanca, se aplica una fuerza de sujeción que asegura la herramienta en su lugar. Este sistema es rápido y conveniente de usar, ya que permite un cambio rápido de herramientas sin la necesidad de herramientas adicionales. Sin embargo, la fuerza de sujeción puede depender de la fuerza aplicada manualmente, lo que puede resultar en una sujeción menos estable en comparación con otros sistemas.</p>
+        <p class="respuesta"><i><U>Sistema de sujeción por tornillo:</U></i> Este sistema utiliza un tornillo para asegurar la herramienta de corte en su posición. Consiste en un tornillo que se aprieta manualmente para fijar la herramienta en su lugar. Al girar el tornillo, se genera una fuerza de sujeción que mantiene la herramienta en su posición. Este sistema ofrece una sujeción más segura y estable en comparación con el sistema de palanca, ya que el tornillo permite un mayor control y aplicación de fuerza. Sin embargo, el proceso de apriete y afloje del tornillo puede llevar más tiempo en comparación con el sistema de palanca.</p>
+        <p class="respuesta"><i><U>Sistema de sujeción por tornillo iLock:</U></i> Este sistema es una variante mejorada del sistema de sujeción por tornillo convencional. Utiliza un tornillo con una cabeza especial iLock que proporciona una sujeción más segura y rápida. El tornillo iLock tiene una forma específica en su cabeza que encaja en una ranura correspondiente en el portaherramientas. Al apretar el tornillo iLock, se genera una fuerza de sujeción que asegura firmemente la herramienta de corte en su posición. Este sistema ofrece una sujeción robusta y confiable, con la ventaja de un cambio rápido de herramientas. Además, proporciona una mayor estabilidad y rigidez durante el mecanizado.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/16-%20sist%20suj.png">
+        </div>
+        <p class="respuesta"><i><U>Tamaño y tipo de portaplacas:</U></i> El tamaño y diseño del portaherramientas que sostiene la placa de corte deben ser adecuados para la máquina y el tipo de placa que se utilizará. Es esencial asegurarse de que el portaherramientas sea compatible con la máquina y proporcione la estabilidad necesaria durante el mecanizado. El tipo de portaplacas puede variar según el sistema de sujeción y el diseño de la herramienta.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/17-%20tamaño%20y%20tipo%20de%20portaplacas.png">
+        </div>
+        <p class="respuesta"><i><U>Forma de la placa:</U></i> La forma de la placa de corte depende de la aplicación específica y el tipo de corte deseado. Las placas de corte están disponibles en diferentes formas, como cuadradas, triangulares, redondas, etc. La elección de la forma dependerá de factores como la accesibilidad a la pieza, el tipo de mecanizado y las restricciones de la geometría de la pieza.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/18-%20forma%20de%20la%20placa.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/18-%20forma%20de%20la%20placa%2000.png">
+        </div>
+        <p class="respuesta"><i><U>Tamaño de la placa:</U></i> El tamaño de la placa de corte se refiere a sus dimensiones físicas, como longitud, ancho y espesor. El tamaño de la placa debe ser compatible con el portaherramientas y la máquina utilizada. Un tamaño adecuado garantizará un soporte estable de la placa y un rendimiento óptimo durante el mecanizado.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/19-%20K%20y%20ang.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/20-%20long%20ef.png">
+        </div>
+        <p class="respuesta"><i><U>Radio de punta:</U></i> El radio de punta en la placa de corte puede ser importante en ciertas aplicaciones de mecanizado, ya que afecta la forma y calidad del acabado de la superficie. Un radio de punta más grande se utiliza para mecanizados de acabado y puede ayudar a reducir las marcas de corte en la pieza. Por otro lado, un radio de punta más pequeño es adecuado para mecanizados de desbaste o cuando se requiere un mayor control de viruta.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/21-%20rad%20punt.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/21-%20rad%20punt%2000.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/21-%20rad%20punt%2001.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/21-%20rad%20punt%2002.png">
+        </div>
+        <p class="respuesta"><i><U>Tipo de placa:</U></i> El tipo de placa de corte se refiere al material y recubrimiento utilizado en su fabricación. Los tipos comunes de placas de corte incluyen metal duro, cerámica, cermet, entre otros. La elección del tipo de placa dependerá de las características del material a mecanizar, las condiciones de corte y la vida útil requerida de la herramienta. Cada tipo de placa tiene propiedades específicas de dureza, resistencia al desgaste, resistencia térmica y capacidad de corte, lo que las hace adecuadas para diferentes aplicaciones.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/22-%20tipo%20de%20placa.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/23-%20forma%20de%20la%20viruta.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/23-%20forma%20de%20la%20viruta%2000.png">
+        </div>
+        <p class="respuesta"><i><U>Material de la placa:</U></i> El material de la placa de corte puede ser carburo de tungsteno, cerámica, cermet, acero de alta velocidad, entre otros. La elección del material de la placa dependerá del tipo de material a mecanizar y las condiciones de corte. Por ejemplo, el carburo de tungsteno es ampliamente utilizado debido a su alta resistencia y dureza, mientras que las placas de cerámica son adecuadas para el mecanizado de alta velocidad y materiales difíciles de mecanizar.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/24-%20material%20de%20la%20placa.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/24.5.2-%20material%20de%20la%20placa.png">
+        </div>
+        <p class="respuesta"><i><U>Datos de corte:</U></i> Los parámetros de corte específicos, como la velocidad de corte, la velocidad de avance, la profundidad de corte y la tasa de remoción de material, son fundamentales al seleccionar la herramienta de corte. Estos datos de corte se determinan en función del material a mecanizar, la geometría de la pieza y otras condiciones de mecanizado. Estos parámetros deben ajustarse adecuadamente para garantizar una operación eficiente y obtener el rendimiento deseado de la herramienta.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/24.5-%20vel%20corte.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/25-%20vel%20corte%20dureza.png">
+        </div>
+    </div>
+
+
+    <div id="Tema-01-08">
+        <h2>EJEMPLO PRÁCTICO</h2>
+        <p class="respuesta">1-	Revisión del plano de la pieza</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/26-%20plano.png">
+        </div>
+        <p class="respuesta">2-	Según la operación se selecciona el portaplacas y la forma de la placa</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/27-%20placa%20y%20portaplaca.png">
+        </div>
+        <p class="respuesta">3-	Calculo de la longitud efectiva de corte</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/28-%20long%20efec.png">
+        </div>
+        <p class="respuesta">4-	Selección del tamaño de la placa</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/28-%20long%20efec%2000.png">
+        </div>
+        <p class="respuesta">5-	Ingresar al catálogo de insertos con el material de la pieza a mecanizar</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/30-%20seleccion%20de%20insert.png">
+        </div>
+        <p class="respuesta">6-	Verificación de rugosidades</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/31-%20cond%20rug.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/29-%20tabla%20rug.png">
+        </div>
+        <p class="respuesta">7-	Selección del Kc según el material a mecanizar</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/32-%20kc.png">
+        </div>
+        <p class="respuesta">8-	Corrección de la velocidad de corte según dureza y tiempo de vida útil de la herramienta.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/33-%20correccion%20Vc%20y%20Kc.png">
+        </div>
+        <p class="respuesta">9-	Calculo de los demás parámetros del mecanizado (Potencia consumida, tiempo de mecanizado, etc.)</p>
+    </div>
+
+    <div id="Tema-01-09">
+        <h2>FRESADO</h2>
+        <p class="respuesta">El fresado es un proceso de mecanizado en el cual una herramienta de corte rotativa, llamada fresa, que se utiliza para eliminar material de una pieza de trabajo. La fresa gira mientras se desplaza a través de la pieza de trabajo, creando cortes y generando una variedad de formas, como ranuras, superficies planas, perfiles y roscas. Este proceso se utiliza ampliamente en la industria para fabricar componentes con precisión dimensional, acabado superficial y formas complejas.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2000.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2001.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2002.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2003.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2004.png">
+        </div>
+        
+        <p id="005" class="pregunta">Características del proceso de fresado</p>
+        <p class="respuesta"><i><U>Remoción de material:</U></i> Durante el fresado, los dientes de la fresa cortan el material de la pieza de trabajo en un movimiento rotativo. La remoción del material se realiza en pequeños fragmentos, conocidos como virutas.</p>
+        <p class="respuesta"><i><U>Movimiento relativo:</U></i> La fresa se mueve en relación con la pieza de trabajo en dos direcciones principales: axialmente (a lo largo del eje de la fresa) y radialmente (en dirección perpendicular al eje de la fresa). Este movimiento relativo permite realizar operaciones como fresado frontal, periférico, de contorno, entre otros.</p>
+        <p class="respuesta"><i><U>Versatilidad:</U></i> El fresado es un proceso versátil que se puede utilizar para producir una amplia gama de formas y características en una pieza de trabajo. Puede utilizarse para crear superficies planas, ranuras, perfiles complejos, roscas, contornos, cavidades y otros elementos geométricos.</p>
+        <p class="respuesta"><i><U>Alta precisión:</U></i> El fresado es capaz de producir piezas con tolerancias estrechas y acabados superficiales de alta calidad. Esto se logra mediante el uso de herramientas de corte de alta precisión y la configuración adecuada de los parámetros de corte.</p>
+        
+        <p id="006" class="pregunta">Ventajas y desventajas del fresado</p>
+        <p class="respuesta">Ventajas:</p>
+        <p class="respuesta"><i><U>Versatilidad para producir piezas de geometría compleja:</U></i> El fresado permite la fabricación de piezas con formas y características diversas, lo que lo convierte en un proceso altamente versátil.</p>
+        <p class="respuesta"><i><U>Alta precisión y calidad superficial:</U></i> Las herramientas de fresado de alta precisión y la posibilidad de controlar los parámetros de corte permiten obtener piezas con tolerancias estrechas y acabados superficiales de alta calidad.</p>
+        <p class="respuesta"><i><U>Eficiencia en la remoción de material:</U></i> El fresado es un proceso eficiente para la remoción de grandes volúmenes de material en comparación con otros métodos, como el torneado.</p>
+        <p class="respuesta"><i><U>Amplia gama de materiales puede ser fresada:</U></i> El fresado es aplicable a una variedad de materiales, incluyendo metales, plásticos, composites y madera, lo que lo hace adecuado para diferentes industrias.</p>
+        <p class="respuesta"><i><U>Posibilidad de automatización y programación CNC:</U></i> El fresado se puede realizar en máquinas CNC (Control Numérico por Computadora), lo que permite una mayor precisión, repetibilidad y productividad.</p>
+        <p class="respuesta">Desventajas:</p>
+        <p class="respuesta"><i><U>Requiere maquinaria especializada y herramientas específicas:</U></i> El fresado requiere el uso de fresadoras, que son máquinas especializadas, y herramientas de fresado diseñadas para cada tipo de operación.</p>
+        <p class="respuesta"><i><U>Mayor inversión inicial en equipos:</U></i> El costo de adquirir una fresadora y las herramientas correspondientes puede ser significativo, especialmente para pequeñas empresas o talleres.</p>
+        <p class="respuesta"><i><U>Puede generar vibraciones y ruido durante el proceso:</U></i> El fresado de piezas grandes o con geometrías complicadas puede generar vibraciones que afectan la calidad del mecanizado y generar ruido en el entorno de trabajo.</p>
+        <p class="respuesta"><i><U>Requiere conocimientos técnicos:</U></i> Para configurar y operar una fresadora de manera eficiente, se requiere conocimiento y experiencia en la selección de herramientas, parámetros de corte, sujeción de piezas, entre otros aspectos técnicos.</p>
+        
+        <p id="007" class="pregunta">Selección de herramientas de fresado</p>
+        <p class="respuesta">La selección adecuada de la herramienta de fresado es fundamental para obtener resultados óptimos. Al elegir una herramienta de fresado, se deben considerar los siguientes factores:</p>
+        <p class="respuesta"><i><U>Material de la pieza de trabajo:</U></i> La selección de la herramienta se basa en las propiedades del material a mecanizar, como la dureza, la tenacidad y la abrasividad. Algunos materiales comunes incluyen acero, aluminio, acero inoxidable, plásticos, entre otros.</p>
+        <p class="respuesta"><i><U>Tipo de operación:</U></i> La herramienta debe ser adecuada para la operación específica que se desea realizar, como fresado frontal, periférico, de contorno, ranurado, etc.</p>
+        <p class="respuesta"><i><U>Velocidad de corte:</U></i> La velocidad de corte es la velocidad periférica a la que gira la fresa y se selecciona en función de la operación y el material. Se determina utilizando datos empíricos, tablas de corte o mediante cálculos específicos.</p>
+        <p class="respuesta"><i><U>Tolerancias y acabado superficial:</U></i> La herramienta debe ser capaz de producir las tolerancias y el acabado superficial requeridos en la pieza de trabajo. Esto se logra mediante el uso de herramientas de corte adecuadas y un correcto ajuste de los parámetros de corte.</p>
+        <p class="respuesta"><i><U>Estabilidad de la herramienta:</U></i> La rigidez y estabilidad de la herramienta son importantes para evitar vibraciones y obtener un mecanizado preciso. Se debe considerar el diseño y la calidad de la herramienta para garantizar una operación estable.</p>
+        <p class="respuesta"><i><U>Durabilidad:</U></i> La vida útil de la herramienta es un factor importante a tener en cuenta. Una herramienta duradera permitirá un mayor tiempo de mecanizado sin necesidad de reemplazo, lo que reduce los costos y el tiempo de inactividad de la máquina.</p>
+        <p class="respuesta">Las herramientas de fresado están fabricadas principalmente con carburo de tungsteno (widia) o con cerámica. El carburo de tungsteno es un material muy duro y resistente al desgaste, lo que lo hace adecuado para cortar metales y materiales duros. Las herramientas de fresado de cerámica son extremadamente duras y resistentes al calor, lo que las hace ideales para el mecanizado a alta velocidad de materiales endurecidos. Además, las herramientas de fresado también pueden tener recubrimientos de nitruro de titanio (TiN), nitruro de titanio y aluminio (TiAlN) u otros recubrimientos para mejorar su rendimiento y prolongar su vida útil.</p>
+        <p class="respuesta">En el fresado, es importante monitorear el desgaste de las herramientas durante el proceso. El desgaste de la herramienta puede afectar la calidad del corte y la precisión dimensional de las piezas. Se deben establecer criterios para determinar el desgaste aceptable de la herramienta, como el aumento en la fuerza de corte, la disminución en la calidad superficial o la medición periódica de la longitud de filo. Cuando se alcanza un nivel de desgaste inaceptable, es necesario considerar la restauración o recambio de la herramienta. Esto puede implicar afilar o reemplazar las plaquitas de corte en el caso de fresas indexables, o sustituir la herramienta completa en el caso de fresas monolíticas.</p>
+        
+        <p id="008" class="pregunta">Cálculos asociados al fresado</p>
+        <p class="respuesta"><i><U>Velocidad de corte (Vc):</U></i> La velocidad de corte es la velocidad periférica a la que gira la fresa y se calcula multiplicando el diámetro de la fresa por la velocidad de rotación de la misma. La fórmula es: Vc = π * Diámetro de la fresa * Velocidad de rotación de la fresa.</p>
+        <p class="respuesta"><i><U>Avance por diente (fz):</U></i> El avance por diente es la distancia axial que avanza la fresa en cada diente durante una revolución completa. Se calcula dividiendo el avance total entre el producto del número de dientes de la fresa y el número de revoluciones. La fórmula es: fz = Avance total / (Número de dientes * Número de revoluciones).</p>
+        <p class="respuesta"><i><U>Espesor de la viruta (t):</U></i> El espesor de la viruta es el grosor del material removido en cada pasada del diente de corte. Se calcula dividiendo el producto del avance por diente y el número de dientes entre la velocidad de avance y el número de revoluciones. La fórmula es: t = (fz * Número de dientes) / (Velocidad de avance * Número de revoluciones).</p>
+        <p class="respuesta"><i><U>Potencia de corte (Pc):</U></i> La potencia de corte es la potencia requerida para realizar el fresado. Se calcula considerando las fuerzas de corte y la velocidad de corte. El cálculo de la potencia de corte puede ser complejo y depende de varios factores, como el material, el tipo de operación, la geometría de la herramienta, entre otros. Generalmente, los fabricantes proporcionan tablas o software especializado para estimar la potencia de corte en función de los parámetros de corte.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2006.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2007.png">
+        </div>
+        
+        <p id="009" class="pregunta">Tipos de fresas</p>
+        <p class="respuesta"><i><U>Fresa cilíndrica:</U></i> También conocida como fresa de extremo, es una herramienta de corte cilíndrica con corte en los extremos y en los lados. Se utiliza para realizar cortes laterales, ranurado, desbaste y acabado en una amplia variedad de materiales.</p>
+        <p class="respuesta"><i><U>Fresa de desbaste:</U></i> Esta fresa tiene múltiples dientes y un perfil robusto. Está diseñada para eliminar rápidamente grandes cantidades de material en operaciones de desbaste y desbaste pesado.</p>
+        <p class="respuesta"><i><U>Fresa de acabado:</U></i> Esta fresa tiene dientes más pequeños y un perfil más suave que la fresa de desbaste. Se utiliza para obtener un acabado superficial de alta calidad y realizar operaciones de acabado y semiacabado.</p>
+        <p class="respuesta"><i><U>Fresa de achaflanado:</U></i> Esta fresa tiene un ángulo de corte en su extremo y se utiliza para crear chaflanes en los bordes de las piezas. Ayuda a eliminar las aristas afiladas y proporciona un acabado suave en los bordes.</p>
+        <p class="respuesta"><i><U>Fresa de perfilado:</U></i> Diseñada para crear perfiles y formas específicas en la pieza de trabajo. Estas fresas pueden tener diferentes perfiles, como redondo, cuadrado, triangular, etc., y se utilizan en operaciones de perfilado y contorneado.</p>
+        <p class="respuesta"><i><U>Fresa de ranurar:</U></i> Esta fresa tiene múltiples dientes y un perfil estrecho. Se utiliza para crear ranuras en la pieza de trabajo, como ranuras en T, ranuras rectas o ranuras en forma de U.</p>
+        <p class="respuesta"><i><U>Fresa de copiar:</U></i> Utilizada para copiar la forma de una plantilla o pieza maestra. Tiene un rodamiento en su extremo que guía la fresa a lo largo del perfil deseado, lo que permite replicar formas con precisión.</p>
+        <p class="respuesta"><i><U>Fresa de ranurar en disco:</U></i> Este tipo de fresa tiene una forma circular y dientes radiales en su perímetro. Se utiliza para crear ranuras circulares, como ranuras para anillos de retención.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2005.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2012.png">
+        </div>
+        
+        <p id="010" class="pregunta">Tipos de fresadoras</p>
+        <p class="respuesta"><i><U>Fresadoras de banco:</U></i> Son máquinas de tamaño más pequeño que se colocan en una mesa de trabajo o banco. Se utilizan principalmente para trabajos de pequeña escala y aplicaciones ligeras.</p>
+        <p class="respuesta"><i><U>Fresadoras verticales:</U></i> Tienen el husillo de la herramienta orientado verticalmente, lo que permite el fresado de superficies verticales y horizontales. Se utilizan comúnmente en talleres y en la fabricación de moldes.</p>
+        <p class="respuesta"><i><U>Fresadoras horizontales:</U></i> Tienen el husillo de la herramienta orientado horizontalmente y se utilizan principalmente para fresado de superficies planas y ranuras. Son adecuadas para trabajos de alta producción.</p>
+        <p class="respuesta"><i><U>Fresadoras universales:</U></i> Son máquinas versátiles que permiten el fresado en múltiples direcciones gracias a la articulación giratoria de la mesa. Pueden realizar tanto fresado horizontal como vertical, lo que las hace adecuadas para una amplia gama de aplicaciones.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2008.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2009.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/A-%20Fresado%2010.png">
+        </div>
+    </div>
+
+
+    <div id="Tema-01-10">
+        <h2>TALADRADO</h2>
+        <p class="respuesta">El taladrado es un proceso de mecanizado que se utiliza para crear agujeros cilíndricos en una pieza de trabajo utilizando una herramienta de corte llamada broca. La broca se gira y se aplica una fuerza axial para penetrar en el material y formar el agujero deseado. Este proceso se utiliza comúnmente en la industria para la fabricación de componentes donde se requiere la creación de agujeros con precisión y rapidez.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2012.png">
+        </div>
+        
+        <p id="011" class="pregunta">Características del proceso de taladrado</p>
+        <p class="respuesta"><i><U>Creación de agujeros:</U></i> El taladrado es un proceso de mecanizado utilizado para crear agujeros cilíndricos en una pieza de trabajo utilizando una herramienta de corte llamada broca o taladro.</p>
+        <p class="respuesta"><i><U>Movimiento rotativo:</U></i> Durante el taladrado, la broca gira sobre su eje y se aplica una fuerza de avance para penetrar en el material y formar el agujero deseado.</p>
+        <p class="respuesta"><i><U>Precisión dimensional:</U></i> El taladrado permite obtener agujeros con precisión dimensional y acabados superficiales adecuados para diferentes aplicaciones y requerimientos.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2015.png">
+        </div>
+        
+        <p id="012" class="pregunta">Ventajas y desventajas del taladrado</p>
+        <p class="respuesta">Ventajas:</p>
+        <p class="respuesta"><i><U>Simplicidad y eficiencia:</U></i> El taladrado es un proceso simple y eficiente para crear agujeros en diferentes materiales. Es rápido y puede ser automatizado para lograr una alta productividad.</p>
+        <p class="respuesta"><i><U>Versatilidad:</U></i> El taladrado se puede utilizar en una amplia gama de materiales, como metales, madera, plásticos, cerámica, entre otros.</p>
+        <p class="respuesta"><i><U>Bajo costo:</U></i> Las brocas de taladrado son relativamente económicas y pueden ser reafiladas o reemplazadas fácilmente, lo que reduce los costos de producción.</p>
+        <p class="respuesta"><i><U>Flexibilidad:</U></i> El taladrado se puede realizar en diferentes orientaciones y posiciones, lo que permite la creación de agujeros en superficies planas, inclinadas o curvas.</p>
+        <p class="respuesta">Desventajas:</p>
+        <p class="respuesta"><i><U>Limitaciones en formas y geometrías:</U></i> El taladrado es adecuado para crear agujeros cilíndricos estándar, pero puede tener dificultades para generar formas y geometrías complejas.</p>
+        <p class="respuesta"><i><U>Requiere una preparación adecuada:</U></i> El material debe estar correctamente sujeto y se requiere una alineación precisa para obtener agujeros precisos y evitar daños en la pieza o la herramienta.</p>
+        <p class="respuesta"><i><U>Limitaciones en profundidad y diámetro:</U></i> La longitud y el diámetro de los agujeros que se pueden crear están limitados por la longitud de la broca y la capacidad de la máquina de taladrado.</p>
+        
+        <p id="013" class="pregunta">Selección de herramientas de taladrado</p>
+        <p class="respuesta">La selección adecuada de la broca de taladrado es esencial para obtener resultados óptimos. Al elegir una herramienta de taladrado, se deben considerar los siguientes factores:</p>
+        <p class="respuesta"><i><U>Material de la pieza de trabajo:</U></i> La selección de la broca se basa en las propiedades del material a mecanizar, como la dureza, la tenacidad y la abrasividad. Algunos materiales comunes incluyen acero, aluminio, madera, plásticos, etc.</p>
+        <p class="respuesta"><i><U>Tipo de agujero y operación:</U></i> La broca debe ser adecuada para el tipo de agujero y la operación específica que se desea realizar, como taladrado estándar, taladrado profundo, taladrado en ángulo, etc.</p>
+        <p class="respuesta"><i><U>Diámetro y longitud del agujero:</U></i> Se debe seleccionar una broca con el diámetro y la longitud adecuados para el agujero deseado. La longitud de la broca debe ser suficiente para alcanzar la profundidad requerida.</p>
+        <p class="respuesta"><i><U>Acabado superficial requerido:</U></i> La geometría de la broca y el recubrimiento superficial pueden afectar el acabado del agujero. Se deben seleccionar brocas con geometría y recubrimiento adecuados para obtener el acabado superficial deseado.</p>
+        <p class="respuesta"><i><U>Sistema de sujeción:</U></i> La broca debe ser compatible con el sistema de sujeción de la máquina de taladrado utilizada. Los sistemas comunes incluyen el mandril de tres mordazas, el portabrocas de cambio rápido, el portabrocas cónico, entre otros.</p>
+        <p class="respuesta">Las brocas de taladrado se fabrican principalmente con acero de alta velocidad (HSS) y carburo de tungsteno. El acero de alta velocidad es un material resistente y económico que se utiliza para taladrar una amplia gama de materiales, incluyendo acero, aluminio y plásticos. Las brocas de carburo de tungsteno son más duras y resistentes al desgaste que las brocas de acero de alta velocidad, lo que las hace adecuadas para taladrar materiales más duros, como aceros endurecidos y materiales compuestos.</p>
+        
+        <p id="014" class="pregunta">Cálculos asociados al taladrado</p>
+        <p class="respuesta"><i><U>Velocidad de corte (Vc):</U></i> La velocidad de corte en el taladrado se refiere a la velocidad periférica de la broca y se calcula multiplicando el diámetro de la broca por la velocidad de rotación de la misma. La fórmula es: Vc = π * Diámetro de la broca * Velocidad de rotación de la broca.</p>
+        <p class="respuesta"><i><U>Avance por revolución (f):</U></i> El avance por revolución es la distancia axial que avanza la broca en cada revolución completa. Se determina según el tipo de material y el diámetro de la broca. Se utilizan tablas y datos empíricos para seleccionar el avance adecuado.</p>
+        <p class="respuesta"><i><U>Velocidad de avance (Vf): </U></i>La velocidad de avance es la velocidad a la cual la broca penetra en el material durante el taladrado y se calcula multiplicando el avance por revolución por la velocidad de rotación de la broca. </p>
+        <p class="respuesta">La fórmula es: Vf = f * Vc.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2004.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2005.png">
+        </div>
+        
+        <p id="015" class="pregunta">Tipos de brocas de taladrado</p>
+        <p class="respuesta"><i><U>Brocas helicoidales:</U></i> Son las más comunes y consisten en una espiral continua alrededor de la broca. Permiten un corte suave y evacuación eficiente de virutas.</p>
+        <p class="respuesta"><i><U>Brocas de centro:</U></i> Tienen una punta afilada en el centro y se utilizan para crear un agujero de guía antes de utilizar una broca helicoidal más grande.</p>
+        <p class="respuesta"><i><U>Brocas escalonadas:</U></i> También conocidas como brocas cono escalonado, tienen múltiples diámetros progresivos en una sola broca y se utilizan para crear agujeros de diferentes tamaños sin cambiar de broca.</p>
+        <p class="respuesta"><i><U>Brocas para taladrado profundo:</U></i> Estas brocas están diseñadas para crear agujeros más largos que las brocas estándar y tienen canales internos para evacuar las virutas de manera eficiente.</p>
+        <p class="respuesta">Las brocas pueden tener recubrimientos para mejorar su rendimiento y prolongar su vida útil. Estos recubrimientos se aplican a la superficie de la broca y pueden estar compuestos de diversos materiales, como nitruro de titanio (TiN), nitruro de titanio y aluminio (TiAlN), nitruro de circonio (ZrN), diamante, entre otros. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2000.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2013.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2001.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2002.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2003.png">
+        </div>
+        
+        <p id="016" class="pregunta">Tipos de taladros</p>
+        <p class="respuesta"><i><U>Taladro de mano:</U></i> Es el tipo más común y versátil de taladro. Se sostiene a mano y se utiliza para perforar agujeros en una variedad de materiales. Puede ser eléctrico o manual.</p>
+        <p class="respuesta"><i><U>Taladro de columna:</U></i> También conocido como taladro de banco, es una versión estacionaria del taladro de mano. Está montado en una columna vertical y se utiliza para perforar agujeros precisos en materiales más grandes y pesados. Tiene una base estable y una mesa de trabajo ajustable.</p>
+        <p class="respuesta"><i><U>Taladro de pedestal:</U></i> Similar al taladro de columna, pero montado en un pedestal o soporte independiente. Es adecuado para trabajos pesados y se utiliza en aplicaciones industriales.</p>
+        <p class="respuesta"><i><U>Taladro de impacto:</U></i> Este tipo de taladro combina la acción de giro con una acción de golpeo hacia adelante y hacia atrás. Es especialmente útil para perforar materiales duros, como concreto o piedra.</p>
+        <p class="respuesta"><i><U>Taladro magnético:</U></i> Se utiliza para taladrar agujeros en superficies metálicas verticales, horizontales o inclinadas. Se sujeta mediante un imán potente y es ampliamente utilizado en la industria del metal.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2006.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2007.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2008.png">
+        </div>
+        
+        <p id="017" class="pregunta">Tipos de sistemas de sujeción</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2014.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2009.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2010.png">
+        </div>
+        
+        <p id="018" class="pregunta">Sujeción de piezas a taladrar</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/B-%20Taladrado%2011.png">
+        </div>
+    </div>
+
+
+    <div id="Tema-01-11">
+        <h2>RECTIFICADO</h2>
+        <p class="respuesta">El rectificado es un proceso de mecanizado que emplea una herramienta abrasiva llamada muela para eliminar material y obtener superficies de alta precisión y acabado superficial. Durante el rectificado, la muela gira y se mueve a lo largo de la pieza de trabajo, generando una acción abrasiva que elimina pequeñas cantidades de material. Este proceso se utiliza para lograr dimensiones y tolerancias muy precisas, así como para obtener un acabado superficial fino en piezas que requieren una alta precisión y ajuste, como herramientas de corte, componentes de precisión y superficies de rodamientos.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/C-%20Rectificado%2000.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/C-%20Rectificado%2001.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/C-%20Rectificado%2002.png">
+        </div>
+
+        <p id="019" class="pregunta">Características del proceso de rectificado</p>
+        <p class="respuesta"><i><U>Eliminación de material:</U></i> El rectificado es un proceso de mecanizado utilizado para eliminar material en forma de pequeños fragmentos mediante la acción abrasiva de una herramienta llamada muela abrasiva. Este proceso se utiliza para obtener superficies con alta precisión dimensional y acabado superficial.</p>
+        <p class="respuesta"><i><U>Movimiento rotativo y lineal:</U></i> Durante el rectificado, la muela abrasiva gira sobre su eje y, al mismo tiempo, se mueve linealmente a través de la pieza de trabajo para eliminar el material no deseado.</p>
+        <p class="respuesta"><i><U>Alta tolerancia dimensional:</U></i> El rectificado se utiliza cuando se requieren tolerancias estrechas y precisión dimensional, ya que permite alcanzar dimensiones finales muy precisas y controladas.</p>
+
+        <p id="020" class="pregunta">Ventajas y desventajas del rectificado</p>
+        <p class="respuesta">Ventajas:</p>
+        <p class="respuesta"><i><U>Alta precisión dimensional:</U></i> El rectificado permite obtener piezas con tolerancias muy ajustadas y precisión dimensional, lo que resulta en una mayor calidad y ajuste de las piezas.</p>
+        <p class="respuesta"><i><U>Acabado superficial superior:</U></i> El proceso de rectificado proporciona un acabado superficial excepcionalmente suave y uniforme, lo que es especialmente importante en aplicaciones que requieren un ajuste preciso y un contacto superficial adecuado.</p>
+        <p class="respuesta"><i><U>Versatilidad:</U></i> El rectificado se puede utilizar para mecanizar una amplia variedad de materiales, incluyendo metales, cerámica, vidrio, plásticos, etc.</p>
+        <p class="respuesta"><i><U>Larga vida útil de la herramienta:</U></i> Las muelas abrasivas utilizadas en el rectificado suelen tener una vida útil prolongada, lo que reduce los costos de herramientas y los tiempos de inactividad de la máquina.</p>
+        <p class="respuesta">Desventajas:</p>
+        <p class="respuesta"><i><U>Mayor costo:</U></i> El proceso de rectificado puede ser más costoso en comparación con otros procesos de mecanizado debido al costo de las muelas abrasivas y los equipos especializados requeridos.</p>
+        <p class="respuesta"><i><U>Tiempo de ciclo más largo:</U></i> El rectificado es un proceso más lento en comparación con otros procesos de mecanizado, ya que se requieren pasadas múltiples para alcanzar las tolerancias y acabados deseados.</p>
+        <p class="respuesta"><i><U>Limitaciones en formas complejas:</U></i> El rectificado es más adecuado para superficies planas, cilíndricas y de perfil simple. Puede ser más difícil de aplicar en formas complejas o geometrías irregulares.</p>
+
+        <p id="021" class="pregunta">Selección de muelas abrasivas</p>
+        <p class="respuesta">La selección adecuada de la muela abrasiva es fundamental para obtener resultados óptimos en el proceso de rectificado. Al elegir una muela abrasiva, se deben considerar los siguientes factores:</p>
+        <p class="respuesta"><i><U>Material de la pieza de trabajo:</U></i> La selección de la muela abrasiva se basa en las propiedades del material a mecanizar, como la dureza, la fragilidad, la conductividad térmica, entre otras. Cada material requiere una combinación específica de características de la muela abrasiva, como tipo de grano, estructura de poros, tamaño del grano, etc.</p>
+        <p class="respuesta"><i><U>Tipo de rectificado:</U></i> El tipo de rectificado a realizar, como el rectificado cilíndrico, rectificado de superficies planas, rectificado de perfiles, determinará el perfil y la geometría de la muela abrasiva requerida.</p>
+        <p class="respuesta"><i><U>Tolerancias y acabado superficial requeridos:</U></i> La especificación de tolerancias y acabados superficiales influye en la selección de la dureza de la muela, la finura del grano abrasivo y la estructura de poros.</p>
+        <p class="respuesta"><i><U>Velocidad de rectificado:</U></i> La velocidad periférica de la muela abrasiva debe ser adecuada para evitar daños en la muela y garantizar una eliminación de material eficiente. La velocidad de rectificado depende del diámetro de la muela y de la velocidad de rotación del husillo.</p>
+        <p class="respuesta"><i><U>Sistema de sujeción:</U></i> La muela abrasiva debe ser compatible con el sistema de sujeción de la máquina rectificadora utilizada, como el mandril, el plato magnético, entre otros.</p>
+        <p class="respuesta">Las muelas abrasivas utilizadas en el rectificado están hechas de materiales abrasivos compuestos, como óxido de aluminio, carburo de silicio o diamante, todos en forma de granos, y unidos con un material aglomerante. El óxido de aluminio es un abrasivo comúnmente utilizado para el rectificado de aceros y materiales ferrosos. El carburo de silicio se utiliza para el rectificado de materiales más duros, como cerámica, vidrio y carburo de tungsteno. El diamante es el material más duro conocido y se utiliza en muelas de diamante para el rectificado de materiales extremadamente duros, como cerámica de nitruro de silicio, carburo de tungsteno y piedras preciosas.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/C-%20Rectificado.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/C-%20Rectificado%2003.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/C-%20Rectificado%2004.png">
+        </div>
+
+        <p id="022" class="pregunta">Desgaste de las muelas y diamantado</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/07-%20MCAV/C-%20Rectificado%2005.png">
+        </div>
+
+        <p id="023" class="pregunta">Cálculos asociados al rectificado</p>
+        <p class="respuesta"><i><U>Velocidad periférica de la muela (Vc):</U></i> La velocidad periférica de la muela se refiere a la velocidad lineal en la periferia de la muela y se calcula multiplicando el diámetro de la muela por la velocidad de rotación del husillo. La fórmula es: Vc = π * Diámetro de la muela * Velocidad de rotación del husillo.</p>
+        <p class="respuesta"><i><U>Velocidad de avance (Vf):</U></i> La velocidad de avance es la velocidad a la cual se desplaza la muela abrasiva a lo largo de la pieza de trabajo y se calcula dividiendo el volumen de material eliminado por unidad de tiempo entre el área de contacto de la muela abrasiva. La fórmula es: Vf = Volumen de material eliminado / Área de contacto de la muela abrasiva.</p>
+
+        <p id="024" class="pregunta">Tipos de rectificado</p>
+        <p class="respuesta"><i><U>Rectificado cilíndrico:</U></i> Se utiliza para mecanizar superficies cilíndricas internas o externas, como ejes, árboles, casquillos, etc.</p>
+        <p class="respuesta"><i><U>Rectificado de superficies planas:</U></i> Se utiliza para obtener superficies planas de alta precisión y acabado superficial, como placas, bloques, moldes, etc.</p>
+        <p class="respuesta"><i><U>Rectificado de perfiles:</U></i> Se utiliza para mecanizar formas complejas y perfiles especiales en la pieza de trabajo, como engranajes, levas, perfiles aerodinámicos, etc.</p>
+        <p class="respuesta"><i><U>Rectificado sin centros:</U></i> Se utiliza para mecanizar piezas cilíndricas largas y delgadas, como ejes, pasadores, barras, etc., sin la necesidad de utilizar un centro fijo.</p>
+
+        <p id="025" class="pregunta">Tipos de rectificadoras</p>
+        <p class="respuesta"><i><U>Rectificadora cilíndrica:</U></i> Utilizada para mecanizar piezas cilíndricas, como ejes, árboles y vástagos. La pieza de trabajo gira mientras la muela abrasiva realiza el proceso de rectificado.</p>
+        <p class="respuesta"><i><U>Rectificadora de superficies planas:</U></i> Empleada para obtener superficies planas y paralelas en piezas de trabajo. La muela abrasiva se desplaza sobre la superficie de la pieza para eliminar el material no deseado.</p>
+        <p class="respuesta"><i><U>Rectificadora sin centros:</U></i> Utilizada para rectificar piezas cilíndricas sin la necesidad de utilizar centros de sujeción. Es comúnmente utilizada para rectificar piezas de alta precisión y gran volumen, como rodamientos y ejes.</p>
+        <p class="respuesta"><i><U>Rectificadora de perfiles:</U></i> Diseñada para crear perfiles complejos y formas especiales en piezas de trabajo. Utiliza una muela abrasiva especializada para dar forma a la pieza según los requisitos precisos.</p>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>

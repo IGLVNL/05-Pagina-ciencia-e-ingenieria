@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, instrumentos de medicion, tipos de instrumentos">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Instrumentos de medicion</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_00_03_Instrumentos de medicion.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="tema">Ingenieria Industrial</p>
+    <p class="tema">Material de estudio</p>
+    <p id="materia" >Procesos industriales</p>
+    <h1 id="tema">Instrumentos de medicion</h1>
+    
+    <div id="menu">
+        <img src="Icons/Menu.svg" title="Menu">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="dropdown" ><a href="#Tema-01-00"  onclick="smoothScroll(event, 'Tema-01-01')">INTRODUCCION</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#001"  onclick="smoothScroll(event, '001')">¿Por qué medimos?</a></li>
+                        <li><a href="#002"  onclick="smoothScroll(event, '002')">¿Qué es una medición?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-02"  onclick="smoothScroll(event, 'Tema-01-02')">01- METROLOGIA</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Definicion</a></li>
+                        <li><a href="#004"  onclick="smoothScroll(event, '004')">¿Qué relación tiene con la calidad?</a></li>
+                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Características de la metrología</a></li>
+                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Incertidumbre de la medicion (Errores)</a></li>
+                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Exactitud y error sistemático</a></li>
+                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Precisión y error aleatorio</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">02- MEDIOS DE CONTROL</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Instrumentos de medición por variable</a></li>
+                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Instrumentos de medición por atributo</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">03- CALIBRE</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#011"  onclick="smoothScroll(event, '011')">¿Para qué sirve un calibre?</a></li>
+                        <li><a href="#012"  onclick="smoothScroll(event, '012')">¿Cómo se utiliza un calibre analógico para medir dimensiones exteriores?</a></li>
+                        <li><a href="#013"  onclick="smoothScroll(event, '013')">¿Cómo se lee la medida en el calibre analógico?</a></li>
+                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Tipos de calibres</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-04"  onclick="smoothScroll(event, 'Tema-01-04')">04- MICROMETRO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#015"  onclick="smoothScroll(event, '015')">¿Cómo funciona un micrómetro?</a></li>
+                        <li><a href="#016"  onclick="smoothScroll(event, '016')">¿Cómo se utiliza?</a></li>
+                        <li><a href="#017"  onclick="smoothScroll(event, '017')">Tipos de micrometro</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-05"  onclick="smoothScroll(event, 'Tema-01-05')">05- COMPARADORES</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#018"  onclick="smoothScroll(event, '018')">¿Cómo funciona un Comparador?</a></li>
+                        <li><a href="#019"  onclick="smoothScroll(event, '019')">¿Cómo se utiliza?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-06"  onclick="smoothScroll(event, 'Tema-01-06')">06- ALESOMETRO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#020"  onclick="smoothScroll(event, '020')">¿Cómo funciona un alesómetro?</a></li>
+                        <li><a href="#021"  onclick="smoothScroll(event, '021')">¿Cómo se utiliza?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-07"  onclick="smoothScroll(event, 'Tema-01-07')">07- OTROS ELEMENTOS DE MEDICION</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_00_procesos_industriales.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_00_01_diseño%20de%20layout.html">01- DISEÑO DE LAYOUT</a></li>
+                <li class="dropdown-2"><a href="C_00_02_Sistema%20de%20tolerancias.html">02- TOLERANCIAS</a></li>
+                <li class="dropdown-2"><a href="C_00_03_Instrumentos%20de%20medicion.html">03- INSTRUMENTOS DE MEDICION</a></li>
+                <li class="dropdown-2"><a href="C_00_04_Control%20estadistico%20de%20proceso.html">04- CONTROL ESTADISTICO DE PROCESOS (CEP)</a></li>
+                <li class="dropdown-2"><a href="C_00_05_Proceso%20productivo-Hoja%20de%20ruta.html">05- PROCESO PRODUCTIVO - HOJA DE RUTA</a></li>
+                <li class="dropdown-2"><a href="C_00_06_MSAV.html">06- PROCESOS DE MECANIZADO SIN ARRANQUE DE VIRUTA (MSAV)</a></li>
+                <li class="dropdown-2"><a href="C_00_07_MCAV.html">07- PROCESOS DE MECANIZADO CON ARRANQUE DE VIRUTA (MCAV)</a></li>
+                <li class="dropdown-2"><a href="C_00_08_CNC.html">08- CNC</a></li>
+                <li class="dropdown-2"><a href="C_00_09_Industria%20alimenticia.html">09- INDUSTRIA ALIMENTICIA</a></li>
+                <li class="dropdown-2"><a href="C_00_10_Recubrimientos.html">10- RECUBRIMIENTOS</a></li>
+                <li class="dropdown-2"><a href="C_00_11_Industrias%20petroquimicas.html">11- INDUSTRIAS PETROQUIMICAS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas">
+        <a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">01- METROLOGIA</a>
+        <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">02- MEDIOS DE CONTROL</a>
+        <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03- CALIBRE</a>
+        <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04- MICROMETRO</a>
+        <a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">05- COMPARADORES</a>
+        <a href="#Tema-01-06" class="boton" onclick="smoothScroll(event, 'Tema-01-06')">06- ALESOMETRO</a>
+        <a href="#Tema-01-06" class="boton" onclick="smoothScroll(event, 'Tema-01-07')">07- OTROS ELEMENTOS DE MEDICION</a>
+    </div>
+    <div id="Tema-01-00">
+        <h2>INTRODUCCION</h2>
+        <p class="pregunta" id="001">¿Por qué medimos?</p>
+        <p class="respuesta">En la manufactura, es esencial que el producto y sus componentes cumplan con las especificaciones establecidas por el ingeniero de diseño. Estas especificaciones de diseño incluyen dimensiones, tolerancias y acabados superficiales para cada pieza individual que forma parte del producto final.</p>
+        
+        <p class="pregunta" id="002">¿Qué es una medición?</p>
+        <p class="respuesta">La medición es el proceso mediante el cual comparamos una cantidad desconocida con un estándar conocido, utilizando un sistema de unidades aceptado y consistente. Esta comparación puede ser tan simple como usar una regla para medir la longitud de una pieza, o incluso más compleja, como realizar una medición de fuerza contra deflexión durante una prueba de tensión. El objetivo de la medición es obtener un valor numérico que representa la cantidad de interés, siempre dentro de límites definidos de exactitud y precisión.</p>
+    </div>
+
+    <div id="Tema-01-01">
+        <h2>METROLOGIA</h2>
+        <p class="pregunta" id="003">Definicion</p>
+        <p class="respuesta">La metrología es el estudio de los sistemas de medida en cualquier campo de la ciencia. Se ocupa de las mediciones, así como de las magnitudes, unidades y constantes básicas en las que éstas se apoyan. Tiene como objetivo cuantificar una magnitud propia de un mensurado (objeto portador o fenómeno físico-químico) convirtiéndola en un resultado mediante un sistema que ejecuta el proceso de medición.</p>
+        <p class="respuesta">La metrología se relaciona con seis cantidades fundamentales: longitud, masa, tiempo, corriente eléctrica, temperatura y radiación luminosa. A partir de éstas, se deriva la mayoría de las otras cantidades físicas, como el área, el volumen, la velocidad, la aceleración, la fuerza, el voltaje eléctrico, la energía térmica, etc. </p>
+        <p class="respuesta">En la metrología de manufactura, el principal interés es la medición de la longitud y sus diversas formas de manifestarse en una pieza o producto. Éstas incluyen longitud, anchura, profundidad, diámetro, rectitud, planicie y redondez; incluso la rugosidad superficial se define en términos de longitud. </p>
+
+        <p class="pregunta" id="004">¿Qué relación tiene con la calidad?</p>
+        <p class="respuesta">Las necesidades de fabricación para la comercialización de distintos productos, requieren una uniformidad de criterio de calidad en lo que se refiere a sus características de producto (forma, tipo, material, dimensiones, performance, etc.) dicha uniformidad se conoce como Normalización, esto significa que cuando se intercambian productos los mismos deben poseer características normalizadas de fabricación. Por ejemplo, en el caso de la fabricación de tornillos, las roscas deben ser normalizadas con respecto a un patrón de estandarización, o norma de fabricación, esto es realmente importante ya que si no se cumpliera con este requisito no podría existir la intercambiabilidad de las piezas. Así, por ejemplo, garantizamos que, si fabricamos un tornillo con una rosca del tipo UN en Argentina, el mismo pueda ser montado sin problemas en un agujero roscado UN de una pieza fabricada en otro país. Esta actividad de normalización requiere una ciencia de medición para poder cuantificar los criterios de calidad antes mencionados, que es la Metrología. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Calidad.jpg">
+        </div>
+
+        <p class="pregunta" id="005">Características de la metrología</p>
+        <p class="respuesta">La Metrología tiene dos características muy importantes que son:  </p>
+        <p class="respuesta"><i><U>Resultado de la medición:</U></i>  Son los distintos datos que surgen como consecuencia de realizar un proceso de medición. </p>
+        <p class="respuesta"><i><U>Incertidumbre de la medida:</U></i> Relacionada con los errores que se cometen al realizar las mediciones (errores aleatorios y sistemáticos) y con las variables que influyen en el proceso de medición (temperatura, operadores, etc.), por lo tanto este parámetro nos indica el grado de calidad con la que se ha realizado la medición y cuanto más cercano a cero es, mayor es la probabilidad de estimar el valor verdadero.</p>
+
+        <p class="pregunta" id="006">Incertidumbre de la medicion (Errores)</p>
+        <p class="respuesta">La incertidumbre de una medición es una estimación cuantitativa de la dispersión posible de los valores que podrían ser atribuidos a la magnitud medida. En otras palabras, representa el rango o margen de error en el valor obtenido durante una medición. Indica la falta de conocimiento completo o precisión absoluta del valor medido. </p>
+        <p class="respuesta">En cualquier proceso de medición se presentan dos tipos de errores a considerar, los Sistemáticos y los Aleatorios a tener en cuenta en cualquier proceso de medición, ya que estos afectan al resultado del mismo.  </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/resultado.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/errores.jpg">
+        </div>
+
+        <p class="pregunta" id="007">Exactitud y error sistemático</p>
+        <p class="respuesta">La exactitud es el grado en el que un valor medido coincide con el valor verdadero de la cantidad de interés. Un procedimiento de medición es exacto cuando no tiene errores sistemáticos. Los errores sistemáticos son desviaciones positivas o negativas del valor verdadero que son consistentes de una medición a la siguiente. Están relacionados con causas que se pueden identificar y corregir. </p>
+
+        <p class="pregunta" id="008">Precisión y error aleatorio</p>
+        <p class="respuesta">La precisión es el grado en el que se puede repetir el proceso de medición. Una buena precisión significa que se reducen al mínimo los errores aleatorios en el procedimiento de medición. Por lo general, los errores aleatorios se asocian con la participación humana en el proceso de medición. No se pueden asignar a causas concretas y generalmente se tratan en forma estadística, para reducirlos se realizan en estudios de rango y reproductibilidad (R&R). Ejemplos de errores aleatorios humanos son: las variaciones en la preparación, la lectura imprecisa de la escala, las aproximaciones redondeadas, etc. Entre los componentes no humanos que contribuyen al error aleatorio están los cambios de temperatura, el desgaste gradual o el desajuste en los elementos funcionales de los dispositivos y otras variantes. Se supone que los errores aleatorios obedecen a una distribución estadística normal cuya media es cero y tiene una desviación estándar distinta de cero.</p>
+        <p class="respuesta">La distinción entre exactitud y precisión se muestra en la figura. En (a) el error aleatorio en la medición es grande, lo que indica una precisión baja; pero el valor de la media de medición coincide con el valor verdadero, lo que indica gran exactitud. En (b) el error de medición es pequeño (buena precisión), pero el valor medido difiere sustancialmente del valor verdadero (baja exactitud). En (c) tanto la exactitud como la precisión son buenas. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/variabilidad.jpg">
+        </div>
+    </div>
+
+    <div id="Tema-01-02">
+        <h2>MEDIOS DE CONTROL</h2>
+        <p class="respuesta">La inspección es un proceso que implica el uso de técnicas de medición y calibración para determinar si un producto, sus componentes, subensambles o materiales iniciales cumplen con las especificaciones del diseño. Existen dos tipos de inspecciones:</p>
+        <p class="respuesta"><i><U>Inspección por variables:</U></i> En este tipo de inspección, se miden las dimensiones del producto o pieza utilizando instrumentos de medición adecuados. Esto permite obtener datos precisos acerca de los valores reales de las dimensiones. Estos datos pueden ser registrados y utilizados posteriormente para analizar tendencias en el proceso de manufactura. Además, se pueden realizar ajustes en el proceso con base en los datos para producir piezas futuras más cercanas al diseño nominal.</p>
+        <p class="respuesta"><i><U>Inspección por atributos:</U></i> En este caso, las piezas se calibran para determinar si están dentro de los límites de tolerancia o no. Esta calibración es más rápida y económica que la medición por variables, pero solo proporciona información sobre si la pieza cumple o no con las especificaciones, sin detalles sobre los valores exactos de sus dimensiones.</p>
+
+        <p class="pregunta" id="009">Instrumentos de medición por variable</p>
+        <p class="respuesta">Dentro de la inspección por variables se utilizan diferentes tipos de instrumentos de medición:</p>
+        <p class="respuesta"><i><U>Con nonio:</U></i> Son instrumentos que utilizan una escala vernier o nonio para realizar mediciones con mayor precisión.</p>
+        <p class="respuesta"><i><U>A tambor:</U></i> Estos instrumentos tienen un tambor graduado que se utiliza para medir dimensiones con gran exactitud.</p>
+        <p class="respuesta"><i><U>A aguja y cuadrante:</U></i> Emplean una aguja y un cuadrante para medir ángulos y dimensiones en ciertos dispositivos.</p>
+
+        <p class="pregunta" id="010">Instrumentos de medición por atributo</p>
+        <p class="respuesta">En la inspección por atributos, se utilizan diversos tipos de instrumentos para calibrar las piezas:</p>
+        <p class="respuesta"><i><U>Para ejes:</U></i> Se emplean para verificar si el diámetro de los ejes cumple con las especificaciones de tolerancia.</p>
+        <p class="respuesta"><i><U>Para agujeros:</U></i> Estos instrumentos se usan para determinar si los agujeros tienen el tamaño adecuado según las tolerancias establecidas.</p>
+        <p class="respuesta"><i><U>De espesores:</U></i> Permiten comprobar el espesor de una pieza y si está dentro de los límites permitidos.</p>
+        <p class="respuesta"><i><U>De longitud:</U></i> Estos instrumentos se utilizan para medir longitudes de manera precisa.</p>
+        <p class="respuesta"><i><U>De profundidad:</U></i> Sirven para medir la profundidad de orificios o cavidades en una pieza.</p>
+        <p class="respuesta"><i><U>De forma:</U></i> Estos instrumentos se utilizan para verificar la forma y geometría de la pieza.</p>
+    </div>
+
+    <div id="Tema-01-03">
+        <h2>CALIBRE</h2>
+        <p class="respuesta">Un calibre (también conocido como calibrador) es un instrumento de medición utilizado para determinar las dimensiones exteriores de objetos con alta precisión. Es una herramienta comúnmente utilizada en diversas industrias, talleres de manufactura, y en aplicaciones donde se requiere medir con exactitud las dimensiones exteriores de piezas o materiales.</p>
+
+        <p class="pregunta" id="011">¿Para qué sirve un calibre?</p>
+        <p class="respuesta">El calibre se utiliza para medir el tamaño de objetos en milímetros o pulgadas, proporcionando mediciones precisas y rápidas. Es especialmente útil cuando se requiere una medición más precisa que la que puede obtenerse con una regla o cinta métrica. Además, los calibres son esenciales para garantizar que las piezas se ajusten correctamente a las tolerancias requeridas y cumplan con las especificaciones de diseño. </p>
+        <p class="respuesta">El Calibre puede hacer tres tipos de mediciones: Exteriores, interiores y profundidades.</p>
+
+        <p class="pregunta" id="012">¿Cómo se utiliza un calibre analógico para medir dimensiones exteriores?</p>
+        <p class="respuesta">El calibre analógico para medir dimensiones exteriores generalmente tiene dos patas o puntas que se utilizan para abrazar el objeto que se va a medir. Para medir una dimensión exterior, se deben seguir los siguientes pasos:</p>
+        <p class="respuesta"><i><U>Abrir el calibre:</U></i> Separar las patas del calibre para que queden lo suficientemente separadas para colocar el objeto entre ellas.</p>
+        <p class="respuesta"><i><U>Posicionar el objeto:</U></i> Colocar el objeto entre las patas del calibre de manera que quede ajustado y en contacto con ambas puntas.</p>
+        <p class="respuesta"><i><U>Ajustar el calibre:</U></i> Asegurarse de que las puntas del calibre estén en contacto con los extremos del objeto y que estén paralelas a la superficie de medición.</p>
+        <p class="respuesta"><i><U>Leer la medición:</U></i> Observar el valor que indica la escala en la regla o tambor del calibre que se alinea con la escala principal para obtener la medida.</p>
+        <p class="respuesta"><i><U>Registrar la medición:</U></i> Anotar la medición obtenida para su registro o uso posterior.</p>
+        <p class="respuesta">Es importante tener en cuenta que al usar un calibre analógico, se debe asegurar que esté limpio y libre de daños para obtener mediciones precisas y confiables.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/calibre.jpg">
+        </div>
+
+        <p class="pregunta" id="013">¿Cómo se lee la medida en el calibre analógico?</p>
+        <p class="respuesta">La forma de leer la medida en un calibre analógico puede variar según el tipo específico del calibre, pero en general, el proceso de lectura es el siguiente:</p>
+        <p class="respuesta"><i><U>Lectura principal:</U></i> En la escala principal del calibre, se encuentran las divisiones que indican la medida en milímetros o pulgadas. La escala principal se lee como una regla, y se debe observar el número que está en la izquierda de la punta móvil del calibre.</p>
+        <p class="respuesta"><i><U>Escala secundaria (Nonio o Vernier):</U></i> Algunos calibres, como el calibre vernier, tienen una escala secundaria que se alínea con la escala principal para obtener mediciones más precisas. Esta escala secundaria tiene divisiones más pequeñas que permiten medir fracciones de milímetros o pulgadas adicionales.</p>
+        <p class="respuesta">Al leer el calibre vernier, debes alinear la línea cero del vernier con la línea cero de la escala principal y luego ver cuál línea del vernier coincide con una línea de la escala principal. Esta línea del vernier te dará el valor de la fracción adicional que debes sumar a la lectura principal para obtener la medida completa.</p>
+        <p class="respuesta">Por ejemplo, si la lectura principal indica 10 mm y la línea del vernier que coincide es la línea número 4, entonces la medida total sería de 10,4 mm (10 mm de la lectura principal + 0,4 mm del vernier).</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/calibre%20precision.jpg">
+        </div>
+
+        <p class="pregunta" id="014">Tipos de calibres</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Calibre%20analogico%20y%20digital.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Calibre%20de%20profundidad%20analogico%20y%20digital.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Calibres%20de%20altura.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/calibre%20de%20verificacion.jpg">
+        </div>
+    </div>
+
+    <div id="Tema-01-04">
+        <h2>MICROMETRO</h2>
+        <p class="respuesta">Un micrómetro es un instrumento de medición de alta precisión utilizado para medir dimensiones pequeñas con gran exactitud. Se utiliza en aplicaciones donde se requiere una precisión mayor que la proporcionada por un calibre o regla. El micrómetro puede medir dimensiones exteriores e interiores de objetos con alta precisión.</p>
+
+        <p class="pregunta" id="015">¿Cómo funciona un micrómetro?</p>
+        <p class="respuesta">El micrómetro consta de dos partes principales: el tambor y el husillo. El tambor es una rueda graduada que tiene divisiones que indican las unidades principales de medida (generalmente milímetros o pulgadas). El tambor está fijado al cuerpo del micrómetro y permanece estacionario durante la medición. El husillo es una barra roscada que se desplaza hacia adentro o hacia afuera al girar el tambor.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/micrometro%20partes.jpg">
+        </div>
+
+        <p class="pregunta" id="016">¿Cómo se utiliza?</p>
+        <p class="respuesta">Para medir con un micrómetro, se siguen los siguientes pasos:</p>
+        <p class="respuesta"><i><U>Preparación:</U></i> Asegúrate de que el micrómetro esté limpio y libre de partículas que puedan afectar la precisión. Verifica que el micrómetro esté correctamente calibrado antes de realizar cualquier medición.</p>
+        <p class="respuesta"><i><U>Posicionamiento:</U></i> Sujeta el objeto que deseas medir entre el husillo y el yunque del micrómetro. Asegúrate de que el objeto esté en posición horizontal y firme para obtener una medición precisa.</p>
+        <p class="respuesta"><i><U>Cierre inicial:</U></i> Gira el tambor en sentido horario hasta que las mordazas del husillo toquen ligeramente el objeto, pero sin aplicar demasiada fuerza.</p>
+        <p class="respuesta"><i><U>Medición:</U></i> Gira el tambor en sentido contrario a las agujas del reloj para mover el husillo hacia el objeto y ajustar la presión de las mordazas contra la superficie. Continúa girando el tambor hasta que las mordazas sujeten firmemente el objeto sin deformarlo.</p>
+        <p class="respuesta"><i><U>Lectura:</U></i> Observa la posición del tambor graduado y busca el número que coincide con la línea de referencia en la regla fija del micrómetro. Esta será la medida principal en milímetros o pulgadas.</p>
+        <p class="respuesta"><i><U>Fracción adicional (opcional):</U></i> Algunos micrómetros tienen una escala secundaria (Nonio o Vernier) que permite obtener mediciones más precisas. Si es así, busca la línea del vernier que coincide con una línea de la escala principal y suma esa fracción al valor principal para obtener una medición más precisa.</p>
+        <p class="respuesta">Es importante tener en cuenta que cada división en el tambor generalmente representa un valor muy pequeño, por lo que es esencial tener cuidado al leer y utilizar el micrómetro. Además, asegúrate de mantener el micrómetro limpio y en buen estado, y de almacenarlo adecuadamente para evitar daños o descalibraciones.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/micrometro%20medicion.jpg">
+        </div>
+
+        <p class="pregunta" id="017">Tipos de micrometro</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Micrometros%20de%20exterior.png">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/micrometro%20engranajes.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Micrometros%20varios.jpg">
+        </div>
+    </div>
+
+    <div id="Tema-01-05">
+        <h2>COMPARADORES</h2>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Reloges%20comparadores.jpg">
+        </div>
+        <p class="respuesta">Un comparador es un instrumento de medición mecánico o electrónico utilizado para comparar las dimensiones de un objeto con respecto a un estándar conocido. Su propósito principal es determinar si el objeto cumple con ciertas especificaciones o tolerancias predefinidas.</p>
+
+        <p class="pregunta" id="018">¿Cómo funciona un Comparador?</p>
+        <p class="respuesta">El funcionamiento del comparador depende del tipo específico que se esté utilizando, pero en general, opera mediante el uso de una aguja o palpador que se mueve en respuesta a las variaciones dimensionales del objeto bajo medición. Algunos comparadores son mecánicos y utilizan engranajes y palancas, mientras que otros son electrónicos y emplean sensores y circuitos para realizar las mediciones.</p>
+
+        <p class="pregunta" id="019">¿Cómo se utiliza?</p>
+        <p class="respuesta">El proceso general de uso del comparador es el siguiente:</p>
+        <p class="respuesta"><i><U>Preparación:</U></i> Asegúrate de que el comparador esté limpio y en buenas condiciones. Comprueba que el palpador o aguja no esté dañado y que se mueva libremente.</p>
+        <p class="respuesta"><i><U>Establecer el estándar:</U></i> Coloca un objeto de referencia, que se conozca con precisión su dimensión (estándar), en la posición de referencia del comparador. Esto puede ser una pieza calibrada o una medida maestra.</p>
+        <p class="respuesta"><i><U>Ajuste del comparador:</U></i> Alinea la aguja del comparador con la marca de cero en la escala o dial. Algunos comparadores tienen una función de ajuste para calibrar la aguja en la posición inicial.</p>
+        <p class="respuesta"><i><U>Colocación del objeto a medir:</U></i> Sujeta el objeto que deseas medir en posición, asegurándote de que esté estable y sin movimientos que puedan afectar la medición.</p>
+        <p class="respuesta"><i><U>Medición:</U></i> Utiliza el palpador o aguja para tocar la superficie del objeto a medir. La aguja se moverá en respuesta a las variaciones dimensionales del objeto en comparación con el estándar.</p>
+        <p class="respuesta"><i><U>Lectura:</U></i> Observa la posición de la aguja en la escala o dial del comparador. La lectura indicará la diferencia entre la dimensión del objeto y el estándar. Dependiendo del tipo de comparador, es posible que se requiera una interpretación adicional para obtener la medición precisa.</p>
+        <p class="respuesta">Es importante tener en cuenta que los comparadores vienen en diferentes tipos y tamaños para adaptarse a diversas aplicaciones y rangos de medición. Algunos comparadores son portátiles y se utilizan para mediciones en el taller, mientras que otros son más precisos y se emplean en laboratorios de metrología. La elección del comparador adecuado dependerá del tipo de medición requerida y de la precisión necesaria para la aplicación específica.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/comparadores%20calibracion.jpg">
+        </div>
+    </div>
+
+    <div id="Tema-01-06">
+        <h2>ALESÓMETRO</h2>
+        <p class="respuesta">Un alesómetro, también conocido como micrómetro de interiores o comparador de interiores, es un instrumento de medición utilizado para medir el diámetro interno de agujeros cilíndricos. Su función principal es determinar con precisión las dimensiones internas de piezas o componentes para asegurar que cumplan con las especificaciones y tolerancias requeridas.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Alesometros.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Alesometros%20partes.jpg">
+        </div>
+        <p class="pregunta" id="020">¿Cómo funciona un alesómetro?</p>
+        <p class="respuesta">El alesómetro funciona mediante el uso de una aguja o palpador que se expande dentro del agujero que se va a medir. El instrumento está diseñado con un mecanismo de ajuste que permite controlar la separación de las puntas de medición. Al girar un tornillo de ajuste, las puntas se despliegan hacia los lados, lo que permite que entren en contacto con las paredes internas del agujero.</p>
+
+        <p class="pregunta" id="021">¿Cómo se utiliza?</p>
+        <p class="respuesta">El proceso general de uso del alesómetro es el siguiente:</p>
+        <p class="respuesta"><i><U>Preparación:</U></i> Asegúrate de que el alesómetro esté limpio y en buenas condiciones. Comprueba que las puntas de medición estén libres de suciedad o daños.</p>
+        <p class="respuesta"><i><U>Ajuste del alesómetro:</U></i> Coloca las puntas del alesómetro en el agujero de referencia, que debe tener un diámetro conocido. Gira el tornillo de ajuste para que las puntas se expandan y entren en contacto con las paredes del agujero. Asegúrate de que las puntas estén paralelas y alineadas correctamente.</p>
+        <p class="respuesta"><i><U>Establecer el punto cero:</U></i> Con las puntas en contacto con las paredes del agujero de referencia, ajusta el dial o la escala del alesómetro para que la aguja indique cero. Esto se considera el punto cero o la posición inicial de medición.</p>
+        <p class="respuesta"><i><U>Medición:</U></i> Retira el alesómetro del agujero de referencia y colócalo en el agujero que deseas medir. Gira el tornillo de ajuste para que las puntas se expandan nuevamente y entren en contacto con las paredes internas del agujero.</p>
+        <p class="respuesta"><i><U>Lectura:</U></i> Observa la posición de la aguja en el dial o escala del alesómetro. La lectura indicará el diámetro interno del agujero en la posición de medición. Ten en cuenta que algunas alesómetros tienen un mecanismo de trinquete para mantener la medición una vez que se alcanza el ajuste correcto.</p>
+        <p class="respuesta">Es importante tener en cuenta que los alesómetros vienen en diferentes tamaños y rangos de medición para adaptarse a distintos diámetros de agujeros. También existen alesómetros mecánicos y digitales, siendo estos últimos más fáciles de leer y con mayor precisión. El alesómetro es una herramienta esencial en la industria de la fabricación y el mecanizado para asegurar la calidad y precisión de los agujeros cilíndricos en diversas piezas y componentes.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Alesometros%20calibracion.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Alesometros%20medicion.jpg">
+        </div>
+    </div>
+
+    <div id="Tema-01-07">
+        <h2>OTROS ELEMENTOS DE MEDICION</h2>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Maquina%20medicion%20por%20coordenadas.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Brazo%20medicion%20por%20coordenadas.jpg">
+        </div>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>

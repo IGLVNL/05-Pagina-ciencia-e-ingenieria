@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Riesgo en el trabajo, SRT">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Riesgo en el trabajo</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_01_Riesgo en el trabajo.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="tema">Ingenieria Industrial</p>
+    <p class="tema">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Riesgo en el trabajo</h1>
+    <div id="menu">
+        <img src="Icons/Menu.svg" title="Menu">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="dropdown"><a href="#Tema-01-01" onclick="smoothScroll(event, 'Tema-01-01')">01 - PRINCIPIOS DE LA SEGURIDAD E HIEGIENE EN EL TRABAJO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#001"  onclick="smoothScroll(event, '001')">Sistemas de gestion</a></li>
+                        <li><a href="#002"  onclick="smoothScroll(event, '002')">La empresa como sistema sociotécnico</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-02" onclick="smoothScroll(event, 'Tema-01-02')">02 - PELIGRO Y RIESGO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Gestión Integral de Peligros y Riesgos en el Ambiente Laboral</a></li>
+                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Evaluación y control de riesgos</a></li>
+                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Gestión de riesgos</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-03" onclick="smoothScroll(event, 'Tema-01-03')">03 - SEGURIDAD EN EL TRABAJO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Accidentes e incidentes</a></li>
+                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Pirámide de Bird</a></li>
+                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Efecto dominó</a></li>
+                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Enfermedades profesionales</a></li>
+                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Higiene industrial</a></li>
+                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Reglas básicas de seguridad</a></li>
+                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Relevamiento general de riesgos laborales</a></li>
+                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Manipulación de productos químicos</a></li>
+                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Eliminación o reducción de la peligrosidad</a></li>
+                        <li><a href="#015"  onclick="smoothScroll(event, '015')">Disminución de la probabilidad de accidentes</a></li>
+                        <li><a href="#016"  onclick="smoothScroll(event, '016')">Investigación de un accidente</a></li>
+                        <li><a href="#017"  onclick="smoothScroll(event, '017')">Organismos de Aplicación y Control en Materia de Seguridad y Salud Laboral</a></li>
+                        <li><a href="#018"  onclick="smoothScroll(event, '018')">Procedimiento ante accidente del trabajador</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#Tema-01-04" onclick="smoothScroll(event, 'Tema-01-04')">04 - RIESGO LABORAL EN EL TRABAJO</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#019"  onclick="smoothScroll(event, '019')">Definiciones</a></li>
+                        <li><a href="#020"  onclick="smoothScroll(event, '020')">Derechos de los trabajadores</a></li>
+                        <li><a href="#021"  onclick="smoothScroll(event, '021')">Derechos de los empleadores</a></li>
+                        <li><a href="#022"  onclick="smoothScroll(event, '022')">Obligaciones de las empresas</a></li>
+                        <li><a href="#023"  onclick="smoothScroll(event, '023')">Historial e indicadores en la Argentina</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgo en el trabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_Riesgo Mecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion..html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas">
+        <a href="#Tema-01-01" class="boton" onclick="smoothScroll(event, 'Tema-01-01')">01 - PRINCIPIOS DE LA SEGURIDAD E HIGIENE EN EL TRABAJO</a>
+        <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">02 - PELIGRO Y RIESGO</a>
+        <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03 - SEGURIDAD EN EL TRABAJO</a>
+        <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04 - RIESGO LABORAL EN LA ARGENTINA</a>
+    </div>
+    <div id="Tema-01-01">
+        <h2>01-	PRINCIPIOS DE LA SEGURIDAD E HIGIENE EN EL TRABAJO</h2>
+        <p id="001" class="pregunta">Sistemas de Gestión</p>
+        <p class="respuesta">En el entorno empresarial actual, la gestión efectiva de la calidad, la seguridad y el medio ambiente se ha convertido en un pilar fundamental para el éxito sostenible de las organizaciones. Estos tres conceptos interconectados, a menudo denominados la "triple hélice", desempeñan un papel esencial en la creación de empresas responsables, eficientes y socialmente conscientes. A medida que las empresas se esfuerzan por alcanzar sus objetivos y mantener su competitividad, la integración coherente de la calidad de los productos, la seguridad de los trabajadores y la protección ambiental se presenta como un enfoque integral e ineludible.</p>
+        <p class="respuesta">La relación entre la calidad y la seguridad es intrínseca y complementaria. Una gestión de calidad sólida garantiza que los productos y servicios cumplan con los estándares establecidos, lo que no solo satisface a los clientes, sino que también reduce la probabilidad de productos defectuosos o mal diseñados. Por otro lado, la seguridad en el lugar de trabajo contribuye a la calidad al prevenir accidentes y errores que podrían dar lugar a productos no conformes. La capacitación en seguridad y la implementación de medidas de prevención también refuerzan la cultura de calidad al fomentar la atención al detalle y la mejora continua.</p>
+        <p class="respuesta">La seguridad de los trabajadores y la protección ambiental están estrechamente vinculadas por su enfoque compartido en la prevención de riesgos y la mitigación de impactos. Las prácticas seguras en el lugar de trabajo a menudo se traducen en operaciones más seguras para el entorno circundante. Además, los riesgos ambientales, como la exposición a productos químicos tóxicos, pueden tener un impacto directo en la salud de los trabajadores. Por otro lado, las medidas para reducir el impacto ambiental, como la gestión de residuos y la conservación de recursos, también pueden mejorar la seguridad laboral al eliminar fuentes potenciales de peligro.</p>
+        <p class="respuesta">La interrelación entre calidad, seguridad y medio ambiente encuentra su culminación en la creación de una empresa sostenible y socialmente responsable. Integrar estos tres pilares en un sistema de gestión cohesivo no solo mejora la reputación y la relación con los clientes, sino que también reduce costos operativos al prevenir accidentes, minimizar el retrabajo y maximizar la eficiencia de los recursos. En última instancia, una organización que busca la excelencia en calidad, seguridad y protección ambiental se posiciona como un líder en su industria, demostrando su compromiso con el bienestar de sus trabajadores, la satisfacción del cliente y la preservación del entorno global.</p>
+        
+        
+        <p id="002" class="pregunta">La empresa como sistema sociotécnico</p>
+        <p class="respuesta">En el contexto de una empresa concebida como un sistema sociotécnico, emerge una interacción intrincada entre dos componentes esenciales: el medio ambiente físico y el medio ambiente organizativo. Estos entornos influyen y se ven influidos por dos pilares fundamentales: el sistema social, que abarca a los individuos, sus relaciones y valores; y el sistema técnico, que engloba los procesos, la tecnología y los recursos utilizados para operar. Dentro del ámbito organizativo, se despliegan diversos procedimientos que engloban tanto la gestión como los aspectos administrativos y legales, y están intrínsecamente conectados con la seguridad ambiental e industrial.</p>
+        <p class="respuesta">En la búsqueda de la excelencia operativa y la sostenibilidad, las organizaciones han adoptado una serie de procedimientos que enfatizan la seguridad ambiental e industrial, salvaguardando la salud de los trabajadores y la preservación del entorno. Entre estos procedimientos se encuentran:</p>
+        <p class="respuesta">Gestión de Calidad (ISO 9000/2): Este enfoque establece estándares y procesos para asegurar que los productos y servicios cumplen con las expectativas y necesidades de los clientes. La norma ISO 9000/2 guía la mejora continua y la satisfacción del cliente, lo que a su vez incide en la seguridad y el rendimiento ambiental al promover procesos eficientes y consistentes.</p>
+        <p class="respuesta">Gestión Ambiental (ISO 14000): La norma ISO 14000 se centra en la gestión de impactos ambientales. Al identificar y mitigar aspectos que pueden afectar el entorno, las empresas minimizan su huella ecológica y se alinean con regulaciones ambientales, promoviendo la sostenibilidad.</p>
+        <p class="respuesta">Gestión Salud y Seguridad Ocupacional (IRAM/ISO 45001): Esta norma aborda la creación de entornos laborales seguros y saludables. Identificar riesgos y aplicar medidas preventivas no solo resguarda la integridad de los empleados, sino que también asegura una operación más confiable y responsable.</p>
+        <p class="respuesta">Inocuidad Alimentaria (FSSC 22000): En el sector alimentario, la inocuidad es primordial. La certificación FSSC 22000 garantiza que los productos sean seguros para el consumo. Al asegurar la calidad y seguridad de los alimentos, se promueve la salud pública y se evitan riesgos industriales.</p>
+        <p class="respuesta">LEED (Leadership in Energy & Environmental Design): Esta certificación evalúa la sostenibilidad de edificios, considerando criterios como eficiencia energética, uso de energías renovables, calidad ambiental interior y elección de materiales. Al promover construcciones sostenibles, se reducen los impactos ambientales y se mejora la salud de los ocupantes.</p>
+        <p class="respuesta">Empresas Certificadas B: Estas empresas, con fines de lucro, se comprometen con un alto estándar de desempeño social y ambiental. La certificación B Corporation aboga por una economía inclusiva y sostenible, promoviendo la transparencia y la responsabilidad empresarial.</p>
+        <p class="respuesta">Responsabilidad Social Empresarial (RSE/RSC): La RSE involucra a las organizaciones en la mejora social, económica y ambiental de la sociedad. Al contribuir al bienestar comunitario y a la preservación del medio ambiente, las empresas no solo mejoran su imagen, sino que también se destacan en un mundo consciente.</p>
+        <p class="respuesta">Además, dentro del entorno organizativo, se despliegan procedimientos administrativos y legales. La Ley de Higiene y Seguridad en el Trabajo, la Ley Riesgos de Trabajo y las leyes de protección ambiental son ejemplos claros. Estas normativas regulan y protegen tanto a los trabajadores como al entorno, garantizando prácticas seguras y responsables.</p>
+    </div>
+    <div id="Tema-01-02">
+        <h2>PELIGRO Y RIESGO</h2>
+        <p id="003" class="pregunta">Gestión Integral de Peligros y Riesgos en el Ambiente Laboral</p>
+        <p class="respuesta">En el contexto empresarial, la seguridad y el bienestar de los trabajadores son elementos primordiales para garantizar un entorno productivo y sostenible. Cuando un trabajador resulta herido, se pone en marcha un proceso que abarca desde la atención médica hasta la identificación y prevención de futuros incidentes. Este enfoque de gestión integral se basa en la comprensión de conceptos clave: peligro y riesgo.</p>
+        <p class="respuesta">Peligro: Fuente Potencial de Daño: Un peligro se define como cualquier situación, objeto o fuente de energía con la capacidad de causar lesiones, enfermedades o daños al ambiente, procesos o propiedades. Puede surgir de diversos factores, como el diseño deficiente, la naturaleza de la actividad, la instalación incorrecta, la exposición a sustancias peligrosas y más. Por ejemplo, cruzar una avenida implica enfrentar el peligro potencial de sufrir un atropellamiento, lo que subraya la importancia de identificar y mitigar peligros en el lugar de trabajo.</p>
+        <p class="respuesta">Identificación de Peligros y Factores de Riesgo: Los peligros en el entorno laboral pueden derivar de diferentes fuentes. Factores de riesgo físicos, como ruido, vibraciones e iluminación inadecuada, afectan a tejidos y órganos según la exposición. Factores químicos involucran sustancias que pueden causar intoxicación, quemaduras y más. Los biológicos, como parásitos y bacterias, pueden provocar enfermedades infecciosas. Aspectos ergonómicos y psicosociales también influyen en la adecuación del trabajo y el bienestar emocional de los empleados. Finalmente, los riesgos eléctricos representan amenazas derivadas de sistemas eléctricos defectuosos, como equipos sin conexión a tierra.</p>
+        <p class="respuesta">Riesgo: El riesgo se define como la probabilidad de que un peligro cause daño o pérdida. Se clasifica en factores de riesgo físicos, químicos, biológicos, ergonómicos, psicosociales y eléctricos, y su gravedad varía en función de la intensidad de exposición y el tiempo. Las dimensiones del riesgo abarcan daño físico o biológico y costos económicos. Sin embargo, también se consideran pérdidas esperadas subjetivas, como la percepción social de las consecuencias y desigualdades, y el significado cultural del riesgo.</p>
+        <p class="respuesta">Medidas de Gestión del Riesgo</p>
+        <p class="respuesta">Para abordar peligros y riesgos, se requiere una estrategia integral. Las medidas preventivas técnicas incluyen acciones que modifican la fuente del peligro, como el uso de equipos de protección personal o mejoras en procesos y diseño. Las medidas preventivas psicosociales involucran la percepción y la concienciación del riesgo en la cultura organizacional y la promoción de actitudes responsables.</p>
+        <p class="respuesta">Factores de Riesgo Mecánicos y Locativos: Garantizando Ambientes Seguros</p>
+        <p class="respuesta">Dentro del panorama de la gestión integral de peligros y riesgos en el ámbito laboral, es fundamental comprender y abordar los factores de riesgo mecánicos y locativos, que plantean amenazas concretas en los objetos, equipos y ambientes donde los trabajadores desarrollan sus labores. La atención a estos riesgos se traduce en la creación de ambientes de trabajo más seguros y en la prevención de accidentes.</p>
+        <p class="respuesta">Factores de Riesgo Mecánicos: Los factores de riesgo mecánicos emergen en objetos, máquinas, equipos, instrumentos y herramientas que, debido a la falta de mantenimiento preventivo o correctivo, pueden generar accidentes laborales. Ejemplos claros incluyen máquinas y equipos sin anclaje, herramientas manuales defectuosas y cuchillas sin seguro operacional. El deterioro y el mal funcionamiento de estos elementos pueden resultar en lesiones graves para los trabajadores. Por esta razón, la implementación de un programa de mantenimiento adecuado y la revisión constante de estos equipos son esenciales para reducir el riesgo y garantizar la seguridad del personal.</p>
+        <p class="respuesta">Factores de Riesgo Locativos: Los factores de riesgo locativos se centran en el ambiente e infraestructura de las instalaciones de trabajo. Las características de diseño, construcción, mantenimiento y deterioro de estos espacios pueden provocar lesiones, situaciones incómodas y daños materiales. Un ambiente de trabajo seguro no solo protege a los empleados, sino que también asegura la integridad de los activos de la organización. La correcta señalización, iluminación, disposición de equipos y vías de escape son aspectos clave para minimizar riesgos locativos. Además, la atención a la ergonomía y la adecuación de los espacios a las actividades laborales también son consideraciones vitales para la prevención de accidentes.</p>
+        <p class="respuesta">Promoviendo la Seguridad y Prevención: La identificación y gestión de los factores de riesgo mecánicos y locativos son pasos fundamentales para fomentar un ambiente de trabajo seguro y saludable. La implementación de medidas de mantenimiento, la capacitación en el uso adecuado de equipos y la adecuación ergonómica de los espacios son pilares clave en la prevención de accidentes. Además, la concienciación de los trabajadores sobre estos riesgos y la promoción de una cultura de seguridad contribuyen a forjar un entorno laboral donde la protección de la salud y el bienestar es prioritaria.</p>
+        
+        <p id="004" class="pregunta">Evaluación y control de riesgos</p>
+        <p class="respuesta">Un Enfoque Sistemático para la Seguridad Laboral: La gestión integral de peligros y riesgos en el ámbito laboral requiere una metodología precisa y sistemática para evaluar y controlar situaciones que puedan poner en riesgo la seguridad y el bienestar de los trabajadores. Este enfoque riguroso se basa en la distinción entre peligro y riesgo, y en la aplicación de una fórmula clave para determinar la magnitud del riesgo.</p>
+        <p class="respuesta">Evaluación de Riesgos: La evaluación y control de riesgos sigue un proceso escalonado y riguroso. Primero, se identifican los peligros, comprendiendo situaciones u objetos que tienen el potencial de causar daño o lesiones. Luego, se procede a determinar la probabilidad de que ocurra un accidente y la posible consecuencia en caso de que ocurra. Esta evaluación permite cuantificar el nivel de riesgo asociado a cada peligro identificado.</p>
+        <p class="respuesta">Fórmula Clave: RIESGO = CONSECUENCIA x PROBABILIDAD. La fórmula básica para calcular el riesgo involucra la multiplicación de la consecuencia potencial de un accidente por la probabilidad de que dicho accidente ocurra. Esta fórmula toma en cuenta también la exposición del individuo al peligro. El resultado es una medida cuantitativa que refleja el nivel de riesgo de una situación específica.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/001.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/002.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/003.jpg">
+        </div>
+        <p class="respuesta">Control de Riesgos: Enfoque ALARP. Una vez evaluado el riesgo, se determina si este es "ALARP" (As Low As Reasonably Practicable), lo que significa "tan bajo como sea razonablemente posible". Si el riesgo es considerado ALARP, se considera que el peligro está controlado y no requiere más medidas preventivas. Si el riesgo no es aceptable en este nivel, se deben establecer controles adicionales para reducir el riesgo a un nivel aceptable. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/004.jpg">
+        </div>
+        <p class="respuesta">En las siguientes imágenes, se ve la sucesión de pasos que se deberían de seguir, para poder encarar una situación de riesgo, y disminuirlo o eliminarlo.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/005.jpg">
+        </div>
+        <p class="respuesta">Ejemplo</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/006.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/007.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/008.jpg">
+        </div>
+        <p class="respuesta">Ciclo de Mejora Continua: El proceso de evaluación y control de riesgos no concluye aquí. Si se requieren controles adicionales, se vuelve al ciclo, comenzando nuevamente desde la determinación de la probabilidad y la consecuencia. La mejora continua es un pilar fundamental en la gestión de riesgos, garantizando que las medidas preventivas evolucionen y se adapten para asegurar un entorno laboral seguro.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/009.jpg">
+        </div>
+        
+        <p id="005" class="pregunta">Gestión de riesgos</p>
+        <p class="respuesta">Según cuan madura sea la empresa, las medidas tomadas en términos de riesgos y peligros, van evolucionando como se ve en la imagen. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/010.jpg">
+        </div>
+    </div>
+    <div id="Tema-01-03">
+        <h2>SEGURIDAD EN EL TRABAJO</h2>
+        <p id="006" class="pregunta">Accidentes e incidentes</p>
+        <p class="respuesta">En el ámbito empresarial, la seguridad laboral es una prioridad fundamental, y la gestión adecuada de accidentes e incidentes es un componente esencial para garantizar el bienestar de los trabajadores y la operación sin interrupciones. Este proceso se basa en una comprensión precisa de los términos clave, como peligro, riesgo, accidente e incidente.</p>
+        <p class="respuesta">El riesgo se define como la combinación de la probabilidad de que ocurra un suceso peligroso con la gravedad de las lesiones o daños resultantes. Un peligro, por otro lado, se refiere a una situación de riesgo inminente. El sentido común y la evaluación de riesgos aceptables desempeñan un papel fundamental en la determinación de si una situación es segura.</p>
+        <p class="respuesta">Los accidentes son eventos inesperados e imprevistos que interrumpen la operación diaria del trabajo y tienen el potencial de causar daños o lesiones. La temporalidad y la gravedad de los accidentes pueden variar, y la Superintendencia de Riesgos del Trabajo (SRT) en Argentina establece criterios específicos para definir un accidente. Se considera accidente aquel evento súbito y violento que ocurre por el hecho o en ocasión del trabajo, incluyendo el trayecto entre el domicilio del trabajador y el lugar de trabajo (in itinere). Estos pueden comprometer tanto a las personas, como a equipos, materiales y herramientas.</p>
+        <p class="respuesta">Los incidentes son situaciones que, aunque no resulten en daños o lesiones inmediatas, son indicativos de un peligro potencial o una situación de riesgo. Estos eventos pueden ser valiosos para identificar problemas antes de que se conviertan en accidentes. La gestión proactiva de incidentes se traduce en la toma de medidas preventivas para evitar accidentes futuros.</p>
+        <p class="respuesta">La gestión efectiva de accidentes e incidentes no solo se trata de responder a situaciones problemáticas, sino también de prevenir futuros riesgos. La identificación temprana de peligros y la implementación de medidas de control y prevención adecuadas son fundamentales para garantizar la seguridad laboral. El aprendizaje continuo a partir de incidentes también desempeña un papel esencial en la mejora continua de los procesos y la cultura de seguridad en la organización.</p>
+        <p class="respuesta">Los accidentes en el entorno laboral pueden ser el resultado de una serie de factores y acciones inseguras que interactúan en conjunto. La comprensión de estas causas es fundamental para prevenir accidentes y promover un entorno de trabajo seguro y saludable. Dos categorías clave de causas son las "Acciones Inseguras o Riesgosas" y las "Condiciones Mecánicas Inseguras".</p>
+        <p class="respuesta">Las acciones inseguras o riesgosas son comportamientos imprudentes o incumplimientos de procedimientos de seguridad establecidos. Estas acciones pueden incluir la violación de normas y procedimientos aceptados que se consideran seguros. Ejemplos de acciones inseguras son:</p>
+        <p class="respuesta">Ignorar o evadir procedimientos de seguridad. Realizar tareas sin el equipo de protección personal adecuado. Usar herramientas de manera incorrecta o sin capacitación adecuada. Apresurarse o distraerse mientras se realiza una tarea. No seguir protocolos de seguridad al operar maquinaria. Condiciones Mecánicas Inseguras</p>
+        <p class="respuesta">Las condiciones mecánicas inseguras son factores ambientales o relacionados con equipos que crean un entorno de trabajo peligroso. Estas condiciones pueden aumentar el riesgo de accidentes y lesiones. Ejemplos de condiciones mecánicas inseguras son:</p>
+        <p class="respuesta">Herramientas o equipos defectuosos que pueden causar fallas o mal funcionamiento. Superficies de trabajo desiguales o resbaladizas que aumentan el riesgo de caídas. Deficiencias en la ventilación o iluminación que pueden afectar la seguridad y el bienestar de los trabajadores. Sistemas de seguridad no funcionales o ausentes en maquinaria y equipos.</p>
+        <p class="respuesta">La identificación y comprensión de las causas subyacentes de los accidentes, como las acciones inseguras y las condiciones mecánicas inseguras, son esenciales para la prevención. Estos factores son interconectados y pueden aumentar la probabilidad de incidentes si no se abordan adecuadamente.</p>
+        <p class="respuesta">Fomentar una cultura de seguridad en el lugar de trabajo es crucial para prevenir accidentes. Esto implica educar y capacitar a los trabajadores en prácticas seguras, alentar la comunicación sobre incidentes potenciales y establecer un ambiente en el que se sientan cómodos reportando condiciones inseguras o actos riesgosos.</p>
+        
+        <p id="007" class="pregunta">Pirámide de Bird</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/011.jpg">
+        </div>
+        <p class="respuesta">La Pirámide de Bird es una representación gráfica utilizada en la gestión de la seguridad laboral para ilustrar la relación entre accidentes e incidentes en el entorno laboral. Esta pirámide, desarrollada por Frank E. Bird Jr., demuestra la importancia de abordar y prevenir los incidentes como una estrategia fundamental para reducir la probabilidad de accidentes más graves.</p>
+        <p class="respuesta">La Pirámide de Bird visualiza cómo los incidentes y actos peligrosos son precursores de accidentes más graves. Al abordar y prevenir los incidentes y actos peligrosos en los niveles inferiores de la pirámide, se reduce la probabilidad de que ocurran accidentes graves en la cima. Esta pirámide subraya la importancia de crear una cultura de seguridad que fomente la identificación y el reporte de incidentes y actos peligrosos, permitiendo la intervención temprana y la implementación de medidas preventivas.</p>
+        <p class="respuesta">La Pirámide de Bird se estructura en varios niveles que reflejan la frecuencia y gravedad de los eventos:</p>
+        <p class="respuesta">Actos Peligrosos: La base de la pirámide representa los actos peligrosos, que son comportamientos inseguros o acciones imprudentes realizadas por los trabajadores. Estos actos tienen un alto grado de frecuencia, pero generalmente resultan en incidentes menores y no causan lesiones graves.</p>
+        <p class="respuesta">Incidentes: El nivel siguiente corresponde a los incidentes. Estos eventos son más serios que los actos peligrosos, pero aún no han resultado en daños graves ni lesiones. Los incidentes son oportunidades para intervenir y prevenir accidentes más graves.</p>
+        <p class="respuesta">Accidentes con Lesiones Leves: Los accidentes con lesiones leves se encuentran en un nivel intermedio de la pirámide. Aunque las lesiones no son críticas, aún pueden requerir atención médica y causar ausencia laboral.</p>
+        <p class="respuesta">Accidentes con Lesiones Graves: Este nivel de la pirámide representa los accidentes que resultan en lesiones graves o discapacidades temporales o permanentes. Estos eventos tienen un impacto significativo en la salud y bienestar de los trabajadores.</p>
+        <p class="respuesta">Accidentes Graves o Fatales: En la cima de la pirámide se encuentran los accidentes más graves, que resultan en lesiones fatales o discapacidades permanentes y significativas. Estos eventos son raros, pero tienen un impacto devastador en los trabajadores y sus familias.</p>
+        
+        <p id="008" class="pregunta">Efecto domino</p>
+        <p class="respuesta">En 1931, W. H. Heinrich introdujo una teoría que cambió la forma en que se abordaban los accidentes en el entorno laboral: la teoría del "efecto dominó". Esta teoría postula que los accidentes no son eventos aislados, sino el resultado de una cadena de causas y efectos interrelacionados. Según esta teoría, al eliminar una causa raíz, se pueden prevenir los accidentes y mejorar la seguridad laboral.</p>
+        <p class="respuesta">Una de las contribuciones notables de Heinrich es la segmentación de las causas de accidentes según su origen. Según su investigación, el 88% de los accidentes son causados por actos humanos peligrosos. Estos actos incluyen comportamientos inseguros, falta de cumplimiento de procedimientos y otras acciones imprudentes. El 10% de los accidentes se atribuyen a condiciones peligrosas en el entorno de trabajo, como equipos defectuosos o falta de mantenimiento. Finalmente, solo el 2% de los accidentes son resultado de hechos fortuitos, eventos impredecibles y no relacionados con la conducta humana o las condiciones laborales.</p>
+        <p class="respuesta">La teoría del efecto dominó ha tenido un impacto profundo en la gestión de la seguridad laboral. La identificación de que la mayoría de los accidentes son causados por actos humanos peligrosos subraya la importancia de la capacitación, la concienciación y el fomento de una cultura de seguridad en el lugar de trabajo. La prevención de accidentes implica no solo abordar las condiciones peligrosas, sino también cambiar comportamientos y hábitos para reducir los actos inseguros.</p>
+        <p class="respuesta">La teoría del efecto dominó ha impulsado un enfoque más holístico en la gestión de la seguridad. En lugar de simplemente tratar los síntomas de los accidentes, se busca identificar y eliminar las causas raíz. Al hacerlo, se crea un entorno de trabajo más seguro y saludable. Además, esta teoría ha llevado a la adopción de prácticas de mejora continua, donde la revisión constante de procesos y la implementación de medidas preventivas se convierten en norma.</p>
+        
+        <p id="009" class="pregunta">Enfermedades profesionales</p>
+        <p class="respuesta">La gestión de enfermedades profesionales es un pilar fundamental para proteger la integridad y el bienestar de los trabajadores. Esta gestión implica una comprensión sólida de conceptos esenciales, como enfermedades profesionales, factores de riesgo y la responsabilidad que conlleva garantizar la seguridad en el lugar de trabajo.</p>
+        <p class="respuesta">Una enfermedad profesional se define como una afección que se produce como resultado directo de la exposición a riesgos presentes en el lugar o tipo de trabajo. Para identificar y clasificar estas enfermedades, se recurre a un Listado de Enfermedades Profesionales. Este listado documenta cuadros clínicos específicos, exposiciones laborales y actividades en las que estas enfermedades suelen manifestarse. Además, se destacan agentes de riesgo, como condiciones ambientales, ruidos, sustancias químicas y cargas de trabajo, que pueden tener un impacto negativo en la salud de los trabajadores.</p>
+        <p class="respuesta">La gestión de enfermedades profesionales implica considerar una serie de riesgos y aspectos esenciales:</p>
+        <p class="respuesta">Seguridad Propia y de los Compañeros: La prevención de enfermedades profesionales garantiza la seguridad y la salud de los trabajadores, protegiéndolos de condiciones laborales perjudiciales.</p>
+        <p class="respuesta">Protección de la Propiedad y Equipos: La implementación de medidas preventivas no solo protege a los trabajadores, sino también a la propiedad y los equipos de la organización, evitando daños y pérdidas innecesarias.</p>
+        <p class="respuesta">Mantenimiento de Estándares de Calidad y Productividad: Un entorno de trabajo saludable y seguro promueve la eficiencia y la calidad en la producción, al reducir la ausencia laboral debido a enfermedades y mejorar la moral y el compromiso de los empleados.</p>
+        <p class="respuesta">Protección del Medio Ambiente: La prevención de enfermedades profesionales también contribuye a proteger el medio ambiente, al limitar la exposición a sustancias químicas y peligrosas que pueden tener un impacto negativo en el ecosistema.</p>
+        <p class="respuesta">Cumplimiento de las Leyes: La gestión de enfermedades profesionales está en línea con las leyes y regulaciones laborales que exigen un entorno de trabajo seguro y saludable para los empleados.</p>
+        <p class="respuesta">Promoviendo la Prevención y la Salud: La gestión efectiva de enfermedades profesionales no solo se trata de tratar las enfermedades existentes, sino de prevenir su aparición. Esto implica la identificación temprana de factores de riesgo, la implementación de medidas preventivas y la promoción de una cultura de seguridad y bienestar en la organización. La colaboración entre empleadores, trabajadores y profesionales de la salud es esencial para garantizar un ambiente laboral saludable y seguro para todos.</p>
+        
+        <p id="010" class="pregunta">Higiene industrial</p>
+        <p class="respuesta">La higiene industrial es un pilar fundamental en la gestión de la salud y seguridad en el trabajo, ya que se enfoca en la identificación, evaluación y control de los factores y tensiones ambientales que pueden tener un impacto en la salud de los trabajadores o incluso en los residentes de la comunidad circundante. Esta disciplina se establece sobre objetivos clave que son la base de la protección y el bienestar laboral. </p>
+        <p class="respuesta">La higiene industrial es un componente esencial para garantizar la seguridad y bienestar de los trabajadores, así como de la comunidad. Al abordar y controlar los factores ambientales que podrían tener un impacto negativo en la salud, se crea un entorno laboral más seguro y saludable. Además, la implementación de medidas de higiene industrial también contribuye a la reducción de enfermedades profesionales y accidentes laborales, promoviendo una cultura de prevención y seguridad.</p>
+        <p class="respuesta">La responsabilidad de implementar medidas de higiene industrial recae en empleadores, trabajadores y profesionales de la salud. La colaboración y el compromiso de todas las partes son esenciales para garantizar un ambiente laboral seguro y saludable. La higiene industrial no solo protege a los trabajadores, sino que también fortalece la sostenibilidad y reputación de la organización en su compromiso con la salud y seguridad.</p>
+        <p class="respuesta">La higiene industrial tiene como misión primordial garantizar la seguridad y salud de los trabajadores, así como de aquellos que interactúan con los entornos laborales. Para lograrlo, se persiguen tres objetivos centrales:</p>
+        <p class="respuesta">El primer paso en la higiene industrial es identificar exhaustivamente los factores y tensiones ambientales presentes en el lugar de trabajo. Esto incluye elementos físicos, químicos, biológicos y ergonómicos que podrían tener un impacto en la salud de las personas expuestas.</p>
+        <p class="respuesta">Una vez identificados los factores, se procede a evaluar su nivel de riesgo. Esto implica comprender la probabilidad de exposición y los posibles efectos adversos en la salud de los trabajadores. La evaluación de riesgos permite priorizar las medidas de control y prevención.</p>
+        <p class="respuesta">El objetivo final es implementar medidas de control adecuadas para mitigar los riesgos identificados. Esto puede incluir cambios en los procesos de trabajo, la introducción de medidas de protección personal, la modificación de equipos o la implementación de controles técnicos para reducir la exposición a factores peligrosos.</p>
+        
+        <p id="011" class="pregunta">Reglas básicas de seguridad</p>
+        <p class="respuesta">La seguridad en el entorno laboral es esencial para proteger a los trabajadores y prevenir accidentes y lesiones. Las reglas básicas de seguridad actúan como una guía fundamental para garantizar que los trabajadores operen en un ambiente seguro y saludable. A continuación, se presentan algunas reglas clave que contribuyen a un lugar de trabajo seguro:</p>
+        <p class="respuesta">No Trabajar Solo en Lugares Riesgosos: Trabajar en áreas peligrosas o potencialmente riesgosas siempre debe hacerse en equipo. La colaboración y el apoyo mutuo pueden ser cruciales en situaciones de emergencia.</p>
+        <p class="respuesta">Usar Vestimenta y Elementos de Protección Adecuados: Utilizar la vestimenta y el equipo de protección personal adecuados es esencial. Esto puede incluir cascos, guantes, gafas de seguridad y protectores auditivos, entre otros.</p>
+        <p class="respuesta">Conocer el Lugar de Trabajo: Familiarizarse con el entorno de trabajo es fundamental para reaccionar adecuadamente en caso de emergencia. Esto incluye conocer las rutas de escape, los números telefónicos de emergencia y la ubicación de equipos de seguridad como matafuegos.</p>
+        <p class="respuesta">Rutas de Escape: Saber cómo evacuar rápidamente en caso de incendio u otras emergencias puede salvar vidas. Conocer las rutas de escape y los puntos de reunión es esencial.</p>
+        <p class="respuesta">Números Telefónicos de Emergencia: Tener acceso rápido a números telefónicos de emergencia es crucial en situaciones críticas. Estos números deben estar claramente visibles y conocidos por todos.</p>
+        <p class="respuesta">Ubicación de Teléfonos y Matafuegos: Saber dónde encontrar teléfonos cercanos y accesibles para llamar a ayuda es esencial. Además, conocer la ubicación de los extintores (matafuegos) y entender los tipos de extintores y su uso puede ser vital en caso de un incendio.</p>
+        <p class="respuesta">Interrumpir la Energía Eléctrica: Conocer cómo interrumpir la energía eléctrica en caso de emergencia o necesidad de realizar reparaciones es importante para prevenir descargas eléctricas y otros peligros.</p>
+        <p class="respuesta">Cortar el Gas: Entender cómo cortar el suministro de gas en situaciones de emergencia o si se detecta una fuga es crucial para evitar posibles explosiones o intoxicaciones.</p>
+        <p class="respuesta">La implementación de estas reglas básicas de seguridad no solo protege a los trabajadores, sino que también fomenta una cultura de seguridad en el lugar de trabajo. Al educar a los empleados sobre estas reglas y alentar su cumplimiento, se crea un entorno donde la seguridad es una prioridad constante.</p>
+        <p class="respuesta">En última instancia, el cumplimiento de estas reglas básicas de seguridad contribuye a un ambiente laboral más seguro y saludable, donde los trabajadores pueden desempeñarse de manera eficiente sin poner en riesgo su bienestar ni el de sus compañeros.</p>
+        
+        <p id="012" class="pregunta">Relevamiento general de riesgos laborales</p>
+        <p class="respuesta">La seguridad en el entorno laboral es un aspecto esencial para proteger la salud y el bienestar de los trabajadores. Para asegurar el cumplimiento de las normativas de Salud y Seguridad en el Trabajo, la Superintendencia de Riesgos del Trabajo (SRT) en Argentina ha establecido la obligación de realizar un Relevamiento General de Riesgos Laborales. Esta medida tiene como objetivo identificar y evaluar los riesgos laborales presentes en el lugar de trabajo y establecer medidas preventivas adecuadas.</p>
+        <p class="respuesta">Según las Resoluciones SRT 463/09, SRT 529/09 y SRT 741/10, los empleadores están obligados a presentar un Relevamiento General de Riesgos Laborales al momento de afiliarse a una Aseguradora de Riesgos de Trabajo (ART). Esta presentación es crucial para establecer una base de información sólida sobre las condiciones de seguridad y salud en el entorno laboral.</p>
+        <p class="respuesta">El empleador tiene un plazo de 30 días a partir de la afiliación a la ART para presentar el Relevamiento General de Riesgos Laborales. Una vez recibida esta información, la ART está obligada a informar a la SRT en un plazo de 10 días. Este proceso garantiza que tanto las autoridades como las aseguradoras tengan un panorama claro de los riesgos existentes en el lugar de trabajo y puedan tomar medidas adecuadas para su mitigación.</p>
+        <p class="respuesta">Con el objetivo de asegurarse de que los empleadores cumplan con las normativas de Salud y Seguridad en el Trabajo, las aseguradoras deben llevar a cabo visitas a los empleadores para verificar el estado de cumplimiento. Durante estas visitas, se evalúa si se han implementado las medidas de prevención necesarias y si se han abordado adecuadamente los riesgos identificados en el Relevamiento General de Riesgos Laborales.</p>
+        <p class="respuesta">La implementación del Relevamiento General de Riesgos Laborales no solo es un requisito legal, sino también una medida fundamental para crear un entorno laboral seguro y saludable. Al identificar y abordar los riesgos laborales de manera proactiva, se previenen accidentes y lesiones, se protege a los trabajadores y se fomenta una cultura de seguridad en el lugar de trabajo.</p>
+        <p class="respuesta">El Relevamiento General de Riesgos Laborales sirve como herramienta para la gestión de la seguridad y la salud en el trabajo, y su cumplimiento es un paso clave hacia la creación de un entorno laboral en el que los trabajadores puedan desempeñarse de manera segura y productiva.</p>
+        
+        <p id="013" class="pregunta">Manipulación de productos químicos</p>
+        <p class="respuesta">La manipulación de productos químicos en el entorno laboral requiere una atención meticulosa y un compromiso con las prácticas de seguridad. Adoptar medidas adecuadas al trabajar con sustancias químicas es esencial para proteger la salud de los trabajadores y prevenir posibles incidentes. A continuación, se presentan directrices clave para una manipulación segura de productos químicos:</p>
+        <p class="respuesta">Uso de Anteojos de Seguridad: Siempre utilice anteojos de seguridad para proteger sus ojos de posibles salpicaduras o aerosoles de productos químicos que podrían ser dañinos.</p>
+        <p class="respuesta">No Huela ni Pruebe: Nunca huela ni pruebe los productos químicos. Utilice su sentido del olfato o del gusto solo en contextos seguros y controlados.</p>
+        <p class="respuesta">MSDS y Rótulos: Asegúrese de tener acceso a las Hojas de Datos de Seguridad de Materiales (MSDS) o su equivalente. Lea los rótulos de los envases para conocer los peligros y las instrucciones de uso.</p>
+        <p class="respuesta">Etiquetas: Nunca utilice productos químicos en frascos sin etiquetas claras y legibles. La falta de etiquetas puede aumentar el riesgo de exposición y accidentes.</p>
+        <p class="respuesta">Productos Desconocidos: Si un material carece de indicaciones de seguridad, trátelo como si fuera peligroso, ya sea explosivo, volátil o venenoso.</p>
+        <p class="respuesta">Evite el Contacto con la Piel: Minimice el contacto de la piel con los productos químicos. Utilice guantes adecuados y siga las tablas de propiedades de los guantes para elegir el tipo adecuado.</p>
+        <p class="respuesta">No Pipetee con la Boca: Evite pipetear líquidos utilizando su boca. Utilice pipetas y dispositivos adecuados para evitar la exposición directa.</p>
+        <p class="respuesta">Organización del Espacio de Trabajo: No sobrecargue su área de trabajo con reactivos y aparatos. Mantenga solo lo que sea necesario y cumpla con las regulaciones de almacenamiento.</p>
+        <p class="respuesta">Almacenamiento Adecuado: No acumule más reactivos de los necesarios para las actividades diarias. Evite guardar productos peligrosos en la campana.</p>
+        <p class="respuesta">Disposición de Residuos: Siga las instrucciones específicas para desechar los residuos químicos de manera segura y responsable. No vierta productos químicos peligrosos de manera indiscriminada.</p>
+        <p class="respuesta">Guantes Apropiados: Utilice los guantes apropiados para el manejo de productos químicos, siguiendo las recomendaciones de las tablas de compatibilidad química.</p>
+        
+        <p id="014" class="pregunta">Eliminación o reducción de la peligrosidad</p>
+        <p class="respuesta">Una parte esencial de la gestión de la seguridad en el lugar de trabajo es abordar y corregir los peligros identificados. Para lograr esto, se requiere una evaluación científico-técnica exhaustiva de las tareas y los entornos laborales, junto con una comprensión clara de si los peligros están relacionados con actos inseguros o condiciones mecánicas inseguras.</p>
+        <p class="respuesta">La evaluación de la tarea y el lugar de trabajo es un proceso detallado que implica identificar fuentes de daño y evaluar cómo y quién podría resultar dañado. Esto incluye la determinación de si un peligro se origina en un acto inseguro o en una condición mecánica insegura. Conciencia del riesgo y evaluación técnica juegan un papel clave en este proceso.</p>
+        <p class="respuesta">Una vez que se han identificado los peligros y se ha realizado una evaluación exhaustiva, se deben tomar medidas para corregirlos. Las medidas correctivas incluyen:</p>
+        <p class="respuesta">Eliminar o Reducir el Peligro: La eliminación del peligro es la medida más efectiva. Si no es posible, se debe buscar reducirlo a un nivel aceptable a través de medidas como modificaciones en los procesos o en el equipo.</p>
+        <p class="respuesta">Aislar el Peligro: Se pueden tomar medidas para aislar el peligro de los trabajadores. Esto podría implicar el uso de barreras físicas o la reubicación de elementos peligrosos.</p>
+        <p class="respuesta">Educación, Entrenamiento y Supervisión: Los trabajadores expuestos a peligros deben ser educados, entrenados y supervisados adecuadamente para asegurarse de que comprendan los riesgos y sepan cómo trabajar de manera segura.</p>
+        <p class="respuesta">Elementos de Protección Personal (EPP): Los EPP son el último recurso para proteger a los trabajadores de los peligros. Esto incluye equipo como guantes, anteojos de seguridad, cascos, arneses y tapones para los oídos. Los EPP se utilizan para reducir el efecto de la exposición al peligro y deben usarse en situaciones donde no se puedan eliminar o reducir los peligros de otra manera.</p>
+        <p class="respuesta">Diferentes peligros requieren diferentes tipos de protección. Por ejemplo, para protegerse del impacto de objetos en movimiento, se pueden utilizar cascos, gafas de seguridad, guantes y zapatos de seguridad. En situaciones donde el calor o productos corrosivos son un peligro, es esencial usar equipos de protección como guantes, delantales y botas resistentes.</p>
+        <p class="respuesta">La correcta selección y uso de EPP es crucial para garantizar la seguridad de los trabajadores. Aunque los EPP son un último recurso, son una herramienta vital para reducir los riesgos y prevenir lesiones en situaciones en las que los peligros no pueden eliminarse por completo.</p>
+        
+        <p id="015" class="pregunta">Disminución de la probabilidad de accidentes</p>
+        <p class="respuesta">La disminución de la probabilidad de accidentes en el lugar de trabajo es una prioridad fundamental que depende tanto de la gestión gerencial como de la adopción de medidas preventivas. Aquí se presentan estrategias clave para reducir la probabilidad de accidentes:</p>
+        <p class="respuesta">La gerencia desempeña un papel fundamental en la seguridad laboral. Al establecer políticas sólidas, fomentar una cultura de seguridad y asignar recursos adecuados, se pueden crear condiciones favorables para prevenir accidentes.</p>
+        <p class="respuesta">El personal debe recibir un entrenamiento adecuado en prácticas de seguridad, manejo de equipos y procedimientos de emergencia. La capacitación constante ayuda a mejorar la conciencia de los riesgos y la correcta ejecución de tareas.</p>
+        <p class="respuesta">Fomentar una comunicación abierta y bidireccional entre los empleados y la gerencia permite identificar y abordar los problemas de seguridad de manera efectiva, creando un entorno en el que se sientan seguros al informar sobre riesgos potenciales.</p>
+        <p class="respuesta">Mantener un ambiente de trabajo limpio, ordenado y bien iluminado es esencial. Los espacios organizados reducen la probabilidad de tropezones y caídas, y una iluminación adecuada ayuda a evitar accidentes por falta de visibilidad.</p>
+        <p class="respuesta">Realizar evaluaciones de rendimiento regulares y reconocer a los empleados que siguen prácticas seguras crea un incentivo para mantener altos estándares de seguridad.</p>
+        <p class="respuesta">Las prácticas adecuadas de almacenamiento y estiba ayudan a evitar caídas de objetos, choques y daños a equipos y materiales, reduciendo la posibilidad de accidentes.</p>
+        <p class="respuesta">Mantener las herramientas y equipos en buen estado es esencial para prevenir fallas y mal funcionamiento, lo que a su vez reduce los riesgos de lesiones.</p>
+        <p class="respuesta">Identificar y corregir peligros esenciales para mantener un entorno seguro. La eliminación o reducción de peligros, el uso de equipos de protección personal y el control de exposiciones peligrosas son estrategias clave.</p>
+        <p class="respuesta">Medidas Preventivas Adicionales:</p>
+        <p class="respuesta">Eliminar el Peligro: Siempre que sea posible, eliminar el peligro de raíz es la mejor opción.</p>
+        <p class="respuesta">Reducir a Nivel Aceptable: Si no se puede eliminar, reducir el peligro a un nivel aceptable mediante medidas de ingeniería.</p>
+        <p class="respuesta">Reemplazar por Algo Menos Peligroso: Si es posible, reemplazar sustancias o procesos peligrosos por alternativas más seguras.</p>
+        <p class="respuesta">Proveer Buena Ventilación: En situaciones donde se manejan sustancias químicas o se generan vapores tóxicos, una ventilación adecuada es crucial.</p>
+        <p class="respuesta">Al combinar medidas gerenciales sólidas, capacitación continua y prácticas preventivas, las organizaciones pueden crear un entorno de trabajo más seguro y reducir significativamente la probabilidad de accidentes. La colaboración de todos los niveles de la organización es esencial para garantizar la salud y el bienestar de los empleados.</p>
+        
+        <p id="016" class="pregunta">Investigación de un accidente</p>
+        <p class="respuesta">La investigación de accidentes es un proceso esencial para comprender las circunstancias detrás de un incidente y tomar medidas para prevenir futuras ocurrencias. A continuación, se describen los pasos clave para llevar a cabo una investigación efectiva y cómo implementar medidas correctivas:</p>
+        <p class="respuesta">Recopilación de Información: Reúna datos sobre el accidente, incluyendo quién resultó lesionado, dónde y cuándo ocurrió, qué materiales, máquinas o condiciones estuvieron involucrados y cómo sucedió el incidente.</p>
+        <p class="respuesta">Análisis de Causas: Determine por qué ocurrió el accidente. Identifique las causas inmediatas y subyacentes, como fallas en equipos, procedimientos inadecuados, falta de entrenamiento o supervisión, entre otros.</p>
+        <p class="respuesta">Causas Básicas y Contribuyentes: Investigue más a fondo para identificar las causas básicas y contribuyentes. Estas pueden ser deficiencias en el diseño del sistema, falta de comunicación, cultura de seguridad deficiente, entre otros factores.</p>
+        <p class="respuesta">Determinación de Medidas Correctivas: Una vez identificadas las causas, diseñe medidas correctivas efectivas para abordar los problemas subyacentes. Estas medidas deben ser específicas, realistas y orientadas a prevenir futuros incidentes.</p>
+        <p class="respuesta">Verificación de Implementación: Asegúrese de que las medidas correctivas se implementen de manera efectiva. Esto puede incluir cambios en procedimientos, adquisición de nuevos equipos, capacitación adicional y más.</p>
+        <p class="respuesta">Creación de Materiales Educativos: Utilice la información recopilada para desarrollar materiales educativos. Estos pueden ser presentaciones, folletos o videos que resalten los riesgos involucrados, las lecciones aprendidas y las medidas preventivas.</p>
+        <p class="respuesta">Cultura de Seguridad: Promueva una cultura de seguridad en la organización. Fomente la comunicación abierta sobre incidentes y aliente a los empleados a reportar problemas y sugerir mejoras.</p>
+        <p class="respuesta">Revisión y Mejora Continua: Regularmente revise los procedimientos y las medidas de seguridad para asegurarse de que sigan siendo efectivos. Aprenda de las investigaciones anteriores para evitar la repetición de incidentes similares.</p>
+        <p class="respuesta">La investigación de los accidentes no solo trata de identificar culpables, sino de comprender las fallas del sistema y tomar medidas para prevenir futuros riesgos. Al seguir estos pasos y mantener un enfoque proactivo en la seguridad, las organizaciones pueden crear un entorno laboral más seguro y evitar incidentes innecesarios.</p>
+        
+        <p id="017" class="pregunta">Organismos de Aplicación y Control en Materia de Seguridad y Salud Laboral</p>
+        <p class="respuesta">En el marco de la Ley 19.587 y las regulaciones que la complementan, se establecen varios organismos de aplicación y control en Argentina para garantizar la seguridad y salud en el ámbito laboral. A continuación, se detallan algunos de estos organismos y sus áreas de competencia:</p>
+        <p class="respuesta">Superintendencia de Riesgos del Trabajo (SRT): La SRT es el organismo encargado de supervisar y controlar la implementación de la Ley 19.587 y la Ley de Riesgos de Trabajo (24.557). Tiene la responsabilidad de promover políticas de prevención de accidentes y enfermedades laborales, así como de fiscalizar la actuación de las Aseguradoras de Riesgos del Trabajo (ART).</p>
+        <p class="respuesta">Comisión Nacional de Energía Atómica (CONEA): La CONEA regula y controla la seguridad en el uso de la energía atómica y las radiaciones ionizantes en diversos ámbitos, incluido el laboral. Su objetivo es prevenir riesgos derivados de la exposición a radiaciones ionizantes y asegurar el cumplimiento de normativas de seguridad nuclear y radiológica.</p>
+        <p class="respuesta">Fábrica Militar: En relación a las sustancias explosivas, la Fábrica Militar es responsable de su producción, almacenamiento y manejo seguro. Sus funciones incluyen la supervisión de instalaciones y procesos para prevenir riesgos y accidentes asociados a estas sustancias.</p>
+        <p class="respuesta">Armada Nacional: El área de trabajos hiperbáricos, que involucra actividades en entornos de alta presión como el buceo, está bajo la jurisdicción de la Armada Nacional. Esta institución establece normativas y medidas de seguridad para prevenir accidentes en estas condiciones.</p>
+        <p class="respuesta">Entes Provinciales: Además de los organismos de nivel nacional, las provincias también cuentan con legislaciones y organismos encargados de supervisar y controlar la seguridad laboral a nivel regional. Por ejemplo, en la provincia de Santa Fe, la Empresa Provincial de la Energía (EPE) podría estar involucrada en la regulación y control de la seguridad eléctrica.</p>
+        
+        <p id="018" class="pregunta">Procedimiento ante accidente del trabajador</p>
+        <p class="respuesta">Cuando ocurre un accidente de trabajo, es crucial seguir un procedimiento adecuado para garantizar la atención inmediata del trabajador afectado y para asegurar que se notifiquen los hechos a las instancias correspondientes. A continuación, se detalla el procedimiento a seguir:</p>
+        <p class="respuesta">Comunicación y Atención Inmediata: En caso de un accidente de trabajo, el trabajador accidentado o cualquier persona presente en la situación debe comunicarse de inmediato con la ART a través del número de teléfono indicado en su tarjeta personal de afiliación. La ART proporcionará la ubicación del centro de atención médica más cercano y dará instrucciones sobre cómo proceder.</p>
+        <p class="respuesta">Importancia de la Credencial: Es esencial que el trabajador porte consigo la credencial de la ART en todo momento. Esta credencial contiene información personal y de contacto importante. En caso de emergencia, se podrá acceder al número gratuito de emergencias médicas disponible las 24 horas del día, los 365 días del año.</p>
+        <p class="respuesta">Atención Médica Inmediata: Una vez en el centro de atención médica de la ART, el trabajador accidentado recibirá la asistencia médica necesaria de manera inmediata. El prestador médico realizará una evaluación de la lesión y brindará la atención requerida. Al finalizar la consulta, el trabajador recibirá una Constancia de Asistencia Médica que documentará los detalles de la consulta y, si es posible, la fecha estimada de reincorporación al trabajo.</p>
+        <p class="respuesta">Pasos para la Denuncia del Accidente: Luego de la atención médica, es importante llevar a cabo el proceso de denuncia del accidente. Los pasos para realizar esta denuncia son los siguientes:</p>
+        <p class="respuesta">El trabajador debe informar inmediatamente al responsable del sector o departamento sobre la contingencia que ocurrió durante su jornada laboral.</p>
+        <p class="respuesta">El responsable del sector o departamento, junto con el trabajador, deberá completar un informe por escrito detallando todas las circunstancias del accidente. Esto incluye el lugar, fecha, hora, causas, tipo de lesiones y cualquier asistencia brindada.</p>
+        <p class="respuesta">Una vez completado el informe, la empresa deberá notificar el accidente a la ART. La ART utilizará esta información para su evaluación y registro correspondiente.</p>
+        <p class="respuesta">Este procedimiento asegura una respuesta rápida y adecuada en caso de accidentes laborales. La pronta atención médica y la notificación adecuada son esenciales para garantizar la salud y seguridad de los trabajadores y para cumplir con las regulaciones establecidas en materia de seguridad laboral.</p>
+    </div>
+    <div id="Tema-01-04">
+        <h2>RIESGO LABORAL EN LA ARGENTINA</h2>
+        <p id="019" class="pregunta">Definiciones</p>
+        <p class="respuesta">Accidente de Trabajo (AT): Un accidente de trabajo es un evento repentino y violento que ocurre debido al trabajo realizado o en relación con él. Esto también incluye incidentes que ocurren durante el trayecto entre el hogar y el lugar de trabajo (conocidos como "in itinere"). En otras palabras, es cualquier evento inesperado que causa daño físico o mental al trabajador mientras está realizando sus tareas laborales o en su camino hacia o desde el trabajo.</p>
+        <p class="respuesta">Enfermedad Profesional (EP): Una enfermedad profesional es aquella enfermedad donde el trabajo es una causa necesaria o un factor contribuyente para la enfermedad. También se considera una enfermedad profesional cuando el trabajo desencadena la aparición o empeoramiento de una afección. En este contexto, las enfermedades profesionales se definen en el Listado de Enfermedades Profesionales, y es importante tener en cuenta que esta lista específica las enfermedades que se consideran relacionadas con el trabajo.</p>
+        <p class="respuesta">Reagravación: La reagravación es el reintegro o reingreso de un accidente de trabajo o enfermedad profesional que previamente ha sido notificado. En otras palabras, es cuando una lesión o enfermedad previamente reportada se empeora o recrudece después de un período de mejoría.</p>
+        <p class="respuesta">Accidentabilidad: La accidentabilidad es la frecuencia o el índice de accidentes de trabajo y enfermedades profesionales en un entorno laboral. Es una medida que indica cuán comunes son estos incidentes en relación con el número total de trabajadores y el tiempo de exposición al riesgo.</p>
+        <p class="respuesta">Trabajador Damnificado: Un trabajador damnificado es cualquier trabajador asegurado que ha sufrido un accidente de trabajo o una enfermedad profesional debido a su trabajo, lo cual incluye los accidentes de trabajo que ocurren durante el trayecto hacia o desde el lugar de trabajo.</p>
+        <p class="respuesta">Empleadores Asegurados / Afiliados: Los empleadores asegurados o afiliados son aquellos que están cubiertos por la Ley de Riesgos del Trabajo (LRT). Esto puede ser a través de un contrato con una Aseguradora de Riesgos de Trabajo (ART) o mediante la opción de autoseguro.</p>
+        <p class="respuesta">Trabajadores Cubiertos: Los trabajadores cubiertos son aquellos empleados que están incluidos en las declaraciones mensuales presentadas a la Administración Federal de Ingresos Públicos (AFIP), cuando están bajo el Sistema Único de Seguridad Social (SUSS), o a las ART responsables o directamente a la Superintendencia de Riesgos del Trabajo (SRT) cuando no están en el SUSS. Esto se refiere a aquellos trabajadores para quienes se realiza la cobertura de seguro por accidentes laborales y enfermedades profesionales.</p>
+        <p class="respuesta">Jornadas No Trabajadas: Las jornadas no trabajadas son el período de tiempo (días hábiles y no hábiles) entre la fecha del accidente o la declaración de la primera manifestación invalidante de una enfermedad profesional y la fecha en que termina la Incapacidad Laboral Temporaria (ILT), excluyendo estas dos fechas. En esencia, es el tiempo durante el cual el trabajador no puede trabajar debido a un accidente o enfermedad laboral.</p>
+        <p class="respuesta">Días con Baja Laboral: Los días con baja laboral son las jornadas no trabajadas por el trabajador damnificado durante el período de Incapacidad Laboral Temporaria (ILT), que es el tiempo durante el cual el trabajador no puede realizar su trabajo debido a un accidente de trabajo o una enfermedad profesional.</p>
+        <p class="respuesta">Registro de Accidentabilidad: El registro de accidentabilidad engloba todos los accidentes de trabajo, incluidos los "in itinere", las enfermedades profesionales y las reagravaciones reportadas por los trabajadores cubiertos y notificadas por las Aseguradoras de Riesgos de Trabajo (ART).</p>
+        <p class="respuesta">Sector de Actividad Económica: El sector de actividad económica se refiere a las diferentes áreas o ramas de actividad en las que operan las empresas. Estas ramas se definen según el Clasificador Internacional Industrial Uniforme (CIIU) y agrupan a las empresas en categorías que reflejan su tipo de actividad.</p>
+        <p class="respuesta">Tamaño del Empleador: El tamaño del empleador se basa en la cantidad de trabajadores cubiertos por los empleadores afiliados o empresas autoaseguradas. Es una medida de la magnitud de la fuerza laboral dentro de una empresa.</p>
+        <p class="respuesta">Casos Notificados: Los casos notificados se refieren a la cantidad total de accidentes de trabajo, enfermedades profesionales y reagravaciones que han sido reportados y registrados por las Aseguradoras de Riesgos de Trabajo (ART) durante un período específico.</p>
+        <p class="respuesta">Forma de Ocurrencia: La forma de ocurrencia es el modo en el cual ocurre un accidente de trabajo o se manifiesta una enfermedad profesional. Esto podría incluir caídas, golpes, exposición a sustancias peligrosas, etc.</p>
+        <p class="respuesta">Agente Causante: El agente causante es cualquier factor, sustancia o circunstancia que provoca un accidente de trabajo o una enfermedad profesional. Puede incluir elementos como maquinaria defectuosa, productos químicos tóxicos, condiciones de trabajo inseguras, entre otros.</p>
+        <p class="respuesta">Salario Medio de la Empresa: El salario medio de la empresa es el promedio de los salarios pagados por cada empleador, y estos salarios están sujetos a la cotización ante la Administración Nacional de la Seguridad Social (ANSeS).</p>
+        <p class="respuesta">Índices: Los índices son herramientas que se utilizan para comparar diferentes categorías o grupos dentro de una misma variable. En el contexto de seguridad laboral, los índices pueden proporcionar información sobre la frecuencia de accidentes, la gravedad de las lesiones y otros aspectos relevantes.</p>
+        
+        <p id="020" class="pregunta">Derechos de los trabajadores</p>
+        <p class="respuesta">Los trabajadores tienen derechos fundamentales en relación con su salud y seguridad en el entorno laboral. Estos derechos están diseñados para garantizar un ambiente de trabajo seguro y para brindarles la protección necesaria en caso de accidentes o enfermedades laborales. A continuación, se detallan algunos de los principales derechos que poseen los trabajadores en este ámbito:</p>
+        <p class="respuesta">Ambiente Sano y Seguro: Los trabajadores tienen el derecho de desempeñarse en un ambiente laboral que garantice su salud y seguridad. Esto incluye la prevención de riesgos, la eliminación de condiciones peligrosas y la promoción de medidas que reduzcan los riesgos en el lugar de trabajo.</p>
+        <p class="respuesta">Conocimiento de Riesgos: Los trabajadores tienen el derecho de conocer los riesgos asociados con su trabajo. La empresa debe proporcionar información clara y completa sobre los peligros potenciales y las medidas de prevención a tomar.</p>
+        <p class="respuesta">Capacitación y Prevención: Los trabajadores tienen el derecho de recibir capacitación sobre cómo prevenir accidentes y enfermedades laborales. Deben ser educados acerca de las medidas de seguridad a seguir y cómo utilizar adecuadamente los elementos de protección personal.</p>
+        <p class="respuesta">Elementos de Protección Personal: Los trabajadores tienen derecho a recibir y utilizar los elementos de protección personal necesarios según las características de su trabajo. Esto incluye equipos como cascos, guantes, gafas de seguridad y otros dispositivos de seguridad.</p>
+        <p class="respuesta">Afiliación a ART: Los trabajadores tienen el derecho de estar cubiertos por una Aseguradora de Riesgos del Trabajo (ART) a través de la afiliación de su empleador. Esto asegura que, en caso de accidente o enfermedad laboral, tendrán acceso a la atención médica y prestaciones correspondientes.</p>
+        <p class="respuesta">Atención Médica y Rehabilitación: En caso de sufrir un accidente o enfermedad laboral, los trabajadores tienen derecho a recibir atención médica inmediata y adecuada. Esto incluye asistencia médica, farmacológica, prótesis, ortopedia y rehabilitación hasta la completa recuperación.</p>
+        <p class="respuesta">Prestaciones Dinerarias: En situaciones de incapacidad laboral temporal debido a un accidente o enfermedad laboral, los trabajadores tienen derecho a recibir prestaciones dinerarias por parte de la ART. Estas prestaciones cubren el período en el que no puedan trabajar.</p>
+        <p class="respuesta">Recalificación Laboral: Si el trabajador no puede continuar realizando su tarea habitual debido a un accidente o enfermedad laboral, tiene derecho a recibir la recalificación necesaria para realizar otra tarea que se ajuste a sus capacidades.</p>
+        <p class="respuesta">Derechos de los Familiares: Los familiares directos de una persona fallecida por un accidente de trabajo o enfermedad profesional también tienen derechos. Tienen derecho a recibir servicios de sepelio y prestaciones dinerarias para hacer frente a las consecuencias económicas de la pérdida.</p>
+        
+        <p id="021" class="pregunta">Derechos de los empleadores</p>
+        <p class="respuesta">Las empresas también cuentan con una serie de derechos en el ámbito de la salud y seguridad laboral, que les permiten tomar medidas preventivas, acceder a asesoramiento y cumplir con las regulaciones establecidas para garantizar un entorno laboral seguro y saludable. A continuación, se detallan los principales derechos de las empresas en este sentido:</p>
+        <p class="respuesta">Elección y Cambio de ART: Las empresas tienen el derecho de elegir una Aseguradora de Riesgos del Trabajo (ART) y de cambiar de aseguradora después de cumplir los plazos mínimos de afiliación.</p>
+        <p class="respuesta">Asesoramiento y Capacitación: Las empresas tienen el derecho de recibir asesoramiento, capacitación y asistencia técnica por parte de la ART en materia de prevención de riesgos. Esto incluye brindar orientación para la protección tanto del empleador como de los trabajadores.</p>
+        <p class="respuesta">Información de la ART: Las empresas tienen el derecho de recibir información de la ART sobre las alícuotas vigentes, las prestaciones del sistema de riesgos del trabajo y los procedimientos de denuncia de accidentes y enfermedades profesionales.</p>
+        <p class="respuesta">Cumplimiento de Obligaciones de la ART: Las empresas tienen el derecho de exigir a su ART la realización de exámenes periódicos a los trabajadores, así como el cumplimiento de la asistencia médica y económica en caso de accidentes o enfermedades laborales.</p>
+        <p class="respuesta">Entrega de Credenciales: Las empresas tienen el derecho de exigir a la ART la entrega de credenciales para los trabajadores, en las cuales se incluye el número telefónico de asistencia en caso de accidente.</p>
+        <p class="respuesta">Afiliación a ART o Autoaseguro: Las empresas pueden optar por estar afiliadas a una ART o autoasegurarse si cumplen con los requisitos establecidos.</p>
+        <p class="respuesta">Notificación y Comunicación: Las empresas tienen la obligación de notificar a la ART la incorporación de nuevo personal y deben informar a sus trabajadores a qué ART están afiliados.</p>
+        <p class="respuesta">Cumplimiento de Normativas: Las empresas deben cumplir con las normas de higiene y seguridad en el trabajo establecidas por la ley y sus normativas complementarias.</p>
+        <p class="respuesta">Prevención de Riesgos: Las empresas tienen el deber de adoptar las medidas necesarias para prevenir riesgos en el trabajo y proteger a sus trabajadores.</p>
+        <p class="respuesta">Información y Capacitación a Trabajadores: Las empresas deben informar a sus trabajadores sobre los riesgos asociados con sus tareas y proporcionarles los elementos de protección personal necesarios. Además, deben capacitar a sus trabajadores en métodos de prevención de riesgos.</p>
+        <p class="respuesta">Exámenes Médicos Preocupacionales: Las empresas tienen el deber de realizar exámenes médicos preocupacionales y por cambio de actividad, informando los resultados a los trabajadores.</p>
+        
+        <p id="022" class="pregunta">Obligaciones de las empresas</p>
+        <p class="respuesta">Las empresas tienen la responsabilidad de garantizar un ambiente de trabajo seguro y saludable para sus empleados. Para lograrlo, deben cumplir una serie de obligaciones establecidas por la legislación y regulaciones en materia de salud y seguridad laboral. A continuación, se detallan las principales obligaciones de las empresas en este ámbito:</p>
+        <p class="respuesta">Denuncia de Accidentes y Enfermedades Profesionales: Las empresas están obligadas a denunciar ante la ART los accidentes de trabajo o enfermedades profesionales que ocurran en su establecimiento. Esta denuncia es fundamental para que los trabajadores reciban la atención médica necesaria y se tomen las medidas adecuadas para prevenir futuros incidentes.</p>
+        <p class="respuesta">Solicitar Atención Médica Inmediata: En caso de que ocurra un accidente de trabajo o enfermedad profesional, la empresa debe solicitar a la ART la atención médica inmediata para el trabajador afectado. La rapidez en la atención puede ser crucial para minimizar el impacto de la lesión o enfermedad.</p>
+        <p class="respuesta">Denunciar Incumplimientos de la ART: Si la empresa identifica incumplimientos por parte de la ART en la prestación de servicios o en el cumplimiento de sus obligaciones, tiene la responsabilidad de denunciar estos casos ante la Superintendencia de Riesgos del Trabajo.</p>
+        <p class="respuesta">Registro de Accidentabilidad Laboral: Las empresas deben mantener un registro de los accidentes de trabajo ocurridos en su establecimiento. Este registro permite tener un seguimiento de la accidentabilidad y analizar patrones para implementar medidas preventivas.</p>
+        <p class="respuesta">Cumplimiento del Programa de Reducción de Siniestralidad: Si la tasa de accidentabilidad de la empresa supera en un 10% el índice de incidencia de su sector de actividad, la empresa debe cumplir con un Programa de Reducción de Siniestralidad. Este programa tiene como objetivo implementar acciones para reducir los riesgos y prevenir accidentes.</p>
+        <p class="respuesta">Inscripción en Registros Específicos: Las empresas deben inscribirse en registros específicos según corresponda. Esto incluye el registro de sustancias y agentes cancerígenos, el registro para la prevención de accidentes industriales mayores y el registro de difenilos policlorados. Estas inscripciones ayudan a monitorear y controlar riesgos específicos.</p>
+        
+        <p id="023" class="pregunta">Historial e indicadores en la Argentina</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/012.jpg">
+        </div>
+        <p class="respuesta">El Índice de Incidencia expresa la cantidad de trabajadores siniestrados por motivo y/o en ocasión del trabajo en un período de 1 año, por cada mil trabajadores expuestos. Este indicador incluye las enfermedades profesionales.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/013.jpg">
+        </div>
+        <p class="respuesta">El Índice de Fallecidos expresa cuántos trabajadores fallecen por motivo y/o en ocasión del trabajo en un período de un año, por cada un millón de trabajadores expuestos. En este caso también se incluyen las EP.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/014.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/015.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/016.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/017.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/018.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/019.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/020.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen" src="Imgs/Seguridad Ambiental e Industrial/021.jpg">
+        </div>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div id="Tema-01-0">
+    <h2></h2>
+    <p class="pregunta"></p>
+    <p class="respuesta"></p>
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="">
+    </div>
+</div-->
