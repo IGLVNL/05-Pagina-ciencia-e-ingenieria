@@ -48,67 +48,13 @@
         </form>
     </div>
     <P id="referencia"></P>
-    <p class="tema">Ingenieria Industrial</p>
-    <p class="tema">Material de estudio</p>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
     <p id="materia" >Procesos industriales</p>
     <h1 id="tema">Instrumentos de medicion</h1>
     
     <div id="menu">
-        <img src="Icons/Menu.svg" title="Menu">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="dropdown" ><a href="#Tema-01-00"  onclick="smoothScroll(event, 'Tema-01-01')">INTRODUCCION</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#001"  onclick="smoothScroll(event, '001')">¿Por qué medimos?</a></li>
-                        <li><a href="#002"  onclick="smoothScroll(event, '002')">¿Qué es una medición?</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-02"  onclick="smoothScroll(event, 'Tema-01-02')">01- METROLOGIA</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Definicion</a></li>
-                        <li><a href="#004"  onclick="smoothScroll(event, '004')">¿Qué relación tiene con la calidad?</a></li>
-                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Características de la metrología</a></li>
-                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Incertidumbre de la medicion (Errores)</a></li>
-                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Exactitud y error sistemático</a></li>
-                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Precisión y error aleatorio</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">02- MEDIOS DE CONTROL</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Instrumentos de medición por variable</a></li>
-                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Instrumentos de medición por atributo</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">03- CALIBRE</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#011"  onclick="smoothScroll(event, '011')">¿Para qué sirve un calibre?</a></li>
-                        <li><a href="#012"  onclick="smoothScroll(event, '012')">¿Cómo se utiliza un calibre analógico para medir dimensiones exteriores?</a></li>
-                        <li><a href="#013"  onclick="smoothScroll(event, '013')">¿Cómo se lee la medida en el calibre analógico?</a></li>
-                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Tipos de calibres</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-04"  onclick="smoothScroll(event, 'Tema-01-04')">04- MICROMETRO</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#015"  onclick="smoothScroll(event, '015')">¿Cómo funciona un micrómetro?</a></li>
-                        <li><a href="#016"  onclick="smoothScroll(event, '016')">¿Cómo se utiliza?</a></li>
-                        <li><a href="#017"  onclick="smoothScroll(event, '017')">Tipos de micrometro</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-05"  onclick="smoothScroll(event, 'Tema-01-05')">05- COMPARADORES</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#018"  onclick="smoothScroll(event, '018')">¿Cómo funciona un Comparador?</a></li>
-                        <li><a href="#019"  onclick="smoothScroll(event, '019')">¿Cómo se utiliza?</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-06"  onclick="smoothScroll(event, 'Tema-01-06')">06- ALESOMETRO</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#020"  onclick="smoothScroll(event, '020')">¿Cómo funciona un alesómetro?</a></li>
-                        <li><a href="#021"  onclick="smoothScroll(event, '021')">¿Cómo se utiliza?</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-07"  onclick="smoothScroll(event, 'Tema-01-07')">07- OTROS ELEMENTOS DE MEDICION</a></li>
-            </ul>
-        </nav>
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
     </div>
     <div id="cont-up">
         <a id="imprimir">
@@ -164,8 +110,8 @@
         <a href="#Tema-01-06" class="boton" onclick="smoothScroll(event, 'Tema-01-06')">06- ALESOMETRO</a>
         <a href="#Tema-01-06" class="boton" onclick="smoothScroll(event, 'Tema-01-07')">07- OTROS ELEMENTOS DE MEDICION</a>
     </div>
-    <div id="Tema-01-00">
-        <h2>INTRODUCCION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-00">INTRODUCCION</h2>
         <p class="pregunta" id="001">¿Por qué medimos?</p>
         <p class="respuesta">En la manufactura, es esencial que el producto y sus componentes cumplan con las especificaciones establecidas por el ingeniero de diseño. Estas especificaciones de diseño incluyen dimensiones, tolerancias y acabados superficiales para cada pieza individual que forma parte del producto final.</p>
         
@@ -173,8 +119,8 @@
         <p class="respuesta">La medición es el proceso mediante el cual comparamos una cantidad desconocida con un estándar conocido, utilizando un sistema de unidades aceptado y consistente. Esta comparación puede ser tan simple como usar una regla para medir la longitud de una pieza, o incluso más compleja, como realizar una medición de fuerza contra deflexión durante una prueba de tensión. El objetivo de la medición es obtener un valor numérico que representa la cantidad de interés, siempre dentro de límites definidos de exactitud y precisión.</p>
     </div>
 
-    <div id="Tema-01-01">
-        <h2>METROLOGIA</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-01">METROLOGIA</h2>
         <p class="pregunta" id="003">Definicion</p>
         <p class="respuesta">La metrología es el estudio de los sistemas de medida en cualquier campo de la ciencia. Se ocupa de las mediciones, así como de las magnitudes, unidades y constantes básicas en las que éstas se apoyan. Tiene como objetivo cuantificar una magnitud propia de un mensurado (objeto portador o fenómeno físico-químico) convirtiéndola en un resultado mediante un sistema que ejecuta el proceso de medición.</p>
         <p class="respuesta">La metrología se relaciona con seis cantidades fundamentales: longitud, masa, tiempo, corriente eléctrica, temperatura y radiación luminosa. A partir de éstas, se deriva la mayoría de las otras cantidades físicas, como el área, el volumen, la velocidad, la aceleración, la fuerza, el voltaje eléctrico, la energía térmica, etc. </p>
@@ -212,8 +158,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-02">
-        <h2>MEDIOS DE CONTROL</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-02">MEDIOS DE CONTROL</h2>
         <p class="respuesta">La inspección es un proceso que implica el uso de técnicas de medición y calibración para determinar si un producto, sus componentes, subensambles o materiales iniciales cumplen con las especificaciones del diseño. Existen dos tipos de inspecciones:</p>
         <p class="respuesta"><i><U>Inspección por variables:</U></i> En este tipo de inspección, se miden las dimensiones del producto o pieza utilizando instrumentos de medición adecuados. Esto permite obtener datos precisos acerca de los valores reales de las dimensiones. Estos datos pueden ser registrados y utilizados posteriormente para analizar tendencias en el proceso de manufactura. Además, se pueden realizar ajustes en el proceso con base en los datos para producir piezas futuras más cercanas al diseño nominal.</p>
         <p class="respuesta"><i><U>Inspección por atributos:</U></i> En este caso, las piezas se calibran para determinar si están dentro de los límites de tolerancia o no. Esta calibración es más rápida y económica que la medición por variables, pero solo proporciona información sobre si la pieza cumple o no con las especificaciones, sin detalles sobre los valores exactos de sus dimensiones.</p>
@@ -234,8 +180,8 @@
         <p class="respuesta"><i><U>De forma:</U></i> Estos instrumentos se utilizan para verificar la forma y geometría de la pieza.</p>
     </div>
 
-    <div id="Tema-01-03">
-        <h2>CALIBRE</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-03">CALIBRE</h2>
         <p class="respuesta">Un calibre (también conocido como calibrador) es un instrumento de medición utilizado para determinar las dimensiones exteriores de objetos con alta precisión. Es una herramienta comúnmente utilizada en diversas industrias, talleres de manufactura, y en aplicaciones donde se requiere medir con exactitud las dimensiones exteriores de piezas o materiales.</p>
 
         <p class="pregunta" id="011">¿Para qué sirve un calibre?</p>
@@ -279,8 +225,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-04">
-        <h2>MICROMETRO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-04">MICROMETRO</h2>
         <p class="respuesta">Un micrómetro es un instrumento de medición de alta precisión utilizado para medir dimensiones pequeñas con gran exactitud. Se utiliza en aplicaciones donde se requiere una precisión mayor que la proporcionada por un calibre o regla. El micrómetro puede medir dimensiones exteriores e interiores de objetos con alta precisión.</p>
 
         <p class="pregunta" id="015">¿Cómo funciona un micrómetro?</p>
@@ -314,8 +260,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-05">
-        <h2>COMPARADORES</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-05">COMPARADORES</h2>
         <div class="contenedor-img">
             <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Reloges%20comparadores.jpg">
         </div>
@@ -338,8 +284,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-06">
-        <h2>ALESÓMETRO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-06">ALESÓMETRO</h2>
         <p class="respuesta">Un alesómetro, también conocido como micrómetro de interiores o comparador de interiores, es un instrumento de medición utilizado para medir el diámetro interno de agujeros cilíndricos. Su función principal es determinar con precisión las dimensiones internas de piezas o componentes para asegurar que cumplan con las especificaciones y tolerancias requeridas.</p>
         <div class="contenedor-img">
             <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Alesometros.jpg">
@@ -366,8 +312,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-07">
-        <h2>OTROS ELEMENTOS DE MEDICION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-07">OTROS ELEMENTOS DE MEDICION</h2>
         <div class="contenedor-img">
             <img class="img" alt="imagen"  src="Imgs/Procesos%20industriales/03-%20Instrumentos%20de%20medicion/Maquina%20medicion%20por%20coordenadas.jpg">
         </div>

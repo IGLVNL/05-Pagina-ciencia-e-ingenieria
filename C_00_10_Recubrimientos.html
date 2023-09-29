@@ -48,51 +48,12 @@
         </form>
     </div>
     <P id="referencia"></P>
-    <p class="tema">Ingenieria Industrial</p>
-    <p class="tema">Material de estudio</p>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
     <p id="materia" >Procesos industriales</p>
     <h1 id="tema">Procesos de recubrimiento</h1>
     <div id="menu">
-        <img src="Icons/Menu.svg" title="Menu">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="dropdown"><a href="#Tema-01-00"  onclick="smoothScroll(event, 'Tema-01-00')">INTRODUCCION</a></li>
-                <li class="dropdown"><a href="#Tema-01-01"  onclick="smoothScroll(event, 'Tema-01-01')">01- EL ACERO Y LA CORROSION</a></li>
-                <li class="dropdown"><a href="#Tema-01-02"  onclick="smoothScroll(event, 'Tema-01-02')">02- MECANISMOS DE PROTECCION</a></li>
-                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">03- PREPARACION SUPERFICIAL</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#001"  onclick="smoothScroll(event, '001')">Limpieza química</a></li>
-                        <li><a href="#002"  onclick="smoothScroll(event, '002')">Limpieza ultrasónica</a></li>
-                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Limpieza mecánica</a></li>
-                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Hidrolimpieza</a></li>
-                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Perfil de anclaje</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-04"  onclick="smoothScroll(event, 'Tema-01-04')">04- TIPOS DE RECUBRIMIENTOS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Recubrimientos metálicos</a></li>
-                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Recubrimientos no metálicos (pinturas)</a></li>
-                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Métodos de aplicación</a></li>
-                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Cálculo de cantidad de pintura</a></li>
-                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Inspecciones</a></li>
-                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Recubrimientos electrolíticos</a></li>
-                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Metalización</a></li>
-                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Rendimiento contra la corrosión atmosférica</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-05"  onclick="smoothScroll(event, 'Tema-01-05')">05- RECUBRIMIENTOS DE HERRAMIENTAS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Mecanismos de desgaste</a></li>
-                        <li><a href="#015"  onclick="smoothScroll(event, '015')">Zonas de desgaste</a></li>
-                        <li><a href="#016"  onclick="smoothScroll(event, '016')">¿Para qué recubrimos una herramienta de corte?</a></li>
-                        <li><a href="#017"  onclick="smoothScroll(event, '017')">Tipos de recubrimientos</a></li>
-                        <li><a href="#018"  onclick="smoothScroll(event, '018')">Recubrimientos gaseosos (CDV y PDV)</a></li>
-                        <li><a href="#019"  onclick="smoothScroll(event, '019')">Recubrimientos de diamante</a></li>
-                        <li><a href="#020"  onclick="smoothScroll(event, '020')">Usos decorativos</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
     </div>
     <div id="cont-up">
         <a id="imprimir">
@@ -146,15 +107,15 @@
         <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04- TIPOS DE RECUBRIMIENTOS</a>
         <a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">05- RECUBRIMIENTOS DE HERRAMIENTAS</a>
     </div>
-    <div id="Tema-01-00">
-        <h2>INTRODUCCION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-00">INTRODUCCION</h2>
         <p class="respuesta">Los tratamientos superficiales modifican las características de la superficie de un material sin alterar su composición, con el propósito de lograr propiedades superficiales que el metal base no posee. Estos tratamientos pueden ser recubrimientos superficiales, como galvanizado, pinturas, metalización o deposición electrolítica, donde se deposita un material diferente sobre el sustrato. También se pueden modificar propiedades del sustrato, como anodizado, granallado, lavado a presión o arenado.</p>
         <p class="respuesta">Estos tratamientos superficiales tienen varios objetivos, como mejorar la resistencia al desgaste, la erosión y la penetración, controlar la fricción en superficies deslizantes, reducir la adhesión, mejorar la lubricación, resistir la corrosión y oxidación, aumentar la resistencia a la fatiga y reconstruir superficies desgastadas para prolongar la vida útil. También se utilizan para modificar la textura superficial, mejorar la apariencia, la precisión dimensional y la resistencia a la fricción, e impartir cualidades decorativas.</p>
         <p class="respuesta">Existen diversos tratamientos para diferentes sustratos y propiedades que se desean alcanzar. En esta unidad se enfocará en los recubrimientos utilizados industrialmente para sustratos metálicos, especialmente para piezas de acero.</p>
     </div>
     
-    <div id="Tema-01-01">
-        <h2>01- EL ACERO Y LA CORROSIO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-01">01- EL ACERO Y LA CORROSIO</h2>
         <p class="respuesta">El acero, una aleación de hierro, carbono y otros compuestos, es ampliamente utilizado en diversas industrias debido a su bajo costo, resistencia y facilidad de conformado. Sin embargo, el acero es susceptible a la corrosión, un proceso en el que la superficie del material se oxida y deteriora con el tiempo.</p>
         <p class="respuesta">La corrosión del acero ocurre cuando el hierro presente en el material se combina con el oxígeno del aire, formando óxido de hierro. Este proceso electroquímico implica la transferencia de electrones entre el hierro (ánodo) y el oxígeno (cátodo) en presencia de un electrolito, como el agua. A diferencia de otros metales que forman una película protectora, el óxido de hierro (herrumbre) no protege al acero y deja poros expuestos, lo que acelera el proceso de corrosión.</p>
         <p class="respuesta">La corrosión del acero tiene diversas implicancias. Desde un punto de vista estético, el óxido y la pintura desprendida afectan la apariencia de las estructuras. Además, la corrosión puede comprometer la seguridad de las estructuras, ya que la reducción de espesor o la presencia de concentradores de tensiones debilita su resistencia. En el ámbito de la industria alimentaria, la corrosión de envases metálicos puede provocar contaminación de los alimentos y afectar la salud de los consumidores.</p>
@@ -164,16 +125,16 @@
         </div>
     </div>
     
-    <div id="Tema-01-02">
-        <h2>02- MECANISMOS DE PROTECCION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-02">02- MECANISMOS DE PROTECCION</h2>
         <p class="respuesta">Para proteger el acero contra la corrosión, se utiliza ampliamente la aplicación de recubrimientos. Estos recubrimientos pueden actuar mediante diferentes mecanismos de protección, como la barrera y el sacrificio.</p>
         <p class="respuesta">La protección por barrera implica la aplicación de una capa de recubrimiento impermeable, como pintura, que aísla al sustrato del oxígeno y otros agentes corrosivos presentes en el ambiente.</p>
         <p class="respuesta">Por otro lado, la protección por sacrificio se basa en cubrir la superficie del acero con un metal más reactivo, como el zinc, que se corroerá en lugar del acero. Cuando se produce una exposición del acero base, como un corte o un rayón, el metal de sacrificio (zinc) se corroerá en beneficio del acero, protegiéndolo catódicamente.</p>
         <p class="respuesta">La combinación de ambos sistemas de protección, así como la aplicación de diferentes métodos y recubrimientos en una misma pieza, puede generar una protección más efectiva y sinérgica contra la corrosión.</p>
     </div>
     
-    <div id="Tema-01-03">
-        <h2>03- PREPARACION SUPERFICIAL</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-03">03- PREPARACION SUPERFICIAL</h2>
         <p class="respuesta">El desempeño de cualquier recubrimiento se ve afectado por la preparación superficial, dado que las capas de impurezas y contaminantes (depositadas o adsorbidas) afectan negativamente la adhesión e integridad del recubrimiento.</p>
         <p class="respuesta">El objetivo principal de la preparación superficial es evitar que se desprenda el recubrimiento. Para lograrlo, es necesario:</p>
         <p class="respuesta">Asegurar la limpieza y eliminación total de aceites, grasas y demás impurezas de la superficie. Incluso si la pieza es nueva, debe limpiarse debido a la posibilidad de contaminación durante el transporte y manipulación.</p>
@@ -211,8 +172,8 @@
         <p class="respuesta">El perfil de anclaje adecuado dependerá de los requerimientos específicos del recubrimiento y del sustrato. Es importante seguir las normas y estándares establecidos para garantizar la calidad y durabilidad del recubrimiento.</p>
     </div>
     
-    <div id="Tema-01-04">
-        <h2>04- TIPOS DE RECUBRIMIENTOS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-04">04- TIPOS DE RECUBRIMIENTOS</h2>
         <p class="respuesta">Una vez que la pieza fue preparada, es decir que se realizó la limpieza para remover los contaminantes y se dio al sustrato el perfil de anclaje necesario para la adherencia, es posible aplicar el recubrimiento.</p>
 
         <p id="006" class="pregunta">Recubrimientos metálicos:</p>
@@ -315,8 +276,8 @@
         </div>
     </div>
     
-    <div id="Tema-01-05">
-        <h2>05- RECUBRIMIENTOS DE HERRAMIENTAS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-05">05- RECUBRIMIENTOS DE HERRAMIENTAS</h2>
         <div class="contenedor-img">
             <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/10-%20Recubrimientos/6-%20recub%20herram.png">
         </div>

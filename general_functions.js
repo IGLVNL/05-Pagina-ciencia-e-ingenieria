@@ -1,3 +1,4 @@
+
 /*metodo para el desplazamiento rapido */
 function smoothScroll(event, targetId) {
     event.preventDefault();
@@ -65,7 +66,145 @@ if (document.getElementById("imprimir")) {
     };
 }
 
+/*metodo para los menus superiores*/
 
+let menu = document.getElementById("menu");
+let temas = document.querySelectorAll("h2");
+let listaPrincipal = document.createElement("ul");
+listaPrincipal.style.flexDirection = "column";
+listaPrincipal.id = "listaPrincipal";
+listaPrincipal.className = "listas";
+listaPrincipal.style.backgroundColor = "#333333";
+listaPrincipal.style.padding = "10px 0px";
+listaPrincipal.style.position = "absolute";
+listaPrincipal.style.top = "0px";
+listaPrincipal.style.left = "5vw";
+listaPrincipal.style.overflowY = "auto";
+listaPrincipal.style.maxHeight = "60vh";
+listaPrincipal.style.width = "40vw";
+listaPrincipal.style.display = "none";
 
+let listaSecundaria = document.createElement("ul");
+listaSecundaria.id = "listaSecundaria";
+listaSecundaria.className = "listaSec";
+listaSecundaria.style.flexDirection = "column";
+listaSecundaria.style.backgroundColor = "#333333";
+listaSecundaria.style.padding = "10px";
+listaSecundaria.style.position = "absolute";
+listaSecundaria.style.top = "0px";
+listaSecundaria.style.left = "45vw";
+listaSecundaria.style.overflowY = "auto";
+listaSecundaria.style.maxHeight = "60vh";
+listaSecundaria.style.width = "40vw";
+listaSecundaria.style.display = "none";
 
+menu.appendChild(listaPrincipal);
+menu.appendChild(listaSecundaria);
 
+let listaSecundariaVisible = null;
+
+temas.forEach(tema => {
+    let elementoLista = document.createElement("li");
+    let enlace = document.createElement("a");
+    enlace.textContent = tema.textContent;
+    enlace.style.textDecoration = "none";
+    enlace.style.color = "white";
+    enlace.href = "#" + tema.id;
+    elementoLista.style.padding = "10px";
+    elementoLista.id = tema.textContent + "_ListaPrincipal";
+    elementoLista.appendChild(enlace);
+    elementoLista.addEventListener("mouseover", function () {
+        if (listaSecundariaVisible) {
+            listaSecundariaVisible.style.display = "none";
+        }
+        let listaSecundariaCorrespondiente = document.getElementById(tema.textContent + "_ListaSecundaria");
+        if (listaSecundariaCorrespondiente) {
+            if(listaSecundariaCorrespondiente.childElementCount != 0){
+                listaSecundariaCorrespondiente.style.display = "flex";
+            } else {
+                listaSecundariaCorrespondiente.style.display = "none";
+            }
+            listaSecundariaVisible = listaSecundariaCorrespondiente;
+        }
+    });
+    elementoLista.addEventListener("click", function(event) {
+        smoothScroll(event, tema.id);
+        event.stopPropagation();
+    });
+    listaPrincipal.appendChild(elementoLista);
+    let listaSecundariaCorrespondiente = document.createElement("ul");
+    listaSecundariaCorrespondiente.id = tema.textContent + "_ListaSecundaria";
+    listaSecundariaCorrespondiente.className = "listaSec";
+    listaSecundariaCorrespondiente.style.flexDirection = "column";
+    listaSecundariaCorrespondiente.style.backgroundColor = "#333333";
+    listaSecundariaCorrespondiente.style.padding = "10px";
+    listaSecundariaCorrespondiente.style.position = "absolute";
+    listaSecundariaCorrespondiente.style.top = "0px";
+    listaSecundariaCorrespondiente.style.left = "45vw";
+    listaSecundariaCorrespondiente.style.overflowY = "auto";
+    listaSecundariaCorrespondiente.style.maxHeight = "60vh";
+    listaSecundariaCorrespondiente.style.width = "40vw";
+    listaSecundariaCorrespondiente.style.display = "none";
+    let contenedorTemas = tema.parentNode;
+    let preguntas = contenedorTemas.querySelectorAll(".pregunta");
+    Array.from(preguntas).forEach(Preg => {
+        let elementoListaPreg = document.createElement("li");
+        let enlacePreg = document.createElement("a");
+        enlacePreg.textContent = Preg.textContent;
+        enlacePreg.style.textDecoration = "none";
+        enlacePreg.style.color = "white";
+        enlacePreg.href = "#" + Preg.id;
+        elementoListaPreg.style.padding = "10px";
+        elementoListaPreg.appendChild(enlacePreg);
+        listaSecundariaCorrespondiente.appendChild(elementoListaPreg);
+        elementoListaPreg.addEventListener("click", function(event) {
+            smoothScroll(event, Preg.id);
+            event.stopPropagation();
+        });
+    });
+    menu.appendChild(listaSecundariaCorrespondiente);
+});
+
+function closeLists() {
+    listaPrincipal.style.display = "none";
+    if (listaSecundariaVisible) {
+        listaSecundariaVisible.style.display = "none";
+        listaSecundariaVisible = null;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    let menuImg = document.getElementById("menuImg");
+    menuImg.addEventListener("click", function () {
+        if (listaPrincipal.style.display == "none") {
+            listaPrincipal.style.display = "flex";
+        } else {
+            listaPrincipal.style.display = "none";
+            listaSecundariaVisible.style.display = "none";
+        }
+    });
+    document.addEventListener("click", function (event) {
+        if (!menu.contains(event.target)) {
+            closeLists();
+        }
+    });
+});
+
+function updateListStyles(mediaQuery) {
+    let listaPrincipal = document.getElementById("listaPrincipal");
+    let listaSecundaria = document.querySelectorAll(".listaSec");
+    if (mediaQuery.matches) {
+        listaPrincipal.style.width = "90vw";
+        listaSecundaria.forEach(function (lista) {
+            lista.style.visibility = "hidden"
+        });
+    } else {
+        listaSecundaria.forEach(function (lista) {
+            lista.style.visibility = "visible"
+        });
+    }
+}
+
+let mediaQuery = window.matchMedia("(max-width: 500px)");
+updateListStyles(mediaQuery);
+mediaQuery.addListener(updateListStyles);

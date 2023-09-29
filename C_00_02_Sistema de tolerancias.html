@@ -49,58 +49,12 @@
         </form>
     </div>
     <P id="referencia"></P>
-    <p class="tema">Ingenieria Industrial</p>
-    <p class="tema">Material de estudio</p>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
     <p id="materia" >Procesos industriales</p>
     <h1 id="tema">Sistema de tolerancias</h1>
     <div id="menu">
-        <img src="Icons/Menu.svg" title="Menu">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="dropdown" ><a href="#Tema-01-00"  onclick="smoothScroll(event, 'Tema-01-00')">INTRODUCCION</a></li>
-                <li class="dropdown"><a href="#Tema-01-01"  onclick="smoothScroll(event, 'Tema-01-01')">01- TOLERANCIAS DIMENSIONALES</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#001"  onclick="smoothScroll(event, '001')">Definiciones</a></li>
-                        <li><a href="#002"  onclick="smoothScroll(event, '002')">Representación de las tolerancias</a></li>
-                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Calidad de las tolerancias</a></li>
-                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Posicion de la tolerancia en agujeros</a></li>
-                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Posicion de la tolerancia en ejes</a></li>
-                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Precisión y error aleatorio</a></li>
-                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Diferencias fundamentales en ejes</a></li>
-                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Diferencias fundamentales en agujeros</a></li>
-                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Definicion de ajuste</a></li>
-                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Representacion de los ajustes</a></li>
-                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Sistemas ISO de ajustes</a></li>
-                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Eleccion de los ajustes</a></li>
-                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Ajustes recomendados</a></li>
-                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Determinacion del ajuste</a></li>
-                        <li><a href="#015"  onclick="smoothScroll(event, '015')">Tolerancias generales dimensionales</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-02"  onclick="smoothScroll(event, 'Tema-01-02')">02- TOLERANCIAS GEOMETRICAS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#016"  onclick="smoothScroll(event, '016')">Definicion</a></li>
-                        <li><a href="#017"  onclick="smoothScroll(event, '017')">Indicaciones de tolerancias geometricas en planos</a></li>
-                        <li><a href="#018"  onclick="smoothScroll(event, '018')">Descripciones de cada tolerancia geometrica</a></li>
-                        <li><a href="#019"  onclick="smoothScroll(event, '019')">Tolerancias geometricas generales</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">03- TOLERANCIAS MICROGEOMETRICAS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#020"  onclick="smoothScroll(event, '020')">Definicion</a></li>
-                        <li><a href="#021"  onclick="smoothScroll(event, '021')">Rugosidad</a></li>
-                        <li><a href="#022"  onclick="smoothScroll(event, '022')">Tabla de conversion de rugosidades</a></li>
-                        <li><a href="#023"  onclick="smoothScroll(event, '023')">Medicion de rugosidad</a></li>
-                        <li><a href="#024"  onclick="smoothScroll(event, '024')">Simbología</a></li>
-                        <li><a href="#025"  onclick="smoothScroll(event, '025')">Indicaciones en los planos</a></li>
-                        <li><a href="#026"  onclick="smoothScroll(event, '026')">Recomendaciones de aplicaciones</a></li>
-                        <li><a href="#027"  onclick="smoothScroll(event, '027')">Guia de aplicacion y obtencion de distintas calidades superficiales</a></li>
-                        <li><a href="#028"  onclick="smoothScroll(event, '028')">Rugosidad en funcion del proceso de fabricacion</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-04"  onclick="smoothScroll(event, 'Tema-01-04')">04- INFORMACION COMPLEMENTARIA</a></li>
-            </ul>
-        </nav>
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
     </div>
     
     <div id="cont-up">
@@ -154,15 +108,15 @@
         <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03- TOLERANCIAS MICROGEOMETRICAS</a>
         <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04- INFORMACION COMPLEMENTARIA</a>
     </div>
-    <div id="Tema-01-00">
-        <h2>INTRODUCCION</h2>
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-00">INTRODUCCION</h2>
         <p class="respuesta">El rendimiento de un producto manufacturado no solo depende de las propiedades mecánicas y físicas de los materiales, sino también de las dimensiones y superficies de sus componentes. Las dimensiones se refieren al tamaño y a los ángulos de un componente y son importantes para asegurar un ajuste adecuado durante el ensamblaje. Debido a que es costoso y casi imposible lograr la dimensión exacta especificada, se permite una variación limitada, conocida como tolerancia.</p>
         <p class="respuesta">Las superficies de los componentes también son importantes, ya que afectan el rendimiento, el ajuste y la percepción estética del producto. Una superficie es el límite exterior de un objeto y puede estar en contacto con otros objetos, fluidos o el espacio. </p>
         <p class="respuesta">En este apartado dimensionesse abordan las dimensiones, tolerancias y superficies, que son atributos especificados por el diseñador del producto. Su implementación física depende en gran medida de los procesos de manufactura utilizados. </p>
     </div>
 
-    <div id="Tema-01-01">
-        <h2>TOLERANCIAS DIMENSIONALES</h2>
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-01">TOLERANCIAS DIMENSIONALES</h2>
         <p class="pregunta" id="001" >Definiciones</p>
         <p class="respuesta">Las tolerancias dimensionales establecen un rango de valores aceptables para las dimensiones funcionales del producto.</p>
         <p class="respuesta">Estas son algunas definiciones que hay que tener presente en esta temática:</p>
@@ -351,8 +305,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-02">
-        <h2>TOLERANCIAS GEOMETRICAS</h2>
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">TOLERANCIAS GEOMETRICAS</h2>
         <p class="pregunta" id="016" >Definicion</p>
         <p class="respuesta">Las tolerancias geométricas son una forma de especificar las características geométricas de una pieza en un plano de ingeniería. Estas características pueden incluir rectitud de un eje, planicidad de una superficie, redondez de un círculo, entre otros elementos.</p>
         <p class="respuesta">Para representar estas tolerancias geométricas en los planos, se utilizan símbolos normalizados, que se muestran en una figura específica. Estos símbolos se clasifican en dos grupos:</p>
@@ -398,8 +352,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-03">
-        <h2>TOLERANCIAS MICROGEOMETRICAS</h2>
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-03">TOLERANCIAS MICROGEOMETRICAS</h2>
         <p class="pregunta" id="020" >Definicion</p>
         <p class="respuesta">Las tolerancias microgeométricas se refieren a las dimensiones y relaciones entre las distintas superficies de una pieza, tal como lo especifica el diseñador en un plano de ingeniería. En el plano, las superficies se representan como contornos ideales, como líneas rectas perfectas, círculos perfectos y otras formas geométricas precisas.</p>
         <p class="respuesta">Sin embargo, al fabricar la pieza, las superficies reales se ven afectadas por el proceso de manufactura utilizado, lo que resulta en variaciones considerables en las características de la superficie. Es esencial para los ingenieros comprender la tecnología de las superficies debido a su importancia tanto tecnológica como comercial en diferentes aplicaciones de los productos.</p>
@@ -512,8 +466,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-04">
-        <h2>04- INFORMACION COMPLEMENTARIA</h2>
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-04">04- INFORMACION COMPLEMENTARIA</h2>
         <p class="pregunta" id="029" >Bibliografia y normativa</p>
         <p class="respuesta">García Mateos A. (1969), Tolerancias, ajustes y calibres, Bilbao, España: Editorial Urmo. </p>
         <p class="respuesta">IRAM 4572 (1996) - Dibujo técnico. Tolerancias geométricas de la forma. Principios y métodos de verificación. Pautas. </p>

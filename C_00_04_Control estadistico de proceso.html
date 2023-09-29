@@ -48,47 +48,12 @@
         </form>
     </div>
     <P id="referencia"></P>
-    <p class="tema">Ingenieria Industrial</p>
-    <p class="tema">Material de estudio</p>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
     <p id="materia" >Procesos industriales</p>
     <h1 id="tema">Control estadistico de procesos (CEP)</h1>
     <div id="menu">
-        <img src="Icons/Menu.svg" title="Menu">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="dropdown"><a href="#Tema-01-01"  onclick="smoothScroll(event, 'Tema-01-01')">01- VARIABILIDAD DE LOS PROCESOS</a></li>
-                <li class="dropdown"><a href="#Tema-01-02"  onclick="smoothScroll(event, 'Tema-01-02')">02- FUNDAMENTOS ESTADISTICOS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#001"  onclick="smoothScroll(event, '001')">Distribución Normal o Campana de Gauss</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">03- CAPACIDAD DE PROCESOS</a></li>
-                <li class="dropdown"><a href="#Tema-01-04"  onclick="smoothScroll(event, 'Tema-01-04')">04- ANALISIS DE APTITUD DE LOS PROCESOS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#002"  onclick="smoothScroll(event, '002')">CP y CPK</a></li>
-                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Ejemplo</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-05"  onclick="smoothScroll(event, 'Tema-01-05')">05- GRAFICOS DE CONTROL X-R</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Definición</a></li>
-                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Realizacion del grafico X̅ - R</a></li>
-                        <li><a href="#006"  onclick="smoothScroll(event, '006')"><i><U>Paso 1:</U></i> Recolección de datos</a></li>
-                        <li><a href="#007"  onclick="smoothScroll(event, '007')"><i><U>Paso 2:</U></i> Cálculo del promedio (X̅)</a></li>
-                        <li><a href="#008"  onclick="smoothScroll(event, '008')"><i><U>Paso 3:</U></i> Cálculo del rango (R)</a></li>
-                        <li><a href="#009"  onclick="smoothScroll(event, '009')"><i><U>Paso 4:</U></i> Promedio de la variable (X̿)</a></li>
-                        <li><a href="#010"  onclick="smoothScroll(event, '010')"><i><U>Paso 5:</U></i> Promedio del rango (R̅)</a></li>
-                        <li><a href="#011"  onclick="smoothScroll(event, '011')"><i><U>Paso 6:</U></i> Límites de control</a></li>
-                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Ejemplo del grafico X̅ - R</a></li>
-                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Evaluacion del grafico X̅ - R</a></li>
-                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Evaluacion del grafico X̅ - R en caso de un proceso ya bajo control</a></li>
-                        <li><a href="#015"  onclick="smoothScroll(event, '015')">Alteraciones del grafico X̅ - R</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-06"  onclick="smoothScroll(event, 'Tema-01-06')">06- COMPORTAMIENTO FISICO Y ESTADISTICO DE UNA TOLERANCIA</a></li>
-                <li class="dropdown"><a href="#Tema-01-07"  onclick="smoothScroll(event, 'Tema-01-07')">07- TABLA DE COEFICIENTES Y CONSTANTES DEL GRAFICO DE CONTROL</a></li>
-            </ul>
-        </nav>
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
     </div>
     <div id="cont-up">
         <a id="imprimir">
@@ -145,8 +110,8 @@
         <a href="#Tema-01-07" class="boton" onclick="smoothScroll(event, 'Tema-01-07')">07- TABLA DE COEFICIENTES Y CONSTANTES DEL GRAFICO DE CONTROL</a>
     </div>
 
-    <div id="Tema-01-01">
-        <h2>VARIABILIDAD DE LOS PROCESOS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-01">VARIABILIDAD DE LOS PROCESOS</h2>
         <p class="respuesta">En la producción industrial, es inevitable que surjan variaciones aleatorias, lo que significa que cada producto fabricado no será idéntico al otro. Esta falta de uniformidad en las características del producto es indeseable, y el objetivo es reducir esta variabilidad tanto como sea posible o al menos mantenerla dentro de límites aceptables. El Control Estadístico de Procesos (CEP) es una herramienta valiosa para lograr este objetivo. Al implementarse durante el proceso de fabricación, contribuye a mejorar la calidad de la producción y aumenta el conocimiento sobre el proceso, lo que puede conducir a mejoras adicionales.</p>
         <p class="respuesta">Para controlar la calidad de las piezas, existen tres métodos:</p>
         <p class="respuesta"><i><U>Control unitario o control al 100%:</U></i> Implica revisar cada producto individualmente, lo que es un proceso largo, costoso y tedioso.</p>
@@ -157,8 +122,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-02">
-        <h2>FUNDAMENTOS ESTADISTICOS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-02">FUNDAMENTOS ESTADISTICOS</h2>
         <p id="001" class="pregunta">Distribución Normal o Campana de Gauss</p>
         <p class="respuesta">Para comprender el Control Estadístico de Procesos, no es necesario ser un experto en estadística, pero es importante recordar los siguientes puntos clave:</p>
         <p class="respuesta"><i><U>Distribución normal o campana de Gauss:</U></i> La distribución normal es una función de densidad de probabilidad que tiene una forma acampanada. Está determinada por dos parámetros: la media (µ) y la desviación estándar (δ). Es simétrica respecto a la media. Alrededor del 68% de la población se encuentra dentro de un rango de ±1 desviación estándar alrededor de la media (µ), el 95% dentro de ±2 desviaciones estándar, y el 99.73% dentro de ±3 desviaciones estándar. Es decir, casi todos los posibles valores que puede tomar la variable estudiada están comprendidos en el rango µ±3δ.</p>
@@ -169,16 +134,16 @@
         <p class="respuesta">El Control Estadístico de Procesos se basa en analizar la información proporcionada por el proceso para detectar la presencia de causas asignables. Para hacer esto, se emplean gráficos de control. Sin embargo, antes de implementar el control estadístico en un proceso, es crucial asegurarse de que esté bajo control, ya que de lo contrario, se pueden obtener conclusiones erróneas y peligrosas.</p>
     </div>
 
-    <div id="Tema-01-03">
-        <h2>CAPACIDAD DE PROCESOS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-03">CAPACIDAD DE PROCESOS</h2>
         <p class="respuesta">La capacidad del proceso se refiere a la habilidad del proceso de producción para satisfacer las especificaciones de calidad establecidas por el diseñador, el productor o el comprador. Aunque un proceso esté bajo control estadístico, es posible que los productos fabricados no cumplan con las especificaciones de calidad externas si la variabilidad es alta.</p>
         <p class="respuesta">Los estudios de capacidad del proceso buscan responder si el proceso tiene la capacidad de cumplir con las especificaciones de calidad. Cuando un proceso se encuentra en control estadístico, aproximadamente el 99.73% de los productos fabricados tendrán una característica de calidad entre µ - 3δ y µ + 3δ. Aquí, µ depende del punto central del proceso, mientras que δ es intrínseco y está relacionado con el número y la variabilidad de las causas comunes del proceso.</p>
         <p class="respuesta">La variabilidad natural del proceso, representada por 6δ, es independiente de las tolerancias establecidas. Si 6s es mayor que el rango de tolerancias, algunos productos estarán fuera de las especificaciones y serán considerados no conformes. Ajustar el proceso para centrarlo sin considerar este hecho solo aumentará su variabilidad.</p>
         <p class="respuesta">Los estudios de capacidad de procesos tienen como objetivos analizar el grado de conformidad de los artículos producidos con respecto al diseño y medir la capacidad del proceso para cumplir con las especificaciones de calidad mediante el uso de índices de capacidad.</p>
     </div>
 
-    <div id="Tema-01-04">
-        <h2>ANALISIS DE APTITUD DE LOS PROCESOS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-04">ANALISIS DE APTITUD DE LOS PROCESOS</h2>
         <p class="respuesta">El análisis de aptitud de un proceso tiene como objetivo principal verificar si dicho proceso se encuentra bajo control estadístico. Una vez confirmado esto, se puede realizar periódicamente para evaluar la capacidad del proceso y otros usos importantes.</p>
         <p class="respuesta">Entre los usos clave del análisis de aptitud de un proceso se encuentran:</p>
         <p class="respuesta">-Predecir el grado de cumplimiento del proceso con las tolerancias establecidas.</p>
@@ -219,8 +184,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-05">
-        <h2>GRAFICOS DE CONTROL X-R</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-05">GRAFICOS DE CONTROL X-R</h2>
         <p id="004" class="pregunta">Definición</p>
         <p class="respuesta">El gráfico de control X̅ -R es una herramienta valiosa para estudiar las variaciones en procesos repetitivos y monitorearlos de manera continua. Se utiliza específicamente cuando la característica de calidad que se desea controlar es una variable continua.</p>
         <p class="respuesta">Este tipo de gráficos tiene dos propósitos fundamentales:</p>
@@ -338,8 +303,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-06">
-        <h2>COMPORTAMIENTO FISICO Y ESTADISTICO DE UNA TOLERANCIA</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-06">COMPORTAMIENTO FISICO Y ESTADISTICO DE UNA TOLERANCIA</h2>
         <p class="respuesta">Supongamos dos máquinas realizando una misma operación de mecanizado, bajo las mismas condiciones de preparación. Ambas máquinas son iguales, pero una tiene grandes desgastes. </p>
         <p class="respuesta">En la máquina con desgastes, el operario debe controlar todas las piezas y corregir continuamente la medida para mantenerla dentro de la tolerancia. </p>
         <p class="respuesta">En la otra máquina, con juegos normales, se siguió un proceso de control estadístico de producción (previa comprobación de la capacidad), por lo que el operario controla piezas sólo con una cierta frecuencia, y modificará la puesta a punto solamente cuando la medida supere ciertos límites.  </p>
@@ -350,8 +315,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-07">
-        <h2>TABLAS DE COEFICIENTES Y CONSTANTES DEL GRAFICO DE CONTROL</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-07">TABLAS DE COEFICIENTES Y CONSTANTES DEL GRAFICO DE CONTROL</h2>
         <div class="contenedor-img">
             <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/04-%20CEP/10-%20Tabla%20de%20coeficientes.png">
         </div>

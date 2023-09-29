@@ -43,7 +43,7 @@ body::-webkit-scrollbar-track:hover{
     background-color: #dedede39;
     transition-duration: 0.7s;
 }
-.tema{
+.temas{
     margin: 0;
     font-size: 8vw;
     text-align: center;
@@ -155,10 +155,7 @@ body::-webkit-scrollbar-track:hover{
     text-align: justify;
 }
 
-#Tema-01-00, #Tema-01-01, #Tema-01-02, #Tema-01-03, #Tema-01-04,
-#Tema-01-05, #Tema-01-06, #Tema-01-07, #Tema-01-08, #Tema-01-09,
-#Tema-01-10, #Tema-01-11, #Tema-01-12, #Tema-01-13, #Tema-01-14,
-#Tema-01-15, #Tema-01-16, #Tema-01-17, #Tema-01-18, #Tema-01-19{
+.contenedorTemas{
     font-size: 30px;
     padding: 20px;
     color: #f4ecb7;
@@ -204,88 +201,15 @@ body::-webkit-scrollbar-track:hover{
     left: 1.2%;
     z-index: 50;
 }
+#menu img{
+    width: 5vw;
+}
 #menu img:hover{
     transform: scale(1.2);
     transition-duration: 0.5s;
 }
-#menu:hover .navbar{
-    visibility: visible;
-    transition-delay: 0.5s;
-}
-.navbar {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    background-color: #333;
-    padding: 10px;
-    z-index: 100;
-    visibility: hidden;
-    max-height: 100%;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 
-.navbar:hover{
-    visibility: visible;
-}
-.navbar:not(:hover){
-    transition-delay: 0.5s;
-}
-
-.navbar-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.navbar-list li {
-    display: flex;
-    margin-right: 20px;
-}
-
-.navbar-list li a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 5px 10px;
-}
-
-.navbar-list li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-/* Dropdown Styles */
-.dropdown {
-    position: relative;
-    z-index: 200;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 0%;
-    left: 100%;
-    background-color: #333;
-    min-width: 150px;
-    padding: 5px;
-    max-height: 400px;
-    width: fit-content-moz-fit-content;
-    white-space: nowrap;
-}
-
-.dropdown-content li {
-    margin: 5px 0;
-}
-
-.dropdown-content li a {
-    color: #fff;
-    text-decoration: none;
-}
 
 /*segundo nav*/
 
@@ -332,7 +256,7 @@ body::-webkit-scrollbar-track:hover{
     padding: 5px 10px;
 }
 
-.navbar-list-2 li a:hover {
+li:hover {
     background-color: #555;
     border-radius: 5px;
 }
@@ -517,8 +441,11 @@ body::-webkit-scrollbar-track:hover{
 }
 
 /*Diseño mobile*/
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
+    #menu img{
+        width: 7vw;
+    }
     #contenedor-subtemas .boton {
         white-space: normal;
     }
@@ -531,30 +458,23 @@ body::-webkit-scrollbar-track:hover{
         font-size: 6vw;
     }
 
-    #Tema-01-00, #Tema-01-01, #Tema-01-02, #Tema-01-03, #Tema-01-04,
-    #Tema-01-05, #Tema-01-06, #Tema-01-07, #Tema-01-08, #Tema-01-09,
-    #Tema-01-10, #Tema-01-11, #Tema-01-12, #Tema-01-13, #Tema-01-14,
-    #Tema-01-15, #Tema-01-16, #Tema-01-17, #Tema-01-18, #Tema-01-19{
+    .contenedorTemas{
         font-size: 4vw;
     }
 
-    .navbar, .navbar-2{
+    .navbar-2{
         width: 100vw;
         margin: 0%;
     }
 
-    .navbar ul, .navbar-2 ul{
+    .navbar-2 ul{
         width: 100vw;
         margin: 0%;
     }
     
-    .navbar li, .navbar-2 li{
+    .navbar-2 li{
         width: 100vw;
         margin: 0%;
-    }
-
-    .navbar-list{
-        width: 100vw;
     }
 
     .navbar-list-2{

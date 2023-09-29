@@ -48,45 +48,12 @@
         </form>
     </div>
     <P id="referencia"></P>
-    <p class="tema">Ingenieria Industrial</p>
-    <p class="tema">Material de estudio</p>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
     <p id="materia">Seguridad Ambiental e Industrial</p>
     <h1 id="tema">Riesgo mecanico</h1>
     <div id="menu">
-        <img src="Icons/Menu.svg" title="Menu">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="dropdown"><a href="#Tema-01-00" onclick="smoothScroll(event, 'Tema-01-00')">00 - INTRODUCCION</a></li>
-                <li class="dropdown"><a href="#Tema-01-01" onclick="smoothScroll(event, 'Tema-01-01')">01 - AREAS DE RIESGO MECANICO</a></li>
-                <li class="dropdown"><a href="#Tema-01-02" onclick="smoothScroll(event, 'Tema-01-02')">02 - SITUACIONES PELIGROSAS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Situaciones Relacionadas con la Operación</a></li>
-                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Situaciones Relacionadas con la Interacción Humana</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-03" onclick="smoothScroll(event, 'Tema-01-03')">03 - CLASIFICACION DEL RIESGO MECANICO</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Riesgo de Atrapamiento</a></li>
-                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Riesgo de Aplastamiento</a></li>
-                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Riesgo de Cizallamiento</a></li>
-                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Riesgo por Sólidos</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-04" onclick="smoothScroll(event, 'Tema-01-04')">04 - ENFERMEDADES PROFESIONALES ASOCIADAS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Causas de Enfermedades Profesionales</a></li>
-                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Enfermedades Profesionales Relacionadas con el Riesgo Mecánico</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-05" onclick="smoothScroll(event, 'Tema-01-05')">05 - SEGURIDAD EN MAQUINAS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Resguardos</a></li>
-                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Dispositivos de Resguardo</a></li>
-                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Seguridad en Máquinas Eléctricas Manuales</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
     </div>
 
     <div id="cont-up">
@@ -134,12 +101,12 @@
         <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04 - ENFERMEDADES PROFESIONALES ASOCIADAS</a>
         <a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">05 - SEGURIDAD EN MAQUINAS</a>
     </div>
-    <div id="Tema-01-00">
-        <h2>INTRODUCCION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-00">INTRODUCCION</h2>
         <p class="respuesta">Los riesgos mecánicos son un conjunto de factores físicos que pueden resultar en lesiones o enfermedades profesionales debido a la acción mecánica de elementos como máquinas, herramientas, piezas a trabajar o materiales proyectados, ya sean sólidos o fluidos. Estos riesgos representan una preocupación importante en el ámbito laboral y requieren medidas de prevención y control para garantizar la seguridad de los trabajadores. En este contexto, la Ley N° 19.587 y el Decreto N° 351/79 establecen directrices para abordar estos riesgos en el entorno de trabajo.</p>
     </div>
-    <div id="Tema-01-01">
-        <h2>AREAS DE RIESGO MECANICO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-01">AREAS DE RIESGO MECANICO</h2>
         <p class="respuesta">Los riesgos mecánicos pueden manifestarse en una variedad de operaciones que implican la manipulación de herramientas, maquinaria, vehículos y dispositivos de elevación. Algunas de las áreas donde se pueden presentar riesgos mecánicos incluyen:</p>
         <p class="respuesta">Herramientas Manuales: El uso de herramientas manuales, ya sean motorizadas o no, conlleva el riesgo de lesiones debido a la acción de corte, impacto o compresión. Esto incluye herramientas como sierras, martillos, destornilladores y más.</p>
         <p class="respuesta">Maquinaria Industrial: Diversas máquinas industriales como fresadoras, lijadoras, tornos, taladros y prensas pueden causar lesiones si no se utilizan adecuadamente o si ocurren fallas en su funcionamiento.</p>
@@ -178,8 +145,8 @@
         <p class="respuesta">Factores Ambientales y Personales: Elementos como ruido, iluminación inadecuada, prisa, estrés o factores personales pueden aumentar la probabilidad de accidentes.</p>
     </div>
     
-    <div id="Tema-01-03">
-        <h2>CLASIFICACION DEL RIESGO MECANICO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-03">CLASIFICACION DEL RIESGO MECANICO</h2>
         <p class="respuesta">Los riesgos mecánicos son una categoría importante de peligros en el entorno laboral, relacionados con la acción mecánica de maquinaria y objetos en movimiento. Estos riesgos pueden resultar en lesiones graves si no se toman medidas preventivas adecuadas. Aquí se presenta una clasificación de riesgos mecánicos junto con ejemplos de cada uno</p>
 
         <p id="003" class="pregunta">Riesgo de Atrapamiento</p>
@@ -207,8 +174,8 @@
         <p class="respuesta">Salpicaduras de fluidos durante operaciones de maquinaria.</p>
     </div>
     
-    <div id="Tema-01-04">
-        <h2>ENFERMEDADES PROFESIONALES ASOCIADAS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-04">ENFERMEDADES PROFESIONALES ASOCIADAS</h2>
         <p class="respuesta">El riesgo mecánico en el entorno laboral no solo puede causar accidentes, sino que también puede dar lugar al desarrollo de enfermedades profesionales. Estas enfermedades son el resultado de la exposición continua a factores mecánicos que pueden afectar la salud de los trabajadores a lo largo del tiempo. A continuación, se describen algunas enfermedades profesionales relacionadas con el riesgo mecánico y las causas subyacentes</p>
 
         <p id="007" class="pregunta">Causas de Enfermedades Profesionales</p>
@@ -226,8 +193,8 @@
         <p class="respuesta">Lesiones en Articulaciones y Ligamentos: Movimientos repetitivos y posturas forzadas pueden causar lesiones en los meniscos y arrancamientos apofisarios.</p>
     </div>
     
-    <div id="Tema-01-05">
-        <h2>SEGURIDAD EN MAQUINAS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-05">SEGURIDAD EN MAQUINAS</h2>
         <p class="respuesta">La seguridad en el entorno laboral, especialmente en el uso de máquinas y herramientas, es fundamental para prevenir accidentes y proteger la salud de los trabajadores. Para garantizar esta seguridad, se implementan diversas medidas y dispositivos de resguardo. A continuación, se presentan algunos conceptos clave relacionados con la seguridad en máquinas y herramientas:</p>
         <p class="respuesta">Las medidas de seguridad en máquinas y herramientas se basan en una combinación de medidas tomadas durante la fase de diseño y construcción, así como en las medidas adoptadas por el usuario.</p>
         <p class="respuesta">Las medidas adoptadas durante la fase de diseño son preferibles, ya que brindan una protección más efectiva que las medidas incorporadas por el usuario.</p>

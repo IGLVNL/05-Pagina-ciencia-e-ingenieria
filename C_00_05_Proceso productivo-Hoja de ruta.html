@@ -48,43 +48,12 @@
         </form>
     </div>
     <P id="referencia"></P>
-    <p class="tema">Ingenieria Industrial</p>
-    <p class="tema">Material de estudio</p>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
     <p id="materia" >Procesos industriales</p>
     <h1 id="tema">Procesos productivos - Hoja de ruta</h1>
     <div id="menu">
-        <img src="Icons/Menu.svg" title="Menu">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="dropdown" ><a href="#Tema-01-00"  onclick="smoothScroll(event, 'Tema-01-00')">INTRODUCCION</a>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-01"  onclick="smoothScroll(event, 'Tema-01-01')">01- ANALISIS DEL PROCESO</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#001"  onclick="smoothScroll(event, '001')">El producto</a></li>
-                        <li><a href="#002"  onclick="smoothScroll(event, '002')">Administración científica</a></li>
-                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Sistemas de manufactura</a></li>
-                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Ingeniería de manufactura</a></li>
-                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Fases de un proceso</a></li>
-                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Selección de un proceso</a></li>
-                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Ejemplo</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-02"  onclick="smoothScroll(event, 'Tema-01-02')">02- DISEÑO DEL PROCESO</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Planificación de los procesos</a></li>
-                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Procesos básicos y secundarios</a></li>
-                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Mejoras de las propiedades físicas y terminación</a></li>
-                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Diagramas más comunes para la planificación de procesos</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">03- HOJA DE RUTA / HOJA DE PROCESOS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Ejemplos de diferentes formatos de hojas de ruta</a></li>
-                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Ejemplo de modo de uso de una hoja de ruta</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
     </div>
     <div id="cont-up">
         <a id="imprimir">
@@ -136,8 +105,8 @@
         <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">02- DISEÑO DEL PROCESO</a>
         <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03- HOJA DE RUTA / HOJA DE PROCESOS</a>
     </div>
-    <div id="Tema-01-00">
-        <h2>INTRODUCCION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-00">INTRODUCCION</h2>
         <p class="respuesta">Un proceso se refiere a una parte cualquiera de una organización que toma insumos y los transforma en productos que, según se espera, tengan un valor más alto para la organización que los insumos originales. El análisis de procesos es una actividad fundamental para comprender y mejorar la eficiencia de las operaciones.</p>
         <div class="contenedor-img">
             <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/1-%20Procesos%20productivo.jpg">
@@ -149,8 +118,8 @@
         <p class="respuesta">Es importante tener en cuenta que los productos de un proceso no siempre son bienes tangibles, también pueden ser servicios. Por ejemplo, en un hospital, los equipos especializados, médicos, enfermeras y técnicos altamente capacitados combinan sus conocimientos y habilidades con el insumo principal, el paciente, para brindar atención y tratamiento médico adecuados, con el objetivo de transformar al paciente en una persona sana.</p>
     </div>
 
-    <div id="Tema-01-01">
-        <h2>ANALISIS DEL PROCESO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-01">ANALISIS DEL PROCESO</h2>
         <p class="respuesta">El análisis del proceso es una herramienta poderosa que permite responder preguntas importantes, como la capacidad de producción por hora, el tiempo necesario para atender a un cliente, los cambios requeridos para expandir la capacidad del proceso y el costo asociado al proceso. Es crucial comprender claramente el propósito del análisis para determinar el nivel de detalle necesario en el modelo del proceso durante su preparación. En general, se busca que el análisis sea lo más simple posible.</p>
         <p class="respuesta">Algunas tareas típicas involucradas en el análisis de procesos incluyen:</p>
         <p class="respuesta">Descomposición del proceso en actividades, tareas u operaciones individuales.</p>
@@ -209,8 +178,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-02">
-        <h2>DISEÑO DEL PROCESO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-02">DISEÑO DEL PROCESO</h2>
         <p class="respuesta">El diseño del proceso en la planificación de procesos implica determinar los procesos de manufactura más adecuados y el orden en el cual deben realizarse para producir una pieza o producto específico. Esto se basa en la ingeniería de diseño que especifica los requisitos funcionales del producto.</p>
         <div class="contenedor-img">
             <img class="img" alt="img" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/7-%20Preguntas%20diseño.jpg">
@@ -267,8 +236,8 @@
         <p class="respuesta">Estas herramientas y consideraciones ayudan al planificador de procesos a diseñar un proceso eficiente, que cumpla con los requisitos de costo, calidad, seguridad y flujo de trabajo adecuado para la fabricación de un producto.</p>
     </div>
 
-    <div id="Tema-01-03">
-        <h2>HOJA DE RUTA - HOJA DE PROCESOS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-03">HOJA DE RUTA - HOJA DE PROCESOS</h2>
         <p class="respuesta">La creación de un proceso de mecanizado requiere tomar en cuenta diversos elementos como la secuencia óptima de operaciones, el material de partida, las máquinas, las herramientas, los elementos de sujeción y posicionado, y los métodos de control. También es fundamental estimar la fuerza de sujeción de la pieza, la cual debe garantizar la posición relativa entre la pieza y la herramienta durante todo el proceso de trabajo, absorbiendo los esfuerzos y momentos de corte en su magnitud, dirección y sentido.</p>
         <p class="respuesta">Para diseñar un proceso de mecanizado, es necesario contar con una hoja de ruta que represente la secuencia cronológica de todas las operaciones necesarias para fabricar una pieza. Esta hoja de ruta es un documento escrito que detalla las características específicas requeridas para la fabricación, las operaciones a realizar y su secuencia de trabajo, así como las máquinas y herramientas que se utilizarán, y otros cálculos técnicos relevantes. En esencia, la hoja de ruta es al planificador de procesos lo que el dibujo de ingeniería es al diseñador del producto. Es un documento oficial que especifica los detalles del plan de procesos.</p>
         <p class="respuesta">Antes de elaborar la hoja de ruta, es importante realizar todos los cálculos y obtener los parámetros de trabajo necesarios para su ejecución. En la hoja de proceso, deben incluirse elementos como el membrete de la empresa, número de hoja, fecha de emisión, número de revisión, número de plano y descripción de la pieza, número de fase u operación, operaciones a realizar, máquinas a utilizar, herramientas, tiempo necesario, material y cualquier otra información relevante.</p>

@@ -48,50 +48,12 @@
         </form>
     </div>
     <P id="referencia"></P>
-    <p class="tema">Ingenieria Industrial</p>
-    <p class="tema">Material de estudio</p>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
     <p id="materia" >Procesos industriales</p>
     <h1 id="tema">Procesos de mecanizado sin arranque de viruta</h1>
     <div id="menu">
-        <img src="Icons/Menu.svg" title="Menu">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="dropdown"><a href="#Tema-01-00" onclick="smoothScroll(event, 'Tema-01-00')">INTRODUCCION</a></li>
-                <li class="dropdown"><a href="#Tema-01-01" onclick="smoothScroll(event, 'Tema-01-01')">CONFORMADO DE METALES</a></li>
-                <li class="dropdown"><a href="#Tema-01-02" onclick="smoothScroll(event, 'Tema-01-02')">CONFORMADO EN CALIENTE</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#001"  onclick="smoothScroll(event, '001')">Laminación en caliente</a></li>
-                        <li><a href="#002"  onclick="smoothScroll(event, '002')">Fabricación de tubos sin costura</a></li>
-                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Forjado</a></li>
-                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Extrusión</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-03" onclick="smoothScroll(event, 'Tema-01-03')">CONFORMADO EN FRIO</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Estirado y trefilado</a></li>
-                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Estirado</a></li>
-                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Trefilado</a></li>
-                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Estampado</a></li>
-                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Punzonado</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-04" onclick="smoothScroll(event, 'Tema-01-04')">PROCESOS ESPECIALES DE CONFORMADO</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Microfusion</a></li>
-                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Metal inyection moulding (MIM)</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-05" onclick="smoothScroll(event, 'Tema-01-05')">CONFORMADO DE POLIMEROS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Secado del aire</a></li>
-                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Extrusora</a></li>
-                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Moldeo por inyección</a></li>
-                        <li><a href="#015"  onclick="smoothScroll(event, '015')">Moldeo por extrusión</a></li>
-                        <li><a href="#016"  onclick="smoothScroll(event, '016')">Moldeo por soplado </a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
     </div>
     <div id="cont-up">
         <a id="imprimir">
@@ -143,8 +105,8 @@
         <a href="#Tema-01-04" class="boton" onclick="smoothScroll(event, 'Tema-01-04')">04- PROCESOS ESPECIALES DE CONFORMADO</a>
         <a href="#Tema-01-05" class="boton" onclick="smoothScroll(event, 'Tema-01-05')">05- CONFORMADO DE POLIMEROS</a>
     </div>
-    <div id="Tema-01-00">
-        <h2>INTRODUCCION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-00">INTRODUCCION</h2>
         <p class="respuesta">Los procesos de manufactura se dividen en dos tipos básicos: operaciones de procesamiento y operaciones de ensamblado. Las operaciones de procesamiento agregan valor al material modificando su geometría, propiedades o apariencia. Por otro lado, las operaciones de ensamblado unen componentes para crear un ensamble. En esta asignatura nos centramos en las operaciones de procesamiento.</p>
         <div class="contenedor-img">
             <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/06-%20MSAV/1-%20Clasificacion%20procesos.jpg">
@@ -153,8 +115,8 @@
         <p class="respuesta">Por lo general, se requieren varias operaciones de procesamiento para transformar el material inicial en su forma final, siguiendo una secuencia específica. Se distinguen tres categorías de operaciones de procesamiento: formado, mejoramiento de una propiedad y procesamiento de una superficie.</p>
         <p class="respuesta">Las operaciones de formado cambian la geometría del material mediante métodos como fundición, forja y maquinado. Las operaciones de mejoramiento de una propiedad mejoran las propiedades físicas del material sin cambiar su forma, siendo el tratamiento térmico un ejemplo común. Las operaciones de procesamiento de una superficie se realizan para limpiar, tratar, recubrir o depositar material en la superficie exterior del material, como el cromado y el pintado.</p>
     </div>
-    <div id="Tema-01-01">
-        <h2>CONFORMADO DE METALES</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-01">CONFORMADO DE METALES</h2>
         <div class="contenedor-img">
             <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/06-%20MSAV/2-%20Clasificacion%20operaciones%20de%20conformado.jpg">
         </div>
@@ -181,8 +143,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-02">
-        <h2>PROCESOS DE CONFORMADO EN CALIENTE</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-02">PROCESOS DE CONFORMADO EN CALIENTE</h2>
         <p class="respuesta">El trabajo en caliente por debajo de la temperatura de recristalización ofrece varias ventajas sobre el trabajo en frío debido a la menor resistencia y endurecimiento por deformación, así como a una mayor ductilidad del metal. Estas ventajas incluyen:</p>
         <p class="respuesta"><i><U>Fuerzas más bajas y menor requerimiento de potencia:</U></i> El metal es más fácil de deformar, lo que reduce las fuerzas y la energía necesarias para el proceso.</p>
         <p class="respuesta"><i><U>Posibilidad de realizar trabajos más intrincados:</U></i> La mayor ductilidad del metal permite lograr formas más complejas durante el conformado.</p>
@@ -301,8 +263,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-03">
-        <h2>PROCESOS DE CONFORMADO EN FRIO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-03">PROCESOS DE CONFORMADO EN FRIO</h2>
         <p class="respuesta">El trabajo en frío se refiere a los procesos de conformado que se realizan a temperatura ambiente o ligeramente por encima de ella. En este tipo de trabajo, se aplica un esfuerzo mayor a la tensión de fluencia del metal, lo que resulta en una deformación permanente o plástica. A diferencia del trabajo en caliente, que se realiza a altas temperaturas, el trabajo en frío ofrece varias ventajas y limitaciones distintivas.</p>
         <div class="contenedor-img">
             <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/06-%20MSAV/19-%20conformado%20en%20frio.jpg">
@@ -449,8 +411,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-04">
-        <h2>PROCESOS ESPECIALES DE CONFORMADO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-04">PROCESOS ESPECIALES DE CONFORMADO</h2>
         <p class="respuesta">Los procesos especiales de formado son aquellos que se basan en una combinación de la inyección y la fundición de metal. Estos procesos se utilizan principalmente para la producción de piezas pequeñas a medianas, con pesos que van desde 5 gramos hasta 50 kilogramos, y se caracterizan por tener altos volúmenes de producción.</p>
         <p class="respuesta">Estos procesos especiales de formado permiten fabricar piezas con formas complejas y características específicas. A continuación, se presentan algunos ejemplos de estos procesos:</p>
         <p class="respuesta"><i><U>Fundición a presión:</U></i> En este proceso, se introduce metal líquido en una cámara de alta presión y se inyecta en un molde. El metal se solidifica rápidamente y se obtiene una pieza con una forma precisa y una excelente calidad superficial. La fundición a presión es ampliamente utilizada en la industria automotriz, electrónica y de dispositivos médicos.</p>
@@ -490,8 +452,8 @@
         <p class="respuesta">El proceso de MIM ofrece características como alta productividad, excelente terminación superficial, estabilidad dimensional, amplia gama de materiales disponibles y competitividad para grandes lotes de piezas complejas. Es un proceso rápido y automatizado, pero no se puede aplicar a materiales como aluminio, magnesio y sus aleaciones.</p>
     </div>
 
-    <div id="Tema-01-05">
-        <h2>CONFORMADO DE POLIMEROS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-05">CONFORMADO DE POLIMEROS</h2>
         <p class="respuesta">Los procesos de conformado de plásticos son de gran importancia debido a la creciente relevancia de los materiales plásticos en la industria. Los plásticos se pueden conformar en una amplia variedad de formas geométricas utilizando diversos procesos, lo que permite una gran versatilidad en la fabricación de piezas. Algunos de los procesos de conformado de plásticos más comunes incluyen el moldeo por inyección, el moldeo por soplado, la extrusión, el termoformado y el laminado. </p>
         <p id="012" class="pregunta">Secado del aire</p>
         <p class="respuesta">Es importante secar el aire que ingresa con los pellets de polímero en una extrusora por varias razones:</p>

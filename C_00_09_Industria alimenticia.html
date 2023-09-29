@@ -48,37 +48,12 @@
         </form>
     </div>
     <P id="referencia"></P>
-    <p class="tema">Ingenieria Industrial</p>
-    <p class="tema">Material de estudio</p>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
     <p id="materia" >Procesos industriales</p>
     <h1 id="tema">Industria alimenticia</h1>
     <div id="menu">
-        <img src="Icons/Menu.svg" title="Menu">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="dropdown" ><a href="#Tema-01-00"  onclick="smoothScroll(event, 'Tema-01-00')">INTRODUCCION</a>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-01"  onclick="smoothScroll(event, 'Tema-01-01')">01- LA INDUSTRIA ALIMENTICIA</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#001"  onclick="smoothScroll(event, '001')">Relevancia mundial</a></li>
-                        <li><a href="#002"  onclick="smoothScroll(event, '002')">Relevancia nacional</a></li>
-                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Producción primaria y estacionalidad</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-02"  onclick="smoothScroll(event, 'Tema-01-02')">02- GESTION DE LA INDUSTRIA ALIMENTICIA</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Buenas Prácticas de Laboratorio (BPL)</a></li>
-                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Buenas Prácticas de Documentación (BPD)</a></li>
-                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Buenas Prácticas de Seguridad (BPS)</a></li>
-                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Buenas Prácticas de Manufactura (BPM)</a></li>
-                        <li><a href="#008"  onclick="smoothScroll(event, '008')">Manejo Integral de Plagas (MIP)</a></li>
-                        <li><a href="#009"  onclick="smoothScroll(event, '009')">Alérgenos</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-03"  onclick="smoothScroll(event, 'Tema-01-03')">03- CONSIDERACIONES FINALES</a>
-                </li>
-            </ul>
-        </nav>
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
     </div>
     <div id="cont-up">
         <a id="imprimir">
@@ -130,16 +105,16 @@
         <a href="#Tema-01-02" class="boton" onclick="smoothScroll(event, 'Tema-01-02')">02- GESTION DE LA INDUSTRIA ALIMENTICIA </a>
         <a href="#Tema-01-03" class="boton" onclick="smoothScroll(event, 'Tema-01-03')">03- CONSIDERACIONES FINALES</a>
     </div>
-    <div id="Tema-01-00">
-        <h2>INTRODUCCION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-00">INTRODUCCION</h2>
         <p class="respuesta">La industria alimentaria es vital para el desarrollo económico y social, abarcando desde la producción primaria hasta la distribución de alimentos procesados. Requiere de servicios, infraestructura y gestión industrial para lograr sus objetivos. Este documento explora aspectos clave para acercarse al tema y facilitar la inserción laboral de los estudiantes de Ingeniería Industrial en estas industrias. Se abordan temas como la relevancia mundial y nacional de la industria, las necesidades primarias y la oferta/demanda estacional de productos, además de conceptos como GxP, inocuidad, recall, contaminación cruzada, trazabilidad, manejo de plagas y gestión de alérgenos, que son fundamentales en la cadena agroalimentaria.</p>
     </div>
     <div class="contenedor-img">
         <img class="img" alt="imagen" src="Imgs/Procesos%20industriales/05-%20Proceso%20productivo%20-%20Hoja%20de%20ruta/3-%20Valor%20percibido.jpg">
     </div>
 
-    <div id="Tema-01-01">
-        <h2>LA INDUSTRIA ALIMENTICIA</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-01">LA INDUSTRIA ALIMENTICIA</h2>
         <p id="001" class="pregunta">Relevancia mundial</p>
         <p class="respuesta">La Organización de las Naciones Unidas (ONU o UN) es una entidad que agrupa a 193 países miembros, trabajando en conjunto para identificar situaciones relevantes y planificar acciones que mejoren aspectos sociales, económicos y políticos. Entre los temas de estudio se encuentra el impacto del crecimiento poblacional desmedido y desbalanceado, que afecta el acceso a vivienda, salud y alimentación de calidad. La alimentación es crucial para la salud y el desarrollo, y su estudio se aborda desde diversas disciplinas. Se muestra una tabla que resume el crecimiento poblacional desde 1950 hasta proyecciones para 2100. Se han implementado medidas y políticas para abordar la generación, abastecimiento y calidad de alimentos, como los Objetivos de Desarrollo del Milenio (ODM) que incluyen aspectos relacionados con la producción y distribución de alimentos. La situación es compleja a nivel mundial, y en Argentina también se enfrentan desafíos similares.</p>
 
@@ -162,8 +137,8 @@
         <p class="respuesta">La industria alimentaria debe adaptarse constantemente a estas necesidades para mantener una demanda cada vez más enfocada en la salud. A pesar de estos cambios, existen factores y situaciones generales que deben considerarse en la industria de alimentos. En los siguientes apartados se abordarán aspectos generales, transversales y de gestión inherentes a todo proceso alimentario.</p>
     </div>
 
-    <div id="Tema-01-02">
-        <h2>GESTION DE LA INDUSTRIA DE ALIMENTOS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-02">GESTION DE LA INDUSTRIA DE ALIMENTOS</h2>
         <p class="respuesta">Tema 3: Gestión en la industria de los alimentosSe enfoca en la gestión de la industria alimenticia, destacando su diferenciación de otras industrias debido a la sensibilidad e impacto directo en la salud de los consumidores. Se introduce el concepto de GxP (buena práctica) y se menciona su aplicación en diferentes áreas, como las buenas prácticas de manufactura (GMP) y las buenas prácticas de laboratorio (GLP). Se resalta la importancia de seguir normas y protocolos para garantizar la calidad y seguridad de los alimentos.</p>
         
         <p id="004" class="pregunta">Buenas Prácticas de Laboratorio (BPL)</p>
@@ -206,8 +181,8 @@
         <p class="respuesta">En este proceso, es necesario revisar los procesos de producción, evaluar el impacto del flujo de materiales, las materias primas almacenadas y su origen, la infraestructura y el equipamiento, así como la capacidad de segregación de productos y otros factores que influyen en la gestión compleja pero necesaria para el diseño de las instalaciones de alimentos, teniendo en cuenta las nuevas demandas de la sociedad y los requisitos legales.</p>
     </div>
 
-    <div id="Tema-01-03">
-        <h2>CONSIDERACIONES FINALES</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-03">CONSIDERACIONES FINALES</h2>
         <p class="respuesta">La industria de alimentos, desde la producción primaria hasta la comercialización, tiene un impacto económico significativo en el Índice de Producción Manufacturero Industrial (IPI) de Argentina.</p>
         <p class="respuesta">La actividad económica y el impacto social de las industrias alimentarias están concentrados en el Área Metropolitana de Buenos Aires (AMBA), Gran Córdoba, Gran Mendoza y la provincia de San Luis.</p>
         <p class="respuesta">La producción primaria de alimentos es heterogénea debido a las características geográficas de Argentina, lo que implica estacionalidad en el abastecimiento. Por lo tanto, es crucial conocer y aplicar diversos métodos de conservación durante el transporte y distribución de alimentos.</p>

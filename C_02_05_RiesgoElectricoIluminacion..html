@@ -48,72 +48,12 @@
         </form>
     </div>
     <P id="referencia"></P>
-    <p class="tema">Ingenieria Industrial</p>
-    <p class="tema">Material de estudio</p>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
     <p id="materia">Seguridad Ambiental e Industrial</p>
     <h1 id="tema">Riesgo Electrico e Ilumnacion</h1>
     <div id="menu">
-        <img src="Icons/Menu.svg" title="Menu">
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="dropdown"><a href="#Tema-01-01" onclick="smoothScroll(event, 'Tema-01-01')">01 - RIESGO ELECTRICO</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#001"  onclick="smoothScroll(event, '001')">Tipos de Riesgo Eléctrico</a></li>
-                        <li><a href="#002"  onclick="smoothScroll(event, '002')">Estadísticas y Conciencia del Riesgo</a></li>
-                        <li><a href="#003"  onclick="smoothScroll(event, '003')">Causas de los Accidentes Eléctricos</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-02" onclick="smoothScroll(event, 'Tema-01-02')">02 - EFECTOS DE UN CHOQUE ELECTRICO</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#004"  onclick="smoothScroll(event, '004')">Efectos en Función de la Intensidad y el Tiempo</a></li>
-                        <li><a href="#005"  onclick="smoothScroll(event, '005')">Otros efectos fisiopatológicos</a></li>
-                        <li><a href="#006"  onclick="smoothScroll(event, '006')">Impedancia del cuerpo humano</a></li>
-                        <li><a href="#007"  onclick="smoothScroll(event, '007')">Quemaduras por arco eléctrico</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-03" onclick="smoothScroll(event, 'Tema-01-03')">03 - MEDIDAS DE PREVENCION</a></li>
-                <li class="dropdown"><a href="#Tema-01-04" onclick="smoothScroll(event, 'Tema-01-04')">04 - LEGISLACION ELECTRICA</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#008"  onclick="smoothScroll(event, '008')">DECRETO 351/79 - ANEXO I - TITULO V - CAPITULO 14: Instalaciones Eléctricas. Artículo 95-102</a></li>
-                        <li><a href="#009"  onclick="smoothScroll(event, '009')">ANEXO VI: Correspondientes a los artículos 95 a 102: CAPITULO 14 - Instalaciones Eléctricas</a></li>
-                        <li><a href="#010"  onclick="smoothScroll(event, '010')">Niveles de Tensión</a></li>
-                        <li><a href="#011"  onclick="smoothScroll(event, '011')">Tensión de Seguridad</a></li>
-                        <li><a href="#012"  onclick="smoothScroll(event, '012')">Bloqueo de un Aparato</a></li>
-                        <li><a href="#013"  onclick="smoothScroll(event, '013')">Consignación</a></li>
-                        <li><a href="#014"  onclick="smoothScroll(event, '014')">Capacitación del Personal</a></li>
-                        <li><a href="#015"  onclick="smoothScroll(event, '015')">Electricidad Estática</a></li>
-                        <li><a href="#016"  onclick="smoothScroll(event, '016')">Recomendaciones de AEA</a></li>
-                        <li><a href="#017"  onclick="smoothScroll(event, '017')">Norma NFPA 70E</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-05" onclick="smoothScroll(event, 'Tema-01-05')">05 - PROTECCIONES ELECTRICAS</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#018"  onclick="smoothScroll(event, '018')">Protección contra Riesgo de Contactos Directos</a></li>
-                        <li><a href="#019"  onclick="smoothScroll(event, '019')">Protección contra Riesgo de Contactos Indirectos</a></li>
-                        <li><a href="#020"  onclick="smoothScroll(event, '020')">Dispositivos de Seguridad</a></li>
-                        <li><a href="#021"  onclick="smoothScroll(event, '021')">Ejemplos de protecciones</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-06" onclick="smoothScroll(event, 'Tema-01-06')">06 - ILUMINACION</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#022"  onclick="smoothScroll(event, '022')">Sensibilidad del Ojo</a></li>
-                        <li><a href="#023"  onclick="smoothScroll(event, '023')">Agudeza Visual y Campo Visual</a></li>
-                        <li><a href="#024"  onclick="smoothScroll(event, '024')">Magnitudes y Unidades</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-07" onclick="smoothScroll(event, 'Tema-01-07')">07 - CONDICIONES PARA EL CONFORT VISUAL</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#025"  onclick="smoothScroll(event, '025')">Efectos de una mala iluminación en la salud </a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#Tema-01-08" onclick="smoothScroll(event, 'Tema-01-08')">08 - LEGISLACION Y NORMATIVAS PARA LA ILUMINACION</a></li>
-                <li class="dropdown"><a href="#Tema-01-09" onclick="smoothScroll(event, 'Tema-01-09')">09 - MEDICION DE LA ILUMINACION</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#026"  onclick="smoothScroll(event, '026')">Eficiencia de Lámparas y Luminarias</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
     </div>
 
     <div id="cont-up">
@@ -166,8 +106,8 @@
         <a href="#Tema-01-09" class="boton" onclick="smoothScroll(event, 'Tema-01-09')">09 - MEDICION DE LA ILUMINACION</a>
     </div>
 
-    <div id="Tema-01-01">
-        <h2>RIESGO ELECTRICO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-01">RIESGO ELECTRICO</h2>
         <p class="respuesta">El riesgo eléctrico es una amenaza física asociada a la siniestralidad generada por la energía eléctrica. Abarca diversas situaciones peligrosas, como el choque eléctrico, quemaduras por arco eléctrico, caídas a causa de descargas eléctricas y la posibilidad de incendios o explosiones relacionados con la electricidad. Es fundamental entender sus distintos aspectos y aplicar medidas de prevención adecuadas para garantizar la seguridad en los entornos laborales y evitar accidentes.</p>
         
         <p id="001" class="pregunta">Tipos de Riesgo Eléctrico</p>
@@ -193,8 +133,8 @@
         <p class="respuesta">Rescate Incorrecto de Accidentados: La falta de capacitación en cómo manejar situaciones de emergencia eléctrica puede llevar a una respuesta incorrecta que aumenta el peligro.</p>
     </div>
 
-    <div id="Tema-01-02">
-        <h2>EFECTOS DE UN CHOQUE ELECTRICO</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-02">EFECTOS DE UN CHOQUE ELECTRICO</h2>
         <p class="respuesta">Cuando una persona experimenta un choque eléctrico, la intensidad de la corriente eléctrica que atraviesa su cuerpo es crucial para determinar los efectos fisiológicos. Varios factores influyen en los efectos de la electricidad en el cuerpo:</p>
         <p class="respuesta">Intensidad de la Corriente Eléctrica: Depende de la resistencia del cuerpo, la humedad de la piel, la trayectoria de la corriente y la frecuencia.</p>
         <p class="respuesta">Duración del Contacto Eléctrico: La duración de la exposición a la corriente eléctrica también es determinante en el resultado de un accidente.</p>
@@ -244,8 +184,8 @@
         <p class="respuesta">Índice ATPV (“Arc Thermal Performance Value” o “Valor de Rendimiento Térmico frente al Arco”) es un valor asignado a telas, protectores faciales, uniformes y trajes para arcos eléctricos, que representa la energía térmica máxima incidente por área de superficie (también denominada densidad de energía, generalmente medida en kJ/m2 o cal/cm²), que un tejido o material puede soportar antes de que el usuario sufra quemaduras de segundo grado.</p>
     </div>
 
-    <div id="Tema-01-03">
-        <h2>MEDIDAS DE PREVENCION ELECTRICA</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-03">MEDIDAS DE PREVENCION ELECTRICA</h2>
         <p class="respuesta">Es esencial implementar medidas de prevención y protección adecuadas para minimizar los riesgos eléctricos en el entorno laboral:</p>
         <p class="respuesta">Identificación de Peligros y Evaluación de Riesgos: Realizar análisis de seguridad eléctrica para identificar los peligros y evaluar los riesgos asociados.</p>
         <p class="respuesta">Formación y Capacitación: Capacitar a los trabajadores sobre los riesgos eléctricos, medidas de seguridad y procedimientos de trabajo seguros.</p>
@@ -283,8 +223,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-04">
-        <h2>LEGISLACION ELECTRICA</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-04">LEGISLACION ELECTRICA</h2>
         <p id="008" class="pregunta">DECRETO 351/79 - ANEXO I - TITULO V - CAPITULO 14: Instalaciones Eléctricas. Artículo 95-102</p>
         <p class="respuesta">Las instalaciones y equipos eléctricos deben cumplir con normas de seguridad para prevenir riesgos.</p>
         <p class="respuesta">Los materiales y equipos utilizados deben cumplir con normas técnicas.</p>
@@ -345,8 +285,8 @@
         <p class="respuesta">La NFPA 70E es una norma de la National Fire Protection Association que se enfoca en la seguridad eléctrica en lugares de trabajo. Aborda prácticas seguras de trabajo, uso adecuado de equipo de protección personal (EPP), mantenimiento de sistemas eléctricos, seguridad para equipos especiales y requisitos de seguridad para instalaciones.</p>
     </div>
 
-    <div id="Tema-01-05">
-        <h2>PROTECCIONES ELECTRICAS</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-05">PROTECCIONES ELECTRICAS</h2>
         <div class="contenedor-img">
             <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/059.jpg">
         </div>
@@ -398,8 +338,8 @@
         <p class="respuesta">Pararrayos: El pararrayos es un dispositivo diseñado para atraer y conducir un rayo hacia tierra, protegiendo así a las personas y estructuras.</p>
     </div>
 
-    <div id="Tema-01-06">
-        <h2>ILUMINACION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-06">ILUMINACION</h2>
         <p class="respuesta">La iluminación adecuada en el entorno laboral tiene un impacto directo en la seguridad, el confort y la productividad de los trabajadores. Una correcta integración de estos aspectos asegura un ambiente de trabajo seguro, cómodo y eficiente. La luz, que es la radiación electromagnética perceptible por el ojo humano, juega un papel esencial en la visión humana y en el rendimiento en el trabajo.</p>
 
         <p id="022" class="pregunta">Sensibilidad del Ojo</p>
@@ -431,8 +371,8 @@
         <p class="respuesta">Luminancia: Característica propia de la fuente de luz o de una superficie iluminada en una dirección dada. Influye en la percepción de claridad.</p>
     </div>
 
-    <div id="Tema-01-07">
-        <h2>CONDICIONES PARA EL CONFORT VISUAL</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-07">CONDICIONES PARA EL CONFORT VISUAL</h2>
         <p class="respuesta">Para lograr un confort visual óptimo en el ambiente laboral, se deben considerar varios condicionantes:</p>
         <p class="respuesta">Condicionantes del Observador: Edad, capacidad visual, agudeza, salud visual, entre otros. </p>
         <div class="contenedor-img">
@@ -457,8 +397,8 @@
         <p class="respuesta"> Inconvenientes posturales</p>
     </div>
 
-    <div id="Tema-01-08">
-        <h2>lEGISLACION Y NORMATIVAS PARA LA ILUMINACION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-08">lEGISLACION Y NORMATIVAS PARA LA ILUMINACION</h2>
         <p class="respuesta">La legislación en materia de iluminación en el entorno laboral establece niveles mínimos de iluminancia para diferentes tipos de tareas y destinos de los locales. La relación entre la iluminancia mínima y media debe ser de al menos 0.5 para asegurar una uniformidad razonable en la iluminancia del lugar.</p>
         <div class="contenedor-img">
             <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/075.jpg">
@@ -471,8 +411,8 @@
         </div>
     </div>
 
-    <div id="Tema-01-09">
-        <h2>MEDICION DE LA ILUMINACION</h2>
+    <div class="contenedorTemas">
+        <h2  id="Tema-01-09">MEDICION DE LA ILUMINACION</h2>
         <p class="respuesta">La medición de la iluminación se realiza utilizando un luxómetro y sigue un protocolo estandarizado. Se toman múltiples mediciones en puntos clave y se calcula la iluminancia media y mínima en función de estos datos.</p>
         <div class="contenedor-img">
             <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/078.jpg">
