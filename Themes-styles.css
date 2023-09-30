@@ -202,7 +202,7 @@ body::-webkit-scrollbar-track:hover{
     z-index: 50;
 }
 #menu img{
-    width: 5vw;
+    width: 35px;
 }
 #menu img:hover{
     transform: scale(1.2);

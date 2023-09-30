@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Prevencion de incendios, Control de incendios">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Prevencion y control de incendios</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_05_RiesgoElectricoIluminacion.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Prevencion y control de incendios</h1>
+    <div id="menu">
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgo en el trabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_Riesgo Mecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion.html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+                <li class="dropdown-2"><a href="C_02_06_PrevencionYControlDeIncendios.html">06- PREVENCION Y CONTROL DE INCENDIOS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas"></div>
+
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-00">INTRODUCCIÓN</h2>
+        <p class="respuesta">La prevención de incendios se basa en principios científicos y técnicos para reducir pérdidas humanas y materiales debido a incendios y explosiones.</p>
+    </div>
+
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-01">FUNDAMENTOS CIENTÍFICOS DEL FUEGO</h2>
+        <p id="001" class="pregunta">Química del Fuego</p>
+        <p class="respuesta">El fuego es una reacción química violenta (oxidación) entre un combustible y un comburente en condiciones adecuadas. Se produce en la interfaz aire/combustible, liberando gases y energía en forma de aumento de presión, temperatura y radiación infrarroja.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/087.jpg">
+        </div>
+    
+        <p id="002" class="pregunta">El Triángulo del Fuego y el Tetraedro del Fuego</p>
+        <p class="respuesta">La teoría inicial del triángulo del fuego (calor, comburente, combustible) se amplía al tetraedro del fuego, que incluye la reacción química en cadena como el cuarto elemento esencial. Sin uno de estos componentes, el fuego no puede ocurrir.</p>
+    
+        <p id="003" class="pregunta">Incendios y Explosiones por Polvos Combustibles</p>
+        <p class="respuesta">Para que ocurran explosiones por polvos, deben estar presentes el oxígeno, una fuente de combustible, una fuente de ignición, mezcla con aire, concentración mínima, polvo seco y un espacio confinado.</p>
+    </div>
+
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">CALCULO DE CARGA DE FUEGO</h2>
+        <p class="respuesta">La carga combustible se refiere al peso en madera por unidad de superficie capaz de generar calor equivalente al de los materiales presentes en un área incendiaria. Se calcula mediante la fórmula: Qc= ∑(cc1×Mg1)/ 4500×A , donde Qc es la carga combustible, cc1 es el calor de combustión de cada producto en kcal, Mg1 es el peso de cada producto en kg y A es el área en metros cuadrados. Se clasifica en riesgo bajo (menos de 160,000 Kcal/m²), riesgo medio (160,000 - 340,000 Kcal/m²) y riesgo alto (más de 340,000 Kcal/m²).</p>
+    </div>
+
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">CLASIFICACIÓN DE RIESGOS</h2>
+        <p class="respuesta">Esta clasificación se utiliza para indicar el grado de peligrosidad de un material en caso de exposición al calor o al fuego. </p>
+        <p class="respuesta">Riesgo 1: Explosivo: Materiales que pueden explotar o detonar fácilmente cuando se exponen al calor, fuego o a ciertas condiciones. Estos materiales representan un alto riesgo y requieren precauciones extremas.</p>
+        <p class="respuesta">Riesgo 2: Inflamable: Materiales que pueden encenderse y arder cuando se exponen al calor o una fuente de ignición. Estos materiales tienen un riesgo significativo de inflamación y deben manipularse con cuidado.</p>
+        <p class="respuesta">Riesgo 3: Muy Combustible: Materiales que tienen un punto de inflamación bajo y pueden encenderse fácilmente en presencia de una fuente de calor. Aunque son menos propensos a la ignición que los materiales explosivos o inflamables, todavía representan un riesgo significativo.</p>
+        <p class="respuesta">Riesgo 4: Combustible: Materiales que pueden quemarse en presencia de una fuente de calor, pero tienen un punto de inflamación más alto que los materiales muy combustibles. Aunque son menos propensos a la ignición, todavía representan un riesgo de incendio.</p>
+        <p class="respuesta">Riesgo 5: Poco Combustible: Materiales que son menos propensos a quemarse en comparación con los materiales combustibles. Aunque pueden arder en ciertas condiciones, el riesgo de ignición es relativamente bajo.</p>
+        <p class="respuesta">Riesgo 6: Incombustible: Materiales que no pueden quemarse ni arder bajo condiciones normales. Estos materiales son seguros en lo que respecta a la inflamación y el fuego.</p>
+        <p class="respuesta">Riesgo 7: Refractarios (NP = No permitido): Materiales que son resistentes al calor y la llama, lo que significa que pueden soportar altas temperaturas sin quemarse o descomponerse. Estos materiales se utilizan en aplicaciones donde se necesita resistencia al calor, como en revestimientos refractarios para hornos y calderas.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/088.jpg">
+        </div>
+    </div>
+
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-03">ELECCIÓN Y CLASIFICACIÓN DE MATAFUEGOS</h2>
+        <p class="respuesta">Los matafuegos se clasifican según su potencial extintor. Esta clasificación está basada en pruebas normalizadas, considerando el tipo de fuego que pueden extinguir y su capacidad extintora, siendo certificados por ensayos estandarizados. Los potenciales extintores se determinan según el tipo de fuego (Clase A o B) y la carga de riesgo de fuego.</p>
+    </div>
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/089.jpg">
+    </div>
+
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-04">MATERIALES INFLAMABLES Y EXPLOSIVOS</h2>
+        <p id="004" class="pregunta">Clasificación de Materiales Inflamables</p>
+        <p class="respuesta">Los materiales inflamables se clasifican en diversas categorías según su punto de inflamación y ebullición. La Clase IA incluye líquidos con un punto de inflamación por debajo de 22.8°C, mientras que la Clase II y IIIB tienen puntos de inflamación entre 37.8°C y 60°C y mayores a 93.3°C, respectivamente.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/090.jpg">
+        </div>
+        
+        <p id="005" class="pregunta">Explosividad y Otros Gases</p>
+        <p class="respuesta">Para medir la concentración de gases como CO, O2, y H2S, se utilizan medidores de lectura directa. Además, se deben considerar compuestos orgánicos volátiles (COV), NH3 y formaldehído en el análisis de gases explosivos.</p>
+    </div>
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/097.jpg">
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-05">EXPLOSIONES</h2>
+        <p id="006" class="pregunta">Tipos de Explosiones</p>
+        <p class="respuesta">Explosiones Físicas:</p>
+        <p class="respuesta">Explosiones por Liberación de Gas Comprimido: Se da cuando un gas es liberado repentinamente de un recipiente.</p>
+        <p class="respuesta">Explosiones por Expansión del Vapor de un Líquido (BLEVE): Ocurre cuando un líquido en un recipiente entra en ebullición de forma instantánea, expandiéndose rápidamente.</p>
+        <p class="respuesta">Explosiones por Evaporación Instantánea de un Líquido Caliente: Se produce cuando un líquido entra en contacto con una superficie caliente y se evapora instantáneamente, generando una explosión.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/098.jpg">
+        </div>
+        
+        <p id="007" class="pregunta">Causas y Condiciones para Explosiones</p>
+        <p class="respuesta">Las explosiones ocurren cuando una sustancia se libera en fase gaseosa o vapor fuera de un recipiente. Las condiciones incluyen alta presión del gas en el momento de la liberación, una liberación súbita y una expansión destructiva del gas.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-06">SECUENCIA DE CRECIMIENTO DE FUEGO</h2>
+        <p id="008" class="pregunta">Etapas de un Incendio</p>
+        <p class="respuesta">Primera Etapa: Desarrollo Inicial - Rápida combustión con temperaturas de 35 a 400°C.</p>
+        <p class="respuesta">Segunda Etapa: Reducción de Oxígeno - Aumento de llamas y temperatura (400 a 550°C).</p>
+        <p class="respuesta">Tercera Etapa: Reducción Drástica de Oxígeno - Fuego se reduce a brasas (550 a 1100°C), con riesgo de back-draft si entra aire antes de evacuar gases.</p>
+        
+        <p id="009" class="pregunta">Fuentes de Combustibles en Edificaciones</p>
+        <p class="respuesta">Los combustibles pueden provenir de estructuras edilicias, contenido del edificio, servicios no estructurales, muebles, equipos eléctricos y objetos personales.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-07">MEDIOS EXTINTORES</h2>
+        <p id="010" class="pregunta">Clasificación de Matafuegos</p>
+        <p class="respuesta">Los matafuegos se clasifican según letras que indican la aplicación (A, B, C) y números que indican la capacidad extintora. Por ejemplo, 2-A indica extinción para fuegos de clase A con capacidad extintora de 2 unidades.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/100.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/101.jpg">
+        </div>
+        
+        <p id="011" class="pregunta">Principios para la Selección de Matafuegos</p>
+        <p class="respuesta">La selección de un matafuegos debe basarse en la naturaleza del combustible, la eficacia del extintor en el riesgo presente, la gravedad previsible del incendio, facilidad de empleo y condiciones atmosféricas especiales.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/099.jpg">
+        </div>
+        
+        <p id="012" class="pregunta">Medios Extintores Específicos</p>
+        <p class="respuesta">Agua: Utilizada en fuegos clase “A” y ocasionalmente en fuegos clase “B”, aplicada en chorro, rociado, pulverización o niebla.</p>
+        <p class="respuesta">Polvo Químico ABC: Adecuado para fuegos clases “A”, “B” y “C”, aunque puede ser corrosivo.</p>
+        <p class="respuesta">Dióxido de Carbono (CO2): Sofoca el fuego y enfría, adecuado para fuegos clase “B” y “C”.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/0102.jpg">
+        </div>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-08">DETECTORES DE HUMO</h2>
+        <p class="respuesta">Los detectores de humo son dispositivos esenciales para la detección temprana de incendios. Funcionan mediante diversos principios y tecnologías para identificar la presencia de humo en el ambiente. A continuación se detallan los principios de funcionamiento y los tipos específicos de detectores de humo:</p>
+        <p id="013" class="pregunta">Tipos Específicos de Detectores</p>
+        <p class="respuesta">Detectores de Ionización: Los detectores de ionización son dispositivos de detección de humo que responden rápidamente a fuegos de alta energía. Funcionan mediante una cámara de ionización que mide las partículas ionizadas en el aire producidas por el humo. Cuando el humo entra en la cámara, la corriente entre dos electrodos se reduce, lo que activa la alarma de incendio. Estos detectores son eficaces para detectar rápidamente incendios con llamas grandes y altamente energéticas.</p>
+        <p class="respuesta">Detectores Fotoeléctricos: Los detectores de fotoelectricidad son más rápidos en la detección de fuegos de baja energía. Funcionan utilizando un haz de luz y un sensor. Cuando las partículas de humo atraviesan el haz de luz, dispersan la luz y activan la alarma. Estos detectores son especialmente efectivos para detectar incendios que producen humo antes de que se desarrollen llamas significativas, lo que permite una detección temprana y una respuesta rápida.</p>
+        <p class="respuesta">Detectores de cámara de Niebla: Los detectores de cámara de niebla miden la densidad de la niebla formada por el humo. Funcionan utilizando una cámara donde el aire se enfría, formando niebla. Cuando el humo entra en la cámara, altera la densidad de la niebla, lo que se detecta y activa la alarma. Estos detectores son sensibles a las partículas finas de humo y son efectivos para la detección temprana de incendios con humo denso pero antes de que se desarrollen llamas significativas.</p>
+        <p class="respuesta">Detectores de Infrarrojos: Los detectores de infrarrojos reaccionan a la radiación total del infrarrojo y son susceptibles a la interferencia solar. Funcionan detectando el cambio en la radiación de infrarrojos causado por el humo o las llamas. Estos detectores son útiles para detectar incendios en condiciones de poca visibilidad, ya que no dependen de la luz visible para funcionar. Sin embargo, pueden ser sensibles a la luz solar directa, por lo que su ubicación y orientación son cruciales para evitar falsas alarmas.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-09">EVACUACIÓN Y CONDUCTA DE EMERGENCIA</h2>
+        <p id="014" class="pregunta">Causas y Preparación para Evacuación</p>
+        <p class="respuesta">Las evacuaciones pueden ser causadas por incendios, escapes de gas, sustancias tóxicas, amenazas de bomba o desastres naturales. La preparación, el conocimiento de rutas de escape y la calma son clave durante una evacuación.</p>
+        
+        <p id="015" class="pregunta">Conducta durante una Evacuación</p>
+        <p class="respuesta">Conozca los medios de salida, escaleras y rutas de escape que conducen al exterior del edificio.</p>
+        <p class="respuesta">En ningún momento omita solicitar la concurrencia de personal de bomberos.</p>
+        <p class="respuesta">No piense que otra persona lo ha hecho.</p>
+        <p class="respuesta">Mantenga la calma ante una situación de riesgo, no adopte actitudes que puedan generar pánico.</p>
+        <p class="respuesta">Verifique la ausencia total de personas antes de abandonar el lugar, especialmente si se trata de niños.</p>
+        <p class="respuesta">No corra, camine rápido y en fila de a uno, cerrando a su paso la mayor cantidad de puertas y ventanas. Así evitará la propagación del fuego.</p>
+        <p class="respuesta">Ante la presencia de humo desplácese gateando, cubriéndose boca y nariz con pañuelos o toallas. De existir humo en la escalera descienda de espalda en forma rampante, no utilice ascensores ni montacargas ya que puede quedar atrapado.</p>
+        <p class="respuesta">Si no puede abandonar el lugar, enciérrese en una habitación que dé hacia la calle, acérquese a una ventana abierta, allí encontrará aire para respirar a la vez que hará señales agitando un trozo de tela o papel para ser visualizado.</p>
+        <p class="respuesta">Cubra la base de la puerta con trapos mojados para evitar el ingreso de humo.</p>
+        <p class="respuesta">Descienda siempre, nunca el recorrido debe ser ascendente, salvo en sótanos y subsuelos.</p>
+        <p class="respuesta">No transponga ventanas, este hecho le ha costado la vida a muchas personas.</p>
+        <p class="respuesta">Espere todo lo posible para ser rescatado.</p>
+        <p class="respuesta">No transporte bultos a fin de no entorpecer su propio desplazamiento, ni el de los demás.</p>
+        <p class="respuesta">El fuego se propaga rápidamente. No regrese al edificio una vez que lo ha abandonado. Quizás no exista una segunda oportunidad. Reúnase con el resto de las personas en un lugar seguro (Punto de Encuentro) y verifique que no falte nadie.</p>
+        <p class="respuesta">No olvide que todo lo que es seguridad nunca está de más.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-10">PROCEDIMIENTOS PARA TRABAJOS EN CALIENTE</h2>
+        <p class="respuesta">El Procedimiento de Trabajos en Caliente se enfoca en actividades que involucran llamas abiertas, calor o material incandescente, como corte, soldadura y amolado. Estas actividades, aunque comunes, son inherentemente peligrosas y requieren medidas preventivas rigurosas para garantizar la seguridad y prevenir incendios en el lugar de trabajo.</p>
+        
+        <p id="16" class="pregunta">Definiciones</p>
+        <p class="respuesta">Trabajo en Caliente: Se refiere a actividades que implican llamas abiertas, calor o material incandescente, con riesgos asociados como energía radiante, metal fundido, emanaciones y chispas.</p>
+        <p class="respuesta">Permiso: Un documento autorizado por la alta gerencia que permite una actividad específica de trabajo en caliente.</p>
+        <p class="respuesta">Individuo que autoriza el permiso (IAP): Un empleado designado responsable de autorizar el permiso y de implementar el programa de trabajo caliente.</p>
+        <p class="respuesta">Operario del trabajo en caliente (OTC): Un empleado o contratista capacitado encargado de realizar el trabajo en caliente, equipado con el conocimiento y el equipo de protección personal (EPP) necesarios.</p>
+        <p class="respuesta">Guardia de Incendio (Fire Watch): Un empleado o contratista capacitado para detectar chispas o fuego y actuar como primera respuesta, incluso deteniendo el trabajo si las condiciones son peligrosas.</p>
+        <p class="respuesta">Panel Sándwich: Un elemento constructivo con caras protectoras y material aislante, presentando riesgo de incendio debido a los materiales combustibles.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/091.jpg">
+        </div>
+
+        <p id="17" class="pregunta">Responsabilidades del Trabajo en Caliente</p>
+        <p class="respuesta">Responsabilidades de la Alta Gerencia: Incluyen establecer áreas aprobadas para trabajos en caliente, asegurar el uso de equipos en buen estado, capacitar al personal y a los contratistas, y proporcionar instrucciones claras sobre materiales inflamables.</p>
+        <p class="respuesta">Rol del IAP: Implica inspeccionar el área de trabajo, autorizar permisos después de evaluar los riesgos, designar un guardia de incendio si es necesario y realizar inspecciones finales para garantizar la seguridad.</p>
+        <p class="respuesta">Trabajadores (OTC): Deben solicitar permisos antes de iniciar el trabajo, verificar el equipo y las condiciones de seguridad, tener la capacidad de rechazar trabajos en condiciones peligrosas y dejar el área segura después del trabajo.</p>
+        <p class="respuesta">Capacitación: Todos los empleados y contratistas deben recibir capacitación anual sobre trabajos en caliente y procedimientos de emergencia.</p>
+        <p class="respuesta">Trabajos en Caliente con Contratistas: Se enfatizan las reuniones previas para acordar procedimientos y normas de seguridad, así como verificar la aseguradora de riesgo del trabajo del contratista.</p>
+
+        <p id="18" class="pregunta">Medidas de seguridad</p>
+        <p class="respuesta">Regla de los 11 Metros: Se establece la necesidad de despejar materiales combustibles en un radio de 11 metros, cubrir materiales no movibles con mantas resistentes al fuego y limpiar superficies, así como cubrir aberturas para prevenir la propagación del fuego.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/092.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/093.jpg">
+        </div>
+        <p class="respuesta">Detección y Extinción de Incendios: Se enfatiza el uso de extintores portátiles, la importancia de no deshabilitar sistemas de detección y alarma, y la necesidad de cubrir temporalmente detectores y rociadores automáticos.</p>
+        
+        <p id="19" class="pregunta">Procedimiento para Obtener el Permiso</p>
+        <p class="respuesta">Áreas Permitidas y Prohibidas: Las áreas permitidas se construyen con materiales no combustibles, mientras que las áreas prohibidas incluyen zonas con atmósferas explosivas y acumulación de polvos explosivos.</p>
+        <p class="respuesta">Procedimiento para Obtener un Permiso: Involucra verificar alternativas y áreas permitidas, completar el formulario de permiso de trabajo en caliente y validar condiciones de seguridad antes de iniciar el trabajo.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/094.jpg">
+        </div>
+        
+        <p id="20" class="pregunta">Cómo Utilizar el Permiso de Trabajo en Caliente</p>
+        <p class="respuesta">Uso del Formulario de Permiso: Destaca la importancia de completar el formulario por el IAP, asegurándose de que todas las secciones estén llenadas correctamente. Se hace hincapié en realizar inspecciones finales y mantener vigilancia después del trabajo. Además, se subraya la necesidad de conservar copias del permiso por al menos 12 meses para auditorías futuras.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/095.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/096.jpg">
+        </div>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div id="contenedor-subtemas">
+    <h2 id="Tema-01-0"></h2>
+
+    <p id="" class="pregunta"></p>
+    <p class="respuesta"></p>
+
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086.jpg">
+    </div>
+</div-->

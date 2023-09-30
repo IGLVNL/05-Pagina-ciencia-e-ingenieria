@@ -84,22 +84,7 @@ listaPrincipal.style.maxHeight = "60vh";
 listaPrincipal.style.width = "40vw";
 listaPrincipal.style.display = "none";
 
-let listaSecundaria = document.createElement("ul");
-listaSecundaria.id = "listaSecundaria";
-listaSecundaria.className = "listaSec";
-listaSecundaria.style.flexDirection = "column";
-listaSecundaria.style.backgroundColor = "#333333";
-listaSecundaria.style.padding = "10px";
-listaSecundaria.style.position = "absolute";
-listaSecundaria.style.top = "0px";
-listaSecundaria.style.left = "45vw";
-listaSecundaria.style.overflowY = "auto";
-listaSecundaria.style.maxHeight = "60vh";
-listaSecundaria.style.width = "40vw";
-listaSecundaria.style.display = "none";
-
 menu.appendChild(listaPrincipal);
-menu.appendChild(listaSecundaria);
 
 let listaSecundariaVisible = null;
 
@@ -180,11 +165,14 @@ document.addEventListener("DOMContentLoaded", function () {
             listaPrincipal.style.display = "flex";
         } else {
             listaPrincipal.style.display = "none";
-            listaSecundariaVisible.style.display = "none";
+            if (listaSecundariaVisible) {
+                listaSecundariaVisible.style.display = "none";
+                listaSecundariaVisible = null;
+            }
         }
     });
     document.addEventListener("click", function (event) {
-        if (!menu.contains(event.target)) {
+        if (!menu.contains(event.target)) { //verifica si no se hace click en un elemento target contenido en menu
             closeLists();
         }
     });
@@ -199,6 +187,7 @@ function updateListStyles(mediaQuery) {
             lista.style.visibility = "hidden"
         });
     } else {
+        listaPrincipal.style.width = "40vw";
         listaSecundaria.forEach(function (lista) {
             lista.style.visibility = "visible"
         });
@@ -208,3 +197,21 @@ function updateListStyles(mediaQuery) {
 let mediaQuery = window.matchMedia("(max-width: 500px)");
 updateListStyles(mediaQuery);
 mediaQuery.addListener(updateListStyles);
+
+
+
+//metodo para los botones principales
+
+var contenedorSubtemas = document.getElementById("contenedor-subtemas");
+var titulos = document.querySelectorAll("h2");
+titulos.forEach(function(titulo, index) {
+    var enlace = document.createElement("a");
+    enlace.href = "#" + titulo.id; 
+    enlace.className = "boton";
+    var indice = (index + 1).toString().padStart(2, "0");
+    enlace.textContent = indice + " - " + titulo.textContent.toUpperCase();
+    enlace.onclick = function(event) {
+        smoothScroll(event, this.getAttribute("href").substring(1));
+    };
+    contenedorSubtemas.appendChild(enlace);
+});
