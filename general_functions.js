@@ -71,6 +71,7 @@ if (document.getElementById("imprimir")) {
 let menu = document.getElementById("menu");
 let temas = document.querySelectorAll("h2");
 let listaPrincipal = document.createElement("ul");
+listaPrincipal.style.display = "none";
 listaPrincipal.style.flexDirection = "column";
 listaPrincipal.id = "listaPrincipal";
 listaPrincipal.className = "listas";
@@ -82,7 +83,6 @@ listaPrincipal.style.left = "5vw";
 listaPrincipal.style.overflowY = "auto";
 listaPrincipal.style.maxHeight = "60vh";
 listaPrincipal.style.width = "40vw";
-listaPrincipal.style.display = "none";
 
 menu.appendChild(listaPrincipal);
 
@@ -118,6 +118,7 @@ temas.forEach(tema => {
     });
     listaPrincipal.appendChild(elementoLista);
     let listaSecundariaCorrespondiente = document.createElement("ul");
+    listaSecundariaCorrespondiente.style.display = "none";
     listaSecundariaCorrespondiente.id = tema.textContent + "_ListaSecundaria";
     listaSecundariaCorrespondiente.className = "listaSec";
     listaSecundariaCorrespondiente.style.flexDirection = "column";
@@ -129,7 +130,6 @@ temas.forEach(tema => {
     listaSecundariaCorrespondiente.style.overflowY = "auto";
     listaSecundariaCorrespondiente.style.maxHeight = "60vh";
     listaSecundariaCorrespondiente.style.width = "40vw";
-    listaSecundariaCorrespondiente.style.display = "none";
     let contenedorTemas = tema.parentNode;
     let preguntas = contenedorTemas.querySelectorAll(".pregunta");
     Array.from(preguntas).forEach(Preg => {
