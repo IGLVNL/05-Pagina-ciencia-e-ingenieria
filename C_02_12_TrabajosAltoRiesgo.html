@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio,Trabajos de alto riesgos">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Trabajos de alto riesgo</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_12_TrabajosAltoRiesgo">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="temas">Ingeniería Industrial</p>
+    <p class="temas">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Trabajos de alto riesgo</h1>
+    <div id="menu">
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgoeneltrabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_RiesgoMecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion.html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+                <li class="dropdown-2"><a href="C_02_06_PrevencionYControlDeIncendios.html">06- PREVENCION Y CONTROL DE INCENDIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_07_AccidentesInItinire.html">07- ACCIDENTES IN-ITINIRE</a></li>
+                <li class="dropdown-2"><a href="C_02_08_Ergonomia.html">08- ERGONOMIA</a></li>
+                <li class="dropdown-2"><a href="C_02_09_EquiposMovilesDeCarga copy.html">09- EQUIPOS MOVILES DE CARGA </a></li>
+                <li class="dropdown-2"><a href="C_02_10_MetodologiaInvestigacionAccidenntes.html">10- METODOLOGIA DE INVESTIGACION DE ACCIDENTES</a></li>
+                <li class="dropdown-2"><a href="C_02_11_SeñalizacionYColor.html">11- SEÑALIZACION Y COLOR</a></li>
+                <li class="dropdown-2"><a href="C_02_12_TrabajosAltoRiesgo.html">12- TRABAJOS DE ALTO RIESGO</a></li>
+                <li class="dropdown-2"><a href="C_02_13_PrimerosAuxilios.html">13- PRIMEROS AUXILIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_14_AparatosSometidosAPresion.html">14- APARATOS SOMETIDOS A PRESION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas"></div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-01">TRABAJOS DE ALTO RIESGO</h2>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/149.jpg">
+        </div>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">TRABAJOS EN ESPACIOS CONFINADOS</h2>
+        <p class="respuesta">La OSHA (Occupational Safety and Health Administration) define un espacio confinado como áreas que:</p>
+        <p class="respuesta">Son lo suficientemente grandes y configurados para que un empleado pueda introducirse completamente y realizar trabajos asignados.</p>
+        <p class="respuesta">Tenga acceso limitado para entrar o salir.</p>
+        <p class="respuesta">No está diseñado para la ocupación continua de un empleado(s).</p>
+        <p class="respuesta">Además, son recintos en los cuales existe una ventilación natural desfavorable permitiendo acumulación de gases y/o vapores tóxicos, inertes, asfixiantes, inflamables u otros y en donde la presencia de oxígeno en el aire puede ser deficiente o enriquecida.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/150.jpg">
+        </div>
+
+        <p id="001" class="pregunta">Espacios confinados con permiso requerido</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/151.jpg">
+        </div>
+        
+        <p id="002" class="pregunta">Atmósferas peligrosas</p>
+        <p class="respuesta">“Aquellas con la condición de IPVS”</p>
+        <p class="respuesta">Atmósferas deficientes en oxígeno.</p>
+        <p class="respuesta">Atmósferas ricas en oxígeno.</p>
+        <p class="respuesta">Atmósferas inflamables (oxígeno, otros gases inflamables, vapores, polvos).</p>
+        <p class="respuesta">Atmósferas toxicas.</p>
+        <p class="respuesta">Atmósferas con temperaturas extremas</p>
+        
+        <p id="003" class="pregunta">Monitoreo de la atmósfera</p>
+        <p class="respuesta">Control de contenido de oxígeno: Mínimo de 19,5% y máximo de 23,5%.</p>
+        <p class="respuesta">Control de presencia de combustibles: Debe de estar por debajo del 10% del LEL (Límite de explosividad).</p>
+        <p class="respuesta">Control para gases tóxicos: El más frecuente es el monóxido de carbono (PEL< 35 ppm) o cualquier otro material peligroso que se determine en el espacio confinado</p>
+        
+        <p id="004" class="pregunta">Medidas preventivas</p>
+        <p class="respuesta">VENTILACIÓN MECÁNICA</p>
+        <p class="respuesta">Primera opción para corrección de problemas.</p>
+        <p class="respuesta">Se lleva a cabo con aire fresco libre de contaminantes.</p>
+        <p class="respuesta">En lo posible, llevar a cabo ventilación continua.</p>
+        <p class="respuesta">Tomar muestras del aire antes y después de ventilar.</p>
+        <p class="respuesta">AISLACIÓN</p>
+        <p class="respuesta">Poner candado y tarjeta en las fuentes de energía eléctrica (Lock/out, tag/out).</p>
+        <p class="respuesta">Asegurar las partes mecánicas.</p>
+        <p class="respuesta">Ponerle lock/out, tag/out a las válvulas cerradas.</p>
+        <p class="respuesta">Blanquear las alcantarillas y el flujo de agua</p>
+        
+        <p id="005" class="pregunta">Personal calificado</p>
+        <p class="respuesta">ENTRANTE</p>
+        <p class="respuesta">Es la persona que ingresara a realizar el trabajo en el espacio confinado la cual debe contar con el adiestramiento necesario y mantenerse en comunicación permanente con el ayudante y el supervisor de entrada.</p>
+        <p class="respuesta">AYUDANTE</p>
+        <p class="respuesta">Es consciente de todos los peligros que existen en el espacio y las señales de exposición.</p>
+        <p class="respuesta">Se asegura que solo personas autorizadas entren al espacio</p>
+        <p class="respuesta">SUPERVISOR DE ENTRADA</p>
+        <p class="respuesta">Responsable de determinar si las condiciones de entrada presentes son aceptables para un espacio confinado, autoriza la entrada</p>
+        <p class="respuesta">Supervisa las operaciones de entrada y detiene la entrada cuando es requerido.</p>
+        <p class="respuesta">Es el encargado de cancelar el permiso en caso de finalizar el trabajo o si las condiciones para el trabajo en espacios confinados son inseguras.</p>
+        
+        <p id="006" class="pregunta">Operaciones de rescate</p>
+        <p class="respuesta">Para llevar a cabo una operación de rescate se puede:</p>
+        <p class="respuesta">Hacer arreglos con servicios de rescate externos.</p>
+        <p class="respuesta">Hacer arreglos para que los propios empleados de la empresa hagan el rescate.</p>
+        <p class="respuesta">Se tendrán maneras de rescate disponibles para el caso que haya que rescatar a un entrante:</p>
+        <p class="respuesta">Número de Emergencia</p>
+        <p class="respuesta">Rescatadores disponibles</p>
+        <p class="respuesta">Equipo para rescate</p>
+        <p class="respuesta">El ayudante tratará de remover al entrante usando elementos de rescate como trípodes, grúas, arnés de cuerpo o escaleras más nunca debe ingresar al espacio confinado ya que solo el personal suficientemente adiestrado puede ejecutar el rescate.</p>
+        
+        <p id="007" class="pregunta">Normativa</p>
+        <p class="respuesta">Ley N° 19587/72 - Art 4; Art. 8 (incisos c y d); Art.9 inciso c)</p>
+        <p class="respuesta">Decreto N° 351/79 - Cap. 21; Art. 157</p>
+        <p class="respuesta">Decreto N° 249/07 - Anexo I, Título III, Cap. 5, Art. 80</p>
+        <p class="respuesta">Decreto N° 911/96 - Cap.7, Arts. 120 y 125; Cap.9, Art. 342</p>
+        <p class="respuesta">Decreto N° 617/97 - Título VI, Art. 26</p>
+        <p class="respuesta">Res. SRT N° 953/2010.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-03">TRABAJOS EN CALIENTE</h2>
+        <p class="respuesta">Son actividades que implican la utilización de llamas abiertas, que liberan calor o producen materiales incandescentes (chispas). Incluye actividades como corte y soldadura, trabajos con llama abierta, afilado (amolado) así como también derretimiento mediante aplicación de calor usando sopletes entre otras.</p>
+
+        <p id="008" class="pregunta">Normativas</p>
+        <p class="respuesta">Norma NFPA 51B desarrollada por la Asociación Nacional de Protección contra incendios de Estados unidos, en ella se abordan la prevención de incendios durante la realización de trabajos de soldadura, corte y procesos similares que involucran la generación de calor y chispas. </p>
+        <p class="respuesta">Ley de Higiene y Seguridad en el Trabajo 19.587. Capítulo 4: Servicio de higiene y seguridad en el trabajo.  </p>
+        <p class="respuesta">La misión fundamental determinar, promover y mantener adecuadas condiciones ambientales en los lugares de trabajo y el más alto nivel de seguridad</p>
+        <p class="respuesta">Decreto 351/79. Características del establecimiento</p>
+
+        <p id="009" class="pregunta">Medidas preventivas de accidentes</p>
+        <p class="respuesta">Elaboración de procedimientos seguros. Revisión anual.</p>
+        <p class="respuesta">Autorización del permiso una vez realizada la evaluación de riesgos.</p>
+        <p class="respuesta">Remoción de materiales combustibles e inflamables si los hubiera.</p>
+        <p class="respuesta">Cubrir grietas en piso y paredes o ductos.</p>
+        <p class="respuesta">Tener disponibilidad de equipos para apagar incendios si este es pequeño.</p>
+        <p class="respuesta">Procedimientos para la comunicación de emergencia, incluyendo cómo y cuándo contactar a los bomberos.</p>
+        <p class="respuesta">Capacitación permanente de empleados.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-04">TRABAJOS EN ALTURA</h2>
+        <p class="respuesta">El trabajo en altura es el trabajo que se ejecuta en niveles superiores a los 2 mts respecto del plano horizontal inferior más próximo.</p>
+        <p class="respuesta">Se considera trabajo en altura cuando la tarea se desarrolla en espacios tales como:</p>
+        <p class="respuesta">Techos y terrazas</p>
+        <p class="respuesta">Estructuras de trabajo (pasarelas; andamios fijos, rodantes, colgantes; silletas; caballetes)</p>
+        <p class="respuesta">Sobre estructuras fijas (silos, tanques, torres, postes)</p>
+        <p class="respuesta">Obras en construcción</p>
+        <p class="respuesta">Esto incluye también los trabajos bajo nivel cero, como la realización de pozos, las excavaciones de profundidad. </p>
+
+        <p id="010" class="pregunta">Legislación </p>
+        <p class="respuesta">Ley 19587/72 “Ley de Higiene y seguridad en el trabajo”</p>
+        <p class="respuesta">Res. SRT 43/97 “Exámenes de salud”</p>
+
+        <p id="011" class="pregunta">Causas de caídas</p>
+        <p class="respuesta">Tratar de alcanzar algo que está fuera de la superficie de trabajo</p>
+        <p class="respuesta">Desorden y falta de limpieza</p>
+        <p class="respuesta">Caminar en una orilla desprotegida</p>
+        <p class="respuesta">Acarrear objetos</p>
+        <p class="respuesta">Superficies resbalosas</p>
+        <p class="respuesta">Tratar de subirse a o desde una superficie de trabajo</p>
+        <p class="respuesta">Trabajar sobre una escalera</p>
+        <p class="respuesta">Trabajar en superficies o estructuras inestables, poco resistentes, o defectuosas</p>
+        <p class="respuesta">Condiciones del tiempo: calor, lluvia, humedad, hielo y/o viento.Por falta de conocimientos.</p>
+        <p class="respuesta">Falta de Procedimiento.</p>
+        <p class="respuesta">Por falta de capacidades</p>
+        <p class="respuesta">Principalmente por falta de valoración a la seguridad.</p>
+        <p class="respuesta">Elementos de protección personal defectuosos</p>
+
+        <p id="012" class="pregunta">Protección contra caídas</p>
+        <p class="respuesta">Baranda de protección</p>
+        <p class="respuesta">Malla de seguridad</p>
+        <p class="respuesta">Cercas y barricadas</p>
+        <p class="respuesta">Cubiertas</p>
+        <p class="respuesta">Andamios</p>
+        <p class="respuesta">Plataformas móviles</p>
+        <p class="respuesta">Ménsulas de techo y guardas contra deslizamiento</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/152.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/153.jpg">
+        </div>
+    </div>
+    
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div class="contenedorTemas">
+    <h2 id="Tema-01-0"></h2>
+
+    <p id="" class="pregunta"></p>
+    <p class="respuesta"></p>
+
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086.jpg">
+    </div>
+</div-->

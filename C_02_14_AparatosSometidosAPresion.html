@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Aparatos sometidos a presion">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Aparatos sometidos a presion</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_14_AparatosSometidosAPresion">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="temas">Ingeniería Industrial</p>
+    <p class="temas">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Aparatos sometidos a presion</h1>
+    <div id="menu">
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgoeneltrabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_RiesgoMecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion.html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+                <li class="dropdown-2"><a href="C_02_06_PrevencionYControlDeIncendios.html">06- PREVENCION Y CONTROL DE INCENDIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_07_AccidentesInItinire.html">07- ACCIDENTES IN-ITINIRE</a></li>
+                <li class="dropdown-2"><a href="C_02_08_Ergonomia.html">08- ERGONOMIA</a></li>
+                <li class="dropdown-2"><a href="C_02_09_EquiposMovilesDeCarga copy.html">09- EQUIPOS MOVILES DE CARGA </a></li>
+                <li class="dropdown-2"><a href="C_02_10_MetodologiaInvestigacionAccidenntes.html">10- METODOLOGIA DE INVESTIGACION DE ACCIDENTES</a></li>
+                <li class="dropdown-2"><a href="C_02_11_SeñalizacionYColor.html">11- SEÑALIZACION Y COLOR</a></li>
+                <li class="dropdown-2"><a href="C_02_12_TrabajosAltoRiesgo.html">12- TRABAJOS DE ALTO RIESGO</a></li>
+                <li class="dropdown-2"><a href="C_02_13_PrimerosAuxilios.html">13- PRIMEROS AUXILIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_14_AparatosSometidosAPresion.html">14- APARATOS SOMETIDOS A PRESION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas"></div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-01">DEFINICION</h2>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/184.jpg">
+        </div>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">CLASIFICACION</h2>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/185.jpg">
+        </div>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-03">LEGISLACION</h2>
+        <p id="001" class="pregunta">¿Qué establece la Ley de Higiene y Seguridad en el Trabajo 19.587? </p>
+        <p class="respuesta">Según el capítulo n° XVI (artículos n°138 a 144) establece que: </p>
+        <p class="respuesta">Consideraciones básicas de operación (instrucciones y esquemas detallados de la instalación, metodología de operación correcta y segura, capacitación y autorización por parte de la Autoridad pertinente del personal a cargo)</p>
+        <p class="respuesta">ASP C/Fuego: Procedimientos y aislaciones de los mismos para prevenir el riesgo térmico</p>
+        <p class="respuesta">Calderas: Inspección anual para extender certificación y aspectos de seguridad ante diferentes escenarios que deben estar validados por la Autoridad pertinente</p>
+        <p class="respuesta">ASP S/Fuego: Control de válvulas de seguridad y presostatos. </p>
+        <p class="respuesta">El almacenado de recipientes, tubos, cilindros, tambores y otros que contengan gases licuados a presión en el interior. Consideraciones generales a cumplir (stock coherente, almacenamiento a pruebas de caídas, disposición dentro del almacén, infraestructura acorde, cartelería y traslados)</p>
+        <p class="respuesta">Aspectos de seguridad contra contingencias en aparatos que pueden desarrollar presión interna por cualquier causa ajena a su función</p>
+        <p id="002" class="pregunta">Requerimientos en Buenos Aires</p>
+        <p class="respuesta">Resolución 231/96 referidos a ASP establece entre sus artículos más relevantes:</p>
+        <p class="respuesta">Consideraciones generales (identificación de los ASP, documentación a presentar a las Autoridades de aplicación)</p>
+        <p class="respuesta">Seguimiento en las obras de construcción de ASP</p>
+        <p class="respuesta">Metodología de inspección</p>
+        <p class="respuesta">Habilitaciones de equipos tanto nacionales como importados</p>
+        <p class="respuesta">Control de los ensayos no destructivos y de elementos de seguridad</p>
+        <p class="respuesta">Extensión de vida útil </p>
+        <p id="003" class="pregunta">Reglamentación en otras provincias</p>
+        <p class="respuesta">Provincia de Córdoba: Decreto 536/97 </p>
+        <p class="respuesta">Provincia de Santa Fe: Ley 1373/1907 DECRETO N° 0605/16 </p>
+        <p class="respuesta">Provincia de Mendoza: Resolución 2136/01 </p>
+        <p class="respuesta">Provincia de Misiones: LEY 104 </p>
+        <p class="respuesta">Ciudad de Buenos Aires: Ordenanza 33677</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-04">ASPECTOS GENERALES PARA LA UTILIZACION DE UN ASP</h2>
+        <p id="004" class="pregunta">ASP con Fuego</p>
+        <p class="respuesta">Serán construidos con materiales que responderán a las normas IRAM, ASME, ASTM, DIN</p>
+        <p class="respuesta">Los generadores de vapor se dividirán de acuerdo a su concepción tecnológica en manuales (A) y automáticos (B), y deberán ser atendidos por personas físicas denominadas "foguistas “, quien deberá estar habilitado y autorizado por la Autoridad de Aplicación</p>
+        <p class="respuesta">Control de alarmas lumínicas y sonoras. Control de registros del foguista </p>
+        <p class="respuesta">Desarrollo de bocas de acceso para limpieza/mantenimiento (Las dimensiones de dichas bocas de acceso se calcularán de acuerdo con los códigos ASME, DIN, ISO)</p>
+        <p class="respuesta">Soldadores calificados para las tareas en estas instalaciones</p>
+        <p class="respuesta">Condiciones edilicias de instalación </p>
+        <p id="005" class="pregunta">ASP sin Fuego</p>
+        <p class="respuesta">Serán construidos con materiales que responderán a las normas IRAM, ASME, ASTM, DIN</p>
+        <p class="respuesta">Llevarán placa de identificación en la que figurará, como mínimo, nombre del fabricante, número y año de fabricación, presión máxima admisible de trabajo y diseño, presión de prueba, número de serie, volumen en litros, norma constructiva</p>
+        <p class="respuesta">Consideraciones de trabajo para tanques de agua caliente y/o fría a presión (dimensionar para cumplir con la presión de trabajo, reguladores automáticos de temperatura y válvulas de desahogo de presión)</p>
+        <p class="respuesta">Consideraciones de trabajo para equipos de aire comprimido: Aberturas adecuadas para limpieza e inspección (importante las purgas para eliminar suciedad, humedad y aceite acumulado que puede afectar el rendimiento del equipo)</p>
+        <p class="respuesta">Condiciones edilicias de instalación </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-05">HABILITACION DE UN ASP</h2>
+        <p class="respuesta">Según el estado de un ASP, y la condición de su placa identificatoria, se establecen diversos requisitos para la habilitación de las mismas por parte del profesional calificado.</p>
+        <p id="006" class="pregunta">TRÁMITE DE HABILITACIÓN DE UN ASP, DIRECTO DE FABRICA</p>
+        <p class="respuesta">1) NOTA DE SOLICITUD DE HABILITACIÓN DE EQUIPO NUEVO, DETALLAR NÚMERO DE EXPEDIENTE DEL PROTOTIPO Y DATOS DEL FABRICANTE.</p>
+        <p class="respuesta">2) ESTATUTO SOCIAL DEL DESTINATARIO.</p>
+        <p class="respuesta">3) DOMICILIO CONSTITUIDO EN EL CASCO URBANO DE LA PLATA DEL DESTINATARIO.</p>
+        <p class="respuesta">4) NOTA DE CRONOGRAMA DE AVISO DE FABRICACIÓN Y DETALLE DEL DESTINATARIO DEL ASP, O ACLARACION SI FUE CONSTRUIDO PARA STOCK, debiendo citarse el número de serie del equipo.</p>
+        <p class="respuesta">5) DECLARACIÓN JURADA (resolución nº 529/98).</p>
+        <p class="respuesta">6) FORMULARIO A (Pagina Web OPDS) </p>
+        <p class="respuesta">7) FORMULARIO F (Pagina Web OPDS) </p>
+        <p class="respuesta">8) CONTRATO PROFESIONAL (como Director Técnico). </p>
+        <p class="respuesta">9) ACTA DE VERIFICACIÓN ORIGINAL (Pagina Web OPDS, no olvidar firma, aclaración y DNI del titular o apoderado de la empresa).</p>
+        <p class="respuesta">10) CÁLCULO COMPLETO DE LA VÁLVULA, UBICACIÓN DEL EQUIPO EN PLANTA. </p>
+        <p class="respuesta">11) REGISTROS DE RECIPIENTES SOMETIDOS A PRESIÓN. </p>
+        <p class="respuesta">12) SELLADO DEL BANCO PROVINCIA. </p>
+        <p class="respuesta">13) NOTA: PAGO DE ARANCELES (tasa de equipos, actas, gastos administrativos)</p>
+        <p id="007" class="pregunta">TRÁMITE DE HABILITACIÓN DE UN ASP USADO, CON PLACA</p>
+        <p class="respuesta">1) NOTA DE SOLICITUD DE HABILITACIÓN DE EQUIPO. </p>
+        <p class="respuesta">2) ESTATUTO SOCIAL. </p>
+        <p class="respuesta">3) DOMICILIO CONSTITUIDO EN EL CASCO URBANO DE LA PLATA. </p>
+        <p class="respuesta">4) NOTA DE AVISO DE ENSAYO. </p>
+        <p class="respuesta">5) DECLARACIÓN JURADA (Resolución Nº 529/98).</p>
+        <p class="respuesta">6) FORMULARIO A (Pagina Web OPDS) </p>
+        <p class="respuesta">7) FORMULARIO F (Pagina Web OPDS) </p>
+        <p class="respuesta">8) CONTRATO PROFESIONAL (como Director Técnico). </p>
+        <p class="respuesta">9) ACTA DE VERIFICACIÓN ORIGINAL (Pagina Web OPDS, no olvidar firma, aclaración y DNI del titular o apoderado de la empresa).</p>
+        <p class="respuesta">10) MEMORIA DE CALCULO COMPLETA DEL ASP, (Cálculo según normas internacionales, calculo completo de la válvula, ubicación del equipo en planta-art.8), Origen o procedencia, año de fabricación y datos técnicos consignados en la placa original de identificación del aparato o la correspondiente documentación de habilitación. Lugar o establecimiento y tiempo en que se lo utilizó anteriormente. Cuando hubieran sido reparados, deberá además expresar los motivos que dieron lugar a la reparación. Esta información tendrá carácter de declaración jurada y cualquier falsedad que se compruebe hará pasible al propietario y al profesional de las sanciones previstas en la presente reglamentación.</p>
+        <p class="respuesta">11) PLANOS DEL EQUIPO </p>
+        <p class="respuesta">12) REGISTROS DE RECIPIENTES SOMETIDOS A PRESIÓN. </p>
+        <p class="respuesta">13) SELLADO DEL BANCO PROVINCIA. </p>
+        <p class="respuesta">14). NOTA: PAGO DE ARANCELES (tasa equipo, acta, gastos administrativos).</p>
+        <p id="008" class="pregunta">TRÁMITE DE HABILITACIÓN DE UN ASP SIN PLACA O CON PLACA NO REGLAMENTARIA </p>
+        <p class="respuesta">1) NOTA DE SOLICITUD DE HABILITACIÓN DE EQUIPO. </p>
+        <p class="respuesta">2) ESTATUTO SOCIAL. </p>
+        <p class="respuesta">3) DOMICILIO CONSTITUIDO EL CASCO URBANO DE LA PLATA. </p>
+        <p class="respuesta">4) NOTA DE AVISO DE ENSAYO.</p>
+        <p class="respuesta">5) Declaración jurada. </p>
+        <p class="respuesta">6) FORMULARIO A (Pagina Web OPDS) </p>
+        <p class="respuesta">7) FORMULARIO F (Pagina Web OPDS) </p>
+        <p class="respuesta">8) CONTRATO PROFESIONAL (como Director Técnico). </p>
+        <p class="respuesta">9) ACTA DE VERIFICACIÓN ORIGINAL (Pagina Web OPDS, no olvidar firma, aclaración y DNI del titular o apoderado de la empresa).</p>
+        <p class="respuesta">10) MEMORIA DE CALCULO COMPLETA DEL ASP, (ensayos de Extensión de Vida Útil, siguiendo normas internacionales, cálculo completo según normas internacionales, presión máxima de trabajo, cálculo completo de la válvula, ubicación del equipo en planta). </p>
+        <p class="respuesta">11) PLANOS DEL EQUIPO. </p>
+        <p class="respuesta">12) COLOCAR PLACA DE REEMPLAZO (según modelo anterior)</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-06">CAPACITACION DEL PERSONAL</h2>
+        <p class="respuesta">El personal del establecimiento que tenga a su cargo el equipo debe contar con capacitación frecuente para el manejo del mismo.</p>
+        <p class="respuesta">Las capacitaciones se realizan a través de la Plataforma Educativa del OPDS, que posee un espacio para garantizar el proceso evaluativo para la obtención del carnet.</p>
+        <p class="respuesta">El carnet permite el desempeño profesional de todas aquellas personas que trabajan con aparatos sometidos a presión en industrias de la provincia de Buenos Aires.</p>
+        <p class="respuesta">El certificado de habilitación es único e intransferible y deberá ser emitido por la Autoridad de Aplicación. El mismo tendrá formato físico y digital y tendrá una validez de cinco (5) años a partir de la fecha de emisión.</p>
+        <p class="respuesta">Las industrias tienen el deber de garantizar que cada persona que manipule aparatos sometidos a presión esté formada y habilitada a tal fin. </p>
+        <p id="009" class="pregunta">FOGUISTA</p>
+        <p class="respuesta">Se considera foguista a aquella persona humana con capacitación especial y certificado de habilitación otorgado por Autoridad Competente para operar aparatos sometidos a presión con fuego. </p>
+        <p id="010" class="pregunta">FRIGORISTA</p>
+        <p class="respuesta">Se considera frigorista a aquella persona humana con capacitación especial y con certificado de habilitación otorgado por Autoridad Competente para operar aparatos sometidos a presión sin fuego, que utilicen productos refrigerantes, en instalaciones destinadas a producir frío. </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-07">RIESGOS ASOCIADOS A LA OPERACION</h2>
+        <p class="respuesta">LOS PRINCIPALES RIESGOS/PELIGROS A LOS QUE ESTAMOS EXPUESTOS DURANTE LA OPERACIÓN DE LOS ASP SON:</p>
+        <p class="respuesta">Atrapamiento</p>
+        <p class="respuesta">Impacto</p>
+        <p class="respuesta">Contacto eléctrico directo / indirecto </p>
+        <p class="respuesta">Explosión</p>
+        <p class="respuesta">Incendio</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-08">POTENCIALES PELIGROS</h2>
+        <p class="respuesta">EXPLOSIÓN</p>
+        <p class="respuesta">NUBE TÓXICA</p>
+        <p class="respuesta">IMPACTO AMBIENTAL</p>
+        <p class="respuesta">BLEVE (expansión explosiva del vapor de un líquido en ebullición)</p>
+        <p class="respuesta">UVCE (explosión de nubes de vapor no confinadas)</p>
+        <p class="respuesta">PILETA DE FUEGO</p>
+        <p class="respuesta">JET-FIRE (chorro de fuego) </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-09">MEDIDAS PREVENTIVAS</h2>
+        <p class="respuesta">La correcta forma de minimizar el riesgo de accidentes es el mantenimiento preventivo y la realización de ensayos periódicos de control. Las características y periodicidad del plan de mantenimiento y ensayos dependerán de las características del APS.</p>
+        <p class="respuesta">El Decreto 351/79, Ley 19587, establece las medidas preventivas a tomar en el manejo de los aparatos sometidos a presión, así como las legislaciones provinciales establecen el tipo y periodicidad de los ensayos que realizamos sobre los mismos. Estas son la Prueba Hidráulica, Medición de espesores y otros Ensayos especiales.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-10">ENSAYOS</h2>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/186.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/187.jpg">
+        </div>
+        <p class="respuesta">Los diferentes decretos y leyes en cada jurisdicción, establecen una serie de ensayos a realizar a los ASP, para poder realizar la habilitación de los mismos. En el caso de la resolución 1126/07 (apéndice 4.13), que aplica a para provincia de buenos aires, se tiene la siguiente tabla con detalles al respecto, en la misma. Estos ensayos, solo aplica para las actividades categorizadas según el decreto 1741/96 reglamentario de la ley 11459 Art. 77. Si la actividad no está categorizada, puede involucrarse una ART, la SRT o el ministerio de trabajo, para pedir los ensayos correspondientes a los ASP.</p>
+        <p class="respuesta">En el caso de las válvulas, estas deben ser controladas periódicamente, sometiéndolas a pruebas de hermeticidad, y calibración de las mismas, sobre todo en válvulas se seguridad o de alivio. En ciertos aparatos, debe haber 2 válvulas de seguridad, por si falla la principal. El venteo de las válvulas de seguridad de estar canalizado por seguridad del calderista.</p>
+        <p class="respuesta">En el caso de los manómetros, estos deben ser controlados, verificando que las lecturas sean las correctas, y además, se deben hacer los controles correspondientes al buen funcionamiento de los presostatos. Debe haber 2 manómetros en ciertos aparatos, por seguridad de funcionamiento, con 100 mm de diámetro cada uno, y con una escala que sea el doble que la presión de trabajo. Debe haber 2 presostatos, por el mismo motivo.</p>
+        <p id="011" class="pregunta">Prueba hidráulica - Medición de espesores</p>
+        <p class="respuesta">-Equipos sin fuego  </p>
+        <p class="respuesta">Prueba Hidráulica: debe realizarse cada 5 años.</p>
+        <p class="respuesta">Inspección Anual: incluye medición de espesores por ultrasonido y calibración de la válvula de seguridad.</p>
+        <p class="respuesta">-Equipos con fuego </p>
+        <p class="respuesta">Prueba hidráulica: debe realizarse cada año.</p>
+        <p class="respuesta">Inspección Anual: incluye medición de espesores por ultrasonido y calibración de la válvula de seguridad.</p>
+        <p id="012" class="pregunta">Procedimiento de una prueba hidráulica</p>
+        <p class="respuesta">Llenado del Recipiente: El recipiente del equipo se llena con agua.</p>
+        <p class="respuesta">Aumento de Presión: La presión se eleva a 1,5 veces la presión de diseño y se mantiene constante durante 1 hora</p>
+        <p class="respuesta">Verificación de Pérdidas: Durante este tiempo, se verifica que no haya pérdidas de líquido desde el recipiente.</p>
+        <p class="respuesta">Control de Presión: También se verifica que no haya variaciones significativas en el registro de la presión durante la prueba.</p>
+        <p class="respuesta">Descenso de Presión: La presión se reduce gradualmente hasta alcanzar la presión atmosférica</p>
+        <p class="respuesta">Comprobación de Deformaciones: Durante el descenso de la presión, se examina el recipiente para asegurarse de que no haya deformaciones o distorsiones inesperadas.</p>
+        <p class="respuesta">Vaciamiento Seguro: Finalmente, el recipiente se vacía con precaución para evitar cualquier posible efecto de colapso.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-11">INGENIERIA DE REHABILITACION</h2>
+        <p class="respuesta">Es el conjunto de ensayos que tiene como objetivo verificar el comportamiento seguro del recipiente a presión (con o sin fuego).</p>
+        <p id="013" class="pregunta">Procedimiento de rehabilitación de calderas</p>
+        <p class="respuesta">Destapar la caldera</p>
+        <p class="respuesta">Limpieza</p>
+        <p class="respuesta">Controlar espesores por ultrasonido en zonas críticas</p>
+        <p class="respuesta">Se calibran y timbran las válvulas de seguridad</p>
+        <p class="respuesta">Se cierra la caldera cambiando las juntas</p>
+        <p class="respuesta">Se efectúa ensayo hidrostático a temperatura ambiente a presión por cálculo según ASME</p>
+        <p class="respuesta">Se efectúa prueba en régimen </p>
+        <p id="014" class="pregunta">Procedimiento de rehabilitación de recipientes sin fuego</p>
+        <p class="respuesta">Destapar el recipiente</p>
+        <p class="respuesta">Proceder a su limpieza/arenado</p>
+        <p class="respuesta">Controlar espesores por ultrasonido cada 200x200mm</p>
+        <p class="respuesta">Se calibran y timbran las válvulas de seguridad y exceso de flujo </p>
+        <p class="respuesta">Se cierra el recipiente cambiando las juntas</p>
+        <p class="respuesta">Se efectúa ensayo hidrostático a temperatura ambiente a presión por cálculo según ASME</p>
+        <p class="respuesta">Se efectúa prueba de hermeticidad y pintura final</p>
+        <p class="respuesta">Se marca el recipiente </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-12">CONTROL DE MATAFUEGOS</h2>
+        <p class="respuesta">La OPDS regula este tipo de aparatos mediante decretos y resoluciones como los siguientes.</p>
+        <p class="respuesta">Decreto Nº 4992/1990. Creación del Registro Prov. de fabricantes y/o recargadores de equipos contra incendios</p>
+        <p class="respuesta">Resolución Nº 99/2011. Fabricación y adecuación de los cilindros.</p>
+        <p class="respuesta">Resolución Nº 522/2007. Modelo de oblea para la fabricación de extintores de 1Kg.</p>
+        <p class="respuesta">Resolución Nº 349/2007. Sobre fabricación y recarga de matafuegos - Resolución N° 717/07 que modifica la Resolución N° 349/07 - Resolución N° 738/07.</p>
+        <p class="respuesta">Resolución SPA Nº619/2002 (Convenio de Cooperación con los Municipios sobre Matafuegos).</p>
+        <p class="respuesta">Resolución Nº 96/1999. Estampillas y Tarjetas de Seguridad para la Fabricación y Recarga de Matafuegos.</p>
+        <p class="respuesta">Resolución Nº 435/1997. Nuevos modelos de estampillas y tarjetas de seguridad.</p>
+        <p class="respuesta">Decreto Nº 3598/1996. Régimen normativo para matafuegos nacionales e importados- Autoridad de aplicación- Modificación del decreto Nº 4992/90.</p>
+        <p class="respuesta">Según IRAM (Instituto Argentino de Normalización y Certificación), que es la entidad encargada de establecer estándares técnicos y de calidad en Argentina, En relación con los matafuegos, las normas IRAM establecen los requisitos y especificaciones técnicas que deben cumplir los extintores de incendios para garantizar su eficacia y seguridad en caso de un incendio. Estas normas son fundamentales para asegurar que los matafuegos funcionen adecuadamente y cumplan con su propósito de extinguir o controlar incendios de manera efectiva. Según las IRAM 3517-1 y 2, estos aparatos, son controlados por los precargadores habilitados.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086188.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/189.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/190.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/191.jpg">
+        </div>
+    </div>
+    
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div class="contenedorTemas">
+    <h2 id="Tema-01-0"></h2>
+
+    <p id="" class="pregunta"></p>
+    <p class="respuesta"></p>
+
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086.jpg">
+    </div>
+</div-->

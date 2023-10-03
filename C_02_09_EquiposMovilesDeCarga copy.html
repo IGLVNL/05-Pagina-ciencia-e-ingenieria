@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Equipos moviles de carga">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Equipos moviles de carga</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_09_EquiposMovilesDeCarga">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="temas">Ingeniería Industrial</p>
+    <p class="temas">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Equipos móviles de carga</h1>
+    <div id="menu">
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgoeneltrabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_RiesgoMecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion.html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+                <li class="dropdown-2"><a href="C_02_06_PrevencionYControlDeIncendios.html">06- PREVENCION Y CONTROL DE INCENDIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_07_AccidentesInItinire.html">07- ACCIDENTES IN-ITINIRE</a></li>
+                <li class="dropdown-2"><a href="C_02_08_Ergonomia.html">08- ERGONOMIA</a></li>
+                <li class="dropdown-2"><a href="C_02_09_EquiposMovilesDeCarga copy.html">09- EQUIPOS MOVILES DE CARGA </a></li>
+                <li class="dropdown-2"><a href="C_02_10_MetodologiaInvestigacionAccidenntes.html">10- METODOLOGIA DE INVESTIGACION DE ACCIDENTES</a></li>
+                <li class="dropdown-2"><a href="C_02_11_SeñalizacionYColor.html">11- SEÑALIZACION Y COLOR</a></li>
+                <li class="dropdown-2"><a href="C_02_12_TrabajosAltoRiesgo.html">12- TRABAJOS DE ALTO RIESGO</a></li>
+                <li class="dropdown-2"><a href="C_02_13_PrimerosAuxilios.html">13- PRIMEROS AUXILIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_14_AparatosSometidosAPresion.html">14- APARATOS SOMETIDOS A PRESION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas"></div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-01">¿QUÉ SON LOS EQUIPOS MÓVILES DE CARGA? </h2>
+        <p class="respuesta">Son vehículos de transporte utilizados para trasladar, estibar, elevar y/o descender cargas. La característica principal de este medio móvil es su capacidad de soportar, levantar, bajar y mover objetos de distintos tipos, tamaños y pesos. </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">TIPOS DE EQUIPOS MÓVILES DE CARGA</h2>
+
+        <p id="001" class="pregunta">De trayectoria fija</p>
+        <p class="respuesta">Son equipos que suelen formar una parte fija de la planta física.</p>
+
+        <p id="002" class="pregunta">Cintas transportadoras</p>
+        <p class="respuesta">Son dispositivos mecánicos cuya función es trasladar de un lugar a otro los materiales utilizados en el proceso de fabricación de un producto de manera continua o intermitente, logrando que el ritmo de trabajo avance de manera rápida y no se vea perjudicado el costo de operaciones debido al tiempo excedente invertido en las actividades. La cinta cuenta con una polea motorizada, la cual permite el movimiento constante hacia adelante. Se encuentra montada en una estructura metálica que proporciona soporte y rigidez y cuyas dimensiones varían, al igual que los componentes que la conforman, los cuales definen la carga que es capaz de soportar y la velocidad que tendrá para realizar el traslado de los materiales. Las bandas pueden ser de rodillos (adecuados para reducir la fricción), modulares (óptimo para industrias alimenticias, debido a su estructura abierta, la cual permite que sea sencilla su limpieza y mantenimiento) o plana (la más común). </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/109.jpg">
+        </div>
+        <p class="respuesta">A continuación, se mencionan los riesgos asociados a la aplicación de cintas transportadoras: </p>
+        <p class="respuesta">Atrapamiento, aplastamiento y caída de personas, caída de materiales, inhalación de polvo y partículas en suspensión en el aire, lesiones por levantar o mover cargas pesadas desde la cinta e incendios si se transportan materiales inflamables o si ocurre una falla eléctrica en el equipo. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/110.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/111.jpg">
+        </div>
+
+        <p id="003" class="pregunta">Estanterías dinámicas</p>
+        <p class="respuesta">Son sistemas de almacenamiento muy utilizados en la actualidad por su gran versatilidad y eficiente aprovechamiento del espacio. Estas estanterías se aplican generalmente en el método FIFO (first in, first out), lo que significa que, los productos o materiales se almacenan de tal manera que los primeros en entrar son los primeros en salir. </p>
+        <p class="respuesta">En este sistema, los productos se encuentran dispuestos sobre carriles con rodillos inclinados hacia adelante y, a medida que se retira una unidad de la parte delantera el siguiente se desplaza automáticamente mediante la gravedad. La inclinación debe ajustarse de manera que permita un flujo estable y continuo y depende del tipo, tamaño y forma de los productos o materiales a almacenar, la velocidad de flujo y las consideraciones de seguridad. Su aplicación implica una reducción significativa en los tiempos y esfuerzos necesarios tanto para la carga como descarga de la mercancía. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/112.jpg">
+        </div>
+        <p class="respuesta">A continuación, se mencionan los riesgos asociados a la aplicación de las estanterías dinámicas: </p>
+        <p class="respuesta">Caída y golpe de las personas por intervenir en altura en condiciones inseguras debido a que es posible que se den atascos de los pallets con los rodillos o en el flujo de los productos y sea necesario desatascar. </p>
+        <p class="respuesta">Riesgo de aplastamiento debido al colapso de la estantería por sobrecarga o por la caída de un producto o material debido a un manejo inadecuado. </p>
+
+        <p id="004" class="pregunta">Polipasto</p>
+        <p class="respuesta">Es un dispositivo mecánico compuesto de poleas fijas o móviles, que combinadas junto a amortiguadores y provisto de ganchos con seguridad se utiliza para elevar, descender o mover cargas con una gran ventaja mecánica, ya que así se requiere aplicar una fuerza mucho menor que el peso que hay que mover.  A continuación, se mencionan los riesgos asociados a la aplicación de este dispositivo: </p>
+        <p class="respuesta">Riesgo de aplastamiento debido a la caída o proyección de la carga durante el movimiento, que se puede producir por defectos en el mecanismo, por sobrecarga o por circunstancias imprevistas. Por ello, es necesario tener en cuenta ciertos aspectos, como por ejemplo: la revisión periódica de los elementos encargados de izar para comprobar que se encuentran en perfecto estado (por ejemplo, comprobar que no existen roturas o signos de desgaste en los eslabones de las cadenas), estos elementos deberán estar fabricados de un material fuerte y resistente, principalmente de acero forjado; las cadenas o elementos de izar se deben colocar en ejes o poleas que tengan ranuras, para evitar que se puedan torcer al enrollarlas; y también se deben controlar periódicamente los ganchos, ya que son los encargados de evitar que la carga se caiga, los mismos deben ser de hierro forjado e incorporar algún elemento de seguridad como el bloqueo de carga. </p>
+        <p class="respuesta">Riesgo de incendio debido a la falla eléctrica del equipo. </p>
+        <p class="respuesta">Lesiones en las manos durante la operación de un polipasto si no se maneja el cable, la cadena o la carga con las precauciones adecuadas, por ejemplo, utilizando guantes para proteger las manos del rozamiento. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/113.jpg">
+        </div>
+
+        <p id="005" class="pregunta">De trayectoria variable</p>
+        <p class="respuesta">son equipos que recorren constantemente la planta.</p>
+
+        <p id="006" class="pregunta">Zorras manuales, eléctricas e hidráulicas </p>
+        <p class="respuesta">Es un tipo de carretilla de pequeño recorrido de elevación, trasladable a mano o por tracción eléctrica o hidráulica y puede ser conducida de forma manual por un operador que puede ir de pie sobre la plataforma o acompañando a la misma. Se utilizan para mover mercadería pesada a nivel del suelo y levantarlas hasta la posición de nivel de carga. Los riesgos asociados al uso de este tipo de equipos son: Riesgo de atrapamiento o aplastamiento de extremidades como manos o pies, sobreesfuerzos al manipular cargas demasiado pesadas, caída de la carga transportada, caída del operario, choques o colisiones contra objetos, paredes, estructuras e incluso con otras zorras, etc. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/114.jpg">
+        </div>
+
+        <p id="007" class="pregunta">Plataformas de elevación</p>
+        <p class="respuesta">Es un equipo de trabajo móvil destinado a trasladar personas hasta una posición de trabajo determinada, principalmente para realizar trabajos en altura. Los trabajos que se realizan con estos equipos son principalmente de mantenimiento, reparación, instalación, montaje, inspección, entre otros. Para utilizar este sistema las personas deben estar autorizadas y capacitadas del uso y manejo del mismo. Los riesgos asociados a su uso son: caída de las personas, vuelco del equipo, caída de objetos o materiales sobre las personas o bienes, golpes o choques de la plataforma contra otros objetos provocando lesiones al operador, contactos eléctricos directos o indirectos, aplastamiento.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/115.jpg">
+        </div>
+
+        <p id="008" class="pregunta">Autoelevadores</p>
+        <p class="respuesta">Son equipos especializados diseñados para realizar trabajos específicos, tienen un contrapeso en la parte trasera, que a través de uñas puede bajar, subir y trasladar todo tipo de cargas, generalmente ubicadas sobre pallets de madera. Requieren instrucciones y reglas específicas para su operación y mantenimiento seguro. En general los accidentes ocurren cuando el conductor no está capacitado o no tiene experiencia, y cuando no se siguen correctamente las reglas básicas de seguridad. A continuación, se detallan los riesgos asociados al autoelevador y sus correspondientes medidas preventivas. </p>
+        <p class="respuesta">Caída de materiales: adaptar las cargas y evitar sacudidas, buena iluminación de la zona de circulación, indicar la capacidad máxima de estanterías y revisar periódicamente el estado de los pallets. </p>
+        <p class="respuesta">Caída del conductor: evitar problemas de visibilidad que motiven inclinación excesiva del operario. </p>
+        <p class="respuesta">Vuelco del autoelevador: utilización de vehículo adecuado a la carga a levantar, evitar los cambios de dirección bruscos y los giros en radios pequeños a alta velocidad, asegurarse del buen estado de las vías de circulación. </p>
+        <p class="respuesta">Choques contra obstáculos y estructuras: señalizar velocidad máxima de circulación, buena iluminación, señalizar con líneas amarillas y negras alternativas los objetos situados en la circulación, mantener las áreas de trabajo limpias y ordenadas. </p>
+        <p class="respuesta">Choques contra otros vehículos: procurar sentidos únicos de circulación y anchura suficiente, accionar alarma y bajar la velocidad en cruces peligrosos, limitar la velocidad. </p>
+        <p class="respuesta">Choques contra peatones: vehículo con iluminación, evitar entradas de vehículos y peatones por la misma puerta de acceso, precaución al cruzar entradas o salidas. </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-03">LEGISLACIÓN ACTUAL</h2>
+        <p class="respuesta">En Argentina rige desde el 2015 la resolución número 960 establecida por la Superintendencia de Riesgos del Trabajo. En particular hace referencia a los trabajos que requieren el uso de autoelevadores. </p>
+        <p class="respuesta">Consta de 4 artículos de los cuales el primero incluye un anexo que se define como:  “Condiciones de seguridad para la operación de autoelevadores”; este deberá ser respetado por los empleadores que tengan bajo su responsabilidad trabajadores que operen este tipo de equipos móviles a lo largo de la jornada laboral, ya sea una actividad esporádica o constante.  </p>
+        <p class="respuesta">A través de su primer artículo se define a qué tipo de equipos se consideran Autoelevadores: vehículos autopropulsados, manejados por un colaborador sentado que pueden elevar y transportar cargas que no superen los 3500 kilogramos. </p>
+        <p class="respuesta">Deben tener una placa de identificación que indique la carga máxima admisible que puede transportar. (Artículo 2). </p>
+        <p class="respuesta">El colaborador conductor deberá estar resguardado de caídas, proyección de objetos o desplazamiento de la carga con una estructura resistente. Si debe conducir en ambientes de lluvia, nieve o agua debe tener un cerramiento correctamente ventilado y limpiaparabrisas. (Artículo 3). El asiento del conductor debe tener un diseño ergonómico para evitar problemas en la zona lumbar y disminuir las vibraciones a las cuales se somete (artículo 5).  </p>
+        <p class="respuesta">Deben tener en condiciones adecuadas: </p>
+        <p class="respuesta">Cinturón de seguridad.  </p>
+        <p class="respuesta">Luces de giro, balizas, posición y freno.  </p>
+        <p class="respuesta">Luces de trabajo en aquellos casos donde la tarea que se realice con el autoelevador así lo requiera.  </p>
+        <p class="respuesta">Bocina.</p>
+        <p class="respuesta">Dispositivo de aviso de retroceso, acústico-luminoso.  </p>
+        <p class="respuesta">Espejos retrovisores en ambos lados del vehículo.  </p>
+        <p class="respuesta">Arrestallamas, en el caso de que se trabaje en ambientes que así lo requieran.  </p>
+        <p class="respuesta">Dispositivo aislante que envuelve el tubo de escape y puntos calientes, para impedir el contacto con materiales o personas evitando posibles quemaduras o incendios.  </p>
+        <p class="respuesta">Freno de estacionamiento que permita mantenerlo inmóvil con su carga máxima y con la pendiente máxima admisible.  </p>
+        <p class="respuesta">Para trabajos en pendientes, debe estar provisto de cuñas para sus ruedas, las que se deben utilizar cuando el autoelevador se encuentra detenido.  </p>
+        <p class="respuesta">Extintor acorde con el riesgo existente. </p>
+        <p class="respuesta">Medios seguros para el ascenso y descenso del operador. </p>
+        <p class="respuesta">Superficies antideslizantes en pedales de mando, pisos y peldaños.  </p>
+        
+        <p id="009" class="pregunta">Artículo 6</p>
+        <p class="respuesta">El responsable de seguridad e higiene deberá establecer la máxima velocidad de circulación de los equipos y fomentar el uso de cartelería en las diferentes áreas donde haya movimiento de estos equipos. Prohibir la circulación de las personas por debajo de los móviles y señalizar con pintura la altura de estructuras, techos y cañerías. </p>
+        
+        <p id="010" class="pregunta">Artículo 8</p>
+        <p class="respuesta">Para poder conducir se debe realizar un curso teórico-práctico más una evaluación final, con revalidación anual. (Artículo 12). El contenido del curso se describe en el artículo 13: </p>
+        <p class="respuesta">Conocimientos técnicos del autoelevador.</p>
+        <p class="respuesta">Instrucciones teóricas y prácticas de manejo y operación. </p>
+        <p class="respuesta">Información sobre la capacidad de carga y sobre la curva o tabla de cargas. </p>
+        <p class="respuesta">Reglas de seguridad y prevención de riesgos. </p>
+        <p class="respuesta">Conocimientos teóricos sobre altura máxima de estiba. </p>
+        <p class="respuesta">Programa y control diario a cargo del operador (listado de verificación o chequeo). </p>
+        <p class="respuesta">Manual para la conducción segura de Autoelevadores.</p>
+        <p class="respuesta">Velocidad de circulación. </p>
+        <p class="respuesta">Distancias mínimas respecto del peatón.</p>
+        <p class="respuesta">Carga de combustible.</p>
+        <p class="respuesta">Recambio de baterías.</p>
+        <p class="respuesta">Legislación vigente.</p>
+        <p class="respuesta">Interpretación y conocimiento del manual del operador.</p>
+        <p class="respuesta">Correcto uso del extintor.</p>
+        <p class="respuesta">Riesgo en el inflado de neumáticos.</p>
+        <p class="respuesta">Prevención de vuelcos.</p>
+        <p class="respuesta">Al finalizar el curso se le entrega una credencial que acredita haber realizado la capacitación.  </p>
+
+        <p id="011" class="pregunta">Artículo 16</p>
+        <p class="respuesta">Indica que el operador del autoelevador, deberá realizar un control diario del equipo en el inicio del turno de trabajo, mediante un listado de verificación o chequeo, que contendrá como mínimo los siguientes puntos:  </p>
+        <p class="respuesta">Ruedas (banda de rodaje, presión, desgaste, etc.).</p>
+        <p class="respuesta">Fijación de los brazos de la horquilla/uñas o del accesorio.</p>
+        <p class="respuesta">Inexistencia de fugas de fluidos en el circuito hidráulico, mangueras y/o conexiones.  d) Niveles de aceites.  </p>
+        <p class="respuesta">Mandos en servicio.  </p>
+        <p class="respuesta">Bocina.</p>
+        <p class="respuesta">Luces.</p>
+        <p class="respuesta">Dispositivo de aviso de retroceso.</p>
+        <p class="respuesta">Frenos de pie y de mano.</p>
+        <p class="respuesta">Espejos.</p>
+        <p class="respuesta">Extintor.</p>
+        <p class="respuesta">Cinturón de seguridad.</p>
+        <p class="respuesta">Sistema de transmisión.</p>
+        <p class="respuesta">Estado del asiento.</p>
+        <p class="respuesta">En caso que el colaborador considere que el equipo no está en condiciones lo deberá declarar a sus supervisores para que vaya a reparación de manera, deberá identificarse claramente que está fuera de servicio para evitar que alguien lo opere por error.  </p>
+        <p class="respuesta">Trimestralmente un profesional con incumbencia deberá realizar una revisión general del autoelevador. </p>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div class="contenedorTemas">
+    <h2 id="Tema-01-0"></h2>
+
+    <p id="" class="pregunta"></p>
+    <p class="respuesta"></p>
+
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086.jpg">
+    </div>
+</div-->

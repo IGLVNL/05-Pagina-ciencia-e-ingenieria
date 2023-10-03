@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Señalización y color">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Señalización y color</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_11_SeñalizacionYColor">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="temas">Ingeniería Industrial</p>
+    <p class="temas">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Señalización y color</h1>
+    <div id="menu">
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgoeneltrabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_RiesgoMecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion.html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+                <li class="dropdown-2"><a href="C_02_06_PrevencionYControlDeIncendios.html">06- PREVENCION Y CONTROL DE INCENDIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_07_AccidentesInItinire.html">07- ACCIDENTES IN-ITINIRE</a></li>
+                <li class="dropdown-2"><a href="C_02_08_Ergonomia.html">08- ERGONOMIA</a></li>
+                <li class="dropdown-2"><a href="C_02_09_EquiposMovilesDeCarga copy.html">09- EQUIPOS MOVILES DE CARGA </a></li>
+                <li class="dropdown-2"><a href="C_02_10_MetodologiaInvestigacionAccidenntes.html">10- METODOLOGIA DE INVESTIGACION DE ACCIDENTES</a></li>
+                <li class="dropdown-2"><a href="C_02_11_SeñalizacionYColor.html">11- SEÑALIZACION Y COLOR</a></li>
+                <li class="dropdown-2"><a href="C_02_12_TrabajosAltoRiesgo.html">12- TRABAJOS DE ALTO RIESGO</a></li>
+                <li class="dropdown-2"><a href="C_02_13_PrimerosAuxilios.html">13- PRIMEROS AUXILIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_14_AparatosSometidosAPresion.html">14- APARATOS SOMETIDOS A PRESION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas"></div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-01">SEÑALIZACIÓN INDUSTRIAL</h2>
+        <p class="respuesta">Es el conjunto de conocimientos técnicos y su aplicación para la reducción, control y eliminación de accidentes en el trabajo, por medio de sus causas, encargándose de implementar las medidas tendientes a evitar accidentes. En la industria, se encuentran personas y su entorno, por lo cual siempre hay riesgos en la interacción entre ambos.</p>
+        <p class="respuesta">Colores y señales de seguridad La función de los colores y las señales de seguridad es atraer la atención sobre lugares, objetos o situaciones que puedan provocar accidentes u originar riesgos a la salud, así como indicar la ubicación de dispositivos o equipos que tengan importancia desde el punto de vista de la seguridad. La normalización de señales y colores de seguridad sirve para evitar, en la medida de lo posible, el uso de palabras en la señalización de seguridad En nuestro país se utiliza la norma IRAM 10005- Parte 1, cuyo objeto fundamental es establecer los colores de seguridad y las formas y colores de las señales de seguridad a emplear para identificar lugares, objetos, o situaciones que puedan provocar accidentes u originar riesgos a la salud. Al identificar con colores, los empleados de un centro de trabajo pueden identificar el tipo de riesgo que puede presentar algún proceso, instalación o material. Así, se pueden implementar acciones o programas para la prevención de los accidentes. La norma IRAM 100005 parte 1 establece definiciones generales para la creación de señales de seguridad. Definiciones generales Color de seguridad: A los fines de la seguridad color de características específicas al que se le asigna un significado definido. Símbolo de seguridad: Representación gráfica que se utiliza en las señales de seguridad. Señal de seguridad: Aquella que, mediante la combinación de una forma geométrica, de un color y de un símbolo, da una indicación concreta relacionada con la seguridad. La señal de seguridad puede incluir un texto (palabras, letras o cifras) destinado a aclarar sus significado y alcance. Señal suplementaria: Aquella que tiene solamente un texto, destinado a completar, si fuese necesario, la información suministrada por una señal de seguridad.</p>
+        
+        <p id="001" class="pregunta">¿Dónde se utiliza?</p>
+        <p class="respuesta">Cartelería (Paredes)</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/123.jpg">
+        </div>
+        <p class="respuesta">Cartelería (Partes de máquinas)</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/124.jpg">
+        </div>
+        <p class="respuesta">Señalización horizontal (Pisos)</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/125.jpg">
+        </div>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">SEÑALIZACIÓN DE COLOR</h2>
+        <p class="respuesta"> La función de los colores y las señales de seguridad es atraer la atención sobre lugares, objetos o situaciones que puedan provocar accidentes u originar riesgos a la salud, así como indicar la ubicación de dispositivos o equipos que tengan importancia desde el punto de vista de la seguridad.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/126.jpg">
+        </div>
+        <p class="respuesta">La aplicación de los colores de seguridad se hace directamente sobre los objetos, partes de edificios, elementos de máquinas, equipos o dispositivos, los colores aplicables son los siguientes:</p>
+        
+        <p id="002" class="pregunta">Rojo</p>
+        <p class="respuesta">El color rojo denota parada o prohibición e identifica además los elementos contra incendio. Se usa para indicar dispositivos de parada de emergencia o dispositivos relacionados con la seguridad cuyo uso está prohibido en circunstancias normales, por ejemplo:</p>
+        <p class="respuesta">Botones, pulsador o palancas de parada de emergencia, botones o palanca que accionen sistema de seguridad contra incendio (rociadores, inyección de gas extintor, etc.).</p>
+        <p class="respuesta">También se usa para señalar la ubicación de equipos contra incendio como por ejemplo, Matafuegos.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/127.jpg">
+        </div>
+        
+        <p id="003" class="pregunta">Amarillo</p>
+        <p class="respuesta">Advierte peligro, delimitación de áreas y advertencia de peligro por radiación. indicar precaución o advertir sobre riesgos en:</p>
+        <p class="respuesta">Partes de máquinas que puedan golpear, cortar, electrocutar o dañar de cualquier otro modo; además se usará para enfatizar dichos riesgos en caso de quitarse las protecciones o tapas y también para indicar los límites de carrera de partes móviles.</p>
+        <p class="respuesta">Interior o bordes de puertas o tapas que deben permanecer habitualmente cerradas, por ejemplo, de: tapas de cajas de llaves, fusibles o conexiones eléctricas, contacto del marco de las puertas cerradas (puerta de la caja de escalera y de la antecámara del ascensor contra incendio), de tapas de piso o de inspección.</p>
+        <p class="respuesta">Desniveles que puedan originar caídas, por ejemplo: primer y último tramo de escalera, bordes de plataformas, fosas, etc.</p>
+        <p class="respuesta">Barreras o vallas, barandas, pilares, postes, partes salientes de instalaciones o artefacto que se prolonguen dentro de las áreas de pasajes normales y que puedan ser chocados o golpeados.</p>
+        <p class="respuesta">Partes salientes de equipos de construcciones o movimiento de materiales. (paragolpes, plumas), de topadoras, tractores, grúas, zorras autoelevadores, etc.).</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/128.jpg">
+        </div>
+        
+        <p id="004" class="pregunta">Verde</p>
+        <p class="respuesta">El color verde denota condición segura. Se usa en elementos de seguridad general, excepto incendio, por ejemplo, en:</p>
+        <p class="respuesta">Puertas de acceso a salas de primeros auxilios.</p>
+        <p class="respuesta">Puertas o salidas de emergencia.</p>
+        <p class="respuesta">Botiquines.</p>
+        <p class="respuesta">Armarios con elementos de seguridad</p>
+        <p class="respuesta">Armarios con elementos de protección personal. Camillas.</p>
+        <p class="respuesta">Duchas de seguridad. Lavaojos, etc.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/129.jpg">
+        </div>
+        
+        <p id="005" class="pregunta">Azul</p>
+        <p class="respuesta">El color azul nos indica que existe la obligación de realizar acciones específicas. Se aplica sobre aquellas partes de artefactos cuya remoción o accionamiento implique la obligación de proceder con precaución, por ejemplo:</p>
+        <p class="respuesta">Tapas de tableros eléctricos.</p>
+        <p class="respuesta">Tapas de cajas de engranajes.</p>
+        <p class="respuesta">Cajas de comando de aparejos y máquinas.</p>
+        <p class="respuesta">Utilización de equipos de protección personal, etc</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/130.jpg">
+        </div>
+        
+        <p id="006" class="pregunta">Condiciones generales</p>
+        <p class="respuesta">Color en cuestión debe representar un cierto porcentaje de la señal: Rojo:35% de la señal; amarillo, azul y verde: 50% de la señal</p>
+        <p class="respuesta">Uso de colores contrastantes en la señal, para mejorar la percepción de los colores de seguridad, y consecuentemente, haya una mayor visibilidad de estos.</p>
+        
+        <p id="007" class="pregunta">Medidas de las señales</p>
+        <p class="respuesta">A pesar de que la forma y colores de la señalización son siempre fijas según la función a cumplir, no sucede lo mismo con el tamaño de esta. Se modifica en base a la distancia desde la que debe ser observada.</p>
+        <p class="respuesta">Las señales deben ser tan grandes como sea posible y su tamaño debe ser congruente con el lugar en que se colocan o el tamaño de los objetos, dispositivos o materiales a los cuales fija, con el propósito de que se pueda ver en su totalidad y claridad desde el sitio que sea necesario. En todos los casos el símbolo debe ser identificado desde una distancia segura.</p>
+        <p class="respuesta">El área mínima A de la señal debe estar relacionada a la más grande distancia L, a la cual la señal debe ser advertida, por la fórmula siguiente:</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/131.jpg">
+        </div>
+        <p class="respuesta">Ejemplo, si la señalización debe fijarse en la pared, y debe ser vista desde una distancia de 20 metros, fácilmente se obtiene que el área de la señalización debe ser de 0,2 metros cuadrados.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-03">COLORES Y SEÑALES DE SEGURIDAD (IRAM 10005 - 2da PARTE)</h2>
+        <p class="respuesta">A nivel Nacional la norma IRAM 10005- Parte 2 establece los colores de seguridad y las formas de las señales de seguridad relacionadas específicamente para las instalaciones contra incendio y los medios de escape.</p>
+        <p class="respuesta">Esta norma establece la señalización de los elementos destinados a la lucha contra incendios tales como matafuegos, hidrantes, pulsadores de alarmas, símbolos y pictogramas para identificar las clases de fuego y señalización específica para la ubicación de equipos de lucha contra incendios.</p>
+        <p class="respuesta">Los principales criterios establecidos para la señalización de los elementos antes mencionados son los siguientes:</p>
+        
+        <p id="008" class="pregunta">Señalización de equipos extintores</p>
+        <p class="respuesta">Para señalizar la ubicación de un matafuego se debe colocar una chapa baliza, tal como lo muestra la figura siguiente. Esta es una superficie con franjas inclinadas en 45 º respecto de la horizontal blancas y rojas de 10 cm de ancho. La parte superior de la chapa deber estar ubicada a 1,20 a 1,50 metros respecto del nivel de piso. Se debe indicar en la parte superior derecha de la chapa baliza las letras correspondientes a los tipos de fuego para los cuales es apto el matafuego ubicado. Las letras deben ser rojas en fondo blanco tal como lo muestra la figura 1. El tamaño de la letra debe ser suficientemente grande como para ser vista desde una distancia de 5 metros.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/132.jpg">
+        </div>
+        
+        <p id="009" class="pregunta">Señalización de nichos hidrantes</p>
+        <p class="respuesta">Se debe colocar sobre el nicho o hidrante una señal en forma de cuadrado con franjas rojas y blancas a 45º a una altura de dos o dos metros y medio respecto del nivel de piso. El lado de cada cuadrado debe ser de 0,30 metros.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/133.jpg">
+        </div>
+        
+        <p id="010" class="pregunta">Señalización de pulsadores de alarmas de incendios</p>
+        <p class="respuesta">Se debe colocar sobre el pulsador una señal en forma de círculo de color rojo a una altura de dos metros respecto del nivel de piso. El círculo debe tener 0,150 metros de diámetro.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/134.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/135.jpg">
+        </div>
+        
+        <p id="011" class="pregunta">Señalización de medios de escape</p>
+        <p class="respuesta">Se puede colocar en pasillos, techos, sobre puertas, en pisos, paredes, etc. Tienen que ser de fácil acceso e interpretación.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/136.jpg">
+        </div>
+        
+        <p id="012" class="pregunta">Identificación de cañerías (IRAM 2507)</p>
+        <p class="respuesta">Se entiende por cañería a todo el sistema formado por los caños, uniones, válvulas, tapones, todas las conexiones para el cambio de dirección de la cañería y el eventual aislamiento exterior de esta última, que se emplea para la conducción de gases, líquidos, semi líquidos, vapores, polvos, plásticos, cableados eléctricos, etc.</p>
+        <p class="respuesta">La señalización de esta, se basa en los productos/sustancias que transporta. Las cañerías se clasifican de la siguiente forma:</p>
+        <p class="respuesta">1. Cañerías destinadas a conducir productos de servicio (agua, vapor, combustible, etc.).</p>
+        <p class="respuesta">Las cuales, si el área de la cañería es de gran tamaño, el pintado total de la cañería se puede reemplazar por el pintado de las franjas según el producto que transporte (ejemplo, de agua fría, se pinta con franjas verdes).</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/137.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/138.jpg">
+        </div>
+        <p class="respuesta">2. Cañerías destinadas a conducir materias primas, productos en proceso y productos terminados. </p>
+        <p class="respuesta">Se puede dividir según el tipo de producto que transporta. Si este es de carácter inofensivo para la salud personal, cualquiera sea el producto transportado, se pinta la cañería de color gris, mientras que, si es peligroso para la salud, sobre el gris se pintan franjas color naranja.</p>
+        <p class="respuesta">Estos son los tipos de cañerías que se dictan en la norma:</p>
+        <p class="respuesta">Lucha contra Incendio > Rojo (Sistema de rociado, boca de incendios, ignífugos)</p>
+        <p class="respuesta">Vapor de agua > Naranja</p>
+        <p class="respuesta">Aire comprimido > Azul</p>
+        <p class="respuesta">Vacío / Electricidad > Negro</p>
+        <p class="respuesta">Agua fría > Verde</p>
+        <p class="respuesta">Agua caliente > Verde con franjas Naranja</p>
+        <p class="respuesta">Gas > Amarillo</p>
+        <p class="respuesta">Producto inofensivo > Gris* (* Producto en Proceso o terminado)</p>
+        <p class="respuesta">Producto peligroso > Gris con franjas Naranja *</p>
+        <p class="respuesta">Barros de Planta de Tratam. > Violeta</p>
+        <p class="respuesta">Efluente líquido sin tratar > Ocre</p>
+        
+        <p id="013" class="pregunta">Dimensiones y aplicaciones de franjas</p>
+        <p class="respuesta">Las franjas o grupos de franjas se pintan a una distancia máxima de 6 m. entre sí, en los tramos rectos, a cada lado de las válvulas, de las conexiones, de los cambios de dirección de la cañería y junto a los pisos, techos o paredes que atraviese la misma. Se debe dejar un espacio de aproximadamente 10 cm. entre la boca de las válvulas o conexiones y la franja correspondiente y también entre las franjas de un mismo grupo. El ancho de las franjas, con relación al diámetro exterior de la cañería, es establecido según la tabla siguiente:</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/139.jpg">
+        </div>
+        
+        <p id="014" class="pregunta">Flechas</p>
+        <p class="respuesta">El sentido de circulación del fluido dentro de las cañerías, se puede identificar cuando sea necesario por medio de flechas que se pintan a cada lado de las franjas o a 10 cm. de las bocas de las válvulas y conexiones.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/140.jpg">
+        </div>
+        
+        <p id="015" class="pregunta">Identificación adicional</p>
+        <p class="respuesta">Se puede efectuar una identificación adicional del producto conducido por las cañerías, por medio de franjas o signos que no interfieran en la identificación establecida.</p>
+        
+        <p id="016" class="pregunta">Leyendas</p>
+        <p class="respuesta">La identificación de los productos conducidos por las cañerías, se puede completar indicando con leyendas el nombre y/o el grado de peligrosidad de los mismos. Las leyendas se puede pintar directamente sobre las franjas o se pueden adosar a las cañerías de pequeño diámetro por medio de carteles especiales y el color de las letras puede ser el negro o el blanco. La elección del color está condicionada al establecimiento de un buen contraste con el color de las franjas. Cuando la cañería esté colocada contra una pared, las leyendas se pinta sobre el lado visible desde el lugar de trabajo; si está elevada se pintan las leyendas debajo del eje horizontal de la cañería y si esta se encuentra apartada de las paredes, se pintan las leyendas sobre sus lados visibles. La altura de las letras con relación al diámetro exterior de la cañería, es la indicada en la tabla siguiente:</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/141.jpg">
+        </div>
+        
+        <p id="017" class="pregunta">Códigos de colores</p>
+        <p class="respuesta">En todos los establecimientos se debe exhibir en un lugar fácilmente accesible, para uso de los operarios, un gráfico con el código de colores utilizado para la identificación de las cañerías.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-04">EJEMPLOS INDUSTRIALES</h2>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/142.jpg">
+        </div>
+        
+        <p id="018" class="pregunta">Riesgo eléctrico.</p>
+        <p class="respuesta">Esta señalización es de las más recurrentes en las industrias, como podemos ver en las fotos las mismas se pueden encontrar en tableros, cerca de transformadores, en la puerta de salas eléctricas, cerca de cables de alta tensión.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/143.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/144.jpg">
+        </div>
+        
+        <p id="019" class="pregunta">Riesgo mecánico</p>
+        <p class="respuesta">El mismo tiene como objetivo que el recurso humano esté enterada y atenta del riesgo a los que está expuesto. Dependiendo del sector de la industria en el que nos encontremos, y con la maquinaria que cuente el mismo, será la cartelization que corresponda. </p>
+        <p class="respuesta">Como podemos ver en la imagen, un ejemplo es que una máquina tiene partes móviles por lo que se recomienda no ingresar sin hacer un previo aviso ya que se podría dar un accidente.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/145.jpg">
+        </div>
+        
+        <p id="020" class="pregunta">Riesgo químico</p>
+        <p class="respuesta">Es muy importante tanto la cartelization como el control de los procesos ya que en las industrias hay mucha exposición de los operarios a contaminación química la cual puede generar quemadura, irritación e incluso asfixias.</p>
+        <p class="respuesta">En la primera foto podemos ver un proceso que utiliza soda cáustica y lo mismo está señalizado con su correspondiente porcentaje.</p>
+        <p class="respuesta">En la otra imagen podemos ver que hay una alarma de fuga de amoniaco. En el caso de que un operario detecte la misma, tiene que accionar el pulsador con el objetivo de dar aviso a las personas del sector y que las mismas evacuen hacia los puntos de encuentro.</p>
+        <p class="respuesta">Los operarios al evacuar deben tener en cuenta las mangas de viento para orientarse en el sentido opuesto.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/146.jpg">
+        </div>
+        ]
+        <p id="021" class="pregunta">Riesgo de incendio</p>
+        <p class="respuesta">Este mismo también es de los riesgos más presentes en la industria ya que cualquier fallo eléctrico puede terminar en un incendio.</p>
+        <p class="respuesta">Podemos ver en las imágenes que la industria cuenta con numerosa cantidad de matafuegos, mangueras y alarmas de incendio.</p>
+        <p class="respuesta">De igual manera que en el riesgo químico, si la alarma de incendio es activada el personal deberá evacuar y reunirse en los puntos de encuentro</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/147.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/148.jpg">
+        </div>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div class="contenedorTemas">
+    <h2 id="Tema-01-0"></h2>
+
+    <p id="" class="pregunta"></p>
+    <p class="respuesta"></p>
+
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086.jpg">
+    </div>
+</div-->

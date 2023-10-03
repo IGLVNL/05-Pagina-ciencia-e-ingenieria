@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Accidentes In Itinere">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Accidentes In Itinere</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_07_AccidentesInItinire">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Accidentes In Itinere</h1>
+    <div id="menu">
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgoeneltrabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_RiesgoMecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion.html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+                <li class="dropdown-2"><a href="C_02_06_PrevencionYControlDeIncendios.html">06- PREVENCION Y CONTROL DE INCENDIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_07_AccidentesInItinire.html">07- ACCIDENTES IN-ITINIRE</a></li>
+                <li class="dropdown-2"><a href="C_02_08_Ergonomia.html">08- ERGONOMIA</a></li>
+                <li class="dropdown-2"><a href="C_02_09_EquiposMovilesDeCarga copy.html">09- EQUIPOS MOVILES DE CARGA </a></li>
+                <li class="dropdown-2"><a href="C_02_10_MetodologiaInvestigacionAccidenntes.html">10- METODOLOGIA DE INVESTIGACION DE ACCIDENTES</a></li>
+                <li class="dropdown-2"><a href="C_02_11_SeñalizacionYColor.html">11- SEÑALIZACION Y COLOR</a></li>
+                <li class="dropdown-2"><a href="C_02_12_TrabajosAltoRiesgo.html">12- TRABAJOS DE ALTO RIESGO</a></li>
+                <li class="dropdown-2"><a href="C_02_13_PrimerosAuxilios.html">13- PRIMEROS AUXILIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_14_AparatosSometidosAPresion.html">14- APARATOS SOMETIDOS A PRESION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas"></div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-01">DEFINICION DE ACCIDENTE IN-ITINERE</h2>
+        <p class="respuesta">Los accidentes "in itinere" se refieren a los incidentes laborales que ocurren durante el trayecto entre el hogar del trabajador y su lugar de trabajo, o viceversa. En Argentina, estos eventos están cubiertos por la Ley de Riesgos del Trabajo (Ley 24.557) y se consideran parte de los riesgos laborales.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">BREVE HISTORIA DE LA LEGISLACION LABORAL EN LA ARGENTINA</h2>
+        <p class="respuesta">En 1995, Argentina implementó la Ley 24.557, estableciendo el sistema de riesgos del trabajo. A lo largo del siglo XXI, se realizaron modificaciones para mejorar la protección de los trabajadores, incluyendo los afectados por accidentes "in itinere".</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-03">MARCO LEGAL Y REGULACIONES</h2>
+        <p class="respuesta">En Argentina, los accidentes "in itinere" están regulados por la Ley de Riesgos del Trabajo (Ley 24.557). Esta ley define estos accidentes, las obligaciones del empleador, derechos y obligaciones del trabajador, y establece el papel de las Aseguradoras de Riesgos del Trabajo (ART).</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-04">TIPOS DE ACCIDENTES Y SECTORES INDUSTRIALES AFECTADOS</h2>
+        <p class="respuesta">Los accidentes "in itinere" pueden incluir situaciones como accidentes de tráfico, caídas, y accidentes en transporte público, bicicletas o motocicletas. Los sectores más afectados suelen ser la industria de la construcción, el sector de servicios y comercio, transporte y logística, salud y asistencia sanitaria, y el sector industrial y manufacturero.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-05">CONSECUENCIAS ECONOMICAS Y SOCIALES</h2>
+        <p class="respuesta">Los accidentes "in itinere" generan costos médicos, pérdida de ingresos, costos de reemplazo de personal y pérdida de productividad para las empresas. También pueden dar lugar a demandas y litigios adicionales.</p>
+        <p class="respuesta">A nivel social, estos accidentes impactan en la calidad de vida de los trabajadores, generan carga emocional y psicológica, reducen la movilidad y aumentan la carga para las familias. Además, tienen un impacto negativo en la seguridad vial en general.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-06">CAUSAS Y FACTORES DE RIESGO</h2>
+
+        <p id="001" class="pregunta">Principales Causas de Accidentes "In Itinere"</p>
+        <p class="respuesta">Las causas comunes de estos accidentes incluyen el exceso de velocidad, fatiga, distracciones, condiciones climáticas adversas, desobedecer normas de tráfico y problemas técnicos del vehículo. Muchas de estas causas son prevenibles con una conducción responsable y prácticas seguras en el tráfico.</p>
+
+        <p id="002" class="pregunta">Relación con la Jornada Laboral</p>
+        <p class="respuesta">Los factores de riesgo están estrechamente relacionados con la jornada laboral, incluyendo horarios de trabajo, fatiga, distracciones relacionadas con el trabajo, presión por llegar a tiempo y desplazamientos largos. La concienciación sobre la seguridad vial y las políticas de seguridad laboral son fundamentales para mitigar estos riesgos.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-07">RESPONSABILIDADES Y OBLIGACIONES</h2>
+
+        <p id="003" class="pregunta">Responsabilidades de los Empleadores</p>
+        <p class="respuesta">Los empleadores tienen la responsabilidad de informar, evaluar riesgos, establecer horarios razonables, proporcionar capacitación en seguridad vial y mantener vehículos de la empresa. También deben fomentar el uso de transporte público, seguir políticas de incentivos seguros y colaborar con autoridades locales para promover la cultura de seguridad.</p>
+
+        <p id="004" class="pregunta">Derechos y Obligaciones de los Trabajadores</p>
+        <p class="respuesta">Los trabajadores tienen derechos como la seguridad en el trabajo y la compensación por lesiones. Sus obligaciones incluyen cumplir normas de tráfico, conducir de manera segura, notificar incidentes, usar equipos de seguridad y cooperar con políticas de seguridad.</p>
+
+        <p id="005" class="pregunta">Papel de las ART (Aseguradoras de Riesgos del Trabajo)</p>
+        <p class="respuesta">Las ART en Argentina cubren accidentes laborales y enfermedades profesionales, proporcionando atención médica, reconocimiento y pago de indemnizaciones. También se encargan de la prevención de riesgos laborales y colaboran en la gestión de siniestros. La colaboración entre empresas y organismos gubernamentales, incluyendo las ART, es esencial para mejorar la seguridad vial y prevenir accidentes "in itinere".</p>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div class="contenedorTemas">
+    <h2 id="Tema-01-0"></h2>
+
+    <p id="" class="pregunta"></p>
+    <p class="respuesta"></p>
+
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086.jpg">
+    </div>
+</div-->

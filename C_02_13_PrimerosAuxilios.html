@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Primeros auxilios">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Primeros auxilios</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_13_PrimerosAuxilios">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="temas">Ingeniería Industrial</p>
+    <p class="temas">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Primeros auxilios</h1>
+    <div id="menu">
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgoeneltrabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_RiesgoMecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion.html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+                <li class="dropdown-2"><a href="C_02_06_PrevencionYControlDeIncendios.html">06- PREVENCION Y CONTROL DE INCENDIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_07_AccidentesInItinire.html">07- ACCIDENTES IN-ITINIRE</a></li>
+                <li class="dropdown-2"><a href="C_02_08_Ergonomia.html">08- ERGONOMIA</a></li>
+                <li class="dropdown-2"><a href="C_02_09_EquiposMovilesDeCarga copy.html">09- EQUIPOS MOVILES DE CARGA </a></li>
+                <li class="dropdown-2"><a href="C_02_10_MetodologiaInvestigacionAccidenntes.html">10- METODOLOGIA DE INVESTIGACION DE ACCIDENTES</a></li>
+                <li class="dropdown-2"><a href="C_02_11_SeñalizacionYColor.html">11- SEÑALIZACION Y COLOR</a></li>
+                <li class="dropdown-2"><a href="C_02_12_TrabajosAltoRiesgo.html">12- TRABAJOS DE ALTO RIESGO</a></li>
+                <li class="dropdown-2"><a href="C_02_13_PrimerosAuxilios.html">13- PRIMEROS AUXILIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_14_AparatosSometidosAPresion.html">14- APARATOS SOMETIDOS A PRESION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas"></div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-01">DEFINICIÓN</h2>
+        <p class="respuesta">Acciones que realiza un socorrista sobre la persona herida, inconsciente o enferma en el lugar donde ha ocurrido el accidente, hasta la llegada del personal especializado. No son tratamientos médicos, son acciones de emergencia.</p>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">SECUENCIA PAS</h2>
+        <p id="001" class="pregunta">PROTEGER</p>
+        <p class="respuesta">A uno mismo</p>
+        <p class="respuesta">A la victima</p>
+        <p class="respuesta">Evitar nuevas victimas</p>
+        <p class="respuesta">Requiere evaluación general y de la victima</p>
+
+        <p id="002" class="pregunta">AVISAR (Pedir auxilio)</p>
+        <p class="respuesta">Numero de emergencia, policía, bomberos, defensa civil, prefectura, ambulancia, emergencias.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/154.jpg">
+        </div>
+
+        <p id="003" class="pregunta">SOCORRER</p>
+        <p class="respuesta">Esta es la finalidad principal de los primeros auxilios, pero para hacerlo correctamente previamente hace falta capacitarse y conocer algunos aspectos generales</p>
+
+        <p id="004" class="pregunta">Consideraciones generales</p>
+        <p class="respuesta">Evaluar la situación antes de actuar. Asegurarse de que no exista riesgo al acercarse a la víctima.</p>
+        <p class="respuesta">Procurar que un adulto responsable permanezca en el sitio, brindando ayuda hasta que llegue la asistencia especializada.</p>
+        <p class="respuesta">No administrar medicación. No mover a la víctima que está severamente lesionada, salvo en situaciones de riesgo mayor o que sea absolutamente necesario.</p>
+
+        <p id="005" class="pregunta">Consejos generales</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/155.jpg">
+        </div>
+
+        <p id="005" class="pregunta">Prioridad de accionar</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/156.jpg">
+        </div>
+
+        <p id="006" class="pregunta">PLS (Posición Lateral de Seguridad)</p>
+        <p class="respuesta">Es la postura estándar de espera y transporte para un accidentado inconsciente.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/157.jpg">
+        </div>
+
+        <p id="007" class="pregunta">Ventajas</p>
+        <p class="respuesta">Evita que en el caso de producirse vómitos, estos sean aspirados a las vías respiratorias.</p>
+        <p class="respuesta">-Evita también que la lengua obstruya las vías aéreas superiores.</p>
+        <p class="respuesta">-Permite valorar la respiración y el pulso.</p>
+        <p class="respuesta">-Esta postura es totalmente estable, es decir, el accidentado “no rodará” porque está anclado con el codo y la rodilla.</p>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-03">HERIDAS</h2>
+    <p class="respuesta">Alteración de la continuidad normal de los tejidos blandos del cuerpo debido a agentes causantes de heridas.</p>
+    <p class="respuesta">Principios generales para el tratamiento de heridas externas: </p>
+    <p class="respuesta">Detener la hemorragia.</p>
+    <p class="respuesta">Evitar contaminación e infección.</p>
+    <p class="respuesta">Dar atención para shock.</p>
+    <p class="respuesta">Obtener asistencia médica. </p>
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/158.jpg">
+    </div>
+    
+    <p id="008" class="pregunta">Primeros auxilios para heridas</p>
+    <p class="respuesta">Lavarse las manos </p>
+    <p class="respuesta">Calzado de guantes descartables </p>
+    <p class="respuesta">Evite hablar, toser o estornudar al momento de tratar una herida</p>
+    <p class="respuesta">Lavar la herida y sus alrededores con suficiente agua limpia</p>
+    <p class="respuesta">Aplicar antisépticos (iodo ,”pervinox”, agua oxigenada). </p>
+    <p class="respuesta">Seque la herida con una gasa estéril o un paño limpio </p>
+    <p class="respuesta">Cubra la herida con gasa estéril </p>
+    <p class="respuesta">No retirar elementos incrustados</p>
+    <p class="respuesta">En caso de desprendimiento de vísceras, no intentar introducirlas nuevamente. </p>
+    <p class="respuesta">Vacunación necesaria</p>
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/159.jpg">
+    </div>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-04">HEMORRAGIAS</h2>
+        <p class="respuesta">Es la salida de sangre incontrolada de cualquier vaso sanguíneo.</p>
+        <p class="respuesta">Pueden ser internas, externas o mixtas.</p>
+        <p class="respuesta">Clasificación según el sangrado (externas).</p>
+        <p class="respuesta">Cómo actuar</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/160.jpg">
+        </div>
+        <p id="009" class="pregunta">Cómo detener una hemorragia externa</p>
+        <p class="respuesta">Si no cede el sangrado, aplicar compresión sobre la arteria que irriga la zona (ej, arteria humeral para el brazo, femoral para extremidades inferiores)</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/161.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/162.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/163.jpg">
+        </div>
+        <p id="010" class="pregunta">Torniquete: último recurso</p>
+        <p class="respuesta">Reservado sólo a los casos donde la hemorragia es tan grave que los métodos anteriores han fallado y/o situaciones donde la vida del paciente está siendo amenazada.</p>
+        <p class="respuesta">1.	Utilice una banda de tela de por lo menos 4 cm de ancho.</p>
+        <p class="respuesta">2.	Coloque la venda varios centímetros por encima de la herida.</p>
+        <p class="respuesta">3.	Dé dos vueltas alrededor de la extremidad</p>
+        <p class="respuesta">4.	Haga un nudo simple en los extremos de la venda. </p>
+        <p class="respuesta">5.	Coloque una vara corta y fuerte.</p>
+        <p class="respuesta">6.	Gire la vara lentamente hasta controlar la hemorragia. </p>
+        <p class="respuesta">7.	Suelte una vez cada 7 minutos. </p>
+        <p class="respuesta">8.	Traslade inmediatamente al centro asistencial.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/164.jpg">
+        </div>
+        <p id="011" class="pregunta">Hemorragia interna y casos particulares</p>
+        <p class="respuesta">Los casos de hemorragia interna son una emergencia siempre.</p>
+        <p class="respuesta">Se sospecha de su presencia por cómo se produjo la lesión y síntomas.</p>
+        <p class="respuesta">Sangrado Nasal: No suele representar riesgos.</p>
+        <p class="respuesta">Hemorragia por el oído: Casos de emergencia graves.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/165.jpg">
+        </div>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-05">FRACTURAS</h2>
+        <p class="respuesta">Es una ruptura parcial o total de un hueso del cuerpo humano</p>
+        <p class="respuesta">Cuando la fractura es parcial, se denomina fisura. cuando es total, puede darse de 2 maneras distintas:</p>
+        <p class="respuesta">FRACTURA CERRADA: el hueso se encuentra roto pero la piel no presenta heridas.</p>
+        <p class="respuesta">FRACTURA ABIERTA: el hueso se encuentra roto y la piel se encuentra atravesada o herida de tal manera que expone la fractura.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/166.jpg">
+        </div>
+        <p class="respuesta">Las fracturas se producen por el sometimiento del hueso a una fuerza mayor a la que puede resistir, en especial si se produce una torsión.</p>
+        <p class="respuesta">Esto ocurre en eventos como golpes, caídas, traumatismos y por causas especiales como tensiones musculares acumuladas o enfermedades óseas.</p>
+        <p class="respuesta">Si se produce una fractura, la zona de la misma determinará las acciones que deben llevarse adelante para asistir a la víctima hasta que reciba atención médica.</p>
+        <p class="respuesta">Si se produce en el cráneo y/o columna vertebral, no debe movilizarse a la víctima salvo situaciones de riesgo, se debe impedir que sea movilizada por otras personas y se debe inmovilizar la cabeza.</p>
+        <p class="respuesta">Si se produce en el resto del cuerpo, se debe inmovilizar la zona afectada con un entablillado o férula. </p>
+        <p class="respuesta">Si la zona afectada es una pierna, puede entablillarse con la pierna sana a través de un vendaje.</p>
+        <p class="respuesta">Si es una fractura expuesta, se debe inmovilizar, sin reducir, tomando las articulaciones por arriba y por debajo.</p>
+        <p class="respuesta">Es fundamental que, en ninguna de las situaciones anteriores, se intente reacomodar el hueso afectado.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/167.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/168.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/169.jpg">
+        </div>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-06">QUEMADURAS</h2>
+        <p class="respuesta">Son lesiones tisulares producidas por el contacto (o la exposición) de la piel con elementos o sustancias a temperaturas extremas.</p>
+        <p class="respuesta">Dañan principalmente la piel o las mucosas, propiciando, a veces, defectos estéticos.</p>
+        <p class="respuesta">Pueden ser producidas por energía térmica, eléctrica, química o electromagnética.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/170.jpg">
+        </div>
+        <p id="012" class="pregunta">Agente causante</p>
+        <p class="respuesta">Quemaduras térmicas: Causadas por metales calientes, líquidos hirvientes, vapor o llama.</p>
+        <p class="respuesta">Quemaduras por radiación: Rayos UV, rayos X.</p>
+        <p class="respuesta">Quemaduras químicas: Sustancias ácidas, alcalinas, detergentes o disolventes.</p>
+        <p class="respuesta">Quemaduras de origen eléctrico:  Corriente eléctrica que circula por la piel.</p>
+        <p id="013" class="pregunta">Tamaño: Regla de los 9s</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/171.jpg">
+        </div>
+        <p id="014" class="pregunta">Gravedad según porcentaje del cuerpo quemado</p>
+        <p class="respuesta">URGENCIA > 10-15%</p>
+        <p class="respuesta">GRAVES > 50%</p>
+        <p class="respuesta">MORTALES > 75%</p>
+        <p id="015" class="pregunta">Ubicación</p>
+        <p class="respuesta">Lo anterior queda anulado en caso de que se trate de zonas sensibles como Ojos, Boca, Manos (palma y anterior), Cuello, Áreas de flexión o Genitales.</p>
+        <p class="respuesta">Siempre van a requerir atención médica, no importa la gravedad.</p>
+        <p id="016" class="pregunta">¿Qué es la piel?</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/172.jpg">
+        </div>
+        <p class="respuesta">Área: 1,5-2 m2</p>
+        <p class="respuesta">Espesor: 1,5-4 mm</p>
+        <p class="respuesta">Peso: 3-4 kg.</p>
+        <p id="017" class="pregunta">Tipología: Según su gravedad</p>
+        <p class="respuesta">Quemadura de PRIMER GRADO (A): EPIDERMIS. Enrojecimiento, inflamación leve, dolor. Acción poco prolongada de superficies calientes o radiación intensa.</p>
+        <p class="respuesta">Quemadura de SEGUNDO GRADO (AB): DERMIS. Rojo y zonas blancas, inflamación, aspecto húmedo, AMPOLLAS, dolor variable. Accidentes con combustibles o líquidos calientes.</p>
+        <p class="respuesta">Quemadura. De TERCER GRADO (B): HIPODERMIS. Rojo intenso, blanco (y hasta negro), deja al descubierto tejido muscular y óseo, indoloras, apariencia curtida y seca, carbonización. Exposición a la llama directa, ropa encendida o electricidad. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/173.jpg">
+        </div>
+        <p id="018" class="pregunta">Primeros auxilios en quemaduras</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/174.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/175.jpg">
+        </div>
+        <p id="019" class="pregunta">Particularidades según agente causante</p>
+        <p class="respuesta">Ropa encendida: Maniobra de la croqueta. Sábana mojada.</p>
+        <p class="respuesta">Radiación solar: Considerar efectos de insolación.</p>
+        <p class="respuesta">Quemaduras eléctricas: Punto de entrada y salida.</p>
+        <p class="respuesta">Quemaduras químicas: Lavado abundante. Frotar. Remover ropa. HOJA DE SEGURIDAD. Atención médica inmediata.</p>
+        <p id="020" class="pregunta">Recomendaciones generales</p>
+        <p class="respuesta">No usar agua helada ni aplicar hielo.</p>
+        <p class="respuesta">No usar remedios caseros (Aloe vera)</p>
+        <p class="respuesta">No aplicar agua a presión</p>
+        <p class="respuesta">Elevar la zona quemada si es posible.</p>
+        <p class="respuesta">Vendar dedos por separado.</p>
+        <p class="respuesta">Quitar anillos, pulseras, collares y accesorios</p>
+        <p class="respuesta">¡Cuidado con el pelo!</p>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-07">SALPICADURAS EN LOS OJOS</h2>
+        <p class="respuesta">Es el contacto de una sustancia química ácida o alcalina con las partes expuestas de los ojos, derivando en una quemadura.</p>
+        <p class="respuesta">Pueden ocurrir en múltiples lugares y con distintas sustancias.</p>
+        <p class="respuesta">Lugares y sustancias más comunes en cada uno:                      </p>
+        <p class="respuesta">Hogar (productos de limpieza, alcohol, vinagre, limón)</p>
+        <p class="respuesta">Laboratorios (reactivos de trabajo)</p>
+        <p class="respuesta">Construcciones (polvos de yeso y de cemento)</p>
+        <p class="respuesta">Talleres e industrias (soda cáustica, solventes, pinturas)</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/176.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/177.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/178.jpg">
+        </div>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/179.jpg">
+        </div>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-08">PARO Y ATAQUE CARDÍACO</h2>
+        <p id="021" class="pregunta">Paro cardíaco</p>
+        <p class="respuesta">Ocurre cuando el corazón deja de latir repentinamente, deteniendo también el suministro de sangre al cerebro y al resto del cuerpo.</p>
+        <p class="respuesta">Puede producirse un paro respiratorio y el corazón funcionará durante 2 a 3 minutos hasta que cierta cantidad de sus células mueran a causa de la falta de oxígeno, luego sobreviene el paro cardiaco.</p>
+        <p class="respuesta">Dos conceptos: MUERTE CLÍNICA-MUERTE BIOLÓGICA.</p>
+        <p class="respuesta">Para que la atención del paro cardio-respiratorio sea efectiva debe realizarse dentro del lapso de la muerte clínica.</p>
+        <p id="022" class="pregunta">Ataque cardíaco</p>
+        <p class="respuesta">Se produce cuando una de las arterias coronarias se obstruye o tapan, lo que impide la llegada de oxígeno al corazón.</p>
+        <p id="023" class="pregunta">Factores de riesgo de ataque cardíaco</p>
+        <p class="respuesta">Estos favorecen la obstrucción de las arterias coronarias, vasos sanguíneos que alimentan al corazón.</p>
+        <p class="respuesta">MODIFICABLES:</p>
+        <p class="respuesta">-Tabaquismo</p>
+        <p class="respuesta">-Sedentarismo</p>
+        <p class="respuesta">-Estrés</p>
+        <p class="respuesta">-Obesidad</p>
+        <p class="respuesta">-Hipercolesterolemia</p>
+        <p class="respuesta">-Hipertensión</p>
+        <p class="respuesta">-Diabetes</p>
+        <p class="respuesta">NO MODIFICABLES:</p>
+        <p class="respuesta">-Hereditarios</p>
+        <p class="respuesta">-Sexo</p>
+        <p class="respuesta">-Edad</p>
+    </div>
+
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-09">RCP</h2>
+        <p class="respuesta">Técnica para salvar vidas, se realizan maniobras de reanimación cardio-pulmonar que combinan la respiración boca a boca y las compresiones en el tórax. se trata de sustituir el latido del corazón que se ha parado, así como la ventilación espontánea del aire en los pulmones.</p>
+        <p id="024" class="pregunta">PASOS para hacer un RCP</p>
+        <p class="respuesta">1)	COMPROBAR SI EL ENTORNO ES SEGURO.</p>
+        <p class="respuesta">2)	COMPROBAR SI LA VÍCTIMA SE ENCUENTRA CONSCIENTE.</p>
+        <p class="respuesta">3)	ABRIR LA VÍA AÉREA MEDIANTE MANIOBRA FRENTE-MENTÓN.</p>
+        <p class="respuesta">4)	VALORAR RESPIRACIÓN MEDIANTE VOS (Ver, Oír, Sentir)</p>
+        <p class="respuesta">5)	EN CASO DE DISPONER DE DESFIBRILADOR, USARLO, DE LO CONTRARIO: ALTERNAR 30 COMPRESIONES Y 2 INSUFLACIONES.</p>
+        <p id="025" class="pregunta">¿Cuándo finalizar la maniobra RCP?</p>
+        <p class="respuesta">Hasta que la víctima inicie la respiración espontánea, lleguen los servicios de emergencia o en caso de agotamiento. Si, tras treinta minutos de reanimación, la persona no ha recuperado la circulación y la ventilación espontánea, también debe detenerse. </p>
+        <p id="026" class="pregunta">Compresiones</p>
+        <p class="respuesta">-Arrodillarse frente a la víctima.</p>
+        <p class="respuesta">-Brazos extendidos, sin doblar codos, una mano sobre la otra.</p>
+        <p class="respuesta">-Posicionar manos en la mitad inferior del esternón, aproximadamente entre pezones.</p>
+        <p class="respuesta">-Comprimir el centro del pecho.</p>
+        <p class="respuesta">-Treinta compresiones seguidas, luego hacer dos insuflaciones.</p>
+        <p id="027" class="pregunta">Insuflaciones</p>
+        <p class="respuesta">-Mano sobre la frente de la víctima y con los dedos de esa mano cerrar la nariz.</p>
+        <p class="respuesta">-Con la otra mano tirar del mentón y abrir boca.</p>
+        <p class="respuesta">- Colocar nuestra boca sobre la de la víctima, y soplar aproximadamente un minuto, que es cuando el tórax se eleva.</p>
+        <p class="respuesta">-Repetir una vez más para tener dos insuflaciones por ciclo.</p>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-10">MANIOBRA DE HEIMLICH</h2>
+        <p class="respuesta">Consiste en la aplicación súbita de una presión sobre el abdomen de la víctima. El aumento de presión abdominal comprime el diafragma, éste a los pulmones, que expulsan aire a gran velocidad y presión despejando las vías respiratorias</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/180.jpg">
+        </div>
+        <p id="028" class="pregunta">Procedimiento</p>
+        <p class="respuesta">-Situarse atrás del paciente</p>
+        <p class="respuesta">-Rodear su cintura con los brazos </p>
+        <p class="respuesta">-Colocar un puño entre el ombligo y la caja torácica, con el pulgar contra el abdomen</p>
+        <p class="respuesta">-Cubrir el puño con la otra mano y presionar fuerte y de forma brusca hacia atrás y hacia arriba</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/181.jpg">
+        </div>
+        <p class="respuesta">Las maniobras de Heimlich y otras deben usarse solo cuando la obstrucción de la vía aérea es grave y la vida está en peligro. Si la persona que se ahoga puede hablar, toser con fuerza o respirar en forma adecuada, no se requiere ninguna intervención</p>
+        <p id="029" class="pregunta">Complicaciones</p>
+        <p class="respuesta">Lesión o fractura costal</p>
+        <p class="respuesta">Lesión de los órganos internos</p>
+        <p id="030" class="pregunta">Contraindicaciones</p>
+        <p class="respuesta">Los pacientes obesos y las mujeres al final del embarazo deben recibir compresiones torácicas en lugar de abdominales</p>
+        <p class="respuesta">Los niños < 20 kg (< 5 años) solo deben recibir compresiones moderadas y golpes en la espalda</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/182.jpg">
+        </div>
+        <p id="031" class="pregunta">¿Qué pasa si la persona que se atraganta está sola?</p>
+        <p class="respuesta">-No perder la calma y respirar por la nariz</p>
+        <p class="respuesta">-Si puede toser, toser inclinándose hacia delante para tratar de expulsar el objeto</p>
+        <p class="respuesta">-Si no puede toser, realizarse a si misma la maniobra de Heimlich. Puede ayudarse con el respaldo de una silla o de algún otro apoyo sólido para agarrarlo con las manos y presionar con fuerza hacia dentro y hacia arriba.</p>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-10">BOTIQUÍN DE PRIMEROS AUXILIOS</h2>
+        <p class="respuesta">Se trata de un conjunto de elementos que permiten dar una primera respuesta ante una emergencia.</p>
+        <p class="respuesta">El botiquín de Primeros Auxilios no debería tener medicamentos sino materiales genéricos de uso común para todas las personas.</p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/183.jpg">
+        </div>
+    </div>
+    
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-11">NORMATIVA</h2>
+        <p class="respuesta">RESOLUCIÓN 908/2009: PROGRAMA NACIONAL DE REANIMACIÓN NEONATAL Y PEDIÁTRICA</p>
+        <p class="respuesta">LEY N° 26.835: PROMOCIÓN Y CAPACITACIÓN EN LAS TÉCNICAS BÁSICAS DE PREANIMACIÓN CARDIOPULMONAR BÁSICAS</p>
+        <p class="respuesta">LEY N° 27.159: SISTEMA DE PREVENCIÓN INTEGRAL DE MUERTE SÚBITA</p>
+    </div>
+    
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div class="contenedorTemas">
+    <h2 id="Tema-01-0"></h2>
+
+    <p id="" class="pregunta"></p>
+    <p class="respuesta"></p>
+
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086.jpg">
+    </div>
+</div-->

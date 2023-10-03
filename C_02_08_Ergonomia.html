@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <meta name="copyright" content="iglvnl">
+    <meta name="author" content="Ignacio">
+    <meta name="audience" content="mature">
+    <meta name="description" content="Sitio web que ofrece material de estudio completo y actualizado para estudiantes de Ingeniería Industrial. Recursos, tutoriales y ejercicios prácticos">
+    <meta name="keyword" content="Ingenieria industrial, material de estudio, Ergonomia">
+    <meta name="robots" content="index, all, follow">
+    <link rel="stylesheet" href="Themes-styles.css">
+    <link rel="icon" type="image/x-icon" href="Icons/IconoPagina001.png">
+    <title>Ergonomia</title>
+</head>
+<body>
+    <div id="CuadroDonacion">
+        <img id="cerrar1" src="Icons/close.svg" alt="img">
+        <a href="http://mpago.la/28SAJCw">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 500$ ARS</p>
+        </a>
+        <a href="http://mpago.la/2wFT3Sc">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 1000$ ARS</p>
+        </a>
+        <a href="http://mpago.la/1N2PWFQ">
+            <img src="Imgs/MP.jpeg" alt="mp">
+            <p>Donar 2000$ ARS</p>
+        </a>
+    </div>
+    <div id="CuadroMail">
+        <img id="cerrar2" src="Icons/close.svg" alt="img">
+        <form id="miFormulario"  action="https://formsubmit.co/iglvnl.mnj@gmail.com" method="POST">
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" name="name" id="nombre" required><br><br>
+            
+            <label for="email">Escribe tu email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            
+            <input id="enviar" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="https://cienciaingenieria.netlify.app/C_02_08_Ergonomia">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    <P id="referencia"></P>
+    <p class="temas">Ingenieria Industrial</p>
+    <p class="temas">Material de estudio</p>
+    <p id="materia">Seguridad Ambiental e Industrial</p>
+    <h1 id="tema">Ergonomia</h1>
+    <div id="menu">
+        <img id="menuImg" src="Icons/Menu.svg" title="Menu">
+    </div>
+
+    <div id="cont-up">
+        <a id="imprimir">
+            <img src="Icons/Imprimir.svg" title="Imprimir pagina">
+        </a>
+        <a id="donaciones">
+            <img src="Icons/donaciones.svg" title="Donaciones">
+        </a>
+        <a id="mail">
+            <img src="Icons/Mail.svg" title="Contacto">
+        </a>
+        <a id="help">
+            <img src="Icons/Ayuda.svg" title="Ayuda">
+        </a>
+        <a href="#referencia" id="principio">
+            <img src="Icons/up.svg" title="ir al principio" onclick="smoothScroll(event, 'referencia')">
+        </a>
+    </div>
+    <a href="#referencia_final" id="final">
+        <img src="Icons/down.svg" title="ir al final" onclick="smoothScroll(event, 'referencia_final')">
+    </a>
+    <div id="cont-btn-volver">
+        <a href="B_02_SeguridadAmbInds.html" id="volver_materia">
+            <img src="Icons/materia.svg"  title="volver al menu de temas">
+        </a>
+        <nav class="navbar-2">
+            <ul class="navbar-list-2">
+                <li class="dropdown-2"><a href="C_02_01_Riesgoeneltrabajo.html">01- RIESGO EN EL TRABAJO</a></li>
+                <li class="dropdown-2"><a href="C_02_02_RiesgoMecanico.html">02- RIESGO MECANICO</a></li>
+                <li class="dropdown-2"><a href="C_02_03_RiesgoQuimico.html">03- RIESGO QUIMICO</a></li>
+                <li class="dropdown-2"><a href="C_02_04_Ruido.html">04- RUIDO Y CONTAMINACION SONORA</a></li>
+                <li class="dropdown-2"><a href="C_02_05_RiesgoElectricoIluminacion.html">05- RIESGO ELECTRICO E ILUMINACION</a></li>
+                <li class="dropdown-2"><a href="C_02_06_PrevencionYControlDeIncendios.html">06- PREVENCION Y CONTROL DE INCENDIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_07_AccidentesInItinire.html">07- ACCIDENTES IN-ITINIRE</a></li>
+                <li class="dropdown-2"><a href="C_02_08_Ergonomia.html">08- ERGONOMIA</a></li>
+                <li class="dropdown-2"><a href="C_02_09_EquiposMovilesDeCarga copy.html">09- EQUIPOS MOVILES DE CARGA </a></li>
+                <li class="dropdown-2"><a href="C_02_10_MetodologiaInvestigacionAccidenntes.html">10- METODOLOGIA DE INVESTIGACION DE ACCIDENTES</a></li>
+                <li class="dropdown-2"><a href="C_02_11_SeñalizacionYColor.html">11- SEÑALIZACION Y COLOR</a></li>
+                <li class="dropdown-2"><a href="C_02_12_TrabajosAltoRiesgo.html">12- TRABAJOS DE ALTO RIESGO</a></li>
+                <li class="dropdown-2"><a href="C_02_13_PrimerosAuxilios.html">13- PRIMEROS AUXILIOS</a></li>
+                <li class="dropdown-2"><a href="C_02_14_AparatosSometidosAPresion.html">14- APARATOS SOMETIDOS A PRESION</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="A_00_ingenieria_industrial.html" id="inicio">
+        <img src="Icons/home.svg" title="volver al menu de materias">
+    </a>
+    <div id="contenedor-subtemas"></div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-01">DEFINICIÓN DE ERGONOMÍA</h2>
+        <p class="respuesta">Es una ciencia multidisciplinaria, responsable de promover y mantener el mayor grado posible de bienestar físico, mental y social de los trabajadores en todas las profesiones; prevenir todo el daño causado a la salud de éstos por las condiciones de trabajo (Enciclopedia de la OIT). </p>
+        <p class="respuesta">Es la ciencia que busca optimizar la interacción entre el trabajador, máquina y ambiente de trabajo con el fin de adecuar los puestos, ambientes y la organización del trabajo a las capacidades y limitaciones de los trabajadores, con el fin de minimizar el estrés y la fatiga y con ello incrementar el rendimiento y la seguridad del trabajador. (RESOLUCIÓN MINISTERIAL 375208-TR) </p>
+        <p class="respuesta">Para la ergonomía la tarea consiste, por lo tanto, en crear las condiciones más confortables para el trabajador en lo que respecta a Iluminación, confort térmico, ruido, carga física de trabajo y carga mental de trabajo. </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-02">ILUMINACIÓN</h2>
+        <p class="respuesta">Una iluminación inadecuada puede tener un impacto negativo en la salud, la comodidad y el rendimiento. Casi el 80% de la información que recibimos de nuestro entorno proviene de la vista. Desde el punto de vista de la seguridad, la capacidad y confort visuales son importantes para prevenir accidentes relacionados a la difícil identificación de objetos y riesgos asociados a maquinarias. La iluminación también tiene un efecto sobre el estado mental y el nivel de fatiga del trabajador.  </p>
+        <p class="respuesta">Factores que determinan el confort visual: </p>
+        <p class="respuesta">Iluminación uniforme </p>
+        <p class="respuesta">Luminancia óptima </p>
+        <p class="respuesta">Ausencia de brillos deslumbrantes </p>
+        <p class="respuesta">Condiciones de contraste adecuadas </p>
+        <p class="respuesta">Colores correctos </p>
+        <p class="respuesta">Ausencia de efectos estroboscópicos  </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-03">RUIDO</h2>
+        <p class="respuesta">La exposición de los trabajadores a niveles sonoros elevados genera todo tipo de consecuencias en la salud. El grado de deterioro de la audición dependerá del nivel del ruido, de la duración de la exposición y de la sensibilidad del trabajador en cuestión.  </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-04">CONFORT TÉRMICO</h2>
+        <p class="respuesta">Es la sensación térmica experimentada por el ser humano relacionada con el equilibrio térmico global de su cuerpo (ISO 7730:2005). Es decir, el equilibrio que hay entre el calor producido por el metabolismo y las formas de disipación de este. </p>
+        <p class="respuesta">La sensación de incomodidad puede estar ocasionada por frío o calor: </p>
+        <p class="respuesta">Si la temperatura de la piel cae por debajo de los 20 grados fruto del contacto con el ambiente o materiales fríos, puede perjudicar el sentido del tacto y reducir la destreza de la mano. Tocar herramientas congeladas puede producir lesiones agudas por contacto. </p>
+        <p class="respuesta">El calor ambiental acompañado por alta humedad puede incrementar la tensión fisiológica durante el esfuerzo, ya que dificulta la tarea del cuerpo para disipar el calor generado durante la actividad muscular.  Sostener herramientas calientes o el contacto con superficies sin guantes puede generar quemaduras.</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-05">CARGA FÍSICA DE TRABAJO</h2>
+        <p class="respuesta">Tiene que ver con todos los requerimientos físicos a los que se ve sometida la persona durante el trabajo. Aquí entran en juego cuestiones como la postura de trabajo, los movimientos que se realizan, la aplicación de fuerzas o la manipulación de cargas.  </p>
+        <p class="respuesta">Los trastornos musculo-esqueléticos (TME) se refieren a daños en los músculos, nervios, tendones, huesos y articulaciones fruto de la exposición a actividades como: </p>
+        <p class="respuesta">Movimientos repetitivos prolongados </p>
+        <p class="respuesta">Posturas forzadas </p>
+        <p class="respuesta">Esfuerzo físico excesivo </p>
+        <p class="respuesta">Vibraciones por manipulación de máquinas </p>
+        <p class="respuesta">Estrés de contacto </p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-06">CARGA MENTAL DE TRABAJO</h2>
+        <p class="respuesta">El nivel de actividad mental necesario para desarrollar el trabajo. Cuando una persona se siente cansada, disminuye la productividad y aumentan los errores. La persona puede sufrir de fatiga mental o estrés. Influyen factores tales como: </p>
+        <p class="respuesta">La cantidad y complejidad de la información a procesar </p>
+        <p class="respuesta">El nivel de procesamiento que requiere la respuesta </p>
+        <p class="respuesta">El tiempo disponible para realizar la tarea</p>
+        <p class="respuesta">Condiciones ambientales (ruido, iluminación, temperatura) </p>
+        <p class="respuesta">Clima laboral</p>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-07">NORMATIVA VIGENTE</h2>
+        <p class="respuesta">El Ministerio de Trabajo, Empleo y Seguridad Social (M.T.E y S.S.)  y la Superintendencia de Riesgos del Trabajo (SRT) en su resolución 886/15 considera que: </p>
+        <p class="respuesta">Inciso a) del apartado 2 del artículo 1 de la Ley 24.557 del año 1995 sobre Riesgos del Trabajo, establece como objetivo la reducción de la siniestralidad a través de la prevención de los riesgos laborales. La misma establece que tanto los empleadores, los trabajadores y las Aseguradoras de Riesgo del Trabajo (A.R.T) están obligados a adoptar medidas legalmente previstas para prevenir de manera eficaz los riesgos en el trabajo. </p>
+        <p class="respuesta">Además, el artículo 1 de la ley 19.587 del año 1972 de Seguridad e Higiene en el Trabajo establece que sus disposiciones se aplicaran a todos los establecimientos y explotaciones, cualesquiera sean su naturaleza.  Qué, asimismo, los artículos 8° y 9° de la citada ley establecen que el empleador deberá adoptar y poner en práctica las medidas adecuadas de higiene y seguridad para proteger la vida y la integridad de los trabajadores.  </p>
+        <p class="respuesta">En el Anexo I de la resolución 295/03 del Ministerio de Trabajo, Empleo y Seguridad Social (M.T.E y S.S.) Reconoce a los trastornos músculo esqueléticos relacionados con el trabajo como un problema importante de salud laboral que puede gestionarse utilizando un programa de ergonomía integrado para la salud y la seguridad. </p>
+        <p class="respuesta">Que los factores de riesgo de incidencia indirecta, como el confort térmico, las vibraciones, el estrés de contacto y otras, deben considerarse como factores que coadyuvan a la generación de trastornos músculo esqueléticos, por lo que deben ser tenidos en cuenta al estimar el riesgo de la tarea e identificar las medidas preventivas específicas. Que la prevención de accidentes de trabajo y enfermedades profesionales, y la obtención de los niveles óptimos de rendimiento, sólo son posibles si el equipo, los lugares de trabajo, los productos y los métodos de trabajo se diseñan en función de las posibilidades y limitaciones humanas, es decir, aplicando los principios de la ergonomía. </p>
+        <p class="respuesta">Que para ello es pertinente aclarar que la evaluación de factores de riesgos debe realizarse con los métodos ya citados por la Resolución M.T.E. y S.S. N° 295/03 y/u otros métodos de evaluación ergonómica reconocidos internacionalmente, en cuanto se adapten a los riesgos que se propone evaluar. Que por lo antedicho se hace necesaria la unificación de criterios entre los profesionales intervinientes para la prevención de estas enfermedades, desde una metodología de abordaje de origen multicausal. Que, en este sentido, se hace necesario el uso de protocolos estandarizados, para facilitar la prevención de las condiciones y medio ambiente del puesto de trabajo. Que la evaluación de los factores de riesgo, la identificación de las medidas correctivas y preventivas y el estudio ergonómico, deberán ser realizados por un profesional con conocimientos en ergonomía. </p>
+        <p class="respuesta">Por lo que la Superintendencia de Riesgos del Trabajo resuelve que se apruebe el Protocolo de Ergonomía como herramienta básica para la prevención de trastornos musculo esqueléticos, Hernias inguinales directas, mixtas y crurales, hernia discal lombo-sacra con o sin compromiso radicular que afecte a un solo segmento columnario y varices primitivas bilaterales. </p>
+
+        <p id="001" class="pregunta">Identificación de Riesgos</p>
+        <p class="respuesta">El anexo 1 del Protocolo de Ergonomía está conformado por la planilla número 1 “identificación de Riesgos”, donde se indica: </p>
+        <p class="respuesta">Nombre del sector donde se desarrolla el puesto de trabajo que se quiere analizar con el que la empresa lo identifica </p>
+        <p class="respuesta">Puesto de trabajo del cual se obtiene un producto/servicio que se caracteriza por una etapa de alimentación, una de elaboración y otra de producto o servicio terminado. Cuando los puestos se repiten en igualdad de condiciones solo se analizará a uno de ellos como “testigo” y este representará a todos los demás puestos. Además, cuando el mismo puesto está ocupado por más de un operario se deberá colocar el nombre de cada uno de los empleados que se desempeñan allí.  </p>
+        <p class="respuesta">El conjunto de actividades que los trabajadores realizan como tarea habitual en su jornada laboral. Para esta descripción se consideró que el operario solo realiza tres tareas en su puesto de trabajo, en caso de que sean más se deberán adjuntar las planillas que sean necesarias para las actividades realizadas.  </p>
+        <p class="respuesta">Número de trabajadores que se desempeñan en ese puesto, en caso de tener más de un turno se deberán indicar a todos los trabajadores.  </p>
+        <p class="respuesta">Procedimiento de trabajo escrito (en caso de que exista) en el que se desarrollan las actividades, métodos y medios y los aspectos de salud y seguridad necesarios para poder llevar a cabo la tarea.  </p>
+        <p class="respuesta">Capacitación necesaria para poder desempeñarse en el puesto, si fue o no recibida.  </p>
+        <p class="respuesta">Manifestación temprana y de forma habitual, durante o después de la jornada laboral de algún dolor o molestia asociada a la actividad e identificando la ubicación del síntoma y se registrará en el siguiente cuadro. Se consulta con el colaborador.  </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/103.jpg">
+        </div>
+        <p class="respuesta">Ahora entonces se realiza el primer paso, identificando el puesto de trabajo, las tareas y los factores de riesgo que se presentan de forma habitual en cada una de ellas usando la siguiente tabla.  </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/104.jpg">
+        </div>
+        <p class="respuesta">En las celdas 1, 2 y 3 se debe explicar: </p>
+        <p class="respuesta">Tareas habituales del puesto.</p>
+        <p class="respuesta">Si existe o no los factores de riesgo listados en A, B, C, D, E, F, G, H e I marcando con una X en la casilla que corresponda.</p>
+        <p class="respuesta">Tiempo de exposición estimado para cada uno de los riesgos en las distintas tareas e indicar el nivel de estos. </p>
+        <p class="respuesta">Según la normativa: </p>
+        <p class="respuesta">El nivel de riesgo 1 es tolerable y no considera necesaria la implementación de medidas correctivas y/o preventivas para proteger la salud del operador.  </p>
+        <p class="respuesta">El nivel de riesgo 2 es moderado, en este caso si deberán implantar medidas correctivas y/o preventivas para proteger la salud del trabajador. </p>
+        <p class="respuesta">El nivel de riesgo 3 es no tolerable, por lo que se deberán implantar medidas correctivas y/o preventivas de manera inmediata con el fin de disminuir el nivel de riesgo.  </p>
+        <p class="respuesta">Para los casos en los que no se identifique la presencia de algún factor de riesgo en la tarea se deberá colocar un guion (-). </p>
+        <p class="respuesta">Si alguno de los factores de riesgos se encuentra presente en alguna de las tareas desempeñadas por el trabajador se deberá realizar la Evaluación Inicial de Factores de Riesgo que se identificaron completando la siguiente planilla (usaremos como ejemplo la planilla 2.A, pero se deberá utilizar la que corresponda para cada uno de los riesgos identificados en el paso 1). </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/105.jpg">
+        </div>
+        
+        <p id="002" class="pregunta">Determinación del Nivel de Riesgo</p>
+        <p class="respuesta">En el caso de que todas las respuestas sean NO, se considerará que el riesgo es tolerable y no deberá implantarse ninguna medida correctiva y/o preventiva, como se mencionó anteriormente. En cambio, si alguna respuesta es SI se deberá continuar con el paso 2 “Determinación del Nivel de Riesgo” utilizando la siguiente tabla:  </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/106.jpg">
+        </div>
+        <p class="respuesta">Si todas las respuestas son NO, se considera que el riesgo es tolerable. Si alguna respuesta es SI no se puede presumir que el riesgo es tolerable por lo que se deberá realizar una Evaluación de Riesgos. </p>
+        
+        <p id="003" class="pregunta">Medidas Correctivas y Preventivas</p>
+        <p class="respuesta">Una vez realizada la evaluación de cada uno de los Riesgos, y cuando los mismos obtengan la calificación de 2 o 3 deberán realizarse las Medidas Correctivas y Preventivas (M.C.P) necesarias para proteger la salud de trabajador. Estas están separadas en dos tipos, las generales y las administrativas y de ingeniería. Las mismas deberán ser registradas con su respectivo número de orden en la planilla 3, a continuación:   </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/107.jpg">
+        </div>
+        <p class="respuesta">Algunas medidas de ingeniería que se podrían implementar para reducir algunos de estos riesgos son: </p>
+        <p class="respuesta">Utilizar ayuda mecánica para eliminar o reducir el esfuerzo requerido </p>
+        <p class="respuesta">Seleccionar o diseñar herramientas que reduzcan la fuerza, el tiempo de manejo y transporte de carga.</p>
+        <p class="respuesta">Utilizar asistidores y/o transportadores mecánicos para el manejo de cargas </p>
+        <p class="respuesta">Proporcionar puestos de trabajos que se puedan adaptar a los operarios mejorando la postura de trabajo.  </p>
+        <p class="respuesta">Por otro lado, algunas medidas administrativas podrían ser: </p>
+        <p class="respuesta">La creación de pautas que permitan a los trabajadores realizar pausas en el proceso </p>
+        <p class="respuesta">Adecuar la organización del trabajo para mejorar los tiempos de recuperación dentro del ciclo de trabajo.</p>
+        <p class="respuesta">Implementar un sistema de rotación entre puestos. </p>
+        <p class="respuesta">Finalmente se deberá utilizar la planilla 4 “Matriz de Seguimiento de Medidas Preventivas” donde se deberá registrar las implementaciones administrativas y de ingeniería propuestas anteriormente indicando la fecha de implementación de cada una de ellas para cada número de Medida Correctiva y Preventiva identificada en la planilla 3. </p>
+        <div class="contenedor-img">
+            <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/108.jpg">
+        </div>
+    </div>
+    
+    <div class="contenedorTemas">
+        <h2 id="Tema-01-08">CONCLUSIONES Y RECOMENDACIONES</h2>
+        <p class="respuesta">De acuerdo a el análisis desarrollado siguiendo requerimientos legales vigentes, como ser la resolución 886/15 y demás resoluciones aplicables y /o artículos teóricos vinculados a la actividad en materia de Higiene y Seguridad, el establecimiento presento varios aspectos a mejorar. </p>
+        <p class="respuesta">Analizado el sector y puesto de trabajo de la organización, teniendo en cuenta las imágenes y lo mencionado anteriormente en el presente informe, se considera de suma importancia la implementación del manual con procedimientos de trabajo seguro específicos de la actividad, formularios de control de equipos, herramientas, etc. Sera una herramienta fundamental para el mejoramiento de las condiciones y el buen desarrollo de las actividades del personal. </p>
+        <p class="respuesta">La capacitación siguiendo un cronograma anual debe ser permanente a los trabajadores en materia de prevención y la participación activa de estos en la elaboración e implementación del nuevo sistema de prevención (manual de procedimientos de trabajo). Así también impulsar el compromiso de toda la organización, donde todos los integrantes del establecimiento tendrán conocimiento, de la Política de Seguridad y Salud Ocupacional. El objetivo principal es la prevención y control de riesgos ergonómicos derivados de la tarea que desarrolla el trabajador en este puesto de trabajo.</p>
+    </div>
+    <a id="referencia_final"></a>
+    <script src="general_functions.js"></script>
+</body>
+</html>
+
+
+
+<!--div class="contenedorTemas">
+    <h2 id="Tema-01-0"></h2>
+
+    <p id="" class="pregunta"></p>
+    <p class="respuesta"></p>
+
+    <div class="contenedor-img">
+        <img class="img" alt="imagen"  src="Imgs/Seguridad Ambiental e Industrial/086.jpg">
+    </div>
+</div-->
